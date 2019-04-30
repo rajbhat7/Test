@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>UMB2BDirector_SME</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Opportunity_Detail__c</field>
+        <field>Product_Basket_Detail__c</field>
+        <field>Owner</field>
+        <field>UM_Product_Categories__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Manager Direct &amp; Indirect Sales</description>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2) AND (3)</booleanFilter>
+            <criteriaItems>
+                <field>Opportunity.UM_Product_Categories__c</field>
+                <operation>equals</operation>
+                <value>Complex</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.UM_Product_Categories__c</field>
+                <operation>equals</operation>
+                <value>Complex Plus</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.Profile</field>
+                <operation>notEqual</operation>
+                <value>UM_Managers_Profile</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Step 1</label>
+        <name>Manager_Direct_Indirect_Sales</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>For Director approval</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Opportunity.UM_Product_Categories__c</field>
+                <operation>equals</operation>
+                <value>Complex</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.UM_Product_Categories__c</field>
+                <operation>equals</operation>
+                <value>Complex Plus</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Step 2</label>
+        <name>Director</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>This approval process is used for approval of opportunity created by Partner with different product type</description>
+    <emailTemplate>UM_UnitymediaTemplates/Email_Alert_for_product_basket</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.UM_Product_Categories__c</field>
+            <operation>equals</operation>
+            <value>Complex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.UM_Product_Categories__c</field>
+            <operation>equals</operation>
+            <value>Complex Plus</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Approved_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Complex_Approved_Record_type</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Complex_Rejected_Record_Type</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>LG_Product_Basket_Rejection_Notification</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Rejected_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Probability_Update2</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Complex Product Partner Opportunity</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

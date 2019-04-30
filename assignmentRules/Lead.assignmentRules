@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>LG_Web_Leads</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>LG_Telesales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Web - Customer Service,Web - Mobile Products,Web - Small Products,Web Order</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>UM_LeadAssignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>SME_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>SME</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_LeadQueue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISNEW()  &amp;&amp;  $Profile.Name!=&quot;UM_Partner&quot; &amp;&amp;  ISPICKVAL(LeadSource , &quot;Web&quot;)</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

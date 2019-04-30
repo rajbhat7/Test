@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assisted Care assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>UM_NP_S</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>OR(ISPICKVAL( LG_Solution__r.LG_DecompositionCriteria__c , &apos;Set 7 - JIRA CCF Service&apos;),
+ISPICKVAL( LG_Solution__r.LG_DecompositionCriteria__c , &apos;Set 17 - Smart Network Charges&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_NP_S</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName == &apos;LG_B2B_Care_Technical_Request_UM&apos; &amp;&amp;  NOT( ISBLANK( LG_Service__c ) ) &amp;&amp;  NOT( ISBLANK( LG_Service__r.LG_ProductFamily__c ) ) &amp;&amp;  (LG_Service__r.LG_ProductFamily__c = $Label.B2B_Service_Product_Family_BDS)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_HPBX_Allgemein</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName == &apos;LG_B2B_Care_Service_Change_Request_UM&apos; &amp;&amp;  NOT( ISBLANK( LG_Service__c ) ) &amp;&amp;  NOT( ISBLANK( LG_Service__r.LG_ProductFamily__c ) ) &amp;&amp;  (LG_Service__r.LG_ProductFamily__c == $Label.B2B_Service_Product_Family_HPBX || LG_Service__r.LG_ProductFamily__c == $Label.B2B_Service_Product_Family_HPBX1)
+&amp;&amp; (  ISPICKVAL(Type, &apos;SIM&apos;) || ISPICKVAL(Type, &apos;Enhancement / Reduction&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_HPBX_Allgemein</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName == &apos;LG_B2B_Care_Technical_Request_UM&apos; &amp;&amp;  NOT( ISBLANK( LG_Service__c ) ) &amp;&amp;  NOT( ISBLANK(   LG_Service__r.LG_ProductFamily__c  ) ) &amp;&amp;  (LG_Service__r.LG_ProductFamily__c ==  $Label.B2B_Service_Product_Family_HPBX || LG_Service__r.LG_ProductFamily__c ==  $Label.B2B_Service_Product_Family_HPBX1)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_Billing_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Billing Query,Online Billing Query</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_NP_S</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Change Request</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Enhancement / Reduction</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_Care_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Admin Change Request,General Query,Service Change Request</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UM_SME_Repair_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Outage/Network Incident,Planned Maintenance Case,SLA Breach Case,Technical Case</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>CaMa Ticket,USMS Ticket,Provision One Step,Activate Service,Install,Schedule Appointment,Cama PendingOrder,Cama Customer Type,Cama Customer Type,Activate Service,Follow-On Order,Install,Jeopardy,Provision,Schedule Appointment,Legacy Fulfilment</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Cama Customer Type,Activate Service,Follow-On Order,Inflight Cancel,Inflight Change,Jeopardy,Provision,Provision One Step,Cama PendingOrder,Coordinate,Manage Tenant,Terminate,Manage Logistics,Notify Customer</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

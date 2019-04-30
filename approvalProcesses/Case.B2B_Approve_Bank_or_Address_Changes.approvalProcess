@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>apiuser@unitymedia.com.prod</submitter>
+        <type>user</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Type</field>
+        <field>LG_Case_Reason__c</field>
+        <field>Subject</field>
+        <field>Description</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>UM_Care_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approve the bank or address change details</description>
+        <entryCriteria>
+            <formula>AND 
+( 
+RecordType.DeveloperName = &apos;LG_B2B_Care_Admin_Change_Request_UM&apos;, 
+OR 
+( 
+AND 
+( 
+ISPICKVAL( Type , &apos;Account&apos;), 
+ISPICKVAL( LG_Case_Reason__c , &apos;Address&apos;) 
+), 
+AND 
+( 
+ISPICKVAL( Type , &apos;Billing Account&apos;), 
+OR( 
+ISPICKVAL( LG_Case_Reason__c , &apos;Invoice Address &amp; Contact&apos;), 
+ISPICKVAL( LG_Case_Reason__c , &apos;Payment Method &amp; Details&apos;)) 
+) 
+), 
+NOT(LG_AddressValidated__c), 
+NOT(UM_IBANValidated__c) 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Approve the Details</label>
+        <name>B2B_Approve_the_Details</name>
+    </approvalStep>
+    <description>Approve Bank or Address Detail changes</description>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND
+(
+RecordType.DeveloperName = &apos;LG_B2B_Care_Admin_Change_Request_UM&apos;,
+NOT(IsClosed),
+OR
+(
+AND
+(
+ISPICKVAL( Type , &apos;Account&apos;),
+ISPICKVAL( LG_Case_Reason__c , &apos;Address&apos;) 
+),
+AND
+(
+ISPICKVAL( Type , &apos;Billing Account&apos;),
+OR(
+ISPICKVAL( LG_Case_Reason__c , &apos;Invoice Address &amp; Contact&apos;),
+ISPICKVAL( LG_Case_Reason__c , &apos;Payment Method &amp; Details&apos;))
+)
+),
+AND
+(
+NOT(LG_AddressValidated__c), 
+NOT( OR(ISNULL(B2B_Street_Name__c),ISBLANK(B2B_Street_Name__c))), 
+NOT( OR(ISNULL(B2B_House_Number__c),ISBLANK(B2B_House_Number__c))), 
+NOT( OR(ISNULL(B2B_Postal_Code__c),ISBLANK(B2B_Postal_Code__c))), 
+NOT( OR(ISNULL(B2B_City__c),ISBLANK(B2B_City__c))), 
+NOT( OR(ISNULL(B2B_Country__c),ISBLANK(B2B_Country__c)))
+),
+NOT(UM_IBANValidated__c)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>B2B_Account_and_Billing_Account_Address_change</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>B2B_Update_Validate_Address</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Approve Bank or Address Changes</label>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
