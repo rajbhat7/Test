@@ -1,0 +1,11 @@
+<!--
+ - Created by Petar on 11/30/2018.
+ -->
+
+<apex:page id="cscrmRecreateOrderConfirmation" standardController="csord__Order__c" extensions="cscrmRecreateDocumentController" action="{!regenerateOrderConf}" showHeader="true" sidebar="true">
+    <apex:sectionHeader title="Recreate Order Confirmation">
+        <apex:outputPanel >
+            There has been an issue regenerating the document, please try again.
+        </apex:outputPanel>
+    </apex:sectionHeader>
+</apex:page>

@@ -1,0 +1,14 @@
+<div style="font-family: arial; font-size: 10pt;">
+    <b>Numéro de client: {!UPC_Credit_Note__c.UPC_Customer_Number__c}</b><br />
+    <br />
+    {!UPC_Credit_Note__c.UPC_Main_Commercial_Contact_Salutation__c},&nbsp;
+    <br />
+    <br />
+    Nous avons le plaisir de vous faire part de lattribution dune note de crédit de CHF {!UPC_Credit_Note__c.UPC_Net_Amount__c}.<br />
+{!UPC_Credit_Note__c.UPC_Credit_Method_Expression__c}<br />
+    <br />
+    Nous restons à votre entière disposition pour tout renseignement complémentaire.<br />
+    <br />
+    Avec nos salutations les meilleures,<br />
+    {!UPC_Credit_Note__c.OwnerFullName}
+</div>

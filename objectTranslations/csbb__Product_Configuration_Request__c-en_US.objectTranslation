@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Flag that determines if approval process has been initiated for product configuration request. --></help>
+        <label><!-- Commercial Approval Status --></label>
+        <name>csbb__Commercial_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Authorization level for commercial approvals. --></help>
+        <label><!-- Commercial Authorization Level --></label>
+        <name>csbb__Commercial_Authorization_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <name>csbb__Offer__c</name>
+        <relationshipLabel><!-- Product Configuration Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>csbb__Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Miscellaneous additional fields, as needed (JSON structure recommended). --></help>
+        <label><!-- Optionals --></label>
+        <name>csbb__Optionals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>csbb__Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>csbb__Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Basket --></label>
+        <name>csbb__Product_Basket__c</name>
+        <relationshipLabel><!-- Product Configuration Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>csbb__Product_Category__c</name>
+        <relationshipLabel><!-- Product Configuration Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>csbb__Product_Configuration__c</name>
+        <relationshipLabel><!-- Product Configuration Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>csbb__Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field represents status of the approval process on product configuration request based on the product configuration. --></help>
+        <label><!-- Technical Approval Status --></label>
+        <name>csbb__Technical_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Authorization level for technical approvals. --></help>
+        <label><!-- Technical Authorization Level --></label>
+        <name>csbb__Technical_Authorization_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Recurring Charges Total --></label>
+        <name>csbb__Total_MRC__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-Off Charges Total --></label>
+        <name>csbb__Total_OC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarterly Recurring Charges Total --></label>
+        <name>csbb__Total_QRC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sales Order Value (SOV) --></label>
+        <name>csbb__Total_SOV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly Recurring Charges Total --></label>
+        <name>csbb__Total_YRC__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Product Configuration Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

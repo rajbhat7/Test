@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Options available on renaming old quotes batch</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>UPC_Batch_Size__c</fullName>
+        <defaultValue>100</defaultValue>
+        <description>Number of documents to update in single batch step</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of documents to update in single batch step</inlineHelpText>
+        <label>Batch Size</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Obsolete_Quote_After__c</fullName>
+        <defaultValue>30</defaultValue>
+        <description>Number of days buffered before the Quote becomes obsolete and be renamed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Starting from today this is the number of days buffered before the Quote becomes obsolete and be renamed</inlineHelpText>
+        <label>Obsolete Quote After</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_OnError_Email__c</fullName>
+        <description>Email of the Admin responsible to look at errors thrown during Quote Renaming batch</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email of Administrator that will be responsible to look at errors thrown during Quote Renaming batch processing</inlineHelpText>
+        <label>On Error Send Email To</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Quote_Clerk_User_Id__c</fullName>
+        <description>User Id under which QuoteRenamer process is run.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>User Id under which QuoteRenamer process is run.</inlineHelpText>
+        <label>Quote Clerk User Id</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Renamed_Quote_Prefix__c</fullName>
+        <description>The string that holds the prefix to the old Quote to be Renamed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text to be prepended to the old Quote title during the renaming batch.</inlineHelpText>
+        <label>Renamed Quote Prefix</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Renaming Options</label>
+    <visibility>Public</visibility>
+</CustomObject>

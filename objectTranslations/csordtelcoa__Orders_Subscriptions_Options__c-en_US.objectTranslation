@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Opportunity TPV Pending Stage Name --></label>
+        <name>UPC_Opportunity_TPV_Pending_Stage_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order TPV Withdrawal Status --></label>
+        <name>UPC_Order_TPV_Withdrawal_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Activated Status --></label>
+        <name>UPC_Service_Activated_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Canceled Status --></label>
+        <name>UPC_Service_Canceled_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Initial Termination Status --></label>
+        <name>UPC_Service_Initial_Termination_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Terminated Status --></label>
+        <name>UPC_Service_Terminated_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Initial Termination Status --></label>
+        <name>UPC_Sub_Initial_Termination_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Canceled Status --></label>
+        <name>UPC_Subscription_Canceled_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Terminated Status --></label>
+        <name>UPC_Subscription_Terminated_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basket Linked To Opportunity --></label>
+        <name>csordtelcoa__Basket_Linked_To_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of product configurations that is processed in a single batch of a single order generation job (if batch mode is used) --></help>
+        <label><!-- Batch Size --></label>
+        <name>csordtelcoa__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Mac Baskets Button Label --></label>
+        <name>csordtelcoa__Create_Mac_Baskets_Button_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Mac Baskets --></label>
+        <name>csordtelcoa__Create_Mac_Baskets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Mac Opportunities Button Label --></label>
+        <name>csordtelcoa__Create_Mac_Opportunities_Button_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Mac Opportunities --></label>
+        <name>csordtelcoa__Create_Mac_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Initial State --></label>
+        <name>csordtelcoa__Deliverable_Initial_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Number Prefix --></label>
+        <name>csordtelcoa__Deliverable_Number_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Triggers --></label>
+        <name>csordtelcoa__Disable_Triggers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Synchronisation --></label>
+        <name>csordtelcoa__Enforce_Synchronisation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Delta On Change --></label>
+        <name>csordtelcoa__Generate_Delta_On_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Inflight Change Delta --></label>
+        <name>csordtelcoa__Generate_Inflight_Change_Delta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Orders From Basket --></label>
+        <name>csordtelcoa__Generate_Orders_From_Basket__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Generate Orders from Basket&quot; overrides &quot;Generate Orders from Bundle&quot; --></help>
+        <label><!-- Generate Orders From Bundle --></label>
+        <name>csordtelcoa__Generate_Orders_From_Bundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of product configurations that is processed in a single batch of a single apply inflight change job (if batch mode is used) --></help>
+        <label><!-- Inflight Batch Size --></label>
+        <name>csordtelcoa__Inflight_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Mac Opportunity Stage --></label>
+        <name>csordtelcoa__Initial_Mac_Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, order generation will not be triggered automatically by the module --></help>
+        <label><!-- Initiate order generation manually --></label>
+        <name>csordtelcoa__Initiate_order_generation_manually__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of record types that can be used in a MACD process. If empty, all record types are used. Valid only if &apos;Use MACD Opportunity Record Types&apos; setting is set. --></help>
+        <label><!-- MACD Opportunity Record Types --></label>
+        <name>csordtelcoa__MACD_Opportunity_Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Generation Strategy --></label>
+        <name>csordtelcoa__Module_Debug_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Module Name --></label>
+        <name>csordtelcoa__Module_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Module Version Number --></label>
+        <name>csordtelcoa__Module_Version_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- A comma separated list of opportunity stages which when set will trigger the creation of orders. It defaults to &quot;Closed Won&quot; if no value is entered --></help>
+        <label><!-- Opportunity Stages creating orders --></label>
+        <name>csordtelcoa__Opportunity_Stages_creating_orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Initial State --></label>
+        <name>csordtelcoa__Order_Initial_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Product Initial State --></label>
+        <name>csordtelcoa__Order_Product_Initial_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default is &quot;Delivered&quot; --></help>
+        <label><!-- Replacement Subscription Delivered State --></label>
+        <name>csordtelcoa__Replacement_Subscription_Delivered_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Revalidation is a process of re-running the defined rules on a cloned product configuration. Since it is a costly process, it is run in a batch. You can select for it to run immediately (checked) or leave it for a later time (unchecked). --></help>
+        <label><!-- Revalidate Cloned Product Configuration --></label>
+        <name>csordtelcoa__Revalidate_Cloned_Product_Configuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of statuses - once a service reaches one of these statuses, system should not change it since it is listed as final. --></help>
+        <label><!-- Service Final States --></label>
+        <name>csordtelcoa__Service_Final_States__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Initial State --></label>
+        <name>csordtelcoa__Service_Initial_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Number Prefix --></label>
+        <name>csordtelcoa__Service_Number_Prefix__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of Subscription statuses not allowing change requests --></help>
+        <label><!-- Statuses Not Allowing Change --></label>
+        <name>csordtelcoa__Statuses_Not_Allowing_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of service statuses where In Flight change is not allowed --></help>
+        <label><!-- Statuses Not Allowing In Flight Change --></label>
+        <name>csordtelcoa__Statuses_Not_Allowing_In_Flight_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of opportunity stages where appending of additional subscriptions to opportunity is not possible. If left empty, it&apos;s disregarded. --></help>
+        <label><!-- Subscription Appending Not Allowed --></label>
+        <name>csordtelcoa__Subscription_Appending_Not_Allowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default &quot;Closed Replaced&quot; --></help>
+        <label><!-- Subscription Closed Replaced State --></label>
+        <name>csordtelcoa__Subscription_Closed_Replaced_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Initial State --></label>
+        <name>csordtelcoa__Subscription_Initial_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Number Prefix --></label>
+        <name>csordtelcoa__Subscription_Number_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Batch Mode --></label>
+        <name>csordtelcoa__Use_Batch_Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to enable record type selection when creating a new MACD opportunity --></help>
+        <label><!-- Use Opportunity Record Types --></label>
+        <name>csordtelcoa__Use_Opportunity_Record_Types__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,29 @@
+<div style="font-family: arial; font-size: 10pt;">
+    Hi Approver<br />
+    <br />
+    Can you please approve the attached credit note?<br />
+    {!ApprovalRequest.External_URL}<br />
+    <br />
+    <b><u>Credit Note {!UPC_Credit_Note__c.Name}</u></b><br />
+    <br />
+    <b>Requested by:</b>&nbsp;{!UPC_Credit_Note__c.UPC_Requested_By_Name__c}<br />
+    <b>Customer Name:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Customer_Name__c}<br />
+    <b>Customer Number:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Customer_Number__c}<br />
+    <b>Service:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Service_SAP_Id__c}<br />
+    <b>Period from:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Period_From__c}<br />
+    <b>Period to:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Period_To__c}<br />
+    <b>Affected Invoice Number:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Affected_Invoice_Numbers__c}<br />
+    <b>Responsible:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Responsible__c}<br />
+    <b>Sales:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Sales_Name__c}<br />
+    <b>Reason:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Reason__c}<br />
+    <b>Justification:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Justification__c}<br />
+    <b>Desired Invoice Text:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Desired_Invoice_Text__c}<br />
+    <b>Credit Method:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Credit_Method__c}<br />
+    <b>Affected Amount:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Affected_Amount__c} CHF<br />
+    <b>New Invoice Amount:&nbsp;</b>{!UPC_Credit_Note__c.UPC_New_Invoice_Amount__c} CHF<br />
+    <b>Net Amount:&nbsp;</b>{!UPC_Credit_Note__c.UPC_Net_Amount__c} CHF<br />
+    <b>Comment:&nbsp;</b>{!ApprovalRequest.Comments}<br />
+    <br />
+    Thank you and best regards,<br />
+    {!UPC_Credit_Note__c.OwnerFullName}
+</div>

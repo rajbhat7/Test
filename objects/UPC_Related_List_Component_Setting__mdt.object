@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to store setting for related component list</description>
+    <fields>
+        <fullName>UPC_Component_Setting_Key__c</fullName>
+        <description>Used to store unique identifier by which component can access settings.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Used to store unique identifier by which component can access settings. Spaces not advised!</inlineHelpText>
+        <label>Component Setting Key</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Description__c</fullName>
+        <description>Used to describe role of custom settings</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Used to describe role of custom settings</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UPC_Display_Object__c</fullName>
+        <description>API name of SObject to be queried.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of SObject to be queried.</inlineHelpText>
+        <label>Display Object</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Field_Definitions__c</fullName>
+        <defaultValue>&apos;[{&quot;name&quot;:&quot;api_name&quot;,&quot;label&quot;:&quot;text label OR (for label) Label.Custom_Label_Name OR (for field label) Field.Object_API_Name__c.Field_API_Name&quot;,&quot;sort&quot;:0,&quot;type&quot;:0}] (JSON array of objects)&apos;</defaultValue>
+        <description>JSON object of fields and labels.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Array of JSON objects with fields, array of object format:[{&quot;key&quot;:&quot;value&quot;(,other keys)}(,other object)].
+Keys: 
+name:API name
+label:a label (use &quot;Label.&quot; prefix for custom)
+order:sort
+type:supported String,Number,Date,Datetime (optional)</inlineHelpText>
+        <label>Field Definitions</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UPC_OE_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>OE Data has a different flow than regular objects.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>OE Data</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_OE_Object_Type__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>OE Object Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>true</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Deliverable</fullName>
+                    <default>false</default>
+                    <label>Deliverable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_WHERE_Clause__c</fullName>
+        <description>Where clause for select. Master record fields can be addressed with curly brackets { and }. DO NOT WRITE WHERE keyword.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Where clause for select. Master record fields can be addressed with curly brackets { and }. DO NOT WRITE WHERE keyword.</inlineHelpText>
+        <label>WHERE Clause</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Related List Component Setting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>UPC_Component_Setting_Key__c</columns>
+        <columns>UPC_Display_Object__c</columns>
+        <columns>UPC_Field_Definitions__c</columns>
+        <columns>UPC_WHERE_Clause__c</columns>
+        <columns>UPC_OE_Data__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Related List Component Settings</pluralLabel>
+    <validationRules>
+        <fullName>Field_Labels_Required</fullName>
+        <active>true</active>
+        <description>Field labels are required</description>
+        <errorConditionFormula>ISBLANK( UPC_Field_Definitions__c )</errorConditionFormula>
+        <errorDisplayField>UPC_Field_Definitions__c</errorDisplayField>
+        <errorMessage>Field labels are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>WHERE_Clause_Required</fullName>
+        <active>true</active>
+        <description>Ensures Where clause exists, no SOQL all.
+Exception OE Data.</description>
+        <errorConditionFormula>AND(ISBLANK (UPC_WHERE_Clause__c),UPC_OE_Data__c = FALSE)</errorConditionFormula>
+        <errorDisplayField>UPC_WHERE_Clause__c</errorDisplayField>
+        <errorMessage>WHERE clause is required.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

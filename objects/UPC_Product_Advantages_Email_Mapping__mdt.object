@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Holds the product advantages shown in the quote email.
+Advantages in HTML so it could be dynamically shown in the email templates.</description>
+    <fields>
+        <fullName>UPC_Advantages__c</fullName>
+        <description>Holds the HTML representation of product advantages - used in quote email.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Advantages</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UPC_Sequence__c</fullName>
+        <description>Holds the sequence in which the product will appear in quote template</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Sequence</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Product Advantages Email Mapping</label>
+    <listViews>
+        <fullName>All_Fields</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>UPC_Advantages__c</columns>
+        <columns>UPC_Sequence__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Fields</label>
+    </listViews>
+    <pluralLabel>Product Advantages Email Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

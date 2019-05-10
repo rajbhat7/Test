@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>CSPOFA__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Orchestration_Process_Template__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Orchestration Process Template</label>
+        <referenceTo>CSPOFA__Orchestration_Process_Template__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Parent_Process__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Process</label>
+        <referenceTo>CSPOFA__Orchestration_Process__c</referenceTo>
+        <relationshipLabel>Child Processes</relationshipLabel>
+        <relationshipName>Child_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Priority__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Low</fullName>
+                    <default>false</default>
+                    <label>1 - Low</label>
+                </value>
+                <value>
+                    <fullName>2 - Normal</fullName>
+                    <default>false</default>
+                    <label>2 - Normal</label>
+                </value>
+                <value>
+                    <fullName>3 - High</fullName>
+                    <default>false</default>
+                    <label>3 - High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Process_On_Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Hold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Process_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Provide</fullName>
+                    <default>false</default>
+                    <label>New Provide</label>
+                </value>
+                <value>
+                    <fullName>Cease</fullName>
+                    <default>false</default>
+                    <label>Cease</label>
+                </value>
+                <value>
+                    <fullName>Upgrade/Downgrade</fullName>
+                    <default>false</default>
+                    <label>Upgrade/Downgrade</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Processing_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal field for storing processing mode information</description>
+        <externalId>true</externalId>
+        <label>Processing Mode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Progress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describes the progress of the Process, in terms of milestones reached. Expressed as a percentage (e.g. &quot;25%&quot;).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describes the progress of the Process, in terms of milestones reached. Expressed as a percentage (e.g. &quot;25%&quot;). NOT TO BE EDITED MANUALLY.</inlineHelpText>
+        <label>Progress</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Root_Process__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Root Process</label>
+        <referenceTo>CSPOFA__Orchestration_Process__c</referenceTo>
+        <relationshipLabel>Descendant Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__State__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used internally by Orchestrator engine for tracking processing. Not to be changed manually.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used internally by Orchestrator engine for tracking processing. Not to be changed manually.</inlineHelpText>
+        <label>State</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>INITIALIZING</fullName>
+                    <default>true</default>
+                    <label>INITIALIZING</label>
+                </value>
+                <value>
+                    <fullName>INACTIVE</fullName>
+                    <default>false</default>
+                    <label>INACTIVE</label>
+                </value>
+                <value>
+                    <fullName>ACTIVE</fullName>
+                    <default>false</default>
+                    <label>ACTIVE</label>
+                </value>
+                <value>
+                    <fullName>COMPLETED</fullName>
+                    <default>false</default>
+                    <label>COMPLETED</label>
+                </value>
+                <value>
+                    <fullName>TERMINATED</fullName>
+                    <default>false</default>
+                    <label>TERMINATED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initializing</fullName>
+                    <default>true</default>
+                    <label>Initializing</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Warning</fullName>
+                    <default>false</default>
+                    <label>Warning</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Subprocess_Step__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subprocess Step</label>
+        <referenceTo>CSPOFA__Orchestration_Step__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Subprocess_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subprocess Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__actual_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Actual Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__confirmed_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Confirmed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__jeopardy_created_flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Put the process in jeopardy. This happens when Target Time is not met.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Process is in jeopardy because the Target Time was not met.</inlineHelpText>
+        <label>In Jeopardy</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__ola_remaining_time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of OLA time remaining after the OLA clock has been paused/stopped.
+The value is always represented in miliseconds.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of OLA time remaining after the OLA clock has been paused/stopped.</inlineHelpText>
+        <label>OLA Remaining Time</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__target_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__target_date_time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Target time to complete the process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Target time to complete the process.</inlineHelpText>
+        <label>Target Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>csord__Order__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Credit_Note__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Credit Note</label>
+        <referenceTo>UPC_Credit_Note__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Service_Line_Item__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Line Item</label>
+        <referenceTo>csord__Service_Line_Item__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Subscription_Canceled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Marks true if case of a topnet case record type is closed</description>
+        <externalId>false</externalId>
+        <label>Subscription Canceled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>csordtelcoa__Service__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Service on which process instance was invoked</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to the Service on which process instance was invoked</inlineHelpText>
+        <label>Service</label>
+        <referenceTo>csord__Service__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>csordtelcoa__Subscription__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <referenceTo>csord__Subscription__c</referenceTo>
+        <relationshipLabel>Orchestration Processes</relationshipLabel>
+        <relationshipName>Orchestration_Processes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Orchestration Process</label>
+    <listViews>
+        <fullName>CSPOFA__All</fullName>
+        <columns>NAME</columns>
+        <columns>CSPOFA__Process_Type__c</columns>
+        <columns>CSPOFA__Status__c</columns>
+        <columns>CSPOFA__Account__c</columns>
+        <columns>CSPOFA__Opportunity__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Orchestration Processes</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>CSPOFA__Orchestration_Process_Template__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CSPOFA__Process_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CSPOFA__Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CSPOFA__jeopardy_created_flag__c</searchFilterFields>
+        <searchFilterFields>CSPOFA__Process_On_Hold__c</searchFilterFields>
+        <searchFilterFields>CSPOFA__Process_Type__c</searchFilterFields>
+        <searchFilterFields>CSPOFA__Status__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>CSPOFA__Process_Visualiser</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Process Visualiser</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.CSPOFA__Constants__c.CSPOFA__Package_URL_Namespace__c}ProcessVisualiser?processId={!CSPOFA__Orchestration_Process__c.Id}</url>
+    </webLinks>
+</CustomObject>

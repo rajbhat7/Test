@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Contact Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Contact Roles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>UPC_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>UPC_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>UPC_Contact__c</name>
+        <relationshipLabel><!-- Opportunity Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>UPC_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Roles --></label>
+        <name>UPC_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Business User</masterLabel>
+            <translation><!-- Business User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Buyer</masterLabel>
+            <translation><!-- Economic Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Decision Maker</masterLabel>
+            <translation><!-- Economic Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluator</masterLabel>
+            <translation><!-- Evaluator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Sponsor</masterLabel>
+            <translation><!-- Executive Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Contact</masterLabel>
+            <translation><!-- Installation Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Commercial Contact</masterLabel>
+            <translation><!-- Main Commercial Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Technical Contact</masterLabel>
+            <translation><!-- Main Technical Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Admin</masterLabel>
+            <translation><!-- Mobile Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Contact</masterLabel>
+            <translation><!-- Primary Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Buyer</masterLabel>
+            <translation><!-- Technical Buyer --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Opportunity Contact Role Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

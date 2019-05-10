@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Partner Portal.Content:ACTIVATION</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>ACTIVATION</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:CONTACT POINTS</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>CONTACT POINTS</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:DIGITAL PHONE PRO</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>DIGITAL PHONE PRO</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:GENERAL</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>GENERAL</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:INTERNET</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>INTERNET</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:PARTNER CONTRACTS</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>PARTNER CONTRACTS</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:SALES ENCOURAGEMENT</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>SALES ENCOURAGEMENT</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:SIP TRUNK</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>SIP TRUNK</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Content:TRAINING</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>TRAINING</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:ACTIVATION</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>ACTIVATION</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:CONTACT POINTS</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>CONTACT POINTS</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:DIGITAL PHONE PRO</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>DIGITAL PHONE PRO</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:FAQ</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FAQ</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:GENERAL</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>GENERAL</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:INTERNET</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>INTERNET</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:PARTNER CONTRACTS</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>PARTNER CONTRACTS</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:SALES ENCOURAGEMENT</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>SALES ENCOURAGEMENT</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:SIP TRUNK</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>SIP TRUNK</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Featured:TRAINING</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>TRAINING</name>
+        <parentName></parentName>
+        <position>9</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:ACTIVATION</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>ACTIVATION</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:CONTACT POINTS</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>CONTACT POINTS</name>
+        <parentName></parentName>
+        <position>9</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:DIGITAL PHONE PRO</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>DIGITAL PHONE PRO</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:GENERAL</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>GENERAL</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:INTERNET</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>INTERNET</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:PARTNER CONTRACTS</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>PARTNER CONTRACTS</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:SALES ENCOURAGEMENT</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>SALES ENCOURAGEMENT</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:SIP TRUNK</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>SIP TRUNK</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Partner Portal.Navigational:TRAINING</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>TRAINING</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

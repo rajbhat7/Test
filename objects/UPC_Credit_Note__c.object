@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>UPC_Account_Interface__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Interface</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>UPC_Account_Interfaces__c.Account__r.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.UPC_Customer_Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>UPC_Account_Interfaces__c</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Affected_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Affected Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Affected_Invoice_Numbers__c</fullName>
+        <externalId>false</externalId>
+        <label>Affected Invoice Numbers</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending approval</fullName>
+                    <default>false</default>
+                    <label>Pending approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Credit_Method_Expression__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;EN&apos;), &apos;This will be credited to you with your next invoice.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;FR&apos;), &apos;Ce montant sera crédité sur votre prochaine facture.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;IT&apos;), &apos;L’importo in questione verrà accreditato sulla prossima fattura.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;EN&apos;), &apos;This will be credited to you with a separate invoice.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;FR&apos;), &apos;Ce montant sera crédité sur une facture séparée.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;IT&apos;), &apos;L’importo in questione verrà accreditato su una fattura separata.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Position Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;EN&apos;), &apos;This will be credited to you to a separate item on your next invoice.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Position Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;FR&apos;), &apos;Ce montant sera crédité sur une position séparée sur votre prochaine facture.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Position Next Invoice&apos;) &amp;&amp; ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;IT&apos;), &apos;L’importo in questione verrà accreditato con una voce separata sulla prossima fattura.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Next Invoice&apos;), &apos;Der Betrag wird Ihnen mit der nächsten Rechnung gutgeschrieben.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Invoice&apos;), &apos;Der Betrag wird Ihnen mit einer separaten Rechnung gutgeschrieben.&apos;,
+IF(ISPICKVAL( UPC_Credit_Method__c , &apos;Separate Position Next Invoice&apos;), &apos;Der Betrag wird Ihnen auf einer separaten Position auf Ihrer nächsten Rechnung gutgeschrieben.&apos;, &apos;&apos;))))))))))))</formula>
+        <label>Credit Method Expression</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Credit_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Method</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Next Invoice</fullName>
+                    <default>false</default>
+                    <label>Next Invoice</label>
+                </value>
+                <value>
+                    <fullName>Separate Invoice</fullName>
+                    <default>false</default>
+                    <label>Separate Invoice</label>
+                </value>
+                <value>
+                    <fullName>Separate Position Next Invoice</fullName>
+                    <default>false</default>
+                    <label>Separate Position Next Invoice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Customer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Customer_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Customer_Number__c</fullName>
+        <description>Sap ID from Service object</description>
+        <externalId>false</externalId>
+        <formula>UPC_Account_Interface__r.UPC_ID__c</formula>
+        <label>Customer Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Desired_Invoice_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Desired Invoice Text</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Justification__c</fullName>
+        <externalId>false</externalId>
+        <label>Justification</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Main_Commercial_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Main_Commercial_Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Main Commercial Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Main_Commercial_Contact_Salutation__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;FR&apos;),  UPC_Main_Commercial_Contact__r.UPC_French_Salutation__c, 
+IF(ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;IT&apos;),  UPC_Main_Commercial_Contact__r.UPC_Italian_Salutation__c,
+IF(ISPICKVAL( UPC_Main_Commercial_Contact__r.UPC_Preferred_Language__c , &apos;EN&apos;),  UPC_Main_Commercial_Contact__r.UPC_English_Salutation__c, UPC_Main_Commercial_Contact__r.UPC_German_Salutation__c)))</formula>
+        <label>Main Commercial Contact Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Main_Commercial_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Holds the lookup to the main commercial contact of the affected Account</description>
+        <externalId>false</externalId>
+        <label>Main Commercial Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Net_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_New_Invoice_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>New Invoice Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Period_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Period From</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Period_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Period To</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Admin</fullName>
+                    <default>false</default>
+                    <label>Admin</label>
+                </value>
+                <value>
+                    <fullName>Contract Change</fullName>
+                    <default>false</default>
+                    <label>Contract Change</label>
+                </value>
+                <value>
+                    <fullName>Termination</fullName>
+                    <default>false</default>
+                    <label>Termination</label>
+                </value>
+                <value>
+                    <fullName>SLA Violation</fullName>
+                    <default>false</default>
+                    <label>SLA Violation</label>
+                </value>
+                <value>
+                    <fullName>Goodwill</fullName>
+                    <default>false</default>
+                    <label>Goodwill</label>
+                </value>
+                <value>
+                    <fullName>Platform Incident</fullName>
+                    <default>false</default>
+                    <label>Platform Incident</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Requested_By_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Requested_By__r.FirstName + &apos; &apos;  + UPC_Requested_By__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requested By Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Requested_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requested By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Responsible__c</fullName>
+        <externalId>false</externalId>
+        <label>Responsible</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Sales_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Sales__r.FirstName + &apos; &apos; + UPC_Sales__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Sales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Credit_Notes1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Service_SAP_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Service SAP Id</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UPC_Service__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>csord__Service__c.UPC_Account__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.UPC_Customer_Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>csord__Service__c</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Credit Note</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CN-{00000}</displayFormat>
+        <label>Credit Note Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Credit Notes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

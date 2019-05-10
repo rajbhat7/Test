@@ -1,0 +1,80 @@
+<!--
+(c) 2019 Nexell GmbH
+Developed by Nexell GmbH, Zug (Switzerland)
+Created: 16.04.2019
+
+Author: Tiago Ribeiro
+Description: PT7985 - Lightning component to handle data and events for the Google Maps
+
+Modifications:
+-->
+<aura:component controller="nxGoogleMapsController" access="global" implements="force:hasRecordId,force:hasSObjectName,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="listSites" type="List" />
+    <aura:attribute name="mapOptions" type="Object" default='{"zoom": 16}' />
+    <aura:attribute name="mapOptionsCenter" type="Object" />
+    <aura:attribute name="mapData" type="Object[]" />
+    <!-- Set listener from VF. This is to check when VF is loaded so we can send marker data -->
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}" />-->
+
+    <!-- Needed to send messages to VF page. But we will get it from VF itself -->
+    <aura:attribute name="vfHost" type="String" default="" />
+    <!-- Google Map options 
+    <aura:attribute name="mapOptions" type="Object" default='{"zoom": 4}' />-->
+    <!-- 
+		Goole map option to set center becasue it's required in following format
+		{"lat":-25.363882, "lng":131.044922}
+	 
+    <aura:attribute name="mapOptionsCenter" type="Object" />-->
+    <!--
+		Google map data for marker in following format
+		[{"lat":-25.363882, "lng":131.044922, "markerText":"This is an account"}]
+   	
+    <aura:attribute name="mapData" type="Object[]" />-->
+    <aura:attribute name="widthValue" type="Decimal"/>
+    <aura:attribute name="loadMap" type="Boolean" default="false" />
+    <aura:attribute name="loaded" type="Boolean" default="false"/>
+    <aura:attribute name="isCommunity" type="Boolean"/>
+    <aura:attribute name="isClicked" type="Boolean" default="false"/>
+    <aura:attribute name="objectId" type="String"/>
+    <!-- Domain of LC for VF to send message -->
+    <aura:attribute name="lcHost" type="String" />
+    <aura:html tag="style">
+        .slds-card__footer{
+            text-align: left;
+        }
+    </aura:html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <div aura:id="measurement" />
+    <aura:if isTrue="{!v.mapData.length > 0}">
+        <lightning:card>
+            <aura:set attribute="title">
+                Sites Map 
+                <br></br>
+                    <aura:if isTrue="{!v.isCommunity}">
+                            <iframe id="teste2" aura:id="vfFrame" src="{! '/Partner/apex/nxGoogleMaps?lcHost=' + v.lcHost}" width="{!v.widthValue}" height="435" frameBorder="0"/>
+                        <aura:set attribute="else">
+                            <iframe id="teste2" aura:id="vfFrame" src="{! '/apex/nxGoogleMaps?lcHost=' + v.lcHost}" width="{!v.widthValue}" height="435" frameBorder="0"/>
+                        </aura:set>
+                    </aura:if>
+            </aura:set>
+            <aura:set attribute="footer">
+                <span style="color: rgb(8, 7, 7);font-weight: 700;">{!'Sites' + ' (' + v.mapData.length + ')'}</span>
+                <ul class="slds-coordinates__list" style="max-height:325px;height:auto;overflow-y:scroll">
+                    <aura:iteration items="{!v.mapData}" var="site">
+                        <li class="slds-coordinates__item">
+                            <span class="slds-assistive-text">{!site.markerText}</span>
+                            <button data-siteid ="{!site.Id}" class="slds-coordinates__item-action slds-button_reset slds-media" onclick="{!c.siteClicked}">
+                                <span class="slds-media__body">
+                                    <span class="slds-text-link">{!site.markerText}</span>
+                                    <span>{!site.address}</span>
+                                </span>
+                            </button>
+                        </li>
+                    </aura:iteration>
+                </ul>                
+            </aura:set>
+        </lightning:card>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- High Level Product Offer --></label>
+        <name>csbb__High_Level_Product_Offer__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the offer will be active and available for configuration. --></help>
+        <label><!-- Active --></label>
+        <name>cscfga__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of associated baskets. Only valid for template offers. --></help>
+        <label><!-- Baskets_Count__c --></label>
+        <name>cscfga__Baskets_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field populated automatically based on number of Categories associated to the Offer. --></help>
+        <label><!-- Category Association Count --></label>
+        <name>cscfga__Category_Association_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Filed not in use. --></help>
+        <label><!-- Content --></label>
+        <name>cscfga__Content__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date range used to make the Offer available only for a fixed time period. --></help>
+        <label><!-- Dates Available --></label>
+        <name>cscfga__Date_Range__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Offer description. --></help>
+        <label><!-- Description --></label>
+        <name>cscfga__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose from existing Eligibility Rules in order to restrict the sale to qualified customers only. --></help>
+        <label><!-- Eligibility Rule --></label>
+        <name>cscfga__Eligibility_Rule__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The weight to be assigned to this Offer when sorting offers for display to the sales user. --></help>
+        <label><!-- Sequence --></label>
+        <name>cscfga__Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Filed not in use. --></help>
+        <label><!-- Shared Context Configuration --></label>
+        <name>cscfga__Shared_Context_Configuration__c</name>
+        <relationshipLabel><!-- Offers (Shared Context) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates that Offer is a template that can be used for creation of new offers or new templates. --></help>
+        <label><!-- Template --></label>
+        <name>cscfga__Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- GUID for JSON export/import --></help>
+        <label><!-- GUID --></label>
+        <name>csexpimp1__guid__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit). --></errorMessage>
+        <name>csexpimp1__Guid_Format_Check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- BtnObrisiMee --></label>
+        <name>cscfga__BtnObrisiMee</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_new_version --></label>
+        <name>cscfga__Create_new_version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- TestniObrisiMe --></label>
+        <name>cscfga__TestniObrisiMe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_to_JSON --></label>
+        <name>csexpimp1__Export_to_JSON</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- List_Export_to_JSON --></label>
+        <name>csexpimp1__List_Export_to_JSON</name>
+    </webLinks>
+</CustomObjectTranslation>

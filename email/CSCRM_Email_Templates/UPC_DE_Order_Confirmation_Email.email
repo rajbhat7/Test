@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="800" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="float:right;text-align:right;color: rgb(0, 0, 0); font-family: arial; font-size: 8pt;">
+				<font face="arial">Weitere Informationen unter:  <a href="https://upc.ch/business">upc.ch/business</a>
+				</font>
+			</div>
+			<div style="clear:both"></div>
+			<div style="color: rgb(35,154,152); font-family: arial; font-size: 10pt;">
+				<font face="arial">Auftragsbestätigung von UPC Business&nbsp;</font></div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br>
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">{!Salutation} {!CustomerName}</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Wir freuen uns sehr, dass Sie sich für UPC Business entschieden haben, und bedanken uns für das entgegengebrachte Vertrauen.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Gerne bestätigen wir Ihnen hiermit den Eingang Ihrer Bestellung.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Anbei erhalten Sie die Auftragsbestätigung inklusive Beilagen.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><br></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><span style="font-family: Arial, sans-serif; font-size: 13.3333px;">Bei Fragen oder sonstigen Anliegen stehen wir Ihnen gerne zur Verfügung.</span></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Freundliche Grüsse</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">{!Order.OwnerFullName}</font></div></div>]]></td>
+</tr>
+</table>

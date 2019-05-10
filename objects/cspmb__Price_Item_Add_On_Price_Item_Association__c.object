@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Describes a many-to-many relationship between Commercial Product and Add On.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Add_On_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Add On Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSCRM_Migration_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used as an external id for migrating the data from org to an org (easing up the deployments).</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Used as an external id for migrating the data from org to an org (easing up the deployments).</inlineHelpText>
+        <label>CSCRM Migration Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Not_Required_For_Change_Types__c</fullName>
+        <description>A comma separated list of of change types for which this addon is not required. This effectively overrides the min value to 0 in addon manager.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A comma separated list of of change types for which this addon is not required. This effectively overrides the min value to 0 in addon manager.</inlineHelpText>
+        <label>Not Required For Change Types</label>
+        <length>124</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Commercial_Product_Contract_Term__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(cspmb__Price_Item__r.cspmb__Contract_Term__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Commercial Product Contract Term</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Configuration_Context__c</fullName>
+        <description>Tells you the relevant context (BP or not).</description>
+        <externalId>false</externalId>
+        <label>Configuration Context</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Requires_Provisioning_Taifun__c</fullName>
+        <description>Does AddOn Requires Provisioning in Taifun</description>
+        <externalId>false</externalId>
+        <formula>cspmb__Add_On_Price_Item__r.UPC_Requires_Provisioning_Taifun__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Does AddOn Requires Provisioning in Taifun</inlineHelpText>
+        <label>Requires Provisioning Taifun</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Add_On_Price_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Add On</label>
+        <referenceTo>cspmb__Add_On_Price_Item__c</referenceTo>
+        <relationshipLabel>Commercial Product Add On Association</relationshipLabel>
+        <relationshipName>Price_Item_Add_On_Price_Item_Association</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Default_Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Group__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of a group of Add-Ons which this Add-On belongs to. Used to groups Add-Ons for a given Commercial Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of a group of Add-Ons which this Add-On belongs to. Used to groups Add-Ons for a given Commercial Product.</inlineHelpText>
+        <label>Group</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Max__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum number of the linked Add On which can be used with the linked Commercial Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of the linked Add On which can be used with the linked Commercial Product.</inlineHelpText>
+        <label>Max</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Min__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The minimum number of the linked Add On which can be used with the linked Commercial Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The minimum number of the linked Add On which can be used with the linked Commercial Product.</inlineHelpText>
+        <label>Min</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__One_Off_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Overrides the One-Off Charge for the linked Add On when used with the linked Commercial Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Overrides the One-Off Charge for the linked Add On when used with the linked Commercial Product.</inlineHelpText>
+        <label>One-Off Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Overrides_Add_On_Charges__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this Add On Association&apos;s One Off Charge and Recurring Charge fields  overrides the equivalent values on the related Add On. If unchecked, this record&apos;s charge fields will take their values from the related Add On.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this Add On Association&apos;s One Off Charge and Recurring Charge fields  overrides the equivalent values on the related Add On. If unchecked, this record&apos;s charge fields will take their values from the related Add On.</inlineHelpText>
+        <label>Overrides Add On Charges</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Price_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Commercial Product</label>
+        <referenceTo>cspmb__Price_Item__c</referenceTo>
+        <relationshipLabel>Commercial Product Add On Association</relationshipLabel>
+        <relationshipName>Price_Item_Add_On_Price_Item_Association</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Recurring_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Overrides the Recurring Charge for the linked Add On when used with the linked Commercial Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Overrides the Recurring Charge for the linked Add On when used with the linked Commercial Product.</inlineHelpText>
+        <label>Recurring Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Sequence__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates the sorting order for this Add On Association.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the sorting order for this Add On Association.</inlineHelpText>
+        <label>Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__effective_end_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__effective_start_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Commercial Product Add On Association</label>
+    <listViews>
+        <fullName>All_CPAOAs</fullName>
+        <columns>NAME</columns>
+        <columns>cspmb__Price_Item__c</columns>
+        <columns>cspmb__Add_On_Price_Item__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All CPAOAs</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PAO-{0}</displayFormat>
+        <label>Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Commercial Product Add On Association</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

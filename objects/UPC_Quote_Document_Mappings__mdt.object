@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>UPC_Category_for_Quote_Value__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Category for Quote Value</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Language_Setting_Field__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Language Setting Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Document Mappings</label>
+    <listViews>
+        <fullName>All_Quote_Document_Mappings</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <columns>UPC_Category_for_Quote_Value__c</columns>
+        <columns>UPC_Language_Setting_Field__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Quote Document Mappings</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Quote Document Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

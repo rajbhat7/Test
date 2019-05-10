@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Values relating the to FTTH Clean Order Sheet document</description>
+    <fields>
+        <fullName>UPC_Appropriate_Products__c</fullName>
+        <description>A comma separated list of the product names for which this document should be generated.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A comma separated list of the product names for which this document should be generated.</inlineHelpText>
+        <label>Appropriate Products</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Clean Order Sheet Value</label>
+    <pluralLabel>Clean Order Sheet Values</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

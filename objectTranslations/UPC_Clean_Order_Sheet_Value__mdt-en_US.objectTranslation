@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Clean Order Sheet Value</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clean Order Sheet Values</value>
+    </caseValues>
+    <fields>
+        <help><!-- A comma separated list of the product names for which this document should be generated. --></help>
+        <label><!-- Appropriate Products --></label>
+        <name>UPC_Appropriate_Products__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Add On --></label>
+        <name>Add_On_Id__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Config ID --></label>
+        <name>Config_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Off Discount Amount --></label>
+        <name>One_Off_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Discount Amount --></label>
+        <name>Recurring_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address --></label>
+        <name>Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addon Abbreviation --></label>
+        <name>UPC_Addon_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Basket Change Type --></label>
+        <name>UPC_Basket_Change_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cable Socket Availability --></label>
+        <name>UPC_Cable_Socket_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Available</masterLabel>
+            <translation><!-- Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined</masterLabel>
+            <translation><!-- Undefined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer Whishdate mapping --></help>
+        <label><!-- Customer Whishdate --></label>
+        <name>UPC_Customer_Whishdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible for Upgrade --></label>
+        <name>UPC_Eligible_for_Upgrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Terms --></label>
+        <name>UPC_Process_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Definition Abbreviation --></label>
+        <name>UPC_Product_Definition_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does service requires provisioning taifun. --></help>
+        <label><!-- Requires Provisioning Taifun --></label>
+        <name>UPC_Requires_Provisioning_Taifun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Address --></label>
+        <name>UPC_Site_Address__c</name>
+        <relationshipLabel><!-- Product Configurations (Site Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>UPC_Site__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of the Attribute. It is derived from Attribute Definition‘s name based on which Attribute was created. --></help>
+        <label><!-- Attribute Name --></label>
+        <name>cscfga__Attribute_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Billing Frequency for Recurring Products in the Product Configuration. It can be derived from Product‘s Default Billing Frequency or with Set Billing Frequency action during configuration process. --></help>
+        <label><!-- Line Item Billing Frequency --></label>
+        <name>cscfga__Billing_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Configuration Offer --></label>
+        <name>cscfga__Configuration_Offer__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Status of the Product Configuration. Automatically set when Product Configuration is saved. --></help>
+        <label><!-- Configuration Status --></label>
+        <name>cscfga__Configuration_Status__c</name>
+        <picklistValues>
+            <masterLabel>Contains Errors or Incomplete</masterLabel>
+            <translation><!-- Contains Errors or Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contains Expired Products</masterLabel>
+            <translation><!-- Contains Expired Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is Valid</masterLabel>
+            <translation><!-- Is Valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Update</masterLabel>
+            <translation><!-- Requires Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Description of the Contract Term Period: e.g. 6 times per year, monthly, weekly, etc. --></help>
+        <label><!-- Contract Term Period Description --></label>
+        <name>cscfga__Contract_Term_Period_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The measure of time used along with Contract Term to define the contract-binding period. Expressed as the number of times the period occurs in a year, for example: Annually (1), Quarterly (4), Monthly (12), Fortnightly (26) and so on. --></help>
+        <label><!-- Contract Term Period --></label>
+        <name>cscfga__Contract_Term_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract Term for this Product Configuration. It can be derived from Product‘s Contract Term or with Set Contract Term action during configuration process. It is a number which combined with Contract Term Period value defines the contract-binding period. --></help>
+        <label><!-- Contract Term --></label>
+        <name>cscfga__Contract_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the Product Configuration. Automatically set when Product Configuration is saved. --></help>
+        <label><!-- Description --></label>
+        <name>cscfga__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dummy input date field to enable hand-rolled date pickers to be built dynamically. --></help>
+        <label><!-- Entry Date --></label>
+        <name>cscfga__Entry_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ordinal number of Product Configuration, set automatically. --></help>
+        <label><!-- Index --></label>
+        <name>cscfga__Index__c</name>
+    </fields>
+    <fields>
+        <help><!-- A key used for Help Test methods. --></help>
+        <label><!-- Key --></label>
+        <name>cscfga__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Index used to indicate the current screen during product configuration. --></help>
+        <label><!-- Last Screen Index --></label>
+        <name>cscfga__Last_Screen_Index__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of non-recurring charges of all Line Items in the configuration. --></help>
+        <label><!-- One Off Charge --></label>
+        <name>cscfga__One_Off_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Parent Configuration. --></help>
+        <label><!-- Parent Configuration --></label>
+        <name>cscfga__Parent_Configuration__c</name>
+        <relationshipLabel><!-- Related Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of associated Product Basket. --></help>
+        <label><!-- Product Basket --></label>
+        <name>cscfga__Product_Basket__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of associated Product Bundle. --></help>
+        <label><!-- Product Bundle --></label>
+        <name>cscfga__Product_Bundle__c</name>
+        <relationshipLabel><!-- Configured Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of Product Definition from which this Configuration was derived. --></help>
+        <label><!-- Product Definition --></label>
+        <name>cscfga__Product_Definition__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is used for better control over the process, enabling fine-grained forecasting capabilities. By default Product Defn name will auto-populate this field, overridden using Set Product Family action during config. Is mapped to Product2.Family fld at Opp sync --></help>
+        <label><!-- Product Family --></label>
+        <name>cscfga__Product_Family__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of this Product Configurations in the bundle. --></help>
+        <label><!-- Quantity --></label>
+        <name>cscfga__Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recurrence Frequency for Recurring Products of the Product Configuration. It can be derived from Product‘s Default Recurrence Frequency or with Set Recurrence Frequency Action during configuration process. --></help>
+        <label><!-- Line Item Recurrence Frequency --></label>
+        <name>cscfga__Recurrence_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of recurring charges of all Line Items in the configuration. --></help>
+        <label><!-- Recurring Charge --></label>
+        <name>cscfga__Recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Parent (Root) Configuration. --></help>
+        <label><!-- Root Configuration --></label>
+        <name>cscfga__Root_Configuration__c</name>
+        <relationshipLabel><!-- All Descendent Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for associating a Screen Flow to the configuration. When editing Product Configuration associated Screen Flow will be displayed instead of regular Configuration Screen. --></help>
+        <label><!-- Screen Flow --></label>
+        <name>cscfga__Screen_Flow__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Automatically assigned by the system. --></help>
+        <label><!-- Serial Number --></label>
+        <name>cscfga__Serial_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unit Price multiplied with Quantity. --></help>
+        <label><!-- Total Price --></label>
+        <name>cscfga__Total_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annualized, discounted sum of one-off and recurring charges for all line items in the configuration --></help>
+        <label><!-- Unit Price --></label>
+        <name>cscfga__Unit_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- User Session --></label>
+        <name>cscfga__User_Session__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Message field that should appear if Configuration Validation fails. --></help>
+        <label><!-- Validation Message --></label>
+        <name>cscfga__Validation_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- A field containing a list of Line Item Charges serialized into JSON --></help>
+        <label><!-- Charges --></label>
+        <name>cscfga__charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the discounts applied to the product configuration. --></help>
+        <label><!-- Discounts --></label>
+        <name>cscfga__discounts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of the absolute values of discounts on one-off charges for product&apos;s own line item attributes --></help>
+        <label><!-- One-Off Charge Line Discount Value --></label>
+        <name>cscfga__one_off_charge_line_discount_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Absolute value of the product-level discount on the one-off charge --></help>
+        <label><!-- One-Off Charge Product Discount Value --></label>
+        <name>cscfga__one_off_charge_product_discount_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the offer from which this configuration was cloned. --></help>
+        <label><!-- Originating Offer --></label>
+        <name>cscfga__originating_offer__c</name>
+        <relationshipLabel><!-- Configuration Offer --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Allows the configurations to be grouped together as an immutable group based on being cloned from the same offer. --></help>
+        <label><!-- Package GUID --></label>
+        <name>cscfga__package_guid__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the configuration is part of a package, this lookup will link it to the slot were it is attached to --></help>
+        <label><!-- Package slot --></label>
+        <name>cscfga__package_slot__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If ‘Inherit’, this configuration will automatically apply its parent product’s discount.
+If ‘Replace’, the parent’s discount is ignored and any specified in the ‘Discounts’ field are applied. --></help>
+        <label><!-- Parent Discount --></label>
+        <name>cscfga__parent_discount__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation><!-- Inherit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace</masterLabel>
+            <translation><!-- Replace --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Displays status of the Configuration pricing --></help>
+        <label><!-- Pricing Status --></label>
+        <name>cscfga__pricing_status__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Update</masterLabel>
+            <translation><!-- Requires Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Definition Iteration --></label>
+        <name>cscfga__product_definition_iteration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated. --></help>
+        <label><!-- __Deprecated__ --></label>
+        <name>cscfga__product_discount__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation><!-- Inherit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace</masterLabel>
+            <translation><!-- Replace --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sum of the absolute values of discounts on recurring charges for product&apos;s own line item attributes --></help>
+        <label><!-- Recurring Charge Line Discount Value --></label>
+        <name>cscfga__recurring_charge_line_discount_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Absolute value of the product-level discount on the recurring charge --></help>
+        <label><!-- Recurring Charge Product Discount Value --></label>
+        <name>cscfga__recurring_charge_product_discount_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Value --></label>
+        <name>cscfga__total_contract_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- One Off Charge plus sum of all Related Product Total One Off Charges --></help>
+        <label><!-- Total One Off Charge --></label>
+        <name>cscfga__total_one_off_charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recurring Charge plus all Related Products Total Recurring Charge --></help>
+        <label><!-- Total Recurring Charge --></label>
+        <name>cscfga__total_recurring_charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- One-Off Charge of this configuration (including the One-Off Charge Product Discount) summed with Total One-Off Charges of its child related products --></help>
+        <label><!-- Unit One-Off Charge --></label>
+        <name>cscfga__unit_one_off_charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recurring Charge of this configuration (including the Recurring Charge Product Discount) summed with Total Recurring Charges of its child related products --></help>
+        <label><!-- Unit Recurring Charge --></label>
+        <name>cscfga__unit_recurring_charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-off non discounted --></label>
+        <name>csdiscounts__One_off_non_discounted__c</name>
+    </fields>
+    <fields>
+        <help><!-- GUID for JSON export/import --></help>
+        <label><!-- GUID --></label>
+        <name>csexpimp1__guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clone Identifier --></label>
+        <name>csoe__Clone_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Non-commercial products are linked to their parent using this field to avoid performance penalties of using related products instead. --></help>
+        <label><!-- Commercial Configuration --></label>
+        <name>csoe__Commercial_Configuration__c</name>
+        <relationshipLabel><!-- Non Commercial Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Config Key --></label>
+        <name>csordtelcoa__Config_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Level --></label>
+        <name>csordtelcoa__Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, configuration and all its child configurations are ignored during order decomposition. Otherwise product type setting on product definition is observed --></help>
+        <label><!-- Ignore For Order Decomposition --></label>
+        <name>csordtelcoa__Ignore_For_Order_Decomposition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Product Configuration --></label>
+        <name>csordtelcoa__Original_Product_Configuration__c</name>
+        <relationshipLabel><!-- Product Configurations (Original Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Lookup Configuration --></label>
+        <name>csordtelcoa__Parent_Lookup_Configuraiton__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replaced Product Configuration --></label>
+        <name>csordtelcoa__Replaced_Product_Configuration__c</name>
+        <relationshipLabel><!-- Product Configurations (Replaced Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replaced Service --></label>
+        <name>csordtelcoa__Replaced_Service__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replaced Subscription --></label>
+        <name>csordtelcoa__Replaced_Subscription__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to a Solution encompassing the Product Configuration object --></help>
+        <label><!-- Solution --></label>
+        <name>csordtelcoa__Solution__c</name>
+        <relationshipLabel><!-- Product Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Month Term --></label>
+        <name>cspl__Month_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>cspl__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Product Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit). --></errorMessage>
+        <name>csexpimp1__Guid_Format_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

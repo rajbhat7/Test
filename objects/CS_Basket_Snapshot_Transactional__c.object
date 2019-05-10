@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Transactional object used with Basket Snapshot Manager logic. Other transactional objects can be created per same principle.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Attribute__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Attribute Lookup (set on Attribute strategy)</description>
+        <externalId>false</externalId>
+        <label>Attribute</label>
+        <referenceTo>cscfga__Attribute__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category_for_Breakdown__c</fullName>
+        <externalId>false</externalId>
+        <label>Category for Breakdown</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Category_for_Order_Confirmation__c</fullName>
+        <externalId>false</externalId>
+        <label>Category for Order Confirmation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Category_for_Quote__c</fullName>
+        <externalId>false</externalId>
+        <label>Category for Quote</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>LineItemCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>LineItemCategory</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity lookup (set by default if exists on related basket)</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Product_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Parent Product Configuration Lookup (set by default if exists on related configuration)</description>
+        <externalId>false</externalId>
+        <label>Parent Product Configuration</label>
+        <referenceTo>cscfga__Product_Configuration__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional (Parent Product Configuration)</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Basket__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product Basket Lookup (set on every record)</description>
+        <externalId>false</externalId>
+        <label>Product Basket</label>
+        <referenceTo>cscfga__Product_Basket__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product Category Lookup (set by default if exists on related definition)</description>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <referenceTo>cscfga__Product_Category__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product Configuration Lookup (set on every record)</description>
+        <externalId>false</externalId>
+        <label>Product Configuration</label>
+        <referenceTo>cscfga__Product_Configuration__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Definition__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product Definition Lookup (set on every record)</description>
+        <externalId>false</externalId>
+        <label>Product Definition</label>
+        <referenceTo>cscfga__Product_Definition__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Root_Product_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Root Product Configuration Lookup (set by default if exists on related configuration)</description>
+        <externalId>false</externalId>
+        <label>Root Product Configuration</label>
+        <referenceTo>cscfga__Product_Configuration__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional (Root Product Configuration)</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sequence__c</fullName>
+        <externalId>false</externalId>
+        <label>Sequence</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Text__c</fullName>
+        <description>Example Text field</description>
+        <externalId>false</externalId>
+        <label>Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Text_for_Quote__c</fullName>
+        <externalId>false</externalId>
+        <label>Text for Quote</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>UPC Address</label>
+        <referenceTo>UPC_ADBASE__c</referenceTo>
+        <relationshipLabel>CS Basket Snapshots Transactional</relationshipLabel>
+        <relationshipName>CS_Basket_Snapshots_Transactional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Display_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Display Status</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>CS Basket Snapshot Transactional</label>
+    <listViews>
+        <fullName>View_Snapshots</fullName>
+        <columns>NAME</columns>
+        <columns>Product_Configuration__c</columns>
+        <columns>Product_Category__c</columns>
+        <columns>Product_Basket__c</columns>
+        <columns>Value__c</columns>
+        <columns>Type__c</columns>
+        <columns>LineItemCategory__c</columns>
+        <columns>Attribute__c</columns>
+        <columns>Category_for_Quote__c</columns>
+        <columns>Category_for_Order_Confirmation__c</columns>
+        <columns>Category_for_Breakdown__c</columns>
+        <columns>Text_for_Quote__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPC_Display_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>View Snapshots</label>
+    </listViews>
+    <nameField>
+        <label>Basket_Snapshot_Transactional Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>CS Basket Snapshots Transactional</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

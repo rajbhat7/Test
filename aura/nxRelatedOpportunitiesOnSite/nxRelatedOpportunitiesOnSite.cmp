@@ -1,0 +1,104 @@
+<!-- 
+(c) 2018 Nexell GmbH Developed by Nexell GmbH, Zug (Switzerland) 
+ Date: 03/2019 
+ Author: Vítor Costa
+ Description: PT7987 - Lighning component to show all opportunities related to an Address. This is the lightning component to show the relative table to show the opportunities
+ Modifications (new entries on top): dd.mm.yyyy [XX] ​PT or Case number followed by short description of change 
+--> 
+
+<aura:component controller="nxRelatedOpportunitiesOnSiteController" access="global" implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="opportunities" type="Opportunity[]"/>
+    <aura:attribute name="numberOfOpportunities" type="Integer" default="0"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="siteId" type="String"/>
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object"
+                    description="The record object to be displayed"/>
+    <aura:attribute name="AccountRecord" type="Object"
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String"
+                    description="An error message bound to force:recordData"/>
+
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.AccountRecord }"
+                      mode="VIEW"/>  
+
+    <lightning:card class="slds-card_boundary"> 
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:opportunity" size="small" />
+            <span class="slds-card__header-title slds-m-left--small slds-truncate">
+                <b>Opportunities ({!v.numberOfOpportunities})</b>
+            </span>
+        </aura:set>
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal "
+        role="grid">
+        <div class="slds-scrollable" style = "height: 250px; width: auto;">
+        <thead>
+            <tr>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center"> ACCOUNT NAME </p>
+                </th>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center"> OPPORTUNITY NAME </p>
+                </th>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center">  OPPORTUNITY STAGE </p>
+                </th>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center"> OPPORTUNITY OWNER </p>
+                </th>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center">  OPPORTUNITY RECORD TYPE </p>
+                </th>
+                <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                        <p align="center"> OPPORTUNITY CREATION DATE </p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.opportunities}" var="opportunity">
+                    <tr class="slds-hint-parent">
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                        <a href="{!'/one/one.app?#/sObject/'+ opportunity.Account.Id + '/view'}" target="_blank">{!opportunity.Account.Name}</a>
+                                </div>
+                            </td>
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                        <a href="{!'/one/one.app?#/sObject/'+ opportunity.Id + '/view'}" target="_blank">{!opportunity.Name}</a>
+                                </div>
+                            </td>
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                    <aura:unescapedHtml value="{!opportunity.StageName}" />
+                                </div>
+                            </td>
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                    <aura:unescapedHtml value="{!opportunity.Owner.Name}" />
+                                </div>
+                            </td>
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                    <aura:unescapedHtml value="{!opportunity.RecordType.Name}" />
+                                </div>
+                            </td>
+                            <td role="gridcell" class="slds-cell-wrap">
+                                <div class="" align="center">
+                                   <ui:outputDate value="{!opportunity.CreatedDate}" />
+                                </div>
+                            </td>
+                        </tr>
+            </aura:iteration>
+        </tbody>
+    </div>
+    </table>
+    </lightning:card>
+ 
+</aura:component>

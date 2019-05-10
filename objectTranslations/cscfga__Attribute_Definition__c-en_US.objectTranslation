@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Snapshot Attribute Fields --></label>
+        <name>Snapshot_Attribute_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Attribute Value Field --></label>
+        <name>Snapshot_Attribute_Value_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Attribute Definition Group --></label>
+        <name>cscfga__Attribute_Definition_Group__c</name>
+        <relationshipLabel><!-- Attribute Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The default price for the attribute if used as a line item. --></help>
+        <label><!-- Base Price --></label>
+        <name>cscfga__Base_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight to be assigned to Attributes defined by this Attribute Definition when sorting the order of evaluation of calculations. Only relevant to &apos;calculation&apos; type Attribute Definitions. --></help>
+        <label><!-- Calculation Sequence --></label>
+        <name>cscfga__Calculation_Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Cascade value --></label>
+        <name>cscfga__Cascade_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated value list containing displayed column widths (integers) for Attributes defined by this Attribute Definition. Only relevant for lookup Attributes set to render as select lists. Unit used for rendering is em. --></help>
+        <label><!-- Column Size CSV --></label>
+        <name>cscfga__Column_Size_CSV__c</name>
+    </fields>
+    <fields>
+        <help><!-- The column span in the configuration screen layout for Attributes defined by this Attribute Definition. &apos;1&apos; for a single column, &apos;2&apos; for both columns. --></help>
+        <label><!-- Column Span --></label>
+        <name>cscfga__Column_Span__c</name>
+    </fields>
+    <fields>
+        <help><!-- CSS style to be applied to the display of Attributes defined by this Attribute Definition. Only relevant to &apos;text display&apos; type Attribute Definitions. --></help>
+        <label><!-- Column Style --></label>
+        <name>cscfga__Column_Style__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the column for Attributes defined by this Attribute Definition in the configuration screen layout. &apos;0&apos; for the left column, &apos;1&apos; for the right column. --></help>
+        <label><!-- Column --></label>
+        <name>cscfga__Column__c</name>
+    </fields>
+    <fields>
+        <help><!-- The generated configuration screen on which Attributes of this Attribute Definition will be displayed. --></help>
+        <label><!-- Configuration Screen --></label>
+        <name>cscfga__Configuration_Screen__c</name>
+        <relationshipLabel><!-- Attribute Definitions (generated screen) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Error message to be displayed for Attributes defined by this Attribute Definition when their value does not fit the custom validation pattern. --></help>
+        <label><!-- Custom Validation Error Message --></label>
+        <name>cscfga__Custom_Validation_Error_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data type indicating how to interpret the value of an Attribute defined by this Attribute Definition. E.g. &apos;String&apos;, &apos;Integer&apos; etc. --></help>
+        <label><!-- Data Type --></label>
+        <name>cscfga__Data_Type__c</name>
+        <picklistValues>
+            <masterLabel>Boolean</masterLabel>
+            <translation><!-- Boolean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decimal</masterLabel>
+            <translation><!-- Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Double</masterLabel>
+            <translation><!-- Double --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integer</masterLabel>
+            <translation><!-- Integer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default value for Attributes defined by this Attribute Definition. In the case of calculation type Attribute Definitions, this will be evaluated as an expression. See documentation for expression syntax. --></help>
+        <label><!-- Default Value --></label>
+        <name>cscfga__Default_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, Attributes defined by this Attribute Definition will accept multiple values. Only relevant to lookup type Attribute Definitions. In the standard UI, will cause relevant Attributes to be displayed as related lists. --></help>
+        <label><!-- Enable Multiple Selection --></label>
+        <name>cscfga__Enable_Multiple_Selection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables automatic search while user is typing. Only relevant for attribute type Select List. --></help>
+        <label><!-- Enable Predictive Search --></label>
+        <name>cscfga__Enable_Predictive_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, a &apos;- - None- - &apos; option will be available for fields that provide a list of choices. Only relevant for attribute types: Select List and Radio button. --></help>
+        <label><!-- Enable Null Option --></label>
+        <name>cscfga__Enable_null_option__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Field --></label>
+        <name>cscfga__Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this attribute is not displayed on the screen during the configuration process. --></help>
+        <label><!-- Hidden --></label>
+        <name>cscfga__Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, attributes based on this definition will be displayed as a line item on the configured product details. --></help>
+        <label><!-- Is Line Item --></label>
+        <name>cscfga__Is_Line_Item__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this attribute definition is a rate/usage line item. --></help>
+        <label><!-- Is Rate Line Item --></label>
+        <name>cscfga__Is_Rate_Line_Item__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text label which will be displayed during configuration instead of the Attribute&apos;s name. --></help>
+        <label><!-- Label --></label>
+        <name>cscfga__Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the line item to be displayed on the pricing summary screen and potentially proposal and invoice documents. If this field has no value, ‘EMPTY’ will be displayed for all non-Text Display type attributes. --></help>
+        <label><!-- Line Item Description --></label>
+        <name>cscfga__Line_Item_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight to be assigned to the Attribute when sorting line items for display. Only relevant to line item Attributes. --></help>
+        <label><!-- Line Item Sequence --></label>
+        <name>cscfga__Line_Item_Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for adding columns of Related Products or Multiselect Lookups as a CSV list. For Related Products provide attribute names which are to be displayed in the related list columns. For Multiselect Lookups provide the field label of the looked-up object. --></help>
+        <label><!-- List Columns --></label>
+        <name>cscfga__List_Columns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use to create a relationship between the Lookup type attribute definition and a Lookup Config. --></help>
+        <label><!-- Lookup Config --></label>
+        <name>cscfga__Lookup_Config__c</name>
+        <relationshipLabel><!-- Attribute Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Lookup Query --></label>
+        <name>cscfga__Lookup_Query__c</name>
+        <relationshipLabel><!-- Attribute Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The maximum cardinality for this attribute. Only relevant for Multi-Select Lookups and Related Product type attributes. --></help>
+        <label><!-- Max --></label>
+        <name>cscfga__Max__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Min --></label>
+        <name>cscfga__Min__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum number of characters that have to be entered into search box on select list lookup. --></help>
+        <label><!-- Minimum Input Length --></label>
+        <name>cscfga__Minimum_Input_Length__c</name>
+    </fields>
+    <fields>
+        <help><!-- The business object &amp; field names this attribute can be mapped to. --></help>
+        <label><!-- Output Mapping --></label>
+        <name>cscfga__Output_Mapping__c</name>
+    </fields>
+    <fields>
+        <help><!-- A regular expression to be used to validate the value of Attributes defined by this Attribute Definition. --></help>
+        <label><!-- Custom Validation Pattern --></label>
+        <name>cscfga__Pattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Product Definition to which this Attribute Definition belongs. --></help>
+        <label><!-- Product Definition --></label>
+        <name>cscfga__Product_Definition__c</name>
+        <relationshipLabel><!-- Attribute Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Quick Entry Grid Orientation --></label>
+        <name>cscfga__Quick_Entry_Grid_Orientation__c</name>
+        <picklistValues>
+            <masterLabel>Horizontal</masterLabel>
+            <translation><!-- Horizontal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertical</masterLabel>
+            <translation><!-- Vertical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Attribute Definition should be treated as a recurring line item. If unchecked, this Attribute Definition should be treated as a one-off line item. Only relevant to line item Attribute Definitions. --></help>
+        <label><!-- Recurring --></label>
+        <name>cscfga__Recurring__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reference value is a text label which will be displayed next to Rate Line Item&apos;s price. Used in correlation with &apos;Is Rate Line Item&apos; checkbox. Can contain basic html mark-up and cannot contain scripts. --></help>
+        <label><!-- Reference Value --></label>
+        <name>cscfga__Reference_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the Attribute will be mandatory field at the start of the configuration process. Can be changed with Actions during configuration. --></help>
+        <label><!-- Required --></label>
+        <name>cscfga__Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Row number that determines where attribute appears on Configuration Screen. --></help>
+        <label><!-- Row --></label>
+        <name>cscfga__Row__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of decimal places. Only relevant for Decimal attribute type. Default value is 2 decimal places. --></help>
+        <label><!-- Scale --></label>
+        <name>cscfga__Scale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Screen Section to which the attribute belongs. --></help>
+        <label><!-- Screen Section --></label>
+        <name>cscfga__Screen_Section__c</name>
+        <relationshipLabel><!-- Attribute Definitions (generated screens) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, Lookup attribute will be presented as inline select style attribute instead of pop-up dialog. --></help>
+        <label><!-- Select List Lookup --></label>
+        <name>cscfga__Select_List_Lookup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of lines for User Input box during configuration process. Only relevant for Attribute Definition type: User Input. Default is 1 line. --></help>
+        <label><!-- Text input lines --></label>
+        <name>cscfga__Text_input_lines__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of this Attribute Definition. --></help>
+        <label><!-- Type --></label>
+        <name>cscfga__Type__c</name>
+        <picklistValues>
+            <masterLabel>Calculation</masterLabel>
+            <translation><!-- Calculation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display Value</masterLabel>
+            <translation><!-- Display Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lookup</masterLabel>
+            <translation><!-- Lookup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MultiSelect List</masterLabel>
+            <translation><!-- MultiSelect List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package Line Item</masterLabel>
+            <translation><!-- Package Line Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package Slot</masterLabel>
+            <translation><!-- Package Slot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio Button</masterLabel>
+            <translation><!-- Radio Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation><!-- Related Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select List</masterLabel>
+            <translation><!-- Select List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Display</masterLabel>
+            <translation><!-- Text Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Input</masterLabel>
+            <translation><!-- User Input --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Use Quick Entry Grid --></label>
+        <name>cscfga__Use_Quick_Entry_Grid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Validation Pattern --></label>
+        <name>cscfga__Validation_Pattern__c</name>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decimal</masterLabel>
+            <translation><!-- Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integer</masterLabel>
+            <translation><!-- Integer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Text which will be displayed next to an attribute in form of a mouseover help text. If blank, no help text will be displayed. --></help>
+        <label><!-- Attribute Help Text --></label>
+        <name>cscfga__attribute_help_text__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the field on Product Configuration to which the Attribute value will be mapped. --></help>
+        <label><!-- Configuration Output Mapping --></label>
+        <name>cscfga__configuration_output_mapping__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, Quantity field will not be displayed for child products. Only relevant for type Related Product. --></help>
+        <label><!-- Disable Quantity --></label>
+        <name>cscfga__disable_quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables large numbers of related products under this attribute by restricting access to computationally expensive functionality. --></help>
+        <label><!-- Enable for high volumes --></label>
+        <name>cscfga__high_volume__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, any changes made to this attribute will cause its Product Bundle to be de-synchronised from the Opportunity, if applicable. --></help>
+        <label><!-- Desynchronises Bundle --></label>
+        <name>cscfga__is_significant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hierarchical reference used to refer to attributes defined by this definition in Runtime V2. --></help>
+        <label><!-- Reference Name --></label>
+        <name>cscfga__reference_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, high volume related products and their line items will be presented hierarchically, in expandable lists in the basket summary page. Applicable only to attributes that are enabled for high volumes. --></help>
+        <label><!-- Show in summary --></label>
+        <name>cscfga__show_in_summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- All attributes with attribute definitions &quot;Store as JSON&quot; ticked, are stored as JSON attachment to its product configuration. Line items and Related Product attributes will not be stored in JSON attachment. --></help>
+        <label><!-- Store as JSON --></label>
+        <name>cscfga__store_as_json__c</name>
+    </fields>
+    <fields>
+        <help><!-- GUID for JSON export/import --></help>
+        <label><!-- GUID --></label>
+        <name>csexpimp1__guid__c</name>
+    </fields>
+    <fields>
+        <help><!-- The function to use to aggregate this attribute when displayed in a grid of multiple configurations.  Blanks means no aggregation --></help>
+        <label><!-- Aggregator --></label>
+        <name>csmle__Aggregator__c</name>
+        <picklistValues>
+            <masterLabel>Avg</masterLabel>
+            <translation><!-- Avg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation><!-- Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min</masterLabel>
+            <translation><!-- Min --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation><!-- Sum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Defaults to AttributeType, custom editor javascript function name will be accepted values. --></help>
+        <label><!-- Editor --></label>
+        <name>csmle__Editor__c</name>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For multi-edit screen, when changing this value, should rules be executed? (blank = true) --></help>
+        <label><!-- Execute Rules On Update --></label>
+        <name>csmle__Execute_Rules_On_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defaults to AttributeType, custom javascript function name will be accepted values. --></help>
+        <label><!-- Formatter --></label>
+        <name>csmle__Formatter__c</name>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Multi-Edit Column Width (Pixels) --></label>
+        <name>csmle__Multi_Edit_Column_Width_Pixels__c</name>
+    </fields>
+    <fields>
+        <help><!-- If left unchecked, delta won&apos;t be calculated for this attribute --></help>
+        <label><!-- Calculate Delta --></label>
+        <name>csordtelcoa__Calculate_Delta__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes that the Attribute represents one or more Assets --></help>
+        <label><!-- Is Asset Generating --></label>
+        <name>csordtelcoa__Is_Asset_Generating__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, attribute will be rendered in product visualizer --></help>
+        <label><!-- Show in Product Visualizer --></label>
+        <name>csordtelcoa__Show_in_Product_Visualizer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit and loss --></label>
+        <name>cspl__Profit_and_loss__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Attribute Definition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Display Information --></label>
+            <section>Display Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit). --></errorMessage>
+        <name>csexpimp1__Guid_Format_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

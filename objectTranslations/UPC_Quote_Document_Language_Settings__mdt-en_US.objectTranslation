@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Document Language Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Document Language Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- ASAP --></label>
+        <name>UPC_ASAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Service ID --></label>
+        <name>UPC_Access_Service_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Technology --></label>
+        <name>UPC_Access_Technology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional_lines_needed --></label>
+        <name>UPC_Additional_lines_needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional phone number (w/o Flat) --></label>
+        <name>UPC_Additional_phone_number_w_o_Flat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advice Of Charge --></label>
+        <name>UPC_Advice_Of_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authentication Code Pt1 --></label>
+        <name>UPC_Authentication_Code_Pt1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authentication Code Pt2 --></label>
+        <name>UPC_Authentication_Code_Pt2__c</name>
+    </fields>
+    <fields>
+        <help><!-- A semi-colon separated list of details to be displayed on quote and order confirmation documents in the Details section where Business Digital TV is shown. When separated, each item will be a bullet point in the document. --></help>
+        <label><!-- UPC BDTV Details --></label>
+        <name>UPC_BDTV_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Cost Phrase --></label>
+        <name>UPC_Base_Cost_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic Fee Phrase --></label>
+        <name>UPC_Basic_Fee_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Method Title Value --></label>
+        <name>UPC_Billing_Method_Title_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Preference Title Mob Value --></label>
+        <name>UPC_Billing_Preference_Title_Mob_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Preference Title Value --></label>
+        <name>UPC_Billing_Preference_Title_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadband Speed Phrase --></label>
+        <name>UPC_Broadband_Speed_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Europe Classic Service --></label>
+        <name>UPC_Business_Mobile_Europe_Classic_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Europe Classic --></label>
+        <name>UPC_Business_Mobile_Europe_Classic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Europe Premium Service --></label>
+        <name>UPC_Business_Mobile_Europe_Premium_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Europe Premium --></label>
+        <name>UPC_Business_Mobile_Europe_Premium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Basic Service --></label>
+        <name>UPC_Business_Mobile_Swiss_Basic_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Basic --></label>
+        <name>UPC_Business_Mobile_Swiss_Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Classic Service --></label>
+        <name>UPC_Business_Mobile_Swiss_Classic_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Classic --></label>
+        <name>UPC_Business_Mobile_Swiss_Classic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Premium Service --></label>
+        <name>UPC_Business_Mobile_Swiss_Premium_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Swiss Premium --></label>
+        <name>UPC_Business_Mobile_Swiss_Premium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Package 100 --></label>
+        <name>UPC_Business_Package_100__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Package 300 --></label>
+        <name>UPC_Business_Package_300__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Package 600 --></label>
+        <name>UPC_Business_Package_600__c</name>
+    </fields>
+    <fields>
+        <label><!-- CATV Included Phrase --></label>
+        <name>UPC_CATV_Included_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- CATV Included Short Phrase --></label>
+        <name>UPC_CATV_Included_Short_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- CATV Not Included Phrase --></label>
+        <name>UPC_CATV_Not_Included_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- CATV Not Included Short Phrase --></label>
+        <name>UPC_CATV_Not_Included_Short_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Forwarding --></label>
+        <name>UPC_Call_Forwarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Number --></label>
+        <name>UPC_Call_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classic --></label>
+        <name>UPC_Classic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combine and Save Discount Phrase --></label>
+        <name>UPC_Combine_and_Save_Discount_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Phrase --></label>
+        <name>UPC_Company_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Term Phrase --></label>
+        <name>UPC_Contract_Term_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDI Block Name --></label>
+        <name>UPC_DDI_Block_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details DigiPhone --></label>
+        <name>UPC_Details_Digiphone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details Header --></label>
+        <name>UPC_Details_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details Internet Service --></label>
+        <name>UPC_Details_Internet_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details Internet --></label>
+        <name>UPC_Details_Internet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital TV Channels --></label>
+        <name>UPC_Digital_TV_Channels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Dial Digits --></label>
+        <name>UPC_Direct_Dial_Digits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Phrase --></label>
+        <name>UPC_Discount_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatrate Europe --></label>
+        <name>UPC_Flatrate_Europe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatrate Export --></label>
+        <name>UPC_Flatrate_Export__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatrate Switzerland --></label>
+        <name>UPC_Flatrate_Switzerland__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatrate World --></label>
+        <name>UPC_Flatrate_World__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half-Yearly Invoice Value --></label>
+        <name>UPC_Half_Yearly_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installation by Partner Phrase --></label>
+        <name>UPC_Installation_by_Partner_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instead Of Phrase --></label>
+        <name>UPC_Instead_Of_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internet options --></label>
+        <name>UPC_Internet_options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>UPC_Language__c</name>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN</masterLabel>
+            <translation><!-- EN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>UPC_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSN Block Name --></label>
+        <name>UPC_MSN_Block_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Service Period Mob --></label>
+        <name>UPC_Min_Service_Period_Mob_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Service Period --></label>
+        <name>UPC_Minimum_Service_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Backup --></label>
+        <name>UPC_Mobile_Backup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Invoice Value --></label>
+        <name>UPC_Monthly_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next regular date --></label>
+        <name>UPC_Next_regular_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Value --></label>
+        <name>UPC_No_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of SIP Channels --></label>
+        <name>UPC_Number_Of_SIP_Channels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number holder --></label>
+        <name>UPC_Number_holder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Option Phrase --></label>
+        <name>UPC_Option_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH Call Number --></label>
+        <name>UPC_PH_Call_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH Number holder --></label>
+        <name>UPC_PH_Number_holder__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH Porting date --></label>
+        <name>UPC_PH_Porting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH Porting details --></label>
+        <name>UPC_PH_Porting_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH Provider --></label>
+        <name>UPC_PH_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paper Bill Value --></label>
+        <name>UPC_Paper_Bill_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Network Discount Phrase --></label>
+        <name>UPC_Partner_Network_Discount_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Porting date --></label>
+        <name>UPC_Porting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Porting details --></label>
+        <name>UPC_Porting_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Customer Phrase --></label>
+        <name>UPC_Private_Customer_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Manager Value --></label>
+        <name>UPC_Property_Manager_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>UPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarterly Invoice Value --></label>
+        <name>UPC_Quarterly_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radio Stations --></label>
+        <name>UPC_Radio_Stations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Installation --></label>
+        <name>UPC_Self_Installation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Availability Phrase --></label>
+        <name>UPC_Service_Availability_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Header --></label>
+        <name>UPC_Service_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Level Basic --></label>
+        <name>UPC_Service_Level_Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Startup Discount Phrase --></label>
+        <name>UPC_Startup_Discount_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Level 511 --></label>
+        <name>UPC_Support_Level_511__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV Option --></label>
+        <name>UPC_TV_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV Socket Available Phrase --></label>
+        <name>UPC_TV_Socket_Available_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV Socket Not Available Phrase --></label>
+        <name>UPC_TV_Socket_Not_Available_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone Numbers Incl --></label>
+        <name>UPC_Telephone_Numbers_Incl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unlimited calls International --></label>
+        <name>UPC_Unlimited_calls_International__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voice options --></label>
+        <name>UPC_Voice_options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>UPC_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly Invoice Value --></label>
+        <name>UPC_Yearly_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years --></label>
+        <name>UPC_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yes Value --></label>
+        <name>UPC_Yes_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- eBanking Value --></label>
+        <name>UPC_eBanking_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- eMail Bill Value --></label>
+        <name>UPC_eMail_Bill_Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Document Language Settings Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

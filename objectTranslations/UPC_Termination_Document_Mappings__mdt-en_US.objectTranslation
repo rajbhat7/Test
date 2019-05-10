@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Termination Document Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Termination Document Mappings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The name of the data source to which this Config Type relates --></help>
+        <label><!-- Data Source Name --></label>
+        <name>UPC_Data_Source_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the placeholder in the Doc Config showing where the data should go --></help>
+        <label><!-- Doc Config Template --></label>
+        <name>UPC_Doc_Config_Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the field in the query result which holds the appropriate data --></help>
+        <label><!-- Query Result Field --></label>
+        <name>UPC_Query_Result_Field__c</name>
+    </fields>
+    <layouts>
+        <layout>Termination Document Mapping Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

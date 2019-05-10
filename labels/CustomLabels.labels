@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>NX_Main_Comercial_or_Technical_must_have_phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Main Commercial or Technical must have phone</shortDescription>
+        <value>A Contact with Main Commercial or Main Technical Role must have a phone number!</value>
+    </labels>
+    <labels>
+        <fullName>NX_NewLine</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewLine</shortDescription>
+        <value>.
+.</value>
+    </labels>
+    <labels>
+        <fullName>cscrmACheckAvailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Address/Availability Check available</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>cscrmACheckNotAvailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Address/Availability Check Not available</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>cscrmAddressHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Address Header</shortDescription>
+        <value>Address</value>
+    </labels>
+    <labels>
+        <fullName>cscrmCityHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>City Header</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>cscrmFTTHHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FTTH Header</shortDescription>
+        <value>FTTH</value>
+    </labels>
+    <labels>
+        <fullName>cscrmHFCHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HFC Header</shortDescription>
+        <value>HFC</value>
+    </labels>
+    <labels>
+        <fullName>cscrmHFCSuitabilityHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HFC Suitability Header</shortDescription>
+        <value>HFC Suitability</value>
+    </labels>
+    <labels>
+        <fullName>cscrmHouseNumberExtHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>House number ext Header</shortDescription>
+        <value>House number ext.</value>
+    </labels>
+    <labels>
+        <fullName>cscrmHouseNumberHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>House number Header</shortDescription>
+        <value>House number</value>
+    </labels>
+    <labels>
+        <fullName>cscrmMoveProductButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Move Product Button</shortDescription>
+        <value>Move Product</value>
+    </labels>
+    <labels>
+        <fullName>cscrmOfferAvailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Offer Available</shortDescription>
+        <value>Offer is available at the selected address</value>
+    </labels>
+    <labels>
+        <fullName>cscrmOfferNotAvailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Offer Not available</shortDescription>
+        <value>Offer is not available at the selected address</value>
+    </labels>
+    <labels>
+        <fullName>cscrmPartnerNetworkModel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partner Network Model</shortDescription>
+        <value>Partner Network Model</value>
+    </labels>
+    <labels>
+        <fullName>cscrmPostcodeHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Postcode header</shortDescription>
+        <value>Postcode</value>
+    </labels>
+    <labels>
+        <fullName>cscrmSelectedSiteAddressId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected Site Address Id</shortDescription>
+        <value>Selected Site Address Id</value>
+    </labels>
+    <labels>
+        <fullName>cscrmSiteHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site Header</shortDescription>
+        <value>Site</value>
+    </labels>
+    <labels>
+        <fullName>cscrmStreetHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Street Header</shortDescription>
+        <value>Street</value>
+    </labels>
+    <labels>
+        <fullName>cscrm_no_document_values_found_for_language</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No General Document Settings found for language</shortDescription>
+        <value>A General Document Settings custom metadata record for the language {0} was not found</value>
+    </labels>
+    <labels>
+        <fullName>cscrm_no_language_passed_for_doc_generation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No language passed to doc generation</shortDescription>
+        <value>A language code must be supplied when creating a document</value>
+    </labels>
+    <labels>
+        <fullName>cscrm_no_source_record_passed_for_doc_generation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No source record for document</shortDescription>
+        <value>A source record Id must be supplied when creating a document</value>
+    </labels>
+</CustomLabels>

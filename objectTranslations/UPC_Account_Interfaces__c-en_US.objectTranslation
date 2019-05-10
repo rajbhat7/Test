@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Interface</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Interfaces</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Interfaces --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interface --></label>
+        <name>Interface__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Verified --></label>
+        <name>UPC_Address_Verified_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Verified --></label>
+        <name>UPC_Address_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>UPC_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Mobile Service ID --></label>
+        <name>UPC_Business_Mobile_Service_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>UPC_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must contain 2-digit ISO country code or English country name. Examples: CH, Switzerland --></help>
+        <label><!-- Country --></label>
+        <name>UPC_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Account ID --></help>
+        <label><!-- External ID --></label>
+        <name>UPC_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>UPC_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Verification Date --></label>
+        <name>UPC_Last_Verification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Verified --></label>
+        <name>UPC_Name_Verified_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Verified --></label>
+        <name>UPC_Name_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Verified --></label>
+        <name>UPC_Owner_Verified_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Verified --></label>
+        <name>UPC_Owner_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>UPC_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Account --></label>
+        <name>UPC_Primary_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taifun Sap ID --></label>
+        <name>UPC_Service_Taifun_Sap_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>UPC_Service__c</name>
+        <relationshipLabel><!-- Account Interfaces --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Must contain only state code. Examples: GE, VD, ZH, ZG --></help>
+        <label><!-- State/Province --></label>
+        <name>UPC_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>UPC_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Account Additional Name --></label>
+        <name>UPC_System_Account_AdditionalName__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Account Name --></label>
+        <name>UPC_System_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- System --></label>
+        <name>UPC_System__c</name>
+        <picklistValues>
+            <masterLabel>ACC</masterLabel>
+            <translation><!-- ACC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZD-Direct</masterLabel>
+            <translation><!-- AZD-Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permaleads</masterLabel>
+            <translation><!-- Permaleads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profondia</masterLabel>
+            <translation><!-- Profondia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SuperOffice</masterLabel>
+            <translation><!-- SuperOffice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taifun</masterLabel>
+            <translation><!-- Taifun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zefix</masterLabel>
+            <translation><!-- Zefix --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- System Type --></label>
+        <name>UPC_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Partner</masterLabel>
+            <translation><!-- Business Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creditor</masterLabel>
+            <translation><!-- Creditor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debitor</masterLabel>
+            <translation><!-- Debitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Network</masterLabel>
+            <translation><!-- Partner Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Data Source</masterLabel>
+            <translation><!-- Prospect Data Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Register</masterLabel>
+            <translation><!-- Register --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>UPC_Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Interface Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

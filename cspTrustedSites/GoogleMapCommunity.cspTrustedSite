@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CspTrustedSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>google map in community.</description>
+    <endpointUrl>https://2bad642b-95e9-1dc1-41e5-f35ec4201b40.a.forceusercontent.com</endpointUrl>
+    <isActive>true</isActive>
+</CspTrustedSite>

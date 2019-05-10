@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>UPC_Site_Address_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>UPC_Site_Address_Compact_Layout</fullName>
+        <fields>UPC_FTTH_Alert__c</fields>
+        <fields>UPC_HFC_Alert__c</fields>
+        <fields>UPC_HFC_Suitability__c</fields>
+        <fields>UPC_Availability__c</fields>
+        <fields>UPC_FTTH_Upload__c</fields>
+        <fields>UPC_FTTH_Download__c</fields>
+        <fields>UPC_Partner_Network_Model__c</fields>
+        <label>UPC Site Address Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created by Nexell to manage multiple addresses to sites.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>UPC_Address_Record_Type__c</fullName>
+        <description>Used tp display the upc address record type in the site address page layout</description>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.RecordType.Name</formula>
+        <label>UPC Address Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>UPC Address</label>
+        <referenceTo>UPC_ADBASE__c</referenceTo>
+        <relationshipLabel>Site Addresses</relationshipLabel>
+        <relationshipName>Site_Addresses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>UPC_Availability__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;dummy_value&quot;</formula>
+        <label>Availability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Available_Access_Technologies__c</fullName>
+        <description>Returns a CSV list of available access technologies. Used in the CPQ product definition rules.</description>
+        <externalId>false</externalId>
+        <formula>IF(UPC_HFC_Checkbox__c &amp;&amp; UPC_FTTH_Checkbox__c, &apos;FTTH,HFC&apos;,
+
+IF(UPC_HFC_Checkbox__c, &apos;HFC&apos;,
+
+IF(UPC_FTTH_Checkbox__c, &apos;FTTH&apos;, &apos;&apos;)))</formula>
+        <label>Available Access Technologies</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_BBCS_Alert__c</formula>
+        <label>BBCS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Checkbox__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( UPC_Address__r.UPC_BBCS__c ,true,false)</formula>
+        <label>BBCS</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Download__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_BBCS_Download__c</formula>
+        <label>BBCS Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Upload__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_BBCS_Upload__c</formula>
+        <label>BBCS Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_FTTH_Alert__c</formula>
+        <label>FTTH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Checkbox__c</fullName>
+        <description>Created by Nexell to be used by Cloudsense.</description>
+        <externalId>false</externalId>
+        <formula>IF(UPC_Address__r.UPC_FTTH__c,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FTTH</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Download__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_FTTH_Download__c</formula>
+        <label>FTTH Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Upload__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_FTTH_Upload__c</formula>
+        <label>FTTH Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_HFC_Alert__c</formula>
+        <label>HFC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Checkbox__c</fullName>
+        <description>Created by nexell to be used by cloudsense.</description>
+        <externalId>false</externalId>
+        <formula>IF(UPC_Address__r.UPC_HFC__c, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HFC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Download__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_HFC_Download__c</formula>
+        <label>HFC Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Suitability__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(UPC_Address__r.UPC_HFC_Suitability__c)</formula>
+        <label>HFC Suitability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Upload__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_HFC_Upload__c</formula>
+        <label>HFC Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Footprint_Check__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_Last_Footprint_Check__c</formula>
+        <label>Last Footprint Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Latitude__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(UPC_Address__r.UPC_Geolocation__Latitude__s)</formula>
+        <label>Latitude</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(UPC_Address__r.UPC_Geolocation__Longitude__s)</formula>
+        <label>Longitude</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Partner_Network_Model__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(UPC_Address__r.UPC_Partner_Network_Model__c)</formula>
+        <label>Partner Network Model</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Address_Link__c</fullName>
+        <description>Used to name the site address with a hyperlink to the record.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id , 
+UPC_Address__r.UPC_Address_Formula__c
+, &quot;_self&quot; )</formula>
+        <label>Site Address Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Address_Name__c</fullName>
+        <description>Used in CS Sales Console for representation of Address in Address Search Results.</description>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_Address_Formula__c</formula>
+        <label>Site Address Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Primary_Address_Name__c</fullName>
+        <description>Used in CS Sales Console for representation of Site in Address Search Results.</description>
+        <externalId>false</externalId>
+        <formula>UPC_Site__r.UPC_ADBASE_Address__r.UPC_Address_Formula__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Site Primary Address Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site__c</fullName>
+        <externalId>false</externalId>
+        <label>Site</label>
+        <referenceTo>UPC_Site__c</referenceTo>
+        <relationshipLabel>Site Addresses</relationshipLabel>
+        <relationshipName>Site_Addresses</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_ULL_CU_Alert__c</formula>
+        <label>ULL CU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Checkbox__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  UPC_Address__r.UPC_ULL_CU__c  ,true,false)</formula>
+        <label>ULL CU</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Downoad__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_ULL_CU_Download__c</formula>
+        <label>ULL CU Downoad</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Upload__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Address__r.UPC_ULL_CU_Upload__c</formula>
+        <label>ULL CU Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Site Address</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UPC_Site_Address_Link__c</columns>
+        <columns>UPC_FTTH_Alert__c</columns>
+        <columns>UPC_HFC_Alert__c</columns>
+        <columns>UPC_HFC_Suitability__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SA-{0000000}</displayFormat>
+        <label>Site Address ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Site Addresses</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

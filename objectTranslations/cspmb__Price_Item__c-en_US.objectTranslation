@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Access Technology --></label>
+        <name>Access_Technology__c</name>
+        <picklistValues>
+            <masterLabel>FTTH</masterLabel>
+            <translation><!-- FTTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFC</masterLabel>
+            <translation><!-- HFC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFC/FTTH</masterLabel>
+            <translation><!-- HFC/FTTH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bandwidth --></label>
+        <name>Bandwidth__c</name>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000</masterLabel>
+            <translation><!-- 1000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200</masterLabel>
+            <translation><!-- 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300</masterLabel>
+            <translation><!-- 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500</masterLabel>
+            <translation><!-- 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600</masterLabel>
+            <translation><!-- 600 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used as an external id for migrating the data from org to an org (easing up the deployments). --></help>
+        <label><!-- CSCRM Migration Id --></label>
+        <name>CSCRM_Migration_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bandwidth --></label>
+        <name>UPC_Bandwidth__c</name>
+        <picklistValues>
+            <masterLabel>10 Mbps / 2 Mbps</masterLabel>
+            <translation><!-- 10 Mbps / 2 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 Mbps / 10 Mbps</masterLabel>
+            <translation><!-- 100 Mbps / 10 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000 Mbps / 100 Mbps</masterLabel>
+            <translation><!-- 1000 Mbps / 100 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150 Mbps / 15 Mbps</masterLabel>
+            <translation><!-- 150 Mbps / 15 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 Mbps / 2 Mbps</masterLabel>
+            <translation><!-- 20 Mbps / 2 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 Mbps / 20 Mbps</masterLabel>
+            <translation><!-- 200 Mbps / 20 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 Mbps / 2.5 Mbps</masterLabel>
+            <translation><!-- 25 Mbps / 2.5 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250 Mbps / 25 Mbps</masterLabel>
+            <translation><!-- 250 Mbps / 25 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Mbps / 3 Mbps</masterLabel>
+            <translation><!-- 30 Mbps / 3 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300 Mbps / 30 Mbps</masterLabel>
+            <translation><!-- 300 Mbps / 30 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 Mbps / 5 Mbps</masterLabel>
+            <translation><!-- 50 Mbps / 5 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 Mbps / 50 Mbps</masterLabel>
+            <translation><!-- 500 Mbps / 50 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Mbps / 6 Mbps</masterLabel>
+            <translation><!-- 60 Mbps / 6 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600 Mbps / 60 Mbps</masterLabel>
+            <translation><!-- 600 Mbps / 60 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 Mbps / 7 Mbps</masterLabel>
+            <translation><!-- 75 Mbps / 7 Mbps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined</masterLabel>
+            <translation><!-- Undefined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commercial Name --></label>
+        <name>UPC_Commercial_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication Protocol --></label>
+        <name>UPC_Communication_Protocol__c</name>
+    </fields>
+    <fields>
+        <help><!-- The download speed of the selected product --></help>
+        <label><!-- Download Speed --></label>
+        <name>UPC_Download_Speed__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000</masterLabel>
+            <translation><!-- 1000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>UPC_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Threshold Value --></label>
+        <name>UPC_Maximum_Threshold_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Threshold Value --></label>
+        <name>UPC_Minimum_Threshold_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows product managers to describe a product. This information could be pulled to CPQ. HTLM is supported. --></help>
+        <label><!-- Product Description --></label>
+        <name>UPC_Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Identifier --></label>
+        <name>UPC_Product_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Account for which this Commercial Product is available. If blank, the Commercial Product is available to all Accounts. If set, the Commercial Product should only be used for the linked Account. --></help>
+        <label><!-- Account --></label>
+        <name>cspmb__Account__c</name>
+        <relationshipLabel><!-- Commercial Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, the Discount Level associated via the linked Account should be applied to the One-Off Charge of this Commercial Product. --></help>
+        <label><!-- Apply One-Off Charge Account Discount --></label>
+        <name>cspmb__Apply_One_Off_Charge_Account_Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the Discount Level associated via the linked Account should be applied to the Recurring Charge of this Commercial Product. --></help>
+        <label><!-- Apply Recurring Charge Account Discount --></label>
+        <name>cspmb__Apply_Recurring_Charge_Account_Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Auth Level to be applied to this Commercial Product. If no Discount Threshold is linked to the Auth Level, then the Auth Level should always be applied. Otherwise, the Auth Level applies if the sales price exceeds the specified Discount Threshold. --></help>
+        <label><!-- Authorization Level --></label>
+        <name>cspmb__Authorization_Level__c</name>
+        <relationshipLabel><!-- Commercial Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The billing frequency which applies to this Commercial Product. --></help>
+        <label><!-- Billing Frequency --></label>
+        <name>cspmb__Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The contract term which applies to this Commercial Product. --></help>
+        <label><!-- Contract Term --></label>
+        <name>cspmb__Contract_Term__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the currency of this Commercial Product as an ISO currency code. --></help>
+        <label><!-- Currency Code --></label>
+        <name>cspmb__Currency_Code__c</name>
+        <picklistValues>
+            <masterLabel>Sample Code</masterLabel>
+            <translation><!-- Sample Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The current version of this Commercial Product. If blank, this record is the current version. --></help>
+        <label><!-- Current Version --></label>
+        <name>cspmb__Current_Version__c</name>
+        <relationshipLabel><!-- Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The type of discount (an amount or a percentage). --></help>
+        <label><!-- Discount Type --></label>
+        <name>cspmb__Discount_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Line Item</masterLabel>
+            <translation><!-- Negative Line Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date after which this Commercial Product ceases to be effective. --></help>
+        <label><!-- Effective End Date --></label>
+        <name>cspmb__Effective_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date from which this Commercial Product is effective. --></help>
+        <label><!-- Effective Start Date --></label>
+        <name>cspmb__Effective_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If unchecked, this Commercial Product is not in effect (overrides start/end dates). --></help>
+        <label><!-- Is Active --></label>
+        <name>cspmb__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- A convenience flag which if checked implies that the linked Authorisation Level should always be applied, in which case it is assumed that there is no Discount Threshold associated with the Authorisation Level. --></help>
+        <label><!-- Is Authorization Required --></label>
+        <name>cspmb__Is_Authorization_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, a lower sales one-off price can be offered than the one-off price of this Commercial Product. If an Authorisation Level is associated, approval may be required subject to a linked Discount Threshold. --></help>
+        <label><!-- Is One-Off Discount Allowed --></label>
+        <name>cspmb__Is_One_Off_Discount_Allowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, a lower sales recurring price can be offered than the recurring price of this Commercial Product. If an Authorisation Level is associated, approval may be required subject to a linked Discount Threshold. --></help>
+        <label><!-- Is Recurring Discount Allowed --></label>
+        <name>cspmb__Is_Recurring_Discount_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Commercial Product --></label>
+        <name>cspmb__Master_Price_item__c</name>
+        <relationshipLabel><!-- Variants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A code representing the one-off charge for this Commercial Product. Typically used to pass through to billing and finance systems. --></help>
+        <label><!-- One-Off Charge Code --></label>
+        <name>cspmb__One_Off_Charge_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- An external identifier for the one-off charge for this Commercial Product. Typically used for integration with external finance and billing systems. --></help>
+        <label><!-- One-Off Charge External Id --></label>
+        <name>cspmb__One_Off_Charge_External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The one-off amount to be charged for this Commercial Product. E.g. an installation charge. --></help>
+        <label><!-- One-Off Charge --></label>
+        <name>cspmb__One_Off_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- The one-off (i.e. not recurring) cost associated with this Commercial Product. Typically used to provide margin calculation. --></help>
+        <label><!-- One-Off Cost --></label>
+        <name>cspmb__One_Off_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- A code identifying this Commercial Product. --></help>
+        <label><!-- Commercial Product Code --></label>
+        <name>cspmb__Price_Item_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- A free text description of this Commercial Product. --></help>
+        <label><!-- Commercial Product Description --></label>
+        <name>cspmb__Price_Item_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If set, the name of the Product Definition with which this Commercial Product should be used. --></help>
+        <label><!-- Product Definition Name --></label>
+        <name>cspmb__Product_Definition_Name__c</name>
+        <picklistValues>
+            <masterLabel>Business Digital TV - Product</masterLabel>
+            <translation><!-- Business Digital TV - Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Digital TV - Tariff</masterLabel>
+            <translation><!-- Business Digital TV - Tariff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Digital TV MySports</masterLabel>
+            <translation><!-- Business Digital TV MySports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Internet Fiber Power 2.0</masterLabel>
+            <translation><!-- Business Internet Fiber Power 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Internet Fiber Power 2.0 Business Package</masterLabel>
+            <translation><!-- Business Internet Fiber Power 2.0 Business Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Mobile</masterLabel>
+            <translation><!-- Business Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Voice</masterLabel>
+            <translation><!-- Business Voice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Voice - Call Rate</masterLabel>
+            <translation><!-- Business Voice - Call Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DigiPhone - Product</masterLabel>
+            <translation><!-- DigiPhone - Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DigiPhone - Tariff</masterLabel>
+            <translation><!-- DigiPhone - Tariff --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A code identifying the recurring charge for this Commercial Product. Typically sent on to billing and finance systems. --></help>
+        <label><!-- Recurring Charge Code --></label>
+        <name>cspmb__Recurring_Charge_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- An external identifier for the recurring charge of this Commercial Product. Typically used for integration to billing and finance systems. --></help>
+        <label><!-- Recurring Charge External Id --></label>
+        <name>cspmb__Recurring_Charge_External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The recurring (e.g. monthly) amount that should be charged for this Commercial Product. --></help>
+        <label><!-- Recurring Charge --></label>
+        <name>cspmb__Recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- The recurring (e.g. monthly) cost for this Commercial Product. Typically used to enable margin calculation. --></help>
+        <label><!-- Recurring Cost --></label>
+        <name>cspmb__Recurring_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>cspmb__Role__c</name>
+        <picklistValues>
+            <masterLabel>Master Price Item</masterLabel>
+            <translation><!-- Master Price Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variant</masterLabel>
+            <translation><!-- Variant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The version number of this Commercial Product. --></help>
+        <label><!-- Version Number --></label>
+        <name>cspmb__Version_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Business Internet Layout</layout>
+        <sections>
+            <label><!-- Charges --></label>
+            <section>Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discounts --></label>
+            <section>Discounts</section>
+        </sections>
+        <sections>
+            <label><!-- Product Specs --></label>
+            <section>Product Specs</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Custom Price Item Layout</layout>
+        <sections>
+            <label><!-- Charges --></label>
+            <section>Charges</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discounts --></label>
+            <section>Discounts</section>
+        </sections>
+        <sections>
+            <label><!-- Versioning --></label>
+            <section>Versioning</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- A master product cannot have another product as its master. --></errorMessage>
+        <name>cspmb__Master_Product_Constraint</name>
+    </validationRules>
+</CustomObjectTranslation>

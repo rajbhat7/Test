@@ -1,0 +1,2490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Geocode Accuracy</value>
+        </caseValues>
+        <name>billing_accuracy_geocode_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered State/Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered State/Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Registered Zip/Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Name --></label>
+        <name>Account_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>UPC_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>UPC_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Account Owner Change Requester --></label>
+        <name>UPC_Account_Owner_Change_Requester__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account of Partner --></label>
+        <name>UPC_Account_of_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account site --></label>
+        <name>UPC_Account_site__c</name>
+        <picklistValues>
+            <masterLabel>HQ</masterLabel>
+            <translation><!-- HQ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UPC_Address_ID --></label>
+        <name>UPC_Address_ID__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Auto Pin Number1 --></label>
+        <name>UPC_Auto_Pin_Number1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Pin Number2 --></label>
+        <name>UPC_Auto_Pin_Number2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Pin Number3 --></label>
+        <name>UPC_Auto_Pin_Number3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Pin Number4 --></label>
+        <name>UPC_Auto_Pin_Number4__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Building Id Related to the registered Address. --></help>
+        <label><!-- Building ID --></label>
+        <name>UPC_Building_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CH-ID --></label>
+        <name>UPC_CH_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Owner Requester --></label>
+        <name>UPC_Change_Owner_Requester__c</name>
+        <relationshipLabel><!-- Accounts (Change Owner Requester) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closed Lost Oppys --></label>
+        <name>UPC_Closed_Lost_Opptys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Oppys --></label>
+        <name>UPC_Closed_Won_Opptys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissioning Type --></label>
+        <name>UPC_Commissioning_Type__c</name>
+        <picklistValues>
+            <masterLabel>One time Commission</masterLabel>
+            <translation><!-- One time Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring Commission</masterLabel>
+            <translation><!-- Recurring Commission --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Add. Name --></label>
+        <name>UPC_CompanyAdditionalName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Account --></label>
+        <name>UPC_Converted_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Primary Taifun with BM Service Id --></label>
+        <name>UPC_Count_Primary_Taifun_with_BM_Srv_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to count Taifun interfaces. --></help>
+        <label><!-- Count Taifun Interface --></label>
+        <name>UPC_Count_Taifun_Interface__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Alert Value --></label>
+        <name>UPC_Credit_Alert_Value__c</name>
+        <picklistValues>
+            <masterLabel>GREEN</masterLabel>
+            <translation><!-- GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREY</masterLabel>
+            <translation><!-- GREY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RED</masterLabel>
+            <translation><!-- RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YELLOW</masterLabel>
+            <translation><!-- YELLOW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Alert --></label>
+        <name>UPC_Credit_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Check --></label>
+        <name>UPC_Credit_Check__c</name>
+        <picklistValues>
+            <masterLabel>Bad Score</masterLabel>
+            <translation><!-- Bad Score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good Score</masterLabel>
+            <translation><!-- Good Score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Score</masterLabel>
+            <translation><!-- Medium Score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Lifecycle --></label>
+        <name>UPC_Customer_Lifecycle__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Cancellation</masterLabel>
+            <translation><!-- In Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Funnel</masterLabel>
+            <translation><!-- Sales Funnel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Token --></label>
+        <name>UPC_Customer_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Call --></label>
+        <name>UPC_Do_Not_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- EHRA-ID --></label>
+        <name>UPC_EHRA_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out --></label>
+        <name>UPC_Email_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checking this Checkbox, this Account will be ignored in all reports that have this field as filter. --></help>
+        <label><!-- Exclude from reports --></label>
+        <name>UPC_Exclude_from_Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Former Account Owner Name --></label>
+        <name>UPC_Former_Account_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Founding Date --></label>
+        <name>UPC_Founding_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Billing Address --></label>
+        <name>UPC_Full_Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grouped number of employees --></label>
+        <name>UPC_Grouped_number_of_employees__c</name>
+        <picklistValues>
+            <masterLabel>10 - 49</masterLabel>
+            <translation><!-- 10 - 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 10</masterLabel>
+            <translation><!-- &lt; 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;=50</masterLabel>
+            <translation><!-- &gt;=50 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Primary Taifun with BM Service Id --></label>
+        <name>UPC_Has_Primary_Taifun_with_BM_Srv_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates has at least one Taifun interface --></help>
+        <label><!-- Has Taifun Interface --></label>
+        <name>UPC_Has_Taifun_Interface__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Industry Division for the current company. Divisions are defined by the Federal Statistical Office FSO --></help>
+        <label><!-- Industry Division --></label>
+        <name>UPC_Industry_Division__c</name>
+        <picklistValues>
+            <masterLabel>A01_Crop and animal produc., hunting (Landw. u. Jagd)</masterLabel>
+            <translation><!-- A01_Crop and animal produc., hunting (Landw. u. Jagd) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A02_Forestry and logging (Forstw. u. Holzeinschlag)</masterLabel>
+            <translation><!-- A02_Forestry and logging (Forstw. u. Holzeinschlag) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A03_Fishing and aquaculture (Fischerei u. Aquakultur)</masterLabel>
+            <translation><!-- A03_Fishing and aquaculture (Fischerei u. Aquakultur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B05_Mining of coal and lignite (Kohlenbergbau)</masterLabel>
+            <translation><!-- B05_Mining of coal and lignite (Kohlenbergbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B06_Extr. of crude petroleum and nat. gas (Gew. v. Erdöl u. Erdgas)</masterLabel>
+            <translation><!-- B06_Extr. of crude petroleum and nat. gas (Gew. v. Erdöl u. Erdgas) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B07_Mining of metal ores (Erzbergbau)</masterLabel>
+            <translation><!-- B07_Mining of metal ores (Erzbergbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B08_O. mining and quarrying (Gew. v. Steinen u. Erden, sonst. Bergbau)</masterLabel>
+            <translation><!-- B08_O. mining and quarrying (Gew. v. Steinen u. Erden, sonst. Bergbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B09_Mining support service activities (DL f. den Bergbau)</masterLabel>
+            <translation><!-- B09_Mining support service activities (DL f. den Bergbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C10_Manufacture of food products (H.v. Nahrungs- u. Futterm.)</masterLabel>
+            <translation><!-- C10_Manufacture of food products (H.v. Nahrungs- u. Futterm.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C11_Manufacture of beverages (Getränkeherstellung)</masterLabel>
+            <translation><!-- C11_Manufacture of beverages (Getränkeherstellung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C12_Ma. of tabacco products (Tabakverarbeitung)</masterLabel>
+            <translation><!-- C12_Ma. of tabacco products (Tabakverarbeitung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C13_Ma. of textiles (Herstellung von Textilien)</masterLabel>
+            <translation><!-- C13_Ma. of textiles (Herstellung von Textilien) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C14_Ma. of wearing apparel (H.v. Bekleidung)</masterLabel>
+            <translation><!-- C14_Ma. of wearing apparel (H.v. Bekleidung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C15_Ma. of leather and related products (H.v. Leder, Lederwaren u. Schuhen)</masterLabel>
+            <translation><!-- C15_Ma. of leather and related products (H.v. Leder, Lederwaren u. Schuhen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C16_Ma. of wood a. of prod. of wood a. cork (H.v. Holz-, Flecht-, Korb- u. Korkwa.)</masterLabel>
+            <translation><!-- C16_Ma. of wood a. of prod. of wood a. cork (H.v. Holz-, Flecht-, Korb- u. Korkwa.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C17_Ma. of paper and paper products (H.v. Papier, Pappe u. Waren daraus)</masterLabel>
+            <translation><!-- C17_Ma. of paper and paper products (H.v. Papier, Pappe u. Waren daraus) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C18_Printing and reprod. of recorded media (H.v. Druckerz.; Vervielf. v. Datenträger)</masterLabel>
+            <translation><!-- C18_Printing and reprod. of recorded media (H.v. Druckerz.; Vervielf. v. Datenträger) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C19_Ma. of coke and refined petroleum prod. (Kokerei u. Mineralölverarb.)</masterLabel>
+            <translation><!-- C19_Ma. of coke and refined petroleum prod. (Kokerei u. Mineralölverarb.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C20_Ma. of chemicals and chemical prod. (H.v. chem. Erzeugnissen)</masterLabel>
+            <translation><!-- C20_Ma. of chemicals and chemical prod. (H.v. chem. Erzeugnissen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C21_Ma. of pharmaceutical prod. a. prep. (H.v. pharma. Erzeugnissen)</masterLabel>
+            <translation><!-- C21_Ma. of pharmaceutical prod. a. prep. (H.v. pharma. Erzeugnissen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22_Ma. of rubber and plastic products (H.v. Gummi- u. Kunststoffwaren)</masterLabel>
+            <translation><!-- C22_Ma. of rubber and plastic products (H.v. Gummi- u. Kunststoffwaren) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C23_Ma. of o. non-metallic mineral prod. (H.v. Glas u. Glaswa., Keramik usw.)</masterLabel>
+            <translation><!-- C23_Ma. of o. non-metallic mineral prod. (H.v. Glas u. Glaswa., Keramik usw.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24_Manufacture of basic metals (Metallerz. u. -bearb.)</masterLabel>
+            <translation><!-- C24_Manufacture of basic metals (Metallerz. u. -bearb.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C25_Ma. of fab. metal prod., except mach. (H.v. Metallerz.)</masterLabel>
+            <translation><!-- C25_Ma. of fab. metal prod., except mach. (H.v. Metallerz.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26_Ma. of computer and electronic prod. (H.v. Ge. f. die Datenverarb.)</masterLabel>
+            <translation><!-- C26_Ma. of computer and electronic prod. (H.v. Ge. f. die Datenverarb.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C27_Manufacture of electrical equipment (H.v. el. Ausrüst.)</masterLabel>
+            <translation><!-- C27_Manufacture of electrical equipment (H.v. el. Ausrüst.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28_Ma. of machinery and equipment n.e.c. (Maschinenbau)</masterLabel>
+            <translation><!-- C28_Ma. of machinery and equipment n.e.c. (Maschinenbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29_Ma. of motor vehicles (H.v. Automobilen u. Automobilt.)</masterLabel>
+            <translation><!-- C29_Ma. of motor vehicles (H.v. Automobilen u. Automobilt.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C30_Ma. of o. transport equipment (Sonst. Fahrzeugbau)</masterLabel>
+            <translation><!-- C30_Ma. of o. transport equipment (Sonst. Fahrzeugbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C31_Manufacture of furniture (H.v. Möbeln)</masterLabel>
+            <translation><!-- C31_Manufacture of furniture (H.v. Möbeln) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C32_Other manufacturing (H.v. sonst. Waren)</masterLabel>
+            <translation><!-- C32_Other manufacturing (H.v. sonst. Waren) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C33_Rep. and install. of mach. and eq. (Rep. u. Inst. v. Masch. u. Ausrüst.)</masterLabel>
+            <translation><!-- C33_Rep. and install. of mach. and eq. (Rep. u. Inst. v. Masch. u. Ausrüst.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D35_Electricity, gas a. steam supply (Energieversorgung)</masterLabel>
+            <translation><!-- D35_Electricity, gas a. steam supply (Energieversorgung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E36_Water collection, treatment and supply (Wasserversorgung)</masterLabel>
+            <translation><!-- E36_Water collection, treatment and supply (Wasserversorgung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E37_Sewerage (Abwasserentsorgung)</masterLabel>
+            <translation><!-- E37_Sewerage (Abwasserentsorgung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E38_Waste collection and treatment (Sammlung, Beh., Beseitigung v. Abfällen)</masterLabel>
+            <translation><!-- E38_Waste collection and treatment (Sammlung, Beh., Beseitigung v. Abfällen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E39_Remediation act. and o. waste man. serv. (Beseitung v. Umweltverschmutzungen)</masterLabel>
+            <translation><!-- E39_Remediation act. and o. waste man. serv. (Beseitung v. Umweltverschmutzungen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F41_Construction of buildings (Hochbau)</masterLabel>
+            <translation><!-- F41_Construction of buildings (Hochbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F42_Civil engineering (Tiefbau)</masterLabel>
+            <translation><!-- F42_Civil engineering (Tiefbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F43_Specialised construction activities (Sonstiges Baugewerbe)</masterLabel>
+            <translation><!-- F43_Specialised construction activities (Sonstiges Baugewerbe) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G45_Trade a. rep. of motor vehicles a. moto. (Ha. m. Motorfahrz.; Insthalt. u. Rep.)</masterLabel>
+            <translation><!-- G45_Trade a. rep. of motor vehicles a. moto. (Ha. m. Motorfahrz.; Insthalt. u. Rep.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G46_Wholesale trade, exc. of motor vehicles (GH.o. Ha. m. Motorfahrz.)</masterLabel>
+            <translation><!-- G46_Wholesale trade, exc. of motor vehicles (GH.o. Ha. m. Motorfahrz.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G47_Retail trade, exc. motor vehicles (DH.o. Ha. m. Motorfahrz.)</masterLabel>
+            <translation><!-- G47_Retail trade, exc. motor vehicles (DH.o. Ha. m. Motorfahrz.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H49_Land transp. a. transp. via pipelines (Landverk., Trans. in Rohrfernleitungen)</masterLabel>
+            <translation><!-- H49_Land transp. a. transp. via pipelines (Landverk., Trans. in Rohrfernleitungen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H50_Water transport (Schifffahrt)</masterLabel>
+            <translation><!-- H50_Water transport (Schifffahrt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H51_Air transport (Luftfahrt)</masterLabel>
+            <translation><!-- H51_Air transport (Luftfahrt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H52_Warehousing and sup. act. for transport. (Lagerei sowie sonst. DL f. den Verk.)</masterLabel>
+            <translation><!-- H52_Warehousing and sup. act. for transport. (Lagerei sowie sonst. DL f. den Verk.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H53_Postal and courier activities (Post-, Kurier- u. Expressdienste)</masterLabel>
+            <translation><!-- H53_Postal and courier activities (Post-, Kurier- u. Expressdienste) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I55_Accommodation (Beherbergung)</masterLabel>
+            <translation><!-- I55_Accommodation (Beherbergung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I56_Food and beverage service activities (Gastronomie)</masterLabel>
+            <translation><!-- I56_Food and beverage service activities (Gastronomie) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J58_Publishing activities (Verlagswesen)</masterLabel>
+            <translation><!-- J58_Publishing activities (Verlagswesen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J59_Motion picture (H, Verleih u. Vertrieb v. Filmen usw.)</masterLabel>
+            <translation><!-- J59_Motion picture (H, Verleih u. Vertrieb v. Filmen usw.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J60_Programming and broadcasting activities (Rundfunkveran.)</masterLabel>
+            <translation><!-- J60_Programming and broadcasting activities (Rundfunkveran.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J61_Telecommunications (Telekom.)</masterLabel>
+            <translation><!-- J61_Telecommunications (Telekom.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J62_Computer progr., consult. and rel. act. (DL f. die Informationstechn.)</masterLabel>
+            <translation><!-- J62_Computer progr., consult. and rel. act. (DL f. die Informationstechn.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J63_Information service activities (Informationsdl.)</masterLabel>
+            <translation><!-- J63_Information service activities (Informationsdl.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K64_Financial service activities (Finanzdl.)</masterLabel>
+            <translation><!-- K64_Financial service activities (Finanzdl.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K65_Insu., reinsurance and pension funding (Vers., Rückvers. u. Pensionskassen)</masterLabel>
+            <translation><!-- K65_Insu., reinsurance and pension funding (Vers., Rückvers. u. Pensionskassen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K66_Act. aux. to financial s. a. insu. act. (M. Finanz- u. Vers.- dl. verb. Tätigk.)</masterLabel>
+            <translation><!-- K66_Act. aux. to financial s. a. insu. act. (M. Finanz- u. Vers.- dl. verb. Tätigk.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L68_Real estate activities (Grundstücks- u. Wohnungswesen)</masterLabel>
+            <translation><!-- L68_Real estate activities (Grundstücks- u. Wohnungswesen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M69_Legal and accounting activities (Rechts- u. Steuerberatung, Wirtschaftsp.)</masterLabel>
+            <translation><!-- M69_Legal and accounting activities (Rechts- u. Steuerberatung, Wirtschaftsp.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M70_Act. of head offices; man. consult. act. (Verw. u. Führung v. Untern.)</masterLabel>
+            <translation><!-- M70_Act. of head offices; man. consult. act. (Verw. u. Führung v. Untern.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M71_Architectural and engineering act. (Architektur- u. Ingenieurbüros)</masterLabel>
+            <translation><!-- M71_Architectural and engineering act. (Architektur- u. Ingenieurbüros) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M72_Scientific research and development (F&amp;E)</masterLabel>
+            <translation><!-- M72_Scientific research and development (F&amp;E) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M73_Advertising and market research (Werbung u. Marktf.)</masterLabel>
+            <translation><!-- M73_Advertising and market research (Werbung u. Marktf.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M74_O. prof., scientific and technical act. (Sonst. wiss. u. techn. Tätigk.)</masterLabel>
+            <translation><!-- M74_O. prof., scientific and technical act. (Sonst. wiss. u. techn. Tätigk.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M75_Veterinary activities (Veterinärwesen)</masterLabel>
+            <translation><!-- M75_Veterinary activities (Veterinärwesen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N77_Rental and leasing activities (Verm. v. beweglichen Sachen)</masterLabel>
+            <translation><!-- N77_Rental and leasing activities (Verm. v. beweglichen Sachen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N78_Employment activities (Vermittlung u. Überlassung v. Pers.)</masterLabel>
+            <translation><!-- N78_Employment activities (Vermittlung u. Überlassung v. Pers.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N79_Travel agency, tour operator reserv. (Reisebüros u. sonst. Reservierungsdl.)</masterLabel>
+            <translation><!-- N79_Travel agency, tour operator reserv. (Reisebüros u. sonst. Reservierungsdl.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N80_Security and investigation act. (Wach- u. Sicherheitsdienste, Detekteien)</masterLabel>
+            <translation><!-- N80_Security and investigation act. (Wach- u. Sicherheitsdienste, Detekteien) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N81_Serv. to build. and landscape act. (Gebäudebetreu.; Garten-, Landschaftsbau)</masterLabel>
+            <translation><!-- N81_Serv. to build. and landscape act. (Gebäudebetreu.; Garten-, Landschaftsbau) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N82_Office admin., office support act. (Wirt. DL f. Untern. u. Privatpers. a.n.g)</masterLabel>
+            <translation><!-- N82_Office admin., office support act. (Wirt. DL f. Untern. u. Privatpers. a.n.g) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O84_Public administration and defence (Öff. Verw., Verteidigung; Sozialvers.)</masterLabel>
+            <translation><!-- O84_Public administration and defence (Öff. Verw., Verteidigung; Sozialvers.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P85_Education (Erziehung u. Unterricht)</masterLabel>
+            <translation><!-- P85_Education (Erziehung u. Unterricht) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q86_Human health activities (Gesundheitswesen)</masterLabel>
+            <translation><!-- Q86_Human health activities (Gesundheitswesen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q87_Residential care activities (Heime o. Erholungs- u. Ferienheime)</masterLabel>
+            <translation><!-- Q87_Residential care activities (Heime o. Erholungs- u. Ferienheime) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q88_Social work act. without accommodation (Sozialwesen o. Heime)</masterLabel>
+            <translation><!-- Q88_Social work act. without accommodation (Sozialwesen o. Heime) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R90_Creative, arts and entertainment act. (Kreative, künstl. Tätigk.)</masterLabel>
+            <translation><!-- R90_Creative, arts and entertainment act. (Kreative, künstl. Tätigk.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R91_Libr., arch., museums and o. cult. act. (Bibliotheken, Archive, Museen, Gärten)</masterLabel>
+            <translation><!-- R91_Libr., arch., museums and o. cult. act. (Bibliotheken, Archive, Museen, Gärten) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R92_Gambling and betting activities (Spiel-, Wett- u. Lotteriewesen)</masterLabel>
+            <translation><!-- R92_Gambling and betting activities (Spiel-, Wett- u. Lotteriewesen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R93_Sports activities and amusement (DL des Sports, Unterhalt. u. Erholung)</masterLabel>
+            <translation><!-- R93_Sports activities and amusement (DL des Sports, Unterhalt. u. Erholung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S94_Activities of membership organisations (Interessenvertr. sowie relig. Verein.)</masterLabel>
+            <translation><!-- S94_Activities of membership organisations (Interessenvertr. sowie relig. Verein.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S95_Repair of computers and personal goods (Rep. v. Datenverarb.-ge., Gebrauchsgüter)</masterLabel>
+            <translation><!-- S95_Repair of computers and personal goods (Rep. v. Datenverarb.-ge., Gebrauchsgüter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S96_Other personal service activities (Sonst. überwiegend persönliche DL)</masterLabel>
+            <translation><!-- S96_Other personal service activities (Sonst. überwiegend persönliche DL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T97_Act. of households as employ. of person. (Private Haushalte m. Hauspers.)</masterLabel>
+            <translation><!-- T97_Act. of households as employ. of person. (Private Haushalte m. Hauspers.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T98_Act. of private households (goods) (H.v. Wa. u. DL durch private Haushalte)</masterLabel>
+            <translation><!-- T98_Act. of private households (goods) (H.v. Wa. u. DL durch private Haushalte) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U99_Act. of extraterritorial org. and bodies (Exterritoriale Org. u. Körperschaften)</masterLabel>
+            <translation><!-- U99_Act. of extraterritorial org. and bodies (Exterritoriale Org. u. Körperschaften) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Date --></label>
+        <name>UPC_Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Credit Check --></label>
+        <name>UPC_Last_Credit_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Onsite Visit --></label>
+        <name>UPC_Last_Onsite_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Zefix Update --></label>
+        <name>UPC_Last_Zefix_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead_Ownership --></label>
+        <name>UPC_Lead_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Association (Verein)</masterLabel>
+            <translation><!-- Association (Verein) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association by public law (öffentlichrechtlicher Verein)</masterLabel>
+            <translation><!-- Association by public law (öffentlichrechtlicher Verein) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooperative (Genossenschaft)</masterLabel>
+            <translation><!-- Cooperative (Genossenschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooperative by public law (öffentlichrechtliche Genossenschaft)</masterLabel>
+            <translation><!-- Cooperative by public law (öffentlichrechtliche Genossenschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation with unlimited partners (Kommanditaktiengesellschaft)</masterLabel>
+            <translation><!-- Corporation with unlimited partners (Kommanditaktiengesellschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign branch (Ausländische Zweigniederlassung)</masterLabel>
+            <translation><!-- Foreign branch (Ausländische Zweigniederlassung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation (Stiftung)</masterLabel>
+            <translation><!-- Foundation (Stiftung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Partnership (Kollektivgesellschaft)</masterLabel>
+            <translation><!-- General Partnership (Kollektivgesellschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indivision (Gemeinderschaft)</masterLabel>
+            <translation><!-- Indivision (Gemeinderschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institute of public law (Institut des öffentlichen Rechts)</masterLabel>
+            <translation><!-- Institute of public law (Institut des öffentlichen Rechts) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLC by public law (öffentlichrechtliche GmbH)</masterLabel>
+            <translation><!-- LLC by public law (öffentlichrechtliche GmbH) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited (Aktiengesellschaft)</masterLabel>
+            <translation><!-- Limited (Aktiengesellschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company (Gesellschaft mit beschränkter Haftung)</masterLabel>
+            <translation><!-- Limited Liability Company (Gesellschaft mit beschränkter Haftung) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Partnership (Kommanditgesellschaft)</masterLabel>
+            <translation><!-- Limited Partnership (Kommanditgesellschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited by public law (öffentlichrechtliche AG)</masterLabel>
+            <translation><!-- Limited by public law (öffentlichrechtliche AG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-commercial procuration (Nichtkaufmännische Prokura)</masterLabel>
+            <translation><!-- Non-commercial procuration (Nichtkaufmännische Prokura) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not defined legal form (Nicht definierte Rechtsform)</masterLabel>
+            <translation><!-- Not defined legal form (Nicht definierte Rechtsform) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Particular legal form (Besondere Rechtsformen)</masterLabel>
+            <translation><!-- Particular legal form (Besondere Rechtsformen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public corporation (Selbst. öffentlichrechtliche Körperschaft)</masterLabel>
+            <translation><!-- Public corporation (Selbst. öffentlichrechtliche Körperschaft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public-law institution (öffentlichrechtliche Anstalt)</masterLabel>
+            <translation><!-- Public-law institution (öffentlichrechtliche Anstalt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole proprietorship (Einzelunternehmen)</masterLabel>
+            <translation><!-- Sole proprietorship (Einzelunternehmen) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole proprietorship (Einzelunternehmen).</masterLabel>
+            <translation><!-- Sole proprietorship (Einzelunternehmen). --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swiss branch (Schweizerische Zweigniederlassung)</masterLabel>
+            <translation><!-- Swiss branch (Schweizerische Zweigniederlassung) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Locked Account Customer Change --></label>
+        <name>UPC_Locked_Account_Customer_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a summary field. It is based on the total amount of Recurring Charges in the Active Services. --></help>
+        <label><!-- Account Summary MRC --></label>
+        <name>UPC_MRC_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Opt Out --></label>
+        <name>UPC_Mailing_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Commercial Contact --></label>
+        <name>UPC_Main_Commercial_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Technical Contact --></label>
+        <name>UPC_Main_Technical_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed in SuperOffice --></label>
+        <name>UPC_Managed_in_SuperOffice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max MRC --></label>
+        <name>UPC_Max_MRC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Authentication Code --></label>
+        <name>UPC_Mobile_Authentication_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mobile numbers must start with + or 0 and must contain only spaces and numbers. Non-mobile phone numbers are not allowed in this field. --></help>
+        <label><!-- Mobile --></label>
+        <name>UPC_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- NOGA Codes Formatted --></label>
+        <name>UPC_NOGA_Codes_Formatted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the NOGA codes as issued by the Federal Statistical Office FSO, Enter the codes starting with #. Separate multiple codes with #. End the entry with #. Example: #61100#61200# --></help>
+        <label><!-- NOGA Codes --></label>
+        <name>UPC_NOGA_Codes__c</name>
+    </fields>
+    <fields>
+        <label><!-- NOGA Economic Activity --></label>
+        <name>UPC_NOGA_Economic_Activity__c</name>
+        <picklistValues>
+            <masterLabel>Animal production [A014000]</masterLabel>
+            <translation><!-- Animal production [A014000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aquaculture [A032000]</masterLabel>
+            <translation><!-- Aquaculture [A032000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crop and animal produc., hunting [A010000]</masterLabel>
+            <translation><!-- Crop and animal produc., hunting [A010000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extr. of crude petroleum and nat. gas [B060000]</masterLabel>
+            <translation><!-- Extr. of crude petroleum and nat. gas [B060000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extr. of crude petrolum [B061000]</masterLabel>
+            <translation><!-- Extr. of crude petrolum [B061000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extr. of natural gas [B062000]</masterLabel>
+            <translation><!-- Extr. of natural gas [B062000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extraction of peat [B089200]</masterLabel>
+            <translation><!-- Extraction of peat [B089200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extraction of salt [B089300]</masterLabel>
+            <translation><!-- Extraction of salt [B089300] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishing [A031000]</masterLabel>
+            <translation><!-- Fishing [A031000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishing and aquaculture [A030000]</masterLabel>
+            <translation><!-- Fishing and aquaculture [A030000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forestry and logging [A020000]</masterLabel>
+            <translation><!-- Forestry and logging [A020000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshwater aquaculture [A032200]</masterLabel>
+            <translation><!-- Freshwater aquaculture [A032200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshwater fishing [A031200]</masterLabel>
+            <translation><!-- Freshwater fishing [A031200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gathering of wild growing products [A023000]</masterLabel>
+            <translation><!-- Gathering of wild growing products [A023000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of aromatic and pharma. crops [A012800]</masterLabel>
+            <translation><!-- Grow. of aromatic and pharma. crops [A012800] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of beverage crops [A012700]</masterLabel>
+            <translation><!-- Grow. of beverage crops [A012700] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of cereals and leguminous crops [A011100]</masterLabel>
+            <translation><!-- Grow. of cereals and leguminous crops [A011100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of citrus fruits [A012300]</masterLabel>
+            <translation><!-- Grow. of citrus fruits [A012300] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of fibre crops [A011600]</masterLabel>
+            <translation><!-- Grow. of fibre crops [A011600] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of grapes [A012100]</masterLabel>
+            <translation><!-- Grow. of grapes [A012100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of grapes [A012101]</masterLabel>
+            <translation><!-- Grow. of grapes [A012101] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of non-perennial crops [A011000]</masterLabel>
+            <translation><!-- Grow. of non-perennial crops [A011000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of oleaginous fruits [A012600]</masterLabel>
+            <translation><!-- Grow. of oleaginous fruits [A012600] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of other non-perennial crops [A011900]</masterLabel>
+            <translation><!-- Grow. of other non-perennial crops [A011900] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of other perennial crops [A012900]</masterLabel>
+            <translation><!-- Grow. of other perennial crops [A012900] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of other tree fruits [A012500]</masterLabel>
+            <translation><!-- Grow. of other tree fruits [A012500] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of perennial crops [A012000]</masterLabel>
+            <translation><!-- Grow. of perennial crops [A012000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of pome fruits and stone fruits [A012400]</masterLabel>
+            <translation><!-- Grow. of pome fruits and stone fruits [A012400] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of rice [A011200]</masterLabel>
+            <translation><!-- Grow. of rice [A011200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of sugar cane [A011400]</masterLabel>
+            <translation><!-- Grow. of sugar cane [A011400] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of tabacco [A011500]</masterLabel>
+            <translation><!-- Grow. of tabacco [A011500] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of tropical fruits [A012200]</masterLabel>
+            <translation><!-- Grow. of tropical fruits [A012200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grow. of vegetables and melons [A011300]</masterLabel>
+            <translation><!-- Grow. of vegetables and melons [A011300] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunting, trapping and related serv. act. [A017000]</masterLabel>
+            <translation><!-- Hunting, trapping and related serv. act. [A017000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logging [A022000]</masterLabel>
+            <translation><!-- Logging [A022000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine aquaculture [A032100]</masterLabel>
+            <translation><!-- Marine aquaculture [A032100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marine fishing [A031100]</masterLabel>
+            <translation><!-- Marine fishing [A031100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min. of chemical and fertiliser minerals [B089100]</masterLabel>
+            <translation><!-- Min. of chemical and fertiliser minerals [B089100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min. of non-ferrous metal ores [B072000]</masterLabel>
+            <translation><!-- Min. of non-ferrous metal ores [B072000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min. of o. non-ferrous metal ores [B072900]</masterLabel>
+            <translation><!-- Min. of o. non-ferrous metal ores [B072900] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min. of uranium and thorium ores [B072100]</masterLabel>
+            <translation><!-- Min. of uranium and thorium ores [B072100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining and quarrying n.e.c. [B089000]</masterLabel>
+            <translation><!-- Mining and quarrying n.e.c. [B089000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining of coal and lignite [B050000]</masterLabel>
+            <translation><!-- Mining of coal and lignite [B050000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining of hard coal [B051000]</masterLabel>
+            <translation><!-- Mining of hard coal [B051000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining of iron ores [B071000]</masterLabel>
+            <translation><!-- Mining of iron ores [B071000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining of lignite [B052000]</masterLabel>
+            <translation><!-- Mining of lignite [B052000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining of metal ores [B070000]</masterLabel>
+            <translation><!-- Mining of metal ores [B070000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining support service activities [B090000]</masterLabel>
+            <translation><!-- Mining support service activities [B090000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed farming [A015000]</masterLabel>
+            <translation><!-- Mixed farming [A015000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O. mining and quarrying [B080000]</masterLabel>
+            <translation><!-- O. mining and quarrying [B080000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation of gravel and pits [B081200]</masterLabel>
+            <translation><!-- Operation of gravel and pits [B081200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other mining and quarrying n.e.c. [B089900]</masterLabel>
+            <translation><!-- Other mining and quarrying n.e.c. [B089900] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant propagation [A013000]</masterLabel>
+            <translation><!-- Plant propagation [A013000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-harvest crop activ. [A016300]</masterLabel>
+            <translation><!-- Post-harvest crop activ. [A016300] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quar. of ornem. and building stone [B081100]</masterLabel>
+            <translation><!-- Quar. of ornem. and building stone [B081100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarrying of stone, sand and clay [B081000]</masterLabel>
+            <translation><!-- Quarrying of stone, sand and clay [B081000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of camels and camelids [A014400]</masterLabel>
+            <translation><!-- Rais. of camels and camelids [A014400] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of dairy cattle [A014100]</masterLabel>
+            <translation><!-- Rais. of dairy cattle [A014100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of horses and o. equines [A014300]</masterLabel>
+            <translation><!-- Rais. of horses and o. equines [A014300] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of other animals [A014900]</masterLabel>
+            <translation><!-- Rais. of other animals [A014900] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of other cattle and buffaloes [A014200]</masterLabel>
+            <translation><!-- Rais. of other cattle and buffaloes [A014200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of poultry [A014700]</masterLabel>
+            <translation><!-- Rais. of poultry [A014700] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of sheep and goats [A014500]</masterLabel>
+            <translation><!-- Rais. of sheep and goats [A014500] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rais. of swine/pigs [A014600]</masterLabel>
+            <translation><!-- Rais. of swine/pigs [A014600] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seed process. for propagation [A016400]</masterLabel>
+            <translation><!-- Seed process. for propagation [A016400] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siliviculture and o. forestry activities [A021000]</masterLabel>
+            <translation><!-- Siliviculture and o. forestry activities [A021000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sup. act. for o. mining and quarrying [B099000]</masterLabel>
+            <translation><!-- Sup. act. for o. mining and quarrying [B099000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sup. act. for petrol. and nat. gas extr. [B091000]</masterLabel>
+            <translation><!-- Sup. act. for petrol. and nat. gas extr. [B091000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support activ. for animal produc. [A016200]</masterLabel>
+            <translation><!-- Support activ. for animal produc. [A016200] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support activ. for crop produc. [A016100]</masterLabel>
+            <translation><!-- Support activ. for crop produc. [A016100] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support activ. to agriculture [A016000]</masterLabel>
+            <translation><!-- Support activ. to agriculture [A016000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support serv. to forestry [A024000]</masterLabel>
+            <translation><!-- Support serv. to forestry [A024000] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viticulture – Vinification and cellaring [A012102]</masterLabel>
+            <translation><!-- Viticulture – Vinification and cellaring [A012102] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NOGA Section --></label>
+        <name>UPC_NOGA_Section__c</name>
+        <picklistValues>
+            <masterLabel>A) AGRICULT., FORESTRY AND FISHING</masterLabel>
+            <translation><!-- A) AGRICULT., FORESTRY AND FISHING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B) MINING AND QUARRYING</masterLabel>
+            <translation><!-- B) MINING AND QUARRYING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C) MANUFACTURING</masterLabel>
+            <translation><!-- C) MANUFACTURING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D) ELECTRICITY, GAS A. STEAM SUPPLY</masterLabel>
+            <translation><!-- D) ELECTRICITY, GAS A. STEAM SUPPLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E) WATER SUPPLY</masterLabel>
+            <translation><!-- E) WATER SUPPLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F) CONSTRUCTION</masterLabel>
+            <translation><!-- F) CONSTRUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G) TRADE; REP. OF MOTOR VEHICLES A. MOTO.</masterLabel>
+            <translation><!-- G) TRADE; REP. OF MOTOR VEHICLES A. MOTO. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H) TRANSPORTATION AND STORAGE</masterLabel>
+            <translation><!-- H) TRANSPORTATION AND STORAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I) ACCOMOD. AND FOOD SERV. ACT.</masterLabel>
+            <translation><!-- I) ACCOMOD. AND FOOD SERV. ACT. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J) INFORMATION AND COMMUNICATION</masterLabel>
+            <translation><!-- J) INFORMATION AND COMMUNICATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K) FINANCIAL AND INSURANCE ACTIVITIES</masterLabel>
+            <translation><!-- K) FINANCIAL AND INSURANCE ACTIVITIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L) REAL ESTATE ACTIVITIES</masterLabel>
+            <translation><!-- L) REAL ESTATE ACTIVITIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M) PROF., SCIENTIFIC AND TECH. ACT.</masterLabel>
+            <translation><!-- M) PROF., SCIENTIFIC AND TECH. ACT. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N) ADMIN. AND SUPPORT SERV. ACT.</masterLabel>
+            <translation><!-- N) ADMIN. AND SUPPORT SERV. ACT. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O) PUBLIC ADMINISTRATION AND DEFENCE</masterLabel>
+            <translation><!-- O) PUBLIC ADMINISTRATION AND DEFENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P) EDUCATION</masterLabel>
+            <translation><!-- P) EDUCATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q) HUMAN HEALTH AND SOCIAL WORK ACT.</masterLabel>
+            <translation><!-- Q) HUMAN HEALTH AND SOCIAL WORK ACT. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R) ARTS, ENTERTAINMENT AND RECREATION</masterLabel>
+            <translation><!-- R) ARTS, ENTERTAINMENT AND RECREATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S) OTHER SERVICE ACTIVITIES</masterLabel>
+            <translation><!-- S) OTHER SERVICE ACTIVITIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T) ACT. OF HOUSEHOLDS AS EMPLOYERS</masterLabel>
+            <translation><!-- T) ACT. OF HOUSEHOLDS AS EMPLOYERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U) ACT. OF EXTRATERRITORIAL ORG. AND BODIES</masterLabel>
+            <translation><!-- U) ACT. OF EXTRATERRITORIAL ORG. AND BODIES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Account Owner Approved --></label>
+        <name>UPC_New_Account_Owner_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Owner Email --></label>
+        <name>UPC_New_Account_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Owner Name --></label>
+        <name>UPC_New_Account_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select here a new Account Owner for this Account. --></help>
+        <label><!-- New Account Owner --></label>
+        <name>UPC_New_Account_Owner__c</name>
+        <relationshipLabel><!-- Accounts (New Account Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Owner Rejected --></label>
+        <name>UPC_New_Owner_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>UPC_Number_of_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Mobiles --></label>
+        <name>UPC_Number_of_Mobiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Workspaces --></label>
+        <name>UPC_Number_of_Workspaces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Oppy Value --></label>
+        <name>UPC_Open_Oppty_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Oppys --></label>
+        <name>UPC_Open_Opptys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account --></label>
+        <name>UPC_Partner_Account__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backup Solution --></label>
+        <name>UPC_Partner_Backup_Solution__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Months --></help>
+        <label><!-- Partner Contract Cancellation Duration --></label>
+        <name>UPC_Partner_Cancellation_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Category --></label>
+        <name>UPC_Partner_Category__c</name>
+        <picklistValues>
+            <masterLabel>Cooperation for Integrated Service</masterLabel>
+            <translation><!-- Cooperation for Integrated Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indirect Sales for UPC</masterLabel>
+            <translation><!-- Indirect Sales for UPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated Digital Service Provider</masterLabel>
+            <translation><!-- Integrated Digital Service Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner as General Contractor</masterLabel>
+            <translation><!-- Partner as General Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Partner</masterLabel>
+            <translation><!-- Support Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Code --></label>
+        <name>UPC_Partner_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Commission Pay-Out Interval --></label>
+        <name>UPC_Partner_Commission_Pay_Out_Interval__c</name>
+        <picklistValues>
+            <masterLabel>Half-Yearly</masterLabel>
+            <translation><!-- Half-Yearly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly</masterLabel>
+            <translation><!-- Yearly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Cancellation Date --></label>
+        <name>UPC_Partner_Contract_Cancellation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Commission Model --></label>
+        <name>UPC_Partner_Contract_Commission_Model__c</name>
+        <picklistValues>
+            <masterLabel>MRC</masterLabel>
+            <translation><!-- MRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation><!-- Revenue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Created by --></label>
+        <name>UPC_Partner_Contract_Created_by__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract End Date --></label>
+        <name>UPC_Partner_Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Holder with Customer --></label>
+        <name>UPC_Partner_Contract_Holder_End_Custome__c</name>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPC</masterLabel>
+            <translation><!-- UPC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Renewal Date --></label>
+        <name>UPC_Partner_Contract_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Sign Date --></label>
+        <name>UPC_Partner_Contract_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Signed by (UPC) --></label>
+        <name>UPC_Partner_Contract_Signed_by_UPC__c</name>
+        <relationshipLabel><!-- Accounts (Partner Contract Sign by (UPC)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Signed by --></label>
+        <name>UPC_Partner_Contract_Signed_by__c</name>
+        <relationshipLabel><!-- Accounts (Partner Contract Sign by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Start Date --></label>
+        <name>UPC_Partner_Contract_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Type --></label>
+        <name>UPC_Partner_Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>No Expiration</masterLabel>
+            <translation><!-- No Expiration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner End Date --></label>
+        <name>UPC_Partner_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LAN/Firewall --></label>
+        <name>UPC_Partner_LAN_Firewall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Lifecycle --></label>
+        <name>UPC_Partner_Lifecycle__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Activation</masterLabel>
+            <translation><!-- In Activation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leaving</masterLabel>
+            <translation><!-- Leaving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer a Partner</masterLabel>
+            <translation><!-- No Longer a Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Multi-Media --></label>
+        <name>UPC_Partner_Multi_Media__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regions --></label>
+        <name>UPC_Partner_Regions__c</name>
+        <picklistValues>
+            <masterLabel>Aargau</masterLabel>
+            <translation><!-- Aargau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appenzell AR</masterLabel>
+            <translation><!-- Appenzell AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appenzell IR</masterLabel>
+            <translation><!-- Appenzell IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basel Land</masterLabel>
+            <translation><!-- Basel Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basel Stadt</masterLabel>
+            <translation><!-- Basel Stadt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bern Mittelland</masterLabel>
+            <translation><!-- Bern Mittelland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bern Stadt</masterLabel>
+            <translation><!-- Bern Stadt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glarus</masterLabel>
+            <translation><!-- Glarus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graubünden</masterLabel>
+            <translation><!-- Graubünden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luzern</masterLabel>
+            <translation><!-- Luzern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schaffhausen</masterLabel>
+            <translation><!-- Schaffhausen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schwyz</masterLabel>
+            <translation><!-- Schwyz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solothurn</masterLabel>
+            <translation><!-- Solothurn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Gallen Land</masterLabel>
+            <translation><!-- St. Gallen Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Gallen Stadt</masterLabel>
+            <translation><!-- St. Gallen Stadt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tessin</masterLabel>
+            <translation><!-- Tessin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thurgau</masterLabel>
+            <translation><!-- Thurgau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uri</masterLabel>
+            <translation><!-- Uri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zug</masterLabel>
+            <translation><!-- Zug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zürich Knonaueramt</masterLabel>
+            <translation><!-- Zürich Knonaueramt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zürich Links (Thalwil, Rüschlikon usw.)</masterLabel>
+            <translation><!-- Zürich Links (Thalwil, Rüschlikon usw.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zürich Oberland</masterLabel>
+            <translation><!-- Zürich Oberland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zürich Rechts (Küsnacht, Erlenbach usw.)</masterLabel>
+            <translation><!-- Zürich Rechts (Küsnacht, Erlenbach usw.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zürich Stadt</masterLabel>
+            <translation><!-- Zürich Stadt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Renewal Planned Date --></label>
+        <name>UPC_Partner_Renewal_Planned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Role --></label>
+        <name>UPC_Partner_Role__c</name>
+        <picklistValues>
+            <masterLabel>+1st Level Support</masterLabel>
+            <translation><!-- +1st Level Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillment &amp; Support of Defined Project Scope</masterLabel>
+            <translation><!-- Fulfillment &amp; Support of Defined Project Scope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Contractor</masterLabel>
+            <translation><!-- General Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generation of Leads &amp; Sales</masterLabel>
+            <translation><!-- Generation of Leads &amp; Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcontractor to UPC</masterLabel>
+            <translation><!-- Subcontractor to UPC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Service --></label>
+        <name>UPC_Partner_Service__c</name>
+        <picklistValues>
+            <masterLabel>Internet HFC</masterLabel>
+            <translation><!-- Internet HFC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice PBX</masterLabel>
+            <translation><!-- Voice PBX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Skills --></label>
+        <name>UPC_Partner_Skills__c</name>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Helpdesk</masterLabel>
+            <translation><!-- IT Helpdesk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Start Date --></label>
+        <name>UPC_Partner_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Subtype --></label>
+        <name>UPC_Partner_Subtype__c</name>
+        <picklistValues>
+            <masterLabel>Solution</masterLabel>
+            <translation><!-- Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Number --></label>
+        <name>UPC_Partner_Tax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Type --></label>
+        <name>UPC_Partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation><!-- Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compentence Partner</masterLabel>
+            <translation><!-- Compentence Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Partner</masterLabel>
+            <translation><!-- Integration Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Partner</masterLabel>
+            <translation><!-- Sales Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner UPC Role --></label>
+        <name>UPC_Partner_UPC_Role__c</name>
+        <picklistValues>
+            <masterLabel>Delivery of Access / Service to Partner</masterLabel>
+            <translation><!-- Delivery of Access / Service to Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillment &amp; Support of Defined Project Scope</masterLabel>
+            <translation><!-- Fulfillment &amp; Support of Defined Project Scope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillment &amp; Support of service</masterLabel>
+            <translation><!-- Fulfillment &amp; Support of service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillment of Service</masterLabel>
+            <translation><!-- Fulfillment of Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Contractor</masterLabel>
+            <translation><!-- General Contractor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Virtual PBX --></label>
+        <name>UPC_Partner_Virtual_PBX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voice Systems --></label>
+        <name>UPC_Partner_Voice_Systems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product of interest --></label>
+        <name>UPC_Product_of_interest__c</name>
+        <picklistValues>
+            <masterLabel>Business Internet</masterLabel>
+            <translation><!-- Business Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Mobile</masterLabel>
+            <translation><!-- Business Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business VPN</masterLabel>
+            <translation><!-- Business VPN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for Changing Owner --></label>
+        <name>UPC_Reason_for_Changing_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject Reason Code --></label>
+        <name>UPC_Reject_Reason_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject Reason --></label>
+        <name>UPC_Reject_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Code --></label>
+        <name>UPC_Risk_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Subsegment --></label>
+        <name>UPC_Sales_Subsegment__c</name>
+        <picklistValues>
+            <masterLabel>SME (w/o HFC)</masterLabel>
+            <translation><!-- SME (w/o HFC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME (with HFC)</masterLabel>
+            <translation><!-- SME (with HFC) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Segment --></label>
+        <name>UPC_Segment_Channel__c</name>
+        <picklistValues>
+            <masterLabel>LE</masterLabel>
+            <translation><!-- LE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME</masterLabel>
+            <translation><!-- SME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOHO</masterLabel>
+            <translation><!-- SOHO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHS</masterLabel>
+            <translation><!-- WHS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Deleted --></label>
+        <name>UPC_Site_Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Startup --></label>
+        <name>UPC_Startup__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC SuOF temp --></label>
+        <name>UPC_SuOF_temp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspended --></label>
+        <name>UPC_Suspended__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV House Wiring --></label>
+        <name>UPC_TV_House_Wiring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taifun ID --></label>
+        <name>UPC_Taifun_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer Opportunities Not Owned By You --></label>
+        <name>UPC_Transfer_Opportunities_not_owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>UPC_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UID Does Not Exist? --></label>
+        <name>UPC_UID_Does_Not_Exist__c</name>
+    </fields>
+    <fields>
+        <label><!-- UID Status --></label>
+        <name>UPC_UID_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please use this format: CHE-000.000.000 --></help>
+        <label><!-- UID --></label>
+        <name>UPC_UID__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Zefix Check Context --></label>
+        <name>UPC_Zefix_Check_Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Zefix Legal Seat --></label>
+        <name>UPC_Zefix_Legal_Seat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Zefix registered --></label>
+        <name>UPC_Zefix_Not_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zefix Share Capital --></label>
+        <name>UPC_Zefix_Share_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zefix Status --></label>
+        <name>UPC_Zefix_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Being Cancelled</masterLabel>
+            <translation><!-- Being Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Red Icon means Zefix was not yet checked.
+Orange Icon means Zefix was checked but did not find the Account.
+Green Icon means Zefix was checked and updated the fields. --></help>
+        <label><!-- Zefix Verified --></label>
+        <name>UPC_Zefix_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- C/O --></label>
+        <name>UPC_co__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>UPC_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voice Systems Detail --></label>
+        <name>Voice_Systems_Detail__c</name>
+        <picklistValues>
+            <masterLabel>3CX</masterLabel>
+            <translation><!-- 3CX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGFEO</masterLabel>
+            <translation><!-- AGFEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVAYA</masterLabel>
+            <translation><!-- AVAYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alcatel-Lucent</masterLabel>
+            <translation><!-- Alcatel-Lucent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asteriks</masterLabel>
+            <translation><!-- Asteriks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centile</masterLabel>
+            <translation><!-- Centile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cisco</masterLabel>
+            <translation><!-- Cisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epygi</masterLabel>
+            <translation><!-- Epygi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOXFON</masterLabel>
+            <translation><!-- FOXFON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gigaset</masterLabel>
+            <translation><!-- Gigaset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hana</masterLabel>
+            <translation><!-- Hana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovaphone</masterLabel>
+            <translation><!-- Innovaphone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linksys Microsoft</masterLabel>
+            <translation><!-- Linksys Microsoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitel</masterLabel>
+            <translation><!-- Mitel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nortel</masterLabel>
+            <translation><!-- Nortel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panasonic</masterLabel>
+            <translation><!-- Panasonic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q-Company</masterLabel>
+            <translation><!-- Q-Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skype for Business</masterLabel>
+            <translation><!-- Skype for Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starface</masterLabel>
+            <translation><!-- Starface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swyx</masterLabel>
+            <translation><!-- Swyx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TipTel</masterLabel>
+            <translation><!-- TipTel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unify</masterLabel>
+            <translation><!-- Unify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertical</masterLabel>
+            <translation><!-- Vertical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zefix Not Registered Reason --></label>
+        <name>Zefix_Not_Registered_Reason__c</name>
+        <picklistValues>
+            <masterLabel>No UID Registration</masterLabel>
+            <translation><!-- No UID Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Account</masterLabel>
+            <translation><!-- Private Account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>cscfga__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>cscfga__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>cscfga__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Cycle --></label>
+        <name>csconta__Billing_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>cscrm__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Level --></label>
+        <name>cspmb__Discount_Level__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout All Profiles</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout All Profiles (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout All Profiles Locked by Zefix</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout All Profiles Locked by Zefix (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout Partner Profile</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout Partners (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout Partners Locked by Zefix</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Customer Account Layout Partners Locked by Zefix (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Segmentation --></label>
+            <section>Segmentation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner Account Layout All Profiles</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Contract Details --></label>
+            <section>Partner Contract Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner-Customer Account Layout All Profiles</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segmentation --></label>
+            <section>Customer Segmentation</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Contract Details --></label>
+            <section>Partner Contract Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Expertise --></label>
+            <section>Partner Expertise</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner-Customer Account Layout All Profiles (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segmentation --></label>
+            <section>Customer Segmentation</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Contract Details --></label>
+            <section>Partner Contract Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Expertise --></label>
+            <section>Partner Expertise</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner-Customer Account Layout All Profiles Locked by Zefix</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segmentation --></label>
+            <section>Customer Segmentation</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Contract Details --></label>
+            <section>Partner Contract Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Expertise --></label>
+            <section>Partner Expertise</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner-Customer Account Layout All Profiles Locked by Zefix (Frozen)</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Check --></label>
+            <section>Credit Check</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segmentation --></label>
+            <section>Customer Segmentation</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Contract Details --></label>
+            <section>Partner Contract Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Expertise --></label>
+            <section>Partner Expertise</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Partner-Customer Account Layout Partner User</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Expertise --></label>
+            <section>Partner Expertise</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change Subscription(s) --></label>
+        <name>Change_Subscription_s</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Credit Check --></label>
+        <name>Credit_Check</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Owner --></label>
+        <name>NX_Change_Owner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>NX_Logacall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NX_NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>NX_New_Case_BCSE</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Phone Case --></label>
+        <name>NX_New_Phone_Case_BCSE</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Site --></label>
+        <name>New_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Site2 --></label>
+        <name>New_Site2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Zefix Check --></label>
+        <name>Zefix_Check</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Customer Account Locked by Zefix (Frozen) --></label>
+        <name>Customer_Account_Locked_by_Zefix_Frozen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer or Prospect (Frozen) --></label>
+        <name>Customer_or_Prospect_Frozen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner-Customer Account --></label>
+        <name>Partner_Customer_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner-Customer Account(Frozen) --></label>
+        <name>Partner_Customer_Account_Frozen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner-Customer Account Locked by Zefix --></label>
+        <name>Partner_Customer_Account_Locked_by_Zefix</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner-Customer Account Locked by Zefix (Frozen) --></label>
+        <name>Partner_Customer_Account_Locked_by_Zefix_Frozen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer or Prospect --></label>
+        <name>UPC_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer Account Locked by Zefix --></label>
+        <name>UPC_Customer_Locked</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Fax numbers must start with + or 0 and must contain only spaces and numbers. --></errorMessage>
+        <name>NX_Account_Fax_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone numbers must start with + or 0 and must contain only spaces and numbers. --></errorMessage>
+        <name>NX_Account_Mobile_Phone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Partners can&apos;t change the Account Name. Please send a request to your Partner Admin. --></errorMessage>
+        <name>NX_Account_Name_Not_Editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account name is locked when is checked by Zefix. --></errorMessage>
+        <name>NX_Account_Name_Readonly_Zefix</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone numbers must start with + or 0 and must contain only spaces and numbers. --></errorMessage>
+        <name>NX_Account_Phone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are not allowed in phone field --></errorMessage>
+        <name>NX_Account_Swiss_Fax_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Mobile Phone: invalid length or wrong number type. Mobile phone number length is 9 digits with area code but without the leading 0. Only mobile numbers are allowed in this field. --></errorMessage>
+        <name>NX_Account_Swiss_Mobile_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are allowed in phone field --></errorMessage>
+        <name>NX_Account_Swiss_Phone_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Customer or Prospect. --></errorMessage>
+        <name>NX_Account_Type_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- These Fields are Read Only, Please refrain from Editing --></errorMessage>
+        <name>NX_Account_not_Editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid UID format. Use correct format (Switzerland: CHE-123.456.789) --></errorMessage>
+        <name>NX_UID_Format_validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Approval --></label>
+        <name>Send_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_subscriptions --></label>
+        <name>csordtelcoa__Multiple_subscriptions</name>
+    </webLinks>
+</CustomObjectTranslation>

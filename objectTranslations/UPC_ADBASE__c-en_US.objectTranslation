@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>UPC Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>UPC Addresses</value>
+    </caseValues>
+    <fields>
+        <label><!-- UPC Address Details --></label>
+        <name>UPC_Address_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Detail --></label>
+        <name>UPC_Address_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address no Building name --></label>
+        <name>UPC_Address_no_Building_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS Download --></label>
+        <name>UPC_BBCS_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS Upload --></label>
+        <name>UPC_BBCS_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- BUILDING COORDINATE X --></label>
+        <name>UPC_BUILDINGCOORDINATEX__c</name>
+    </fields>
+    <fields>
+        <label><!-- BUILDING COORDINATE Y --></label>
+        <name>UPC_BUILDINGCOORDINATEY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building Name --></label>
+        <name>UPC_BUILDINGNAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annex --></label>
+        <name>UPC_BUILDINGNUMBERANNEX__c</name>
+    </fields>
+    <fields>
+        <label><!-- BUILDING REMARKS --></label>
+        <name>UPC_BUILDINGREMARKS__c</name>
+    </fields>
+    <fields>
+        <label><!-- BUILDING STATUS NAME --></label>
+        <name>UPC_BUILDINGSTATUSNAME__c</name>
+        <picklistValues>
+            <masterLabel>completed</masterLabel>
+            <translation><!-- completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dismantled</masterLabel>
+            <translation><!-- dismantled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>planned</masterLabel>
+            <translation><!-- planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to dismantle</masterLabel>
+            <translation><!-- to dismantle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>under construction</masterLabel>
+            <translation><!-- under construction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>UPC_BUILDING_NUMBER__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building ID not Found --></label>
+        <name>UPC_Building_ID_not_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- CANTON BUNDESLAND --></label>
+        <name>UPC_CANTON_BUNDESLAND__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>UPC_COUNTRYCODEA2__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH Download --></label>
+        <name>UPC_FTTH_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH Upload --></label>
+        <name>UPC_FTTH_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geolocation --></label>
+        <name>UPC_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Download --></label>
+        <name>UPC_HFC_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Suitability --></label>
+        <name>UPC_HFC_Suitability__c</name>
+        <picklistValues>
+            <masterLabel>T0</masterLabel>
+            <translation><!-- T0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1</masterLabel>
+            <translation><!-- T1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2</masterLabel>
+            <translation><!-- T2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T3</masterLabel>
+            <translation><!-- T3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4</masterLabel>
+            <translation><!-- T4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFC Upload --></label>
+        <name>UPC_HFC_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID BUILDING STATUS --></label>
+        <name>UPC_IDBUILDINGSTATUS__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ID BUILDING --></label>
+        <name>UPC_ID_BUILDING__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>UPC_LOCATIONNAME1__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOCATION NAME2 --></label>
+        <name>UPC_LOCATIONNAME2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Footprint Check --></label>
+        <name>UPC_Last_Footprint_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC_MapStreet --></label>
+        <name>UPC_MapStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS ID --></label>
+        <name>UPC_OS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- POST CODE OFFICE NAME --></label>
+        <name>UPC_POSTCODEOFFICENAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- POSTCODE ANNEX --></label>
+        <name>UPC_POSTCODE_ANNEX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>UPC_POSTCODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRIMARY APARTMENT ID --></label>
+        <name>UPC_PRIMARY_APARTMENT_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Network Model --></label>
+        <name>UPC_Partner_Network_Model__c</name>
+        <picklistValues>
+            <masterLabel>DV</masterLabel>
+            <translation><!-- DV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PKV</masterLabel>
+            <translation><!-- PKV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PN</masterLabel>
+            <translation><!-- PN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PN1</masterLabel>
+            <translation><!-- PN1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PN2</masterLabel>
+            <translation><!-- PN2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mixed</masterLabel>
+            <translation><!-- mixed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- START DATE --></label>
+        <name>UPC_STARTDATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>UPC_STREETNAME1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street2 --></label>
+        <name>UPC_STREETNAME2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU Download --></label>
+        <name>UPC_ULL_CU_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU Upload --></label>
+        <name>UPC_ULL_CU_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU__c</name>
+    </fields>
+    <layouts>
+        <layout>UPC Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Footprint Fields --></label>
+            <section>Footprint Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Address Layout Admin</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Footprint Fields --></label>
+            <section>Footprint Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Footprint Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Footprint Fields --></label>
+            <section>Footprint Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Footprint Address Layout Admin</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Footprint Fields --></label>
+            <section>Footprint Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Footprint --></label>
+        <name>Update_Footprint</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Address Master --></label>
+        <name>Address_Master</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Footprint --></label>
+        <name>Footprint</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

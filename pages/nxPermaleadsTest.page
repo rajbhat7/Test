@@ -1,0 +1,122 @@
+<!--
+(c) 2019 Nexell GmbH
+Developed by NEXELL GmbH, Zug (Switzerland)
+Created: 04.02.2019
+Version:
+
+Author: Pierre Castori
+Description:
+Test page for the Permaleads class service.
+
+Modifications:
+11.03.2019 [PC] PT7890 - campaign members created
+
+-->
+<apex:page controller="nxPermaleadsController"
+           standardStylesheets="true"
+           showHeader="true"
+           sidebar="false"
+           applyHtmlTag="true"
+           applyBodyTag="false"
+           docType="html-5.0"
+           title="Permaleads to Salesforce"
+           lightningStylesheets="true">
+
+<body>
+
+    <div class="slds-scope" id="idContainer" style="padding:10px;">
+
+    <apex:sectionHeader title="Permaleads Test Page"/>
+    
+        <apex:outputPanel id="idDetails" rendered="FALSE">
+            <h1>Scheduled Job Details</h1>
+            <br/>
+            <br/>
+            Next query time: {!NextQueryTime}
+            <br/>
+            <br/>
+            <i>Query time defines a datetime threshold for Permaleads visits. Visits with a date field lower than the query time will not be processed.
+            By default the query time is set to the closest Permaleads Event StartDateTime value.</i>
+        </apex:outputPanel>
+        
+        <h1>Test Job Execution</h1>
+
+        This test launches a job similar to the scheduled job, and displays the execution status.
+        The execution results can be seen by looking at the account or lead records, or at the error log once the
+        operation is completed: record insertion/update will be made and/or error log entries will be produced (if any).
+        <br/>
+        <br/>
+        
+        <apex:form >
+        
+            <b>Next query timestamp</b> &nbsp;
+            <apex:inputText value="{!queryString}" id="idQueryString"/>
+            <script>
+                document.getElementById('{!$Component.idQueryString}').size = 40;
+            </script>
+            <br/>
+            <br/>
+            <i>Query timestamp defines a datetime threshold for Permaleads visits. Only visits with a 'date' field higher than the query timestamp will be processed.
+            By default the query timestamp is set to the closest Permaleads Event 'StartDateTime' field value.</i>
+            <br/>
+            <i>Format: e.g. '2017-09-20 08:43:49'. Leave default value above (or blank) to use the query timestamp of the next scheduled job.</i>
+            <br/>
+            <br/>
+            
+            <b>Update data</b> &nbsp;
+            <apex:inputCheckbox value="{!updateData}"/>
+            <br/>
+            <br/>
+            <i>Check this box if you want the job to update the data in Salesforce based on the received Permaleads visits. If this box is unchecked then the
+            job executes exactly as a "normal" scheduled job querying Permaleads but no data is committed to the Salesforce database.</i>
+            <br/>
+            <br/>
+            <br/>
+            <apex:commandButton value="Download Permaleads Visits"
+                                styleClass="slds-vf-button_brand"
+                                style="cursor:pointer;"
+                                onclick="document.body.style.cursor = 'wait';"
+                                action="{!ExecutePermaleadsUpdate}"
+                                oncomplete="document.body.style.cursor = 'auto';"
+                                rerender="idResults,idErrors,idDetails"/>
+            
+            <br/>
+            <br/>
+            
+            <apex:pageBlock id="idResults" title="Results">
+                Visits downloaded: {!VisitsDownloaded}<br/><br/>
+                Accounts matches: {!AccountsMatchs}<br/>
+                Events created/updated for accounts: {!AccountEventsCreated}<br/><br/>
+                Leads matches: {!LeadsMatchs}<br/>
+                Leads created: {!LeadsCreated}<br/>
+                Campaign members created for leads: {!CampaignMembersMatchs}<br/>
+                Events created/updated for leads: {!LeadEventsCreated}<br/>
+                <!--
+                <apex:variable var="counter" value="1"/>
+                <apex:repeat value="{!permAccountsForVFDisplay}" var="a">
+                    {!counter}. {!a.Name}
+                    <br/>
+                    <apex:variable var="counter" value="{!VALUE(counter)+1}"/>
+                </apex:repeat>
+                -->
+            </apex:pageBlock>
+
+            <apex:pageBlock id="idErrors" title="Status / Errors">
+                <apex:variable var="counter" value="1"/>
+                <apex:repeat value="{!errorsForVFDisplay}" var="e">
+                    {!e.Name}:{!e.UPC_Type__c}:{!e.UPC_Description__c}
+                    <br/>
+                    <br/>
+                    <apex:variable var="counter" value="{!VALUE(counter)+1}"/>
+                </apex:repeat>
+            </apex:pageBlock>
+            
+        </apex:form>
+        <br/>
+        <br/>
+
+    </div>
+
+</body>
+
+</apex:page>

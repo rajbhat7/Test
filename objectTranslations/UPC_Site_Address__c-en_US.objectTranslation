@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Site Addresses</value>
+    </caseValues>
+    <fields>
+        <label><!-- UPC Address Record Type --></label>
+        <name>UPC_Address_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- Site Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Availability --></label>
+        <name>UPC_Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Access Technologies --></label>
+        <name>UPC_Available_Access_Technologies__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS Download --></label>
+        <name>UPC_BBCS_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS Upload --></label>
+        <name>UPC_BBCS_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH Download --></label>
+        <name>UPC_FTTH_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH Upload --></label>
+        <name>UPC_FTTH_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Download --></label>
+        <name>UPC_HFC_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Suitability --></label>
+        <name>UPC_HFC_Suitability__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Upload --></label>
+        <name>UPC_HFC_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Footprint Check --></label>
+        <name>UPC_Last_Footprint_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>UPC_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>UPC_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Network Model --></label>
+        <name>UPC_Partner_Network_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Address Name --></label>
+        <name>UPC_Site_Address_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Address Name --></label>
+        <name>UPC_Site_Address_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Primary Address Name --></label>
+        <name>UPC_Site_Primary_Address_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>UPC_Site__c</name>
+        <relationshipLabel><!-- Site Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU Downoad --></label>
+        <name>UPC_ULL_CU_Downoad__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU Upload --></label>
+        <name>UPC_ULL_CU_Upload__c</name>
+    </fields>
+    <layouts>
+        <layout>Site Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Footprint Fields --></label>
+            <section>Footprint Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- FootPrint --></label>
+        <name>FootPrint</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

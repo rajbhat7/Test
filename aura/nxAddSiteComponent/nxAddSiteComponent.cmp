@@ -1,0 +1,84 @@
+<!--
+(c) 2018 Nexell GmbH  
+Developed by Nexell GmbH, Zug (Switzerland) 
+
+PT7791 - Footprint Enchancements -> Add site component to be used on different components
+
+@date 07.12.2018
+@author Tiago Ribeiro
+
+@modifications
+-->
+
+<aura:component implements="force:hasRecordId,force:lightningQuickAction">
+    <aura:attribute name="isOpen" type="boolean" default=""/>
+    <aura:attribute name="selectedAddress" type="String" default=""/>
+    <aura:attribute name="footPrintOpen" type="boolean" default=""/>
+    <aura:attribute name="idval" type="String"/>
+    <aura:attribute name="objectName" type="String"/>
+    <aura:attribute name="idOpp" type="String" default=""/>
+    <aura:attribute name="idLead" type="String" default=""/>
+    <aura:attribute name="override" type="boolean" default=""/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="strike_evt_addNewRecord" event="c:strike_evt" action="{!c.handleNewRecord}"/>
+    
+    <aura:registerEvent name="siteUpdateEvent" type="c:nxSiteUpdateEvent"/>
+    
+        <!-- ###### MODAL BOX HEADER Start ######-->
+        <header class="slds-modal__header">
+            <lightning:buttonIcon iconName="utility:close"
+                                    onclick="{! c.closeModel }"
+                                    alternativeText="close"
+                                    variant="bare-inverse"
+                                    class="slds-modal__close"/>
+            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Add Site</h2>
+        </header>
+        <lightning:recordEditForm
+                aura:id="form"
+                objectApiName="UPC_Site__c"
+                onsuccess="{!c.handleSuccess}"
+                onsubmit="{!c.handleSubmit}"
+                onerror="{!c.handleError}">
+        <!--###### MODAL BOX BODY Part Start######-->
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <lightning:messages />
+            <div class="slds-grid slds-gutters">   
+                <div class="slds-col">
+                    <c:strike_lookup
+                        label="UPC Address"
+                        object="UPC_ADBASE__c"
+                        searchField="UPC_Address_Formula__c"
+                        placeholder="Select Addresses..."
+                        iconName="standard:account"
+                        subtitleField="UPC_Address_Formula__c"
+                        order="UPC_Address_Formula__c"
+                        limit="5"
+                        loadingMessage="Loading..."
+                        errorMessage="Invalid input"
+                        value="{!v.selectedAddress}"
+                        allowNewRecords="true"
+                        overrideNewEvent="true"
+                        showRecentRecords="true"/>
+                    <lightning:inputField aura:id="accountField" fieldName="UPC_Account__c"/>
+                    <lightning:inputField aura:id="leadField" fieldName="UPC_Lead__c"/>
+                    <lightning:inputField fieldName="UPC_Geolocation__c"/>
+                </div>
+                <div class="slds-col">
+                    <lightning:inputField fieldName="UPC_Note__c"/>
+                </div>                    
+            </div>
+        </div>
+        <!--###### MODAL BOX FOOTER Part Start ######-->
+        <footer class="slds-modal__footer">
+            <lightning:button variant="neutral" 
+                                label="Cancel"
+                                title="Cancel"
+                                onclick="{! c.closeModel }"/>
+            <lightning:button variant="brand"
+                                type="submit"
+                                label="Save"
+                                title="Save"/>
+        </footer>
+        </lightning:recordEditForm>
+</aura:component>

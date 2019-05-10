@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to give info in New Topnet Order</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC FR New Topnet Order Info</name>
+    <style>freeForm</style>
+    <subject>Vérification de votre connexion à large bande, Request ID: {!UPC_mLog_Request_ID__c}</subject>
+    <textOnly>Vous obtiendrez de plus amples informations à l&apos;adresse: upc.ch/business
+Vérification de votre connexion à large bande, Request ID: {!UPC_mLog_Request_ID__c}
+
+{!Salutation}
+
+Afin de pouvoir profiter du service UPC Business que vous avez commandé, vous avez besoin d’un raccordement à large bande de UPC ou de l’un de ses réseaux partenaires.
+
+Si une prise de raccordement est déjà disponible sur le lieu prévu, elle sera vérifiée au préalable et modifiée si besoin, pour répondre aux dernières normes techniques.
+Si aucune prise de raccordement n’est disponible, elle sera alors installée.
+Notre entreprise partenaire vous contactera dans les jours qui suivent afin de convenir d’un rendez-vous.
+
+Veuillez noter que ce rendez-vous ne comprend pas l’installation des services de UPC Business.
+Une fois la vérification du raccordement effectuée, notre partenaire spécialisé vous contactera pour l’installation.
+
+Nous restons à votre entière disposition pour tout renseignement complémentaire.
+
+Avec nos salutations les meilleures,
+UPC Business
+
+_________________________________________
+Business Customer Service Excellence
+
+Tél.      0800 568 568
+E-mail kmu@upc.ch
+
+UPC Suisse Sàrl
+UPC Business
+Richtiplatz 5
+Case postale
+8304 Wallisellen
+upc.ch/business</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

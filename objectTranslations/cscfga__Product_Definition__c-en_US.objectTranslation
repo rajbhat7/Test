@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Snapshot Object --></label>
+        <name>Snapshot_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attach pdf documents --></label>
+        <name>UPC_Attach_Pdf_Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Abbreviation --></label>
+        <name>UPC_Product_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Grouping --></label>
+        <name>csbb__Product_Grouping__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, it indicates that this Product Definition is active and available to sales users for configuration (several other conditions must be met). --></help>
+        <label><!-- Active --></label>
+        <name>cscfga__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the user to proceed to the next screens without completing all the required fields. A warning message will be displayed upon saving. --></help>
+        <label><!-- Allow progress from incomplete screens --></label>
+        <name>cscfga__Allow_progress_from_incomplete_screens__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date range used to make the products available only for the fixed time period specified. --></help>
+        <label><!-- Dates Available --></label>
+        <name>cscfga__Date_Range__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Defines how often recurring product will be charged. Translates to Billing Frequency during product configuration. --></help>
+        <label><!-- Default Line Item Billing Frequency --></label>
+        <name>cscfga__Default_Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-Annual</masterLabel>
+            <translation><!-- Bi-Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fortnightly</masterLabel>
+            <translation><!-- Fortnightly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default value that represents the measure of time and is used along with Contract Term to define the contract-binding period. Expressed as the number of times the period occurs in a year, for example: Annually (1), Quarterly (4), Monthly (12) and so on. --></help>
+        <label><!-- Default Contract Term Period --></label>
+        <name>cscfga__Default_Contract_Term_Period__c</name>
+        <picklistValues>
+            <masterLabel>Day</masterLabel>
+            <translation><!-- Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation><!-- Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default Contract Term for this Product Definition. It is a number which combined with Contract Term Period value defines the contract-binding period. --></help>
+        <label><!-- Default Contract Term --></label>
+        <name>cscfga__Default_Contract_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines how often recurring product should be billed. Translates to Recurrence Frequency during product configuration. --></help>
+        <label><!-- Default Line Item Recurrence Frequency --></label>
+        <name>cscfga__Default_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-Annual</masterLabel>
+            <translation><!-- Bi-Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fortnightly</masterLabel>
+            <translation><!-- Fortnightly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Description of the product visible to the sales user in the configuration process. --></help>
+        <label><!-- Description --></label>
+        <name>cscfga__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to restrict sale of this product based on the eligibility rule criteria (e.g. only customers which meet the criteria will have access to this product). --></help>
+        <label><!-- Eligibility Rule --></label>
+        <name>cscfga__Eligibility_Rule__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contains details entered during Import of this Product Category / Definition. --></help>
+        <label><!-- Import Information --></label>
+        <name>cscfga__Import_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, Product Definition is archived and not available to sales users for configuration. --></help>
+        <label><!-- Is Archived --></label>
+        <name>cscfga__IsArchived__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Product Definition can be used as Shared Context to other products. --></help>
+        <label><!-- Is Shared Context Definition --></label>
+        <name>cscfga__Is_Shared_Context_Definition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text label displayed instead of Product Definition name during configuration. --></help>
+        <label><!-- Label --></label>
+        <name>cscfga__Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the resulting configuration name is auto-generated and cannot be overridden by the user. --></help>
+        <label><!-- Config name is read-only --></label>
+        <name>cscfga__Name_Is_Read_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for mapping Opportunity object fields which can be used for product configuration. --></help>
+        <label><!-- Opportunity Mapping --></label>
+        <name>cscfga__Opportunity_Mapping__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product Category that this Product Definition belongs to. --></help>
+        <label><!-- Product Category --></label>
+        <name>cscfga__Product_Category__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, all Rules will be reprocessed on the final step of Product Bundle configuration. --></help>
+        <label><!-- Reprocess Rules --></label>
+        <name>cscfga__Reprocess_Rules__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, only Users with specific profiles will have access to this Product Definition. Use Access Permissions button on the Product Definition detail page to define the access rules. --></help>
+        <label><!-- Restrict Access --></label>
+        <name>cscfga__Restrict_Access__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight to be assigned to this Product Definition when sorting products for display to the sales user during configuration. --></help>
+        <label><!-- Sequence --></label>
+        <name>cscfga__Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to associate another Product Definition, which is declared as Shared Context, to this Product. --></help>
+        <label><!-- Shared Context Definition --></label>
+        <lookupFilter>
+            <errorMessage><!-- The selected Definition must be a Shared Context Definition --></errorMessage>
+        </lookupFilter>
+        <name>cscfga__Shared_Context_Definition__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- XML --></label>
+        <name>cscfga__XML__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of a class implementing Configuration customisation. --></help>
+        <label><!-- Configuration Customiser Class --></label>
+        <name>cscfga__configuration_customiser_class__c</name>
+    </fields>
+    <fields>
+        <help><!-- Image displayed next to Product Definition name when selecting the products during configuration. --></help>
+        <label><!-- Image URL --></label>
+        <name>cscfga__image_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Iteration --></label>
+        <name>cscfga__iteration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hierarchical reference used to build child object references in Runtime V2 --></help>
+        <label><!-- Reference --></label>
+        <name>cscfga__reference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select runtime engine that will be used with product definition.
+v1 - Visualforce/apex runtime
+v2 - JS runtime --></help>
+        <label><!-- Runtime Version --></label>
+        <name>cscfga__runtime_version__c</name>
+        <picklistValues>
+            <masterLabel>v1</masterLabel>
+            <translation><!-- v1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>v2</masterLabel>
+            <translation><!-- v2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- GUID for JSON export/import --></help>
+        <label><!-- GUID --></label>
+        <name>csexpimp1__guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Produce Line Items --></label>
+        <name>csordtelcoa__Do_Not_Produce_Service_Line_Items__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes if a Service spawned from a Product Configuration with this Product Definition can be modified independently --></help>
+        <label><!-- Is Contextualized --></label>
+        <name>csordtelcoa__Is_Contextualized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>csordtelcoa__Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation><!-- Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nothing</masterLabel>
+            <translation><!-- Nothing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Screen Flow For Service Changes --></label>
+        <name>csordtelcoa__Screen_Flow_For_Service_Changes__c</name>
+        <relationshipLabel><!-- Product Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Association --></label>
+        <name>csordtelcoa__Subscription_Association__c</name>
+        <picklistValues>
+            <masterLabel>Subscription1</masterLabel>
+            <translation><!-- Subscription1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription2</masterLabel>
+            <translation><!-- Subscription2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription3</masterLabel>
+            <translation><!-- Subscription3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription4</masterLabel>
+            <translation><!-- Subscription4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription5</masterLabel>
+            <translation><!-- Subscription5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Product per Unit of Quantity --></label>
+        <name>csordtelcoa__order_product_per_unit_of_a_quantity__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Package Definition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Custom Product Definition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Basket Rules Container --></label>
+        <name>basket_rules_container</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Package Definition --></label>
+        <name>package_definition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Definition --></label>
+        <name>product_definition</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A Shared Context Definition cannot require another Shared Context Definition --></errorMessage>
+        <name>cscfga__Shared_Context_Cannot_Require_Another</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Product Definition used as a shared context definiiton must have the &apos;Is Shared Context Definition&apos; checkbox ticked. --></errorMessage>
+        <name>cscfga__Shared_Context_Def_Must_Be_Correct_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit). --></errorMessage>
+        <name>csexpimp1__Guid_Format_Check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Access_Permissions --></label>
+        <name>cscfga__Access_Permissions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Attributes_From_Template --></label>
+        <name>cscfga__Add_Attributes_From_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Compile_Model --></label>
+        <name>cscfga__Compile_Model</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Compile_Online_Rules_UI --></label>
+        <name>cscfga__Compile_Online_Rules_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Compile_Product_Definitions --></label>
+        <name>cscfga__Compile_Product_Definitions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Layout --></label>
+        <name>cscfga__Manage_Layout</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reinstate_from_archive --></label>
+        <name>cscfga__Reinstate_from_archive</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Related_Rules --></label>
+        <name>cscfga__Related_Rules</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_to_JSON --></label>
+        <name>csexpimp1__Export_to_JSON</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- List_Export_to_JSON --></label>
+        <name>csexpimp1__List_Export_to_JSON</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ProductDesignerStudio --></label>
+        <name>cspdui__ProductDesignerStudio</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+{!Case.Account}
+{!Case.Contact}
+{!Case.CaseNumber}
+{!Case.CreatedDate}
+{!Case.Subject}
+{!Case.Description}

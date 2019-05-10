@@ -1,0 +1,22 @@
+<!--
+   (c) 2018 CloudSense LTD
+   Developed by CloudSense LTD, London (UK)
+
+   @date 12.2018
+   @author Tomislav Blazek
+
+   @description Used as an action button to withdraw an Order.
+
+   @modifications
+   1.12.2018 [TB] SFCH-737 TPV Order Management Withdrawal
+-->
+<aura:component description="cscrmWithdrawOrder" controller="cscrmWithdrawOrderController" extends="c:cscrmCommonComponent"
+                implements="force:lightningQuickActionWithoutHeader,force:hasSObjectName,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <div>
+        <lightning:spinner variant="brand"
+                           size="small"
+                           alternativeText="Loading..."
+                           aura:id="spinner"/>
+    </div>
+</aura:component>

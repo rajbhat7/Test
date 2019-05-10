@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>UPC Order Confirmation Email Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>UPC Order Confirmation Email Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Document Folder Name --></label>
+        <name>UPC_Document_Folder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Confirmation EmailTemplate Name --></label>
+        <name>UPC_EmailTemplate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Language --></label>
+        <name>UPC_Email_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity EmailTemplate --></label>
+        <name>UPC_Opportunity_EmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- TopNet EmailTemplateName --></label>
+        <name>UPC_TopNet_EmailTemplateName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

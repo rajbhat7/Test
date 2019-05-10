@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The price of this Attribute for a single year. Only relevant where the Attribute is set to be a line item. Auto-calculated based on the recurrence frequency of the Product Configuration this Attribute belongs to. --></help>
+        <label><!-- Annualised Price --></label>
+        <name>cscfga__Annualised_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Attribute Definition which describes this Attribute. --></help>
+        <label><!-- Attribute Definition --></label>
+        <name>cscfga__Attribute_Definition__c</name>
+        <relationshipLabel><!-- Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Billing price of this Attribute. Only relevant where the Attribute is set to be a line item. Auto-calculated based on the recurrence frequency of the Product Configuration this Attribute belongs to. --></help>
+        <label><!-- Billing Price --></label>
+        <name>cscfga__Billing_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field not in use. --></help>
+        <label><!-- Cascade value --></label>
+        <name>cscfga__Cascade_value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of discount applied to this Attribute&apos;s price. A calculated field representing the difference between this Attribute&apos;s List Price and Sales Price, depending on the Discount Type - either an absolute amount or a percentage. --></help>
+        <label><!-- Discount Amount --></label>
+        <name>cscfga__Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of discount - e.g. &apos;amount&apos; or &apos;percentage&apos;. --></help>
+        <label><!-- Discount Type --></label>
+        <name>cscfga__Discount_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value of this Attribute displayed to the user during configuration. Only relevant to Select List or Radio Button type Attributes. --></help>
+        <label><!-- Display Value --></label>
+        <name>cscfga__Display_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked this attribute is not displayed on the product configuration screen. --></help>
+        <label><!-- Hidden --></label>
+        <name>cscfga__Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked this attribute is a line item and will be displayed in the product bundle screen. --></help>
+        <label><!-- Is Line Item --></label>
+        <name>cscfga__Is_Line_Item__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Attribute is currently read-only given the state of the Product Configuration process. --></help>
+        <label><!-- Is Read Only --></label>
+        <name>cscfga__Is_Read_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Attribute is currently required given the state of the Product Configuration. --></help>
+        <label><!-- Is Required --></label>
+        <name>cscfga__Is_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked this attribute is listed as standard line item on bundle page, but its price will not be totalled in any of the sums. If specified its price can be used later on in the billing process for calculation of actual charges given a period of usage. --></help>
+        <label><!-- Is Rate Line Item --></label>
+        <name>cscfga__Is_rate_line_item__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field. An external ID uniquely identifying this Attribute. --></help>
+        <label><!-- Key --></label>
+        <name>cscfga__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is displayed on bundle detail page. Initial value is taken from Attribute Definition, but it may be changed by rules. If this field has no value, ‘EMPTY&apos; will be displayed. Operators +,-,/,*  and {}, () can be used by escaping them with a \. --></help>
+        <label><!-- Line Item Description --></label>
+        <name>cscfga__Line_Item_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight to be assigned to this Attribute when sorting line items for display. Only relevant to line item Attributes. --></help>
+        <label><!-- Line Item Sequence --></label>
+        <name>cscfga__Line_Item_Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- The price of this Attribute before any discount. --></help>
+        <label><!-- List Price --></label>
+        <name>cscfga__List_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sales price of this Attribute after any discount. --></help>
+        <label><!-- Price --></label>
+        <name>cscfga__Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Product Configuration to which this Attribute belongs. --></help>
+        <label><!-- Product Configuration --></label>
+        <name>cscfga__Product_Configuration__c</name>
+        <relationshipLabel><!-- Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Attribute should be treated as a recurring line item. If unchecked, this Attribute should be treated as a one-off line item. Only relevant to line item Attributes. --></help>
+        <label><!-- Recurring --></label>
+        <name>cscfga__Recurring__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value of this Attribute captured during the configuration process. --></help>
+        <label><!-- Value --></label>
+        <name>cscfga__Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Attribute is active within the configuration. Otherwise it should be ignored. --></help>
+        <label><!-- Is_Active --></label>
+        <name>cscfga__is_active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Product Level Discount --></label>
+        <name>cscfga__is_product_level_discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- GUID for JSON export/import --></help>
+        <label><!-- GUID --></label>
+        <name>csexpimp1__guid__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Attribute Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit). --></errorMessage>
+        <name>csexpimp1__Guid_Format_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

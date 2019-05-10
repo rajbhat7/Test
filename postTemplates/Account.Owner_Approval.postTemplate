@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PostTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <default>true</default>
+    <fields>Name</fields>
+    <fields>UPC_Former_Account_Owner_Name__c</fields>
+    <fields>UPC_New_Account_Owner__c</fields>
+    <label>Owner Approval</label>
+</PostTemplate>

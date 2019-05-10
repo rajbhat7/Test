@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for Credit Notes approvals</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UPC Credit Notes Approval</name>
+    <style>none</style>
+    <subject>Credit Note Approval Request</subject>
+    <textOnly>Hi Approver
+
+Can you please approve the attached credit note?
+{!ApprovalRequest.External_URL}
+
+Credit Note {!UPC_Credit_Note__c.Name}
+
+Requested by: {!UPC_Credit_Note__c.UPC_Requested_By_Name__c}
+Customer Name: {!UPC_Credit_Note__c.UPC_Customer_Name__c}
+Customer Number: {!UPC_Credit_Note__c.UPC_Customer_Number__c}
+Service: {!UPC_Credit_Note__c.UPC_Service_SAP_Id__c}
+Period from: {!UPC_Credit_Note__c.UPC_Period_From__c}
+Period to: {!UPC_Credit_Note__c.UPC_Period_To__c}
+Affected Invoice Number: {!UPC_Credit_Note__c.UPC_Affected_Invoice_Numbers__c}
+Responsible: {!UPC_Credit_Note__c.UPC_Responsible__c}
+Sales: {!UPC_Credit_Note__c.UPC_Sales_Name__c}
+Reason: {!UPC_Credit_Note__c.UPC_Reason__c}
+Justification: {!UPC_Credit_Note__c.UPC_Justification__c}
+Desired Invoice Text: {!UPC_Credit_Note__c.UPC_Desired_Invoice_Text__c}
+Credit Method: {!UPC_Credit_Note__c.UPC_Credit_Method__c}
+Affected Amount: {!UPC_Credit_Note__c.UPC_Affected_Amount__c} CHF
+New Invoice Amount: {!UPC_Credit_Note__c.UPC_New_Invoice_Amount__c} CHF
+Net Amount: {!UPC_Credit_Note__c.UPC_Net_Amount__c} CHF
+Comment: {!ApprovalRequest.Comments}
+
+Thank you and best regards,
+{!UPC_Credit_Note__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

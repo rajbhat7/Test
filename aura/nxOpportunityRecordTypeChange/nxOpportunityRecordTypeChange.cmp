@@ -1,0 +1,33 @@
+<!--
+(c) 2019 Nexell GmbH  
+Developed by Nexell GmbH, Zug (Switzerland) 
+
+PT8195 - Button to change oppy record type
+
+@date 06.05.2019
+@author Pierre Castori
+
+@modifications
+
+-->
+<aura:component controller="nxOpportunityManager" implements="force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object"
+                    description="The record object to be displayed"/>
+    <aura:attribute name="OppRecord" type="Object"
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String"
+                    description="An error message bound to force:recordData"/>
+
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.OppRecord }"
+                      mode="VIEW"/>
+
+</aura:component>

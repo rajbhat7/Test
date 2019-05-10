@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Document Query</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Document Queries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Document --></label>
+        <name>UPC_Document__c</name>
+        <picklistValues>
+            <masterLabel>Order Confirmation</masterLabel>
+            <translation><!-- Order Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination</masterLabel>
+            <translation><!-- Termination --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The query to execute to retrieve the data --></help>
+        <label><!-- Query --></label>
+        <name>UPC_Query__c</name>
+    </fields>
+    <layouts>
+        <layout>Document Query Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

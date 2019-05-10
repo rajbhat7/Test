@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>UPC Evolution Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>UPC_Order_Validated__c</fieldNames>
+        <fieldNames>UPC_Order_Not_Validated_Create_Task__c</fieldNames>
+        <fieldNames>UPC_Rejection_Reason__c</fieldNames>
+        <fieldNames>UPC_Rejection_Comments__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Document and Files: Completeness / Correctness / Legibility / Filing&lt;/li&gt;&lt;li&gt;Basket: Sync / Approved / Correct Pricing / Approval Note&lt;/li&gt;&lt;li&gt;Opportunity Details: Sales Segment / Type / Contacts and Roles / Billing Account / Notes / Migrations&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closure</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Generate a quote&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Create a meeting for you to contact the prospect&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Modify the shopping basket or generate a different version by cloning it if needed&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Use deal closers to ensure the sale&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Negotiation Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Configure a new product basket if needed for this case&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Change the billing preferences in the account if it is a customers need&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Add additional contacts if necessary&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;If you finished all the steps the system will prove whether an approval is needed&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Proposal / Price Quote</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>UPC_B2C_Clarify_ID__c</fieldNames>
+        <fieldNames>UPC_B2C_Products__c</fieldNames>
+        <fieldNames>UPC_B2C_General_Description__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Initial stage after creation&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Gather customers Needs&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Collect all relevant B2C regarding Information about existing products, contracts and customer number(s)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Opportunity nurturing and data enrichment from external data sources&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Verify the existing account information and update if necessary&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Verify the existing contact information and update if necessary&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Add all sites to the customer&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Check the availability of products&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Evolution</recordTypeName>
+</PathAssistant>

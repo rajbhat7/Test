@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DuplicateRuleId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RecordCount</fullName>
+    </fields>
+    <listViews>
+        <fullName>Lead_17_12_2018_16_08</fullName>
+        <columns>Name</columns>
+        <columns>RecordCount</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Parent</field>
+            <operation>equals</operation>
+            <value>Lead 17.12.2018 16:08</value>
+        </filters>
+        <label>Lead 17.12.2018 16:08</label>
+    </listViews>
+    <listViews>
+        <fullName>Lead_17_12_2018_19_00</fullName>
+        <columns>Name</columns>
+        <columns>RecordCount</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Parent</field>
+            <operation>equals</operation>
+            <value>Lead 17.12.2018 19:00</value>
+        </filters>
+        <label>Lead 17.12.2018 19:00</label>
+    </listViews>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

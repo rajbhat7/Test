@@ -1,0 +1,17 @@
+<!--
+(c) 2018 CloudSense LTD
+Developed by CloudSense LTD, London (UK)
+
+Date: 11.2018
+Author: Petar Pozar
+
+Description: Used as base component with some generic methods
+
+Modifications (new entries on top):
+dd.mm.yyyy [XX] PT or Case number followed by short description of change
+-->
+
+
+<aura:component description="cscrmCommonComponent" extensible="true">
+    {!v.body}
+</aura:component>

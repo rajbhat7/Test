@@ -1,0 +1,14 @@
+<apex:page showHeader="false" standardStylesheets="true" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False">
+        <style type="text/css">
+        body {
+    background-color: white;
+}
+        .pbTitle {
+        white-space:nowrap;
+        border:white;
+    }
+   
+    </style>
+  <flow:interview name="Create_Case_Flow">
+  </flow:interview>
+</apex:page>

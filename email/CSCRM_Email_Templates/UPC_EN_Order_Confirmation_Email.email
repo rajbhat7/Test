@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 8pt; float: right; text-align: right;">
+				<font face="arial">&nbsp;Further information is available at:  <a href="https://upc.ch/business">upc.ch/business</a>
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; clear: both;"></div>
+			<div style="">
+				<font face="arial" style="color: rgb(35, 154, 152); font-family: arial; font-size: 10pt;">Order confirmation from UPC Business&nbsp;</font></div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br>
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">{!Salutation} {!CustomerName}</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Thank you for choosing UPC Business and for the trust you have placed in us.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">We are pleased to hereby confirm receipt of your order.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Enclosed you will find the order confirmation with supporting documents.</font></div><div style="background-color: rgb(255, 255, 255); font-size: 16px;"><br></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Should you have any questions, please do not hesitate to contact me.</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial"><br></font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">Yours sincerely</font></div><div style="font-size: 10pt; background-color: rgb(255, 255, 255);"><font face="arial">{!Order.OwnerFullName}</font></div></div>]]></td>
+</tr>
+</table>

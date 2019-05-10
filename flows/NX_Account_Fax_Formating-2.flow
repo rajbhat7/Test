@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>prefix 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision15</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>length = 12</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision15</name>
+        <label>myDecision15</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_16</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_16</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_16_A1</targetReference>
+            </connector>
+            <label>Length &lt;=13</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision3</name>
+        <label>myDecision3</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_4</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_4_A1</targetReference>
+            </connector>
+            <label>Prefix 98 or 99</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision9</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>length= 9 &amp; prefix &lt;&gt;3 digit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision9</name>
+        <label>myDecision9</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_10</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_10</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_10_A1</targetReference>
+            </connector>
+            <label>length =9 prefix = 3 digits</label>
+        </rules>
+    </decisions>
+    <description>Used to reformat fax numbers</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,4,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,7,3)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_11_myRule_10_A1_6720101382</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,4,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,7,3)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,11,2)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_14_myRule_13_A1_0536538131</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,11,2)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,11,3)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_17_myRule_16_A1_1176657385</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,11,3)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,1)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,2,5)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_2_myRule_1_A1_6009678156</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,1)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,2,5)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,2,99)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_5_myRule_4_A1_0602561504</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,2,99)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,3,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,6,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+,8,2)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_8_myRule_7_A1_2822490485</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,3,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,6,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+,8,2)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+,&quot;1&quot;)))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+,&quot;1&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+)=9))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_10</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+)=9))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR(ISNEW(),ISCHANGED([Account].fax)),
+AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+)=12))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR(ISNEW(),ISCHANGED({!myVariable_current.Fax})),
+AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+)=12))
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR(ISNEW(),ISCHANGED([Account].fax)),
+AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+)&lt;=13))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_16</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR(ISNEW(),ISCHANGED({!myVariable_current.Fax})),
+AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+)&lt;=13))
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR(ISNEW(),ISCHANGED([Account].fax)),
+AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+
+OR(
+
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+,&quot;98&quot;)),
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+,&quot;99&quot;))))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_4</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR(ISNEW(),ISCHANGED({!myVariable_current.Fax})),
+AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+
+OR(
+
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+,&quot;98&quot;)),
+(BEGINS(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+,&quot;99&quot;))))
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR(ISNEW(),ISCHANGED([Account].fax)),
+AND(OR( 
+BEGINS([Account].fax,&quot;+41&quot;), 
+BEGINS([Account].fax,&quot;+ 41&quot;), 
+BEGINS([Account].fax,&quot;00 41&quot;), 
+BEGINS([Account].fax,&quot;0041&quot;), 
+AND(BEGINS([Account].fax,&quot;0&quot;),NOT(BEGINS([Account].fax,&quot;00&quot;))) 
+), 
+
+AND(
+/*Prefix &lt;&gt;3digits */
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;080&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+41 80&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+4180&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;004180&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;0041 80&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;084&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+41 84&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+4184&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;004184&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;0041 84&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;086&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+41 86&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+4186&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;004186&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;0041 86&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;087&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+41 87&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+4187&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;004187&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;0041 87&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;090&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+41 90&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;+4190&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;004190&quot;)),
+NOT(BEGINS(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;),&quot;0041 90&quot;)),
+/*Prefix &lt;&gt;3digits */
+
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS([Account].fax,&quot;+41&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Account].fax,&quot;0041&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Account].fax,&quot;0&quot;),
+MID(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Account].fax,&quot; &quot;,&quot;&quot;))),
+
+
+[Account].fax
+))))
+/*fax normatization */
+)=9)
+))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR(ISNEW(),ISCHANGED({!myVariable_current.Fax})),
+AND(OR( 
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Fax},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Fax},&quot;00&quot;))) 
+), 
+
+AND(
+/*Prefix &lt;&gt;3digits */
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;080&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+41 80&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+4180&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;004180&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;0041 80&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;084&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+41 84&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+4184&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;004184&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;0041 84&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;086&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+41 86&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+4186&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;004186&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;0041 86&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;087&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+41 87&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+4187&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;004187&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;0041 87&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;090&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+41 90&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;+4190&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;004190&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;),&quot;0041 90&quot;)),
+/*Prefix &lt;&gt;3digits */
+
+(LEN(
+/*fax normatization */
+(IF(
+
+BEGINS({!myVariable_current.Fax},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Fax},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Fax},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Fax},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Fax}
+))))
+/*fax normatization */
+)=9)
+))
+)</expression>
+    </formulas>
+    <interviewLabel>NX_Account_Fax_Formating-2_InterviewLabel</interviewLabel>
+    <label>NX_Account_Fax_Formating</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Account</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_10_A1</name>
+        <label>update phone</label>
+        <locationX>1000</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_11_myRule_10_A1_6720101382</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>update phone</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_14_myRule_13_A1_0536538131</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_16_A1</name>
+        <label>update phone</label>
+        <locationX>1600</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_17_myRule_16_A1_1176657385</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>update phone</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_2_myRule_1_A1_6009678156</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_4_A1</name>
+        <label>Update phone</label>
+        <locationX>400</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_5_myRule_4_A1_0602561504</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Account]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>update phone</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Fax</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Fax</field>
+            <value>
+                <elementReference>formula_8_myRule_7_A1_2822490485</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
+    </variables>
+</Flow>

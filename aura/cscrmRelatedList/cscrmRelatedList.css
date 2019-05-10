@@ -1,0 +1,45 @@
+/**
+ * Created by Petar on 11/19/2018.
+ */
+.THIS .cs-selected {
+	color: #1589ee;
+}
+.THIS .slds-table {
+	table-layout: fixed;
+}
+.THIS .slds-table thead th:first-of-type {
+	width: 5%;
+}
+.THIS .slds-table tbody td span {
+	vertical-align: bottom;
+}
+/*.THIS .cs-row-body:hover .cs-cell {*/
+    /*background-color: #f3f2f2;*/
+    /*box-shadow: #dddbda 0 -1px 0 inset, #dddbda 0 1px 0 inset;*/
+/*}*/
+
+/*.THIS .cs-header {*/
+    /*font-size: 0.75rem;*/
+    /*line-height: 1.25;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.0625rem;*/
+    /*background-color: #fafaf9;*/
+    /*color: #514f4d;*/
+    /*padding: 0.25rem 0.5rem;*/
+    /*border-top: 1px solid #dddbda;*/
+    /*border-bottom: 1px solid #dddbda;*/
+    /*min-height: 28px;*/
+/*}*/
+
+/*.THIS .cs-cell {*/
+    /*border-bottom: 1px solid #dddbda;*/
+    /*color: #080707;*/
+    /*padding: 0.25rem 0.5rem;*/
+    /*min-height: 28px;*/
+    /*display: flex;*/
+/*}*/
+
+/*.THIS .cs-cell  span {*/
+    /*align-self: center;*/
+    /*display: flex;*/
+/*}*/

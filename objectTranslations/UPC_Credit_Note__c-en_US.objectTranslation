@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credit Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Credit Notes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Interface --></label>
+        <name>UPC_Account_Interface__c</name>
+        <relationshipLabel><!-- Credit Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Affected Amount --></label>
+        <name>UPC_Affected_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affected Invoice Numbers --></label>
+        <name>UPC_Affected_Invoice_Numbers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>UPC_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending approval</masterLabel>
+            <translation><!-- Pending approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>UPC_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Method Expression --></label>
+        <name>UPC_Credit_Method_Expression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Method --></label>
+        <name>UPC_Credit_Method__c</name>
+        <picklistValues>
+            <masterLabel>Next Invoice</masterLabel>
+            <translation><!-- Next Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Invoice</masterLabel>
+            <translation><!-- Separate Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Position Next Invoice</masterLabel>
+            <translation><!-- Separate Position Next Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Account --></label>
+        <name>UPC_Customer_Account__c</name>
+        <relationshipLabel><!-- Credit Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>UPC_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>UPC_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Invoice Text --></label>
+        <name>UPC_Desired_Invoice_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Justification --></label>
+        <name>UPC_Justification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Commercial Contact Name --></label>
+        <name>UPC_Main_Commercial_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Commercial Contact Salutation --></label>
+        <name>UPC_Main_Commercial_Contact_Salutation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Commercial Contact --></label>
+        <name>UPC_Main_Commercial_Contact__c</name>
+        <relationshipLabel><!-- Credit Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Net Amount --></label>
+        <name>UPC_Net_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Invoice Amount --></label>
+        <name>UPC_New_Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period From --></label>
+        <name>UPC_Period_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period To --></label>
+        <name>UPC_Period_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>UPC_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Change</masterLabel>
+            <translation><!-- Contract Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goodwill</masterLabel>
+            <translation><!-- Goodwill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform Incident</masterLabel>
+            <translation><!-- Platform Incident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLA Violation</masterLabel>
+            <translation><!-- SLA Violation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination</masterLabel>
+            <translation><!-- Termination --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested By Name --></label>
+        <name>UPC_Requested_By_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By --></label>
+        <name>UPC_Requested_By__c</name>
+        <relationshipLabel><!-- Credit Notes (Requested By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Responsible --></label>
+        <name>UPC_Responsible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Name --></label>
+        <name>UPC_Sales_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales --></label>
+        <name>UPC_Sales__c</name>
+        <relationshipLabel><!-- Credit Notes (Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service SAP Id --></label>
+        <name>UPC_Service_SAP_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>UPC_Service__c</name>
+        <relationshipLabel><!-- Credit Notes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Custom Credit Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

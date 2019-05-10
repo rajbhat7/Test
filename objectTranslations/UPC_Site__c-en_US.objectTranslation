@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sites</value>
+    </caseValues>
+    <fields>
+        <label><!-- HFC Suitability --></label>
+        <name>HFC_Suitability__c</name>
+        <picklistValues>
+            <masterLabel>T1</masterLabel>
+            <translation><!-- T1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2</masterLabel>
+            <translation><!-- T2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T3</masterLabel>
+            <translation><!-- T3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4</masterLabel>
+            <translation><!-- T4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Name --></label>
+        <name>Site_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Address --></label>
+        <name>UPC_ADBASE_Address__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>UPC_Account__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- UPC Address Details --></label>
+        <name>UPC_Address_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS Rollup --></label>
+        <name>UPC_BBCS_Rollup__c</name>
+        <picklistValues>
+            <masterLabel>Gray</masterLabel>
+            <translation><!-- Gray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation><!-- Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BUILDING COORDINATE Y --></label>
+        <name>UPC_BUILDINGCOORDINATE_Y__c</name>
+    </fields>
+    <fields>
+        <label><!-- BUILDING COORDINATE X --></label>
+        <name>UPC_BUILDING_COORDINATE_X__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Basic Address --></label>
+        <name>UPC_Basic_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building ID --></label>
+        <name>UPC_Building_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building ID not Found --></label>
+        <name>UPC_Building_ID_not_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH Rollup --></label>
+        <name>UPC_FTTH_Rollup__c</name>
+        <picklistValues>
+            <masterLabel>Gray</masterLabel>
+            <translation><!-- Gray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation><!-- Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geolocation --></label>
+        <name>UPC_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Rollup --></label>
+        <name>UPC_HFC_Rollup__c</name>
+        <picklistValues>
+            <masterLabel>Gray</masterLabel>
+            <translation><!-- Gray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation><!-- Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC__c</name>
+    </fields>
+    <fields>
+        <label><!-- HelperField --></label>
+        <name>UPC_HelperField__c</name>
+    </fields>
+    <fields>
+        <label><!-- HelperOppId --></label>
+        <name>UPC_HelperOppId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Footprint Check --></label>
+        <name>UPC_Last_Footprint_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Taifun Reconciliation --></label>
+        <name>UPC_Last_Taifun_Reconciliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>UPC_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>UPC_Lead__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>UPC_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC_MapCity --></label>
+        <name>UPC_MapCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC_MapPostCode --></label>
+        <name>UPC_MapPostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC_MapStreet --></label>
+        <name>UPC_MapStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Only Solution Offer --></label>
+        <name>UPC_No_SOHO_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>UPC_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS ID --></label>
+        <name>UPC_OS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Address Record Type --></label>
+        <name>UPC_Primary_Address_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Name --></label>
+        <name>UPC_Site_Name_Searchable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Number --></label>
+        <name>UPC_Site_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>UPC_Site_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Only Solution Offer --></label>
+        <name>UPC_Soho_Service_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taifun Address Number --></label>
+        <name>UPC_Synced_Taifun_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU Rollup --></label>
+        <name>UPC_ULL_CU_Rollup__c</name>
+        <picklistValues>
+            <masterLabel>Gray</masterLabel>
+            <translation><!-- Gray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation><!-- Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>UPC Site Layout Admin</layout>
+        <sections>
+            <label><!-- Checkboxes (Admin Only) --></label>
+            <section>Checkboxes (Admin Only)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Address Coordinates --></label>
+            <section>Primary Address Coordinates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UPC Site Layout All Profiles</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Address Coordinates --></label>
+            <section>Primary Address Coordinates</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Address --></label>
+        <name>Add_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Primary Address --></label>
+        <name>Change_Primary_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Footprint --></label>
+        <name>Footprint_Check</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A site can only be created with a Lead or an Account. Please make sure to fulfill one of them. --></errorMessage>
+        <name>Account_or_Lead_are_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A site can only be created with an Address or a Geotag. Please make sure to fulfill one of them. --></errorMessage>
+        <name>Address_or_Geotag_are_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No Soho Service can only be checked if FTTH and FHC are not Checked. --></errorMessage>
+        <name>No_SOHO_check_when_FTTH_and_HFC_no_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a note when the address is not fulfilled. --></errorMessage>
+        <name>Note_is_Mandatory_when_Address_is_empty</name>
+    </validationRules>
+</CustomObjectTranslation>

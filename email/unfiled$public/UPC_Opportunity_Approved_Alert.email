@@ -1,0 +1,11 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The Opportunity {!Opportunity.Name} is
+approved by&nbsp;{!Opportunity.UPC_Back_Office_Approver__c} and now my be closed.</p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Access the opportunity directly from this link:&nbsp;{!Opportunity.Link}</p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Thank You,<o:p></o:p></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Your Salesforce Admin</p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><div style="font-size: 12pt;"><span style="color: rgb(89, 89, 89); background-color: rgb(242, 242, 242);"><font face="Arial, sans-serif">Get the Salesforce1 App:</font></span></div><div style="font-size: 12pt;"><br><span style="font-size: 12pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><font size="2"><a href="https://itunes.apple.com/us/app/salesforce/id404249815?mt=8">Visit App Store</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.salesforce.chatter&amp;hl=en">Visit Google Play</a>&nbsp;&nbsp;</font></div>]]></td>
+</tr>
+</table>

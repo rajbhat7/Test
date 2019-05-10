@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Number of documents to update in single batch step --></help>
+        <label><!-- Batch Size --></label>
+        <name>UPC_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days without a response after which a task will be created for a Sales agent to chase an issued offer --></help>
+        <label><!-- Offer Reminder Days --></label>
+        <name>UPC_Offer_Reminder_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email of Administrator that will be responsible to look at errors thrown during Quote Renaming batch processing. --></help>
+        <label><!-- On Error Send Email To --></label>
+        <name>UPC_On_Error_Send_Email_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- User Id under which QuoteRenamer process is run. --></help>
+        <label><!-- Quote Clerk User Id --></label>
+        <name>UPC_Quote_Clerk_User_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days quote is considered valid after will be renamed. --></help>
+        <label><!-- Quote Valid Days --></label>
+        <name>UPC_Quote_Valid_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text to be prepended to the old Quote title during the renaming batch. --></help>
+        <label><!-- Renamed Quote Prefix --></label>
+        <name>UPC_Renamed_Quote_Prefix__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

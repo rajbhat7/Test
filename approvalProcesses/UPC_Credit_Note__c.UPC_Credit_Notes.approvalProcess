@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>UPC_Requested_By__c</field>
+        <field>UPC_Requested_By_Name__c</field>
+        <field>UPC_Customer_Account__c</field>
+        <field>UPC_Customer_Name__c</field>
+        <field>UPC_Customer_Number__c</field>
+        <field>UPC_Service__c</field>
+        <field>UPC_Service_SAP_Id__c</field>
+        <field>UPC_Period_From__c</field>
+        <field>UPC_Period_To__c</field>
+        <field>UPC_Affected_Invoice_Numbers__c</field>
+        <field>UPC_Responsible__c</field>
+        <field>UPC_Reason__c</field>
+        <field>UPC_Justification__c</field>
+        <field>UPC_Desired_Invoice_Text__c</field>
+        <field>UPC_Credit_Method__c</field>
+        <field>UPC_Affected_Amount__c</field>
+        <field>UPC_New_Invoice_Amount__c</field>
+        <field>UPC_Net_Amount__c</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>tomislav.blazek@cloudsense.com.upc</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for lower affected amount and certain types of Credit Notes</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>Admin,Contract Change,Termination</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>lessOrEqual</operation>
+                <value>250</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Minor Approval Required</label>
+        <name>UPC_Credit_Notes_Minor_Approval_Required</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>UPC_Requested_By__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Requestor</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>SLA Violation,Goodwill,Platform Incident</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>250</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Requestor</label>
+        <name>UPC_Credit_Notes_Major_Approval_Requestor</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Requestor Manager</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>SLA Violation,Goodwill,Platform Incident</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>250</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Requestor Manager</label>
+        <name>UPC_Credit_Notes_Major_Approval_Requestor_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>UPC_Sales__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Sales</description>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>SLA Violation,Goodwill,Platform Incident</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>250</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Sales__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Sales</label>
+        <name>UPC_Credit_Notes_Major_Approval_Sales</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Sales User Manager</description>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>SLA Violation,Goodwill,Platform Incident</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>250</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Sales__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Sales User Manager</label>
+        <name>UPC_Credit_Notes_Major_Approval_Sales_User_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>andrew.barrick@cloudsense.com.upc.prod</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Head Profit Center</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Reason__c</field>
+                <operation>equals</operation>
+                <value>SLA Violation,Goodwill,Platform Incident</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>250</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Head Profit Center</label>
+        <name>UPC_Credit_Notes_Major_Approval_Head_Profit_Center</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>tomislav.blazek@cloudsense.com.upc</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to Head Controlling</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>1000</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - Head Controlling</label>
+        <name>UPC_Credit_Notes_Major_Approval_Head_Controlling</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>tomislav.blazek@cloudsense.com.upc</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to SVP &amp; MD Business Services</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>10000</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Notes Major Approval - SVP MD Business Services</label>
+        <name>UPC_Credit_Notes_Major_Approval_SVP_MD_Business_Services</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>marin.mamic@cloudsense.com.upc.prod</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Suitable for greatly affected amount and certain types of Credit Notes. Sent to CFO</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>50000</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Credit Notes Major Approval - CFO</label>
+        <name>UPC_Credit_Notes_Major_Approval_CFO</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Used for approving the credit notes attached to the services.</description>
+    <emailTemplate>CSCRM_Email_Templates/UPC_Credit_Notes_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>UPC_Credit_Note__c.UPC_Affected_Amount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>UPC_Credit_Note_Set_To_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>UPC_Credit_Notes_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>CSCRM_Final_Rejection_Action</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>UPC_Credit_Notes_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>UPC_Credit_Note_Pending_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>UPC Credit Notes Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>UPC_Credit_Notes_Recalled</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

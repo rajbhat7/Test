@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global" controller="nxAddressFootPrintUpdate">
+                <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+              
+                <lightning:card>
+                    <aura:set attribute="title">
+                        <lightning:icon iconName="utility:connected_apps" size="small"/>
+                        Calling Webservice
+                    </aura:set> 
+                    <div>
+                        <lightning:spinner alternativeText="Loading" size="large" />
+                </div>
+                </lightning:card>
+
+</aura:component>

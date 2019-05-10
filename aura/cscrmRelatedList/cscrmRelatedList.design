@@ -1,0 +1,8 @@
+<!--
+ - Created by Petar on 11/18/2018.
+ -->
+
+<design:component>
+    <design:attribute name="settingsKey" label="Settings Key" description="Releated List Component Setting key" />
+    <design:attribute name="componentTitle" label="Related List Title" description="Related List Title" />
+</design:component>

@@ -1,0 +1,37 @@
+<!--
+(c) 2018 CloudSense LTD
+Developed by CloudSense LTD, London (UK)
+
+Date: 10.01.2019
+Author: Andrew Barrick
+
+Description: [SFCH-1091] Used for quick create Account Related Contacts 
+
+Modifications (new entries on top):
+dd.mm.yyyy [XX] PT or Case number followed by short description of change
+-->
+
+<apex:page id="cscrmQuickCreateAccContactRel" controller="cscrmQuickCreateAccContactRelController" tabstyle="Contact" sideBar="false" showHeader="false">
+    <apex:stylesheet value="{!$Resource.cscrmStylesGeneral + '/lightning.css'}" />
+    <apex:form >
+        <apex:includeScript value="{!$Resource.cscfga__jQuery_1_4_2_min}"/>
+        <apex:includeScript value="{!$Resource.cscfga__cs_messaging}"/>
+        <apex:pageBlock id="pageBlock">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!save}" value="Save"/>
+                <input type="button" onclick="window.history.go(-1); return false;" value="Cancel" class="btn"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Contact Information" id="pageBlockSection" columns="1">
+                <apex:pageMessages />
+                <apex:inputField value="{!aContact.Salutation}"/>
+                <apex:inputField value="{!aContact.FirstName}"/>
+                <apex:inputField value="{!aContact.LastName}"/>
+                <apex:inputField value="{!aContact.Email}"/>
+                <apex:inputField value="{!aContact.Phone}"/>
+                <apex:inputField value="{!aContact.MobilePhone}"/>
+                <apex:inputField value="{!aContact.UPC_Gender__c}"/>
+                <apex:inputField value="{!aContact.UPC_Preferred_Language__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

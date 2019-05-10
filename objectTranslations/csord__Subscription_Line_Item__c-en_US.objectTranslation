@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Discount Type --></label>
+        <name>csord__Discount_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Depending on the Discount Type field either a percentage or an amount. --></help>
+        <label><!-- Discount Value --></label>
+        <name>csord__Discount_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discounted Amount --></label>
+        <name>csord__Discounted_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>csord__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Id field used for bulk inserts of Orders &amp; Subscriptions objects. --></help>
+        <label><!-- External Identifier --></label>
+        <name>csord__External_Identifier2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identification --></label>
+        <name>csord__Identification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes if the item is active --></help>
+        <label><!-- Is Active --></label>
+        <name>csord__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Subscription Line Item as an Adhoc Line Item. Default value of &quot;false&quot;/&quot;unchecked&quot; represents a normal Subscription Line Item. --></help>
+        <label><!-- Is Adhoc --></label>
+        <name>csord__Is_Adhoc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Recurring --></label>
+        <name>csord__Is_Recurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Description --></label>
+        <name>csord__Line_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>csord__Line_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order Request object which introduced the latest changes to this object. --></help>
+        <label><!-- Order Request --></label>
+        <name>csord__Order_Request__c</name>
+        <relationshipLabel><!-- Subscription Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Before Discount --></label>
+        <name>csord__Price_Before_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>csord__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The parent Subscription of this Subscription Line Item. --></help>
+        <label><!-- Subscription --></label>
+        <name>csord__Subscription__c</name>
+        <relationshipLabel><!-- Subscription Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>csord__Total_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>csord__duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Type --></label>
+        <name>csord__line_item_type__c</name>
+        <picklistValues>
+            <masterLabel>Charge</masterLabel>
+            <translation><!-- Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount Charge</masterLabel>
+            <translation><!-- Discount Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Limited Discount Charge</masterLabel>
+            <translation><!-- Time Limited Discount Charge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offset --></label>
+        <name>csord__offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>csord__sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled By Change Process --></label>
+        <name>csordtelcoa__Cancelled_By_Change_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Status --></label>
+        <name>csordtelcoa__Delta_Status__c</name>
+        <picklistValues>
+            <masterLabel>Added</masterLabel>
+            <translation><!-- Added --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price And Name Change</masterLabel>
+            <translation><!-- Price And Name Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Change</masterLabel>
+            <translation><!-- Price Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unchanged</masterLabel>
+            <translation><!-- Unchanged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line Item Reference Id --></label>
+        <name>csordtelcoa__Line_Item_Reference_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Subscription Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

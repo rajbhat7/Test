@@ -1,0 +1,81 @@
+<table border="0" cellpadding="5" width="620" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 8pt; float: right; text-align: right;">
+				<font face="arial">Further information is available at: <a href="https://upc.ch/business">upc.ch/business</a></font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; clear: both;"></div>
+			<div style="">
+				<font face="arial" style="color: rgb(35, 154, 152); font-family: arial; font-size: 10pt;">Offer from UPC Business&nbsp;</font></div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br>
+					</font>
+				</div>
+				<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+					<font face="arial">{!Salutation} {!CustomerName}</font>
+				</div>
+				<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+					<font face="arial">
+						<br>
+						</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">Thank you for your interest in products from UPC Business.</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">Enclosed you will find our offer tailored to your specific needs, including accompanying documents.</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">
+							<br>
+							</font>
+						</div>
+						<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">We are convinced that we can ideally support you with our ICT solutions.</font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><span style="font-size: 10pt;">With our services you will benefit from the following advantages:</span></div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <br>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <ul>
+                        {!ProductAdvantages}
+                    </ul>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <br>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">We would be glad to welcome you as a Business customer soon.</font>
+            </div>
+							<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+								<font face="arial">After receiving the signed offer within 30 days we will arrange the ordered services for you.</font>
+							</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><font face="arial">It's even faster with our online tool: <a href="{!ClickApproveLink}">here</a> you can simply accept or reject your offer.</font></div>
+							<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+								<font face="arial">
+									<br>
+									</font>
+								</div>
+								<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+									<font face="arial">I am available as your personal contact and will be glad to answer any questions about your offer.</font>
+								</div>
+								<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+									<font face="arial">
+										<br>
+										</font>
+									</div>
+									<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+										<font face="arial">Yours sincerely</font>
+									</div>
+									<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+										<font face="arial">{!Opportunity.OwnerFullName}</font>
+									</div>]]></td>
+</tr>
+</table>

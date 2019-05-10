@@ -1,0 +1,138 @@
+<apex:page StandardController="Account" extensions="cscrmAccountMultipleSubscriptionsCtrlr" id="fullPage" showHeader="true" sidebar="true" >
+    <html>
+        <head>
+            <apex:slds />
+            <apex:includeScript value="{!$Resource.csordtelcoa__jQuery}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.csordtelcoa__tm_styles, 'tm-styles.css')}"/>
+
+            <style>
+                @font-face{
+                    font-family: "Salesforce-sans";
+                        src: url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular.eot')}");
+                        src: url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular.eot?#iefix')}") format('embedded-opentype'),
+                            url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular.woff2')}") format('woff2'),
+                            url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular.woff')}") format('woff'),
+                            url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular.ttf')}") format('trkuetype'),
+                            url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'SalesforceSans-Regular-webfont.svg#_scriptregular')}") format('svg');
+                }
+
+                @charset "UTF-8";
+
+                @font-face {
+                    font-family: "cs-tm";
+                    src:url("fonts/cs-tm.eot");
+                    src:url("fonts/cs-tm.eot?#iefix") format("embedded-opentype"),
+                        url("fonts/cs-tm.woff") format("woff"),
+                        url("fonts/cs-tm.ttf") format("truetype"),
+                        url("fonts/cs-tm.svg#cs-tm") format("svg");
+
+                    src: url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'cs-tm.eot')}");
+                    src: url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'cs-tm.eot?#iefix')}") format('embedded-opentype'),
+                        url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'cs-tm.woff')}") format('woff'),
+                        url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'cs-tm.ttf')}") format('trkuetype'),
+                        url("{!URLFOR($Resource.csordtelcoa__tm_fonts, 'cs-tm.svg#cs-tm')}") format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+            </style> 
+            <script>
+                setTimeout(function(){ document.getElementById('spinner').className += ' slds-hide' }, 3000);
+            </script>
+            
+        </head>
+        <body>
+            <apex:form id="pageForm" styleClass="telecom-style">
+                <apex:pageMessages />
+                
+                <div class="screen-wrapper">
+                    <div class="page-header">
+                        <div class="header-titles">
+                            <div class="title">Multiple subscriptions generation</div>
+                            <div class="subtitle">Create change request for multiple subscriptions</div>
+                        </div>
+                        <apex:outputPanel id="changeRequestButtons" styleClass="btn-group-wrapper" >
+                            <div class="btn-group">
+                                <apex:commandButton styleClass="button" value="Cancel" title="Cancel" action="{!cancel}"/>
+                                <apex:commandButton styleClass="button" value="{!$Setup.csordtelcoa__Orders_Subscriptions_Options__c.csordtelcoa__Create_Mac_Opportunities_Button_Label__c}" action="{!CreateMultipleSubscriptionMacOpportunity}" rendered="{!$Setup.csordtelcoa__Orders_Subscriptions_Options__c.csordtelcoa__Create_Mac_Opportunities__c}" status="status" rerender="pageForm"/>
+                            </div>
+                        </apex:outputPanel>
+                    </div>
+                    <div class="section-expandable-parent" id="expList">
+                        <div class="header">Parameters</div>
+                        <div class="section">
+                            <apex:outputPanel >
+                                <apex:outputLabel value="Select Change Type" for="changeType"/>
+                                <div class="select-wrapper">
+                                    <apex:selectList value="{!changeType}"  size="1" multiselect="false" required="true" id="changeType">
+                                        <apex:actionSupport event="onchange" action="{!rerenderButtons}" rerender="pageForm" /> 
+                                        <apex:selectOptions value="{!ChangeTypes}"/>
+                                    </apex:selectList>
+                                </div>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!$Setup.csordtelcoa__Orders_Subscriptions_Options__c.csordtelcoa__Create_Mac_Opportunities__c}">
+                                <apex:outputLabel value="Opportunity name" for="title" />
+                                <apex:inputText value="{!oppName}" id="title" size="80" />
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!IF($Setup.csordtelcoa__Orders_Subscriptions_Options__c.csordtelcoa__Create_Mac_Opportunities__c && $Setup.csordtelcoa__Orders_Subscriptions_Options__c.csordtelcoa__Use_Opportunity_Record_Types__c && oppRecordTypes.size >0,true,false)}">
+                                <apex:outputLabel value="Select Opportunity Record Type" for="oppRecrodType"/>
+                                <div class="select-wrapper">
+                                    <apex:selectList value="{!oppRecordType}"  size="1" multiselect="false" required="true" id="oppRecrodType">
+                                        <apex:selectOptions value="{!oppRecordTypes}"/>
+                                    </apex:selectList>
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                    <apex:outputPanel id="pageBlockSubscriptions">
+                        <div class="section-expandable-parent">
+                            <div class="header">Subscriptions</div>
+                            <div class="section">
+                                <fieldset class="cst-fieldset" id="customCheckboxPanel">
+                                    <div id="chk_options">
+                                        <apex:repeat value="{!listswc}" var="opt">
+                                                <apex:outputPanel styleClass="slds-list_horizontal">
+                                                    <label class="slds-list_horizontal ">
+                                                        <apex:inputCheckbox value="{!opt.selected}" />
+                                                        <span class="checkbox-document"></span> 
+                                                        <span class="slds-list_horizontal">
+                                                            <apex:outputText >&nbsp;{!opt.sub.name}&nbsp;</apex:outputText>
+                                                            <apex:outputText >&nbsp;{!opt.sub.csordtelcoa__Subscription_Number__c}&nbsp;</apex:outputText>
+                                                            <apex:outputText >&nbsp;{!opt.sapid}&nbsp;</apex:outputText>
+                                                            <apex:outputText >&nbsp;{!opt.address}&nbsp;</apex:outputText>
+                                                            <apex:outputText >&nbsp;{!opt.activation_date}&nbsp;</apex:outputText>
+                                                        </span>
+                                                    </label>
+                                                </apex:outputPanel>
+                                        </apex:repeat>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                     </apex:outputPanel>
+                </div>
+                
+                <apex:actionstatus id="status">
+                    <apex:facet name="start">
+                        <div class="slds-spinner_container">
+                            <div id="mySpinner" role="status" class="slds-spinner slds-spinner_large">
+                                <span class="slds-assistive-text">Loading</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </apex:facet>
+                </apex:actionstatus> 
+            </apex:form>
+
+             <script>
+                $('[id$=chk_options] input').on('change', function () {
+                    if ($(this).is(':checked')) {
+                        $('[id$=sel_opt]').val($(this).attr('data-value'));
+                    }
+                    render_result();
+                });
+            </script>
+        </body>
+    </html>
+</apex:page>

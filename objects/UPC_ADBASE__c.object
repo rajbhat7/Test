@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>UPC_Address_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>UPC_Address_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>UPC_Address_Compact_Layout</fullName>
+        <fields>UPC_Address_Details__c</fields>
+        <fields>UPC_FTTH_Alert__c</fields>
+        <fields>UPC_HFC_Alert__c</fields>
+        <fields>UPC_HFC_Suitability__c</fields>
+        <fields>UPC_Last_Footprint_Check__c</fields>
+        <fields>RecordTypeId</fields>
+        <label>UPC Address Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>UPC_Address_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CONTAINS($Profile.Name, &quot;Partner&quot;), 
+HYPERLINK(&quot;/Partner/&quot; &amp;   Id , 
+IF(NOT(ISBLANK(UPC_BUILDINGNAME__c)),UPC_BUILDINGNAME__c&amp;&quot;, &quot;,&quot;&quot;)&amp;
+UPC_STREETNAME1__c&amp;
+IF(NOT(ISBLANK(UPC_BUILDING_NUMBER__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_BUILDING_NUMBER__c &amp; UPC_BUILDINGNUMBERANNEX__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODE__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_POSTCODE__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODEOFFICENAME__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_POSTCODEOFFICENAME__c&amp;
+IF(NOT(ISBLANK(UPC_COUNTRYCODEA2__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_COUNTRYCODEA2__c
+, &quot;_self&quot; ),
+
+HYPERLINK(&quot;/&quot; &amp;   Id , 
+IF(NOT(ISBLANK(UPC_BUILDINGNAME__c)),UPC_BUILDINGNAME__c&amp;&quot;, &quot;,&quot;&quot;)&amp;
+UPC_STREETNAME1__c&amp;
+IF(NOT(ISBLANK(UPC_BUILDING_NUMBER__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_BUILDING_NUMBER__c &amp; UPC_BUILDINGNUMBERANNEX__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODE__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_POSTCODE__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODEOFFICENAME__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_POSTCODEOFFICENAME__c&amp;
+IF(NOT(ISBLANK(UPC_COUNTRYCODEA2__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_COUNTRYCODEA2__c
+, &quot;_self&quot; )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC Address Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address_Formula__c</fullName>
+        <description>Created by Nexell, field used by Cloudsense in the basket.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(UPC_BUILDINGNAME__c)),UPC_BUILDINGNAME__c&amp;&quot;, &quot;,&quot;&quot;)&amp;
+UPC_STREETNAME1__c&amp;
+IF(NOT(ISBLANK(UPC_BUILDING_NUMBER__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_BUILDING_NUMBER__c &amp; UPC_BUILDINGNUMBERANNEX__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODE__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_POSTCODE__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODEOFFICENAME__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_POSTCODEOFFICENAME__c&amp;
+IF(NOT(ISBLANK(UPC_COUNTRYCODEA2__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_COUNTRYCODEA2__c</formula>
+        <label>Address Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address_no_Building_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_STREETNAME1__c&amp;
+IF(NOT(ISBLANK(UPC_BUILDING_NUMBER__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_BUILDING_NUMBER__c &amp; UPC_BUILDINGNUMBERANNEX__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODE__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_POSTCODE__c&amp;
+IF(NOT(ISBLANK(UPC_POSTCODEOFFICENAME__c)),&quot; &quot;,&quot;&quot;)&amp; UPC_POSTCODEOFFICENAME__c&amp;
+IF(NOT(ISBLANK(UPC_COUNTRYCODEA2__c)),&quot;, &quot;,&quot;&quot;)&amp; UPC_COUNTRYCODEA2__c</formula>
+        <label>UPC Address no Building name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+IF( 
+
+AND(UPC_BBCS__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_BBCS__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+)),
+IF( 
+
+AND(UPC_BBCS__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_BBCS__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+))
+)</formula>
+        <label>BBCS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Download__c</fullName>
+        <externalId>false</externalId>
+        <label>BBCS Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Upload__c</fullName>
+        <externalId>false</externalId>
+        <label>BBCS Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>BBCS</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGCOORDINATEX__c</fullName>
+        <externalId>false</externalId>
+        <label>BUILDING COORDINATE X</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGCOORDINATEY__c</fullName>
+        <externalId>false</externalId>
+        <label>BUILDING COORDINATE Y</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGNAME__c</fullName>
+        <description>The building name</description>
+        <externalId>false</externalId>
+        <label>Building Name</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGNUMBERANNEX__c</fullName>
+        <description>The house number annex (A, B, C, etc.)</description>
+        <externalId>false</externalId>
+        <label>Annex</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGREMARKS__c</fullName>
+        <externalId>false</externalId>
+        <label>BUILDING REMARKS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGSTATUSNAME__c</fullName>
+        <externalId>false</externalId>
+        <label>BUILDING STATUS NAME</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>planned</fullName>
+                    <default>false</default>
+                    <label>planned</label>
+                </value>
+                <value>
+                    <fullName>under construction</fullName>
+                    <default>false</default>
+                    <label>under construction</label>
+                </value>
+                <value>
+                    <fullName>completed</fullName>
+                    <default>false</default>
+                    <label>completed</label>
+                </value>
+                <value>
+                    <fullName>to dismantle</fullName>
+                    <default>false</default>
+                    <label>to dismantle</label>
+                </value>
+                <value>
+                    <fullName>dismantled</fullName>
+                    <default>false</default>
+                    <label>dismantled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDING_NUMBER__c</fullName>
+        <description>The house number</description>
+        <externalId>false</externalId>
+        <label>Number</label>
+        <length>28</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Building_ID_not_Found__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Building ID not Found</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_CANTON_BUNDESLAND__c</fullName>
+        <externalId>false</externalId>
+        <label>CANTON BUNDESLAND</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_COUNTRYCODEA2__c</fullName>
+        <description>The 2-digit country code, as per ISO-3166</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+IF( 
+
+AND(UPC_FTTH__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_FTTH__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+)),
+IF( 
+
+AND(UPC_FTTH__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_FTTH__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+))
+)</formula>
+        <label>FTTH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Download__c</fullName>
+        <description>Field created by Nexell to receive the download speed from foot print check</description>
+        <externalId>false</externalId>
+        <label>FTTH Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Upload__c</fullName>
+        <description>Field Created by Nexell to receive the Upload speed from footprint check,</description>
+        <externalId>false</externalId>
+        <label>FTTH Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>FTTH</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Geolocation__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Geolocation</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+IF( 
+
+AND( 
+UPC_HFC__c, 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T1&quot;), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+
+IF( 
+
+
+AND( 
+UPC_HFC__c, 
+OR( 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T2&quot;), 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T3&quot;), 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T4&quot;) 
+), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/Partner/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+
+IF( 
+AND( 
+NOT(UPC_HFC__c), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+))),
+IF( 
+
+AND( 
+UPC_HFC__c, 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T1&quot;), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+
+IF( 
+
+
+AND( 
+UPC_HFC__c, 
+OR( 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T2&quot;), 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T3&quot;), 
+ISPICKVAL( UPC_HFC_Suitability__c,&quot;T4&quot;) 
+), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+
+IF( 
+AND( 
+NOT(UPC_HFC__c), 
+NOT(ISNULL( UPC_Last_Footprint_Check__c )) 
+), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+)))
+)</formula>
+        <label>HFC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Download__c</fullName>
+        <description>Created by Nexell to store the download speed for HFC.</description>
+        <externalId>false</externalId>
+        <label>HFC Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Suitability__c</fullName>
+        <externalId>false</externalId>
+        <label>HFC Suitability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>T0</fullName>
+                    <default>false</default>
+                    <label>T0</label>
+                </value>
+                <value>
+                    <fullName>T1</fullName>
+                    <default>false</default>
+                    <label>T1</label>
+                </value>
+                <value>
+                    <fullName>T2</fullName>
+                    <default>false</default>
+                    <label>T2</label>
+                </value>
+                <value>
+                    <fullName>T3</fullName>
+                    <default>false</default>
+                    <label>T3</label>
+                </value>
+                <value>
+                    <fullName>T4</fullName>
+                    <default>false</default>
+                    <label>T4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Upload__c</fullName>
+        <description>Created by Nexell to store the upload speed for HFC.</description>
+        <externalId>false</externalId>
+        <label>HFC Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HFC</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_IDBUILDINGSTATUS__c</fullName>
+        <externalId>false</externalId>
+        <label>ID BUILDING STATUS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_ID_BUILDING__c</fullName>
+        <externalId>false</externalId>
+        <label>ID BUILDING</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_LOCATIONNAME1__c</fullName>
+        <description>The town for the address. UPC uses LOCATION_NAME1 as the default town name</description>
+        <externalId>false</externalId>
+        <label>Town</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_LOCATIONNAME2__c</fullName>
+        <externalId>false</externalId>
+        <label>LOCATION NAME2</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Footprint_Check__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Footprint Check</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_MapStreet__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_STREETNAME1__c + IF(ISBLANK(UPC_BUILDING_NUMBER__c),&apos;&apos;, &apos; &apos; + UPC_BUILDING_NUMBER__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC_MapStreet</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_OS_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>OS ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_POSTCODEOFFICENAME__c</fullName>
+        <externalId>false</externalId>
+        <label>POST CODE OFFICE NAME</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_POSTCODE_ANNEX__c</fullName>
+        <externalId>false</externalId>
+        <label>POSTCODE ANNEX</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_POSTCODE__c</fullName>
+        <description>The postcode of the address</description>
+        <externalId>false</externalId>
+        <label>Postcode</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_PRIMARY_APARTMENT_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>PRIMARY APARTMENT ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Partner_Network_Model__c</fullName>
+        <description>Field Created by Nexell to store the Partner Network Model from the foot print check results.</description>
+        <externalId>false</externalId>
+        <label>Partner Network Model</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>DV</fullName>
+                    <default>false</default>
+                    <label>DV</label>
+                </value>
+                <value>
+                    <fullName>mixed</fullName>
+                    <default>false</default>
+                    <label>mixed</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>PKV</fullName>
+                    <default>false</default>
+                    <label>PKV</label>
+                </value>
+                <value>
+                    <fullName>PN</fullName>
+                    <default>false</default>
+                    <label>PN</label>
+                </value>
+                <value>
+                    <fullName>PN1</fullName>
+                    <default>false</default>
+                    <label>PN1</label>
+                </value>
+                <value>
+                    <fullName>PN2</fullName>
+                    <default>false</default>
+                    <label>PN2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_STARTDATE__c</fullName>
+        <externalId>false</externalId>
+        <label>START DATE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_STREETNAME1__c</fullName>
+        <description>The street name. UPC uses STREETNAME1 for the primary street name</description>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_STREETNAME2__c</fullName>
+        <description>The streetname. This is the alternative spelling of the streetname, eg in the secondary language</description>
+        <externalId>false</externalId>
+        <label>Street2</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+IF( 
+
+AND(UPC_ULL_CU__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_ULL_CU__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+)),
+IF( 
+
+AND(UPC_ULL_CU__c, NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IF(AND(NOT(UPC_ULL_CU__c), NOT(ISNULL(UPC_Last_Footprint_Check__c ))), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20) 
+
+))
+)</formula>
+        <label>ULL CU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Download__c</fullName>
+        <externalId>false</externalId>
+        <label>ULL CU Download</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Upload__c</fullName>
+        <externalId>false</externalId>
+        <label>ULL CU Upload</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ULL CU</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>UPC Address</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>UPC_Address_Details__c</columns>
+        <columns>UPC_ID_BUILDING__c</columns>
+        <columns>UPC_BUILDINGNAME__c</columns>
+        <columns>UPC_BUILDING_NUMBER__c</columns>
+        <columns>UPC_BUILDINGNUMBERANNEX__c</columns>
+        <columns>UPC_HFC_Suitability__c</columns>
+        <columns>UPC_STREETNAME1__c</columns>
+        <columns>UPC_POSTCODE__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>ADB-{00000000}</displayFormat>
+        <label>SF ADB ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>UPC Addresses</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Address_Master</fullName>
+        <active>true</active>
+        <label>Address Master</label>
+        <picklistValues>
+            <picklist>UPC_BUILDINGSTATUSNAME__c</picklist>
+            <values>
+                <fullName>completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>dismantled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>to dismantle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>under construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_HFC_Suitability__c</picklist>
+            <values>
+                <fullName>T0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_IDBUILDINGSTATUS__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_Partner_Network_Model__c</picklist>
+            <values>
+                <fullName>DV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PKV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>mixed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Footprint</fullName>
+        <active>true</active>
+        <label>Footprint</label>
+        <picklistValues>
+            <picklist>UPC_BUILDINGSTATUSNAME__c</picklist>
+            <values>
+                <fullName>completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>dismantled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>to dismantle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>under construction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_HFC_Suitability__c</picklist>
+            <values>
+                <fullName>T0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>T4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_IDBUILDINGSTATUS__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UPC_Partner_Network_Model__c</picklist>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>UPC_Address_Details__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_ID_BUILDING__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_BUILDINGNAME__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_BUILDING_NUMBER__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_POSTCODE__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_STREETNAME1__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>UPC_Address_Details__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_ID_BUILDING__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_BUILDINGNAME__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_BUILDING_NUMBER__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_STREETNAME1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_POSTCODE__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_Address_Details__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_ID_BUILDING__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_BUILDINGNAME__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_BUILDING_NUMBER__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_STREETNAME1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPC_POSTCODE__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Address_Formula__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_ID_BUILDING__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_BUILDINGNAME__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_BUILDING_NUMBER__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_BUILDINGNUMBERANNEX__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_STREETNAME1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_POSTCODE__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

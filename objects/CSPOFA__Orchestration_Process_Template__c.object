@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>CSPOFA__Associated_Profile__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Associated Profile</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__OLA_Activity_Linked_By__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines a record that is used to link with OLA Activity Definition. In case of Scheduler integration Calendar represents OLA Activity Definition</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines data that is used as key for Activity Definition selection through Data Links</inlineHelpText>
+        <label>OLA Activity Linked By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__OLA_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>OLA Duration</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__OLA_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The time amount for the process to finish before it goes into jeopardy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time amount for the process to finish before it goes into jeopardy.</inlineHelpText>
+        <label>OLA Time</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__OLA_Unit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines process level OLA unit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>OLA unit on process level: day, hour, minute. If not defined the minute unit is used.</inlineHelpText>
+        <label>OLA Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Priority__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Low</fullName>
+                    <default>false</default>
+                    <label>1 - Low</label>
+                </value>
+                <value>
+                    <fullName>2 - Normal</fullName>
+                    <default>true</default>
+                    <label>2 - Normal</label>
+                </value>
+                <value>
+                    <fullName>3 - High</fullName>
+                    <default>false</default>
+                    <label>3 - High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Process_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Process_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Provide</fullName>
+                    <default>false</default>
+                    <label>New Provide</label>
+                </value>
+                <value>
+                    <fullName>Upgrade/Downgrade</fullName>
+                    <default>false</default>
+                    <label>Upgrade/Downgrade</label>
+                </value>
+                <value>
+                    <fullName>Cease</fullName>
+                    <default>false</default>
+                    <label>Cease</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Processing_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal field for storing processing mode information</description>
+        <externalId>true</externalId>
+        <label>Processing Mode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSPOFA__Unique_Name__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This field is used as a workaround to add uniqueness constraint to standard Name field.</description>
+        <externalId>false</externalId>
+        <label>Unique Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Orchestration Process Template</label>
+    <listViews>
+        <fullName>CSPOFA__All</fullName>
+        <columns>NAME</columns>
+        <columns>CSPOFA__Process_Label__c</columns>
+        <columns>CSPOFA__Process_Type__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Orchestration Process Templates</pluralLabel>
+    <searchLayouts>
+        <listViewButtons>CSPOFA__List_Export_to_JSON</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>CSPOFA__Export_to_JSON</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Export to JSON</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/resource/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;jQuery_1_4_2_min&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;JSON3/json3.min.js&apos;)}
+{!REQUIRESCRIPT(&apos;/soap/ajax/25.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/25.0/apex.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/1499252528000/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;csom_exp&apos;)}
+
+var objectName = &apos;{!$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c}&apos;;
+if(objectName){
+    objectName += &apos;__&apos;
+}
+objectName += &apos;Orchestration_Process_Template__c&apos;;
+JsonExpImp.startJsonExport(objectName, [&apos;{!CSPOFA__Orchestration_Process_Template__c.Id}&apos;], &apos;{!JSENCODE(CSPOFA__Orchestration_Process_Template__c.Name)}&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CSPOFA__Export_to_XML</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Export to XML</masterLabel>
+        <openType>sidebar</openType>
+        <page>CSPOFA__XMLExporter</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>CSPOFA__List_Export_to_JSON</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Export to JSON</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&apos;/resource/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;jQuery_1_4_2_min&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;JSON3/json3.min.js&apos;)}
+{!REQUIRESCRIPT(&apos;/soap/ajax/25.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/25.0/apex.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/1499252528000/&apos;&amp;IF(ISBLANK($Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c),&apos;&apos;,$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c&amp;&apos;__&apos;)&amp;&apos;csom_exp&apos;)} 
+
+var objectName = &apos;{!$Setup.CSPOFA__Constants__c.CSPOFA__Package_Namespace__c}&apos;;
+if(objectName){
+    objectName += &apos;__&apos;
+}
+objectName += &apos;Orchestration_Process_Template__c&apos;;
+
+JsonExpImp.startJsonListExport(objectName, &apos;Selected Process Templates&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CSPOFA__Process_Designer</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Process Designer</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.CSPOFA__Constants__c.CSPOFA__Package_URL_Namespace__c}ProcessDesigner?templateId={!CSPOFA__Orchestration_Process_Template__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CSPOFA__Process_Visualiser</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Process Visualiser</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.CSPOFA__Constants__c.CSPOFA__Package_URL_Namespace__c}ProcessDesigner?templateId={!CSPOFA__Orchestration_Process_Template__c.Id}</url>
+    </webLinks>
+</CustomObject>

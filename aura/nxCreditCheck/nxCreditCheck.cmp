@@ -1,0 +1,42 @@
+<!--
+(c) 2019 Nexell GmbH
+Developed by NEXELL GmbH, Zug (Switzerland)
+	
+@description	Lightning interface to CreditCheck
+
+@author	Pierre Castori [PC]
+@date	13.02.2019
+
+@modifications: 
+-->
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global" controller="nxCreditCheckManager">
+
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="myMessage" type="String"  />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small" />
+            Credit Check Webservice
+        </aura:set>
+        <div>
+            <aura:if isTrue="{! v.loaded }">
+                    <aura:if isTrue="{!not(empty(v.data))}">
+ 
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="utility:warning" alternativeText="Warning!" variant="warning"/><lightning:formattedText value="{!v.myMessage}" />
+                        </aura:set>
+                    </aura:if>
+                   
+                <aura:set attribute="else">
+                    <lightning:spinner alternativeText="Loading" size="large" />
+                </aura:set>
+            </aura:if> 
+        </div>
+    </lightning:card>
+
+</aura:component>

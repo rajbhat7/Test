@@ -1,0 +1,112 @@
+<!--
+(c) 2019 Nexell GmbH
+Developed by Nexell GmbH, Zug (Switzerland)
+Created: 09.05.2019
+
+Author: Tiago Ribeiro
+Description: PT8197 - Convert site Map and UPC Address Map to google api, so they be available in Community 
+
+Modifications:
+
+-->
+<apex:page showHeader="false">
+    <html>
+        <head>
+            <!-- 
+				This stylesheet contains specific styles for displaying the map on this page. Replace it with your own styles as described in the documentation:
+				https://developers.google.com/maps/documentation/javascript/tutorial 
+			-->
+            <link rel="stylesheet" href="//developers.google.com/maps/documentation/javascript/demos/demos.css"/>
+        </head>
+
+        <body>
+            
+            <div id="map"></div>
+
+            <script>
+                var lexOrigin = 'https://{!$CurrentPage.parameters.lcHost}';
+                console.log(lexOrigin);
+                //Data for Google map
+                var data;
+                
+                //Send message to LC
+                function sendToLC(message) {
+                    if(typeof(lexOrigin) != 'undefined'){
+                        parent.postMessage(message, lexOrigin);
+                    }
+                }
+                
+                //Receive message from LC
+                window.addEventListener("message", function(event) {
+                    //If page is public (like used in force.com sites) then be careful about the origin
+                    //if (event.origin !== lexOrigin) {
+                        // Not the expected origin: reject message!
+                        //return;
+                    //}
+                    // Handle message
+                    console.log('Data Sent to VF: ', event.data);
+                    data = event.data;
+        
+                    
+                    if(typeof(event.data.loadGoogleMap) != 'undefined'){
+                        //Load Google Map Script
+                        var script = document.createElement("script");
+                        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIAo5pNdqD44wb6J-eio1ucX8LMVrZgPE&callback=initMap";
+                        document.getElementsByTagName("head")[0].appendChild(script);        
+                    }
+                }, false);
+
+                function initMap() {
+                    
+                    //Convert address to position
+                    function geocoder(feature, center) {
+                        var geocoder = new google.maps.Geocoder();
+                        geocoder.geocode({'address': feature.address}, function(results, status){
+                            if(status == 'OK'){
+                                if(center == true){
+                                    map.setCenter(results[0].geometry.location);
+                                }else{
+                                    feature.position = results[0].geometry.location
+                                    addMarker(feature);
+                                }
+                            }
+                        });
+                    }
+
+                    function addMarker(feature) {
+                        var marker = new google.maps.Marker({
+                            position: feature.position,
+                            map: map
+                        });
+                        
+                        /*
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: contentString,
+                            maxWidth: 325
+                        });*/
+                    }
+
+                    //Create new map               
+                    var map = new google.maps.Map(document.getElementById("map"), JSON.parse(data.mapOptions));
+
+                    //iterate through map data for each point (even if 1)
+                    var mapData = data.mapData;
+
+                    for(var i=0, j=mapData.length; i<j; i++){
+                        if(mapData[i].lat == 0 && mapData[i].lng == 0){
+                            geocoder(mapData[i], false);
+                        }else{
+                            var myLatlng = new google.maps.LatLng(mapData[i].lat, mapData[i].lng);
+                            addMarker({position: myLatlng, address: mapData[i].address});                      
+                        }   
+                    }
+
+                    map.setCenter(data.mapOptionsCenter);
+                }
+
+                var vfHost = "{!LEFT($CurrentPage.URL,FIND('/',$CurrentPage.URL,9))}";
+                sendToLC({'state':'LOADED', 'vfHost': vfHost});
+            </script>
+        </body>
+    </html>
+</apex:page>

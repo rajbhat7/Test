@@ -1,0 +1,102 @@
+<!--
+(c) 2018 CloudSense LTD
+Developed by CloudSense LTD, London (UK)
+
+Date: 11.2018
+Author: Petar Pozar
+
+Description: Used to display records implicitly related to current record
+
+Modifications (new entries on top):
+dd.mm.yyyy [XX] PT or Case number followed by short description of change
+-->
+
+
+<aura:component description="cscrmRelatedList" extends="c:cscrmCommonComponent" controller="cscrmRelatedListController"
+                implements="force:hasRecordId,force:hasSObjectName,flexipage:availableForRecordHome">
+    <aura:attribute name="settingsKey" type="String" description="Settings keys" access="global"/>
+    <aura:attribute name="componentTitle" type="String" description="Related List Title" default="Related List Title"
+                    access="global"/>
+    <aura:attribute name="records" type="Array" description="List of related list records"/>
+    <aura:attribute name="fieldDefinitions" type="Array" description="List of field definitions"/>
+    <aura:attribute name="numberOfColumns" type="Integer" description="Number of Field definitions"/>
+    <aura:attribute name="isError" type="Boolean" description="Flag indication error" default="false"/>
+    <aura:attribute name="errorMessage" type="String" description="Error message"/>
+    <aura:attribute name="selectedRow" type="Integer" description="Index of row copy was used on"/>
+    <aura:attribute name="selectedColumn" type="String" description="API name of field copy was used on"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="relatedListEvent" event="c:cscrmRelatedListEvent" action="{!c.handleRelatedListEvent}"/>
+
+    <h2 class="slds-text-heading_small">{!v.componentTitle}</h2>
+    <aura:if isTrue="{!not(v.isError)}">
+    <div class="slds-m-top_medium">
+        <!--<div class="slds-grid cs-row-header">-->
+        <!--<aura:iteration items="{!v.fieldDefinitions}" var="fieldDefinition" indexVar="columnIndex">-->
+        <!--<aura:if isTrue="{!columnIndex == 0}">-->
+        <!--X-->
+        <!--</aura:if>-->
+        <!--<div class="{!join(' ',join('','slds-size_1-of-',v.numberOfColumns),'slds-col cs-header')}" style="{!fieldDefinition.name == v.selectedColumn ? 'color:red' : ''}">{!fieldDefinition.label}</div>-->
+        <!--</aura:iteration>-->
+        <!--</div>-->
+        <!--<aura:iteration items="{!v.records}" var="record" indexVar="rowIndex">-->
+        <!--<div class="slds-grid cs-row-body">-->
+        <!--<aura:iteration items="{!v.fieldDefinitions}" var="fieldDefinition" indexVar="columnIndex">-->
+        <!--<div class="{!join(' ',join('','slds-size_1-of-',v.numberOfColumns),'slds-col cs-cell')}">-->
+        <!--&lt;!&ndash;  class="{join(' ',join('','slds-size_1-of-',v.numberOfColumns),'slds-col')}" &ndash;&gt;-->
+
+        <!--<aura:if isTrue="{!columnIndex == 0}">-->
+        <!--<span style="{!rowIndex == v.selectedRow ? 'color:red' : ''}">-->
+        <!--{!rowIndex}.-->
+        <!--</span>-->
+        <!--</aura:if>-->
+        <!--<c:cscrmRelatedListCell fieldDefinition="{!fieldDefinition}" record="{!record}"-->
+        <!--rowIndex="{!rowIndex}"-->
+        <!--isSelected="{!and(rowIndex == v.selectedRow, fieldDefinition.name == v.selectedColumn)}"/>-->
+        <!--</div>-->
+        <!--</aura:iteration>-->
+        <!--</div>-->
+        <!--</aura:iteration>-->
+        <table class="slds-table slds-table_bordered">
+            <thead>
+            <tr>
+                <aura:iteration items="{!v.fieldDefinitions}" var="fieldDefinition" indexVar="columnIndex">
+                    <aura:if isTrue="{!columnIndex == 0}">
+                        <th>\</th>
+                    </aura:if>
+                    <th class="{!join(' ',join('slds-text-title_caps',(fieldDefinition.name == v.selectedColumn ? 'cs-selected': '')))}">
+                        <div class="slds-truncate" title="{!fieldDefinition.label}">
+                        {!fieldDefinition.label} </div>
+                    </th>
+                </aura:iteration>
+            </tr>
+            </thead>
+            <tbody>
+            <aura:iteration items="{!v.records}" var="record" indexVar="rowIndex">
+                <tr>
+                    <aura:iteration items="{!v.fieldDefinitions}" var="fieldDefinition" indexVar="columnIndex">
+                        <aura:if isTrue="{!columnIndex == 0}">
+                            <td class="{!join(' ',(rowIndex == v.selectedRow ? 'cs-selected': ''))}">
+                                {!rowIndex+1}.
+                            </td>
+                        </aura:if>
+                        <c:cscrmRelatedListCell fieldDefinition="{!fieldDefinition}" record="{!record}"
+                                                rowIndex="{!rowIndex}"
+                                                isSelected="{!and(rowIndex == v.selectedRow, fieldDefinition.name == v.selectedColumn)}"/>
+                    </aura:iteration>
+                </tr>
+            </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+    </aura:if>
+    <aura:if isTrue="{!v.isError}">
+    {!v.errorMessage}
+    </aura:if>
+    <div>
+        <lightning:spinner variant="brand"
+                           size="small"
+                           alternativeText="Loading..."
+                           aura:id="spinner"/>
+    </div>
+</aura:component>

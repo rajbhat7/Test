@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to send the Opportunity Owner approval information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC Opportunity Approved Alert</name>
+    <style>freeForm</style>
+    <subject>Opportunity Approved by Back Office: {!Opportunity.Name}</subject>
+    <textOnly>The Opportunity {!Opportunity.Name} is approved by {!Opportunity.UPC_Back_Office_Approver__c} and now my be closed.
+
+
+
+Access the opportunity directly from this link: {!Opportunity.Link}
+
+
+Thank You,
+
+
+
+Your Salesforce Admin
+
+
+
+Get the Salesforce1 App:
+
+Visit App Store Visit Google Play</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

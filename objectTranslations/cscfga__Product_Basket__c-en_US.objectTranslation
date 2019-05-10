@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account On Basket Snapshot --></label>
+        <name>Account_On_Basket_Snapshot__c</name>
+        <relationshipLabel><!-- Product Baskets (Account On Basket Snapshot) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Account --></label>
+        <name>Billing_Account__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Language --></label>
+        <name>Quote_Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TCV Approval Flag --></label>
+        <name>TCV_Approval_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- The note presented to the approver on basket approval. --></help>
+        <label><!-- Note For Approver --></label>
+        <name>UPC_Note_For_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Generating Status --></label>
+        <name>UPC_Quote_Generating_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used Snapshot Objects --></label>
+        <name>Used_Snapshot_Objects__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status of accessibility of the basket. The basket gets blocked when it is in the process of cloning (whether it is cloned or the clone itself). --></help>
+        <label><!-- Accessibility Status --></label>
+        <name>csbb__Accessibility_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>csbb__Account__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Includes High Level Products --></label>
+        <name>csbb__Includes_High_Level_Products__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional information on the Product Basket record, used by CSBB. --></help>
+        <label><!-- Optionals --></label>
+        <name>csbb__Optionals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synchronised With Opportunity --></label>
+        <name>csbb__Synchronised_With_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays status of the Basket. --></help>
+        <label><!-- Basket Status --></label>
+        <name>cscfga__Basket_Status__c</name>
+        <picklistValues>
+            <masterLabel>Contains Errors</masterLabel>
+            <translation><!-- Contains Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ContainsExpiredProducts</masterLabel>
+            <translation><!-- ContainsExpiredProducts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is Valid</masterLabel>
+            <translation><!-- Is Valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name of Opportunity this Basket is associated with. --></help>
+        <label><!-- Opportunity --></label>
+        <name>cscfga__Opportunity__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- List of product IDs contained in this Basket. --></help>
+        <label><!-- Products Id Qty In Basket --></label>
+        <name>cscfga__Products_Id_Qty_In_Basket__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of Product Names contained in the Basket. --></help>
+        <label><!-- Products Names In Basket --></label>
+        <name>cscfga__Products_In_Basket__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Configuration that is used as a Shared Context which is associated with this Basket. --></help>
+        <label><!-- Shared Context Configuration --></label>
+        <name>cscfga__Shared_Context_Configuration__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Sum of non-recurring and one year&apos;s worth of recurring prices of all items contained in this Basket. --></help>
+        <label><!-- Total Price --></label>
+        <name>cscfga__Total_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details about user session within which this Bundle was created. --></help>
+        <label><!-- User Session --></label>
+        <name>cscfga__User_Session__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Displays status of the Basket pricing --></help>
+        <label><!-- Pricing Status --></label>
+        <name>cscfga__pricing_status__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Update</masterLabel>
+            <translation><!-- Requires Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Value --></label>
+        <name>cscfga__total_contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>csconta__Contract__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Frame Agreement --></label>
+        <name>csconta__Frame_Agreement__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applied Promotions --></label>
+        <name>csdiscounts__Applied_Promotions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval Status --></label>
+        <name>csdiscounts__Discount_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- annual Contract Value --></label>
+        <name>csdiscounts__annual_Contract_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- recurring Charge --></label>
+        <name>csdiscounts__recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- total Discount Over Contract Term --></label>
+        <name>csdiscounts__total_Discount_Over_Contract_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- total Discount in the First Year --></label>
+        <name>csdiscounts__total_Discount_in_the_First_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- total one off charge --></label>
+        <name>csdiscounts__total_one_off_charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>csordtelcoa__Account__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- In standalone basket scenario, use this picklist to trigger order generation --></help>
+        <label><!-- Basket Stage --></label>
+        <name>csordtelcoa__Basket_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospecting</masterLabel>
+            <translation><!-- Prospecting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Type --></label>
+        <name>csordtelcoa__Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocation</masterLabel>
+            <translation><!-- Relocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Generation Batch Job Id --></label>
+        <name>csordtelcoa__Order_Generation_Batch_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order that initiated creation of this product basket --></help>
+        <label><!-- Order Under Change --></label>
+        <name>csordtelcoa__Order_Under_Change__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product Basket that preceded this one. Used for in-flight changes --></help>
+        <label><!-- Previous Product Basket --></label>
+        <name>csordtelcoa__Previous_Product_Basket__c</name>
+        <relationshipLabel><!-- Following Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Process Inflight in Batch --></label>
+        <name>csordtelcoa__Process_Inflight_in_Batch__c</name>
+    </fields>
+    <fields>
+        <help><!-- Force batch processing of the opportunity --></help>
+        <label><!-- Process Order Generation In Batch --></label>
+        <name>csordtelcoa__Process_Order_Generation_In_Batch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration Clone Batch Job Id --></label>
+        <name>csordtelcoa__Product_Configuration_Clone_Batch_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Force generation of MACD basket in a batch --></help>
+        <label><!-- Product Configuration Clone In Batch --></label>
+        <name>csordtelcoa__Product_Configuration_Clone_In_Batch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription To Be Added To --></label>
+        <name>csordtelcoa__Subscription_To_Be_Added_To__c</name>
+        <relationshipLabel><!-- Product Baskets (Subscription To Be Added To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription To Be Changed --></label>
+        <name>csordtelcoa__Subscription_To_Be_Changed__c</name>
+        <relationshipLabel><!-- Product Baskets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Synchronised with Opportunity --></label>
+        <name>csordtelcoa__Synchronised_with_Opportunity__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Inflight Change --></label>
+        <name>Inflight_Change</name>
+    </recordTypes>
+</CustomObjectTranslation>

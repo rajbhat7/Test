@@ -1,0 +1,90 @@
+<!--
+(c) 2018 Nexell GmbH  
+Developed by Nexell GmbH, Zug (Switzerland) 
+
+PT7812 - Override New on Address Lookup for Billing Accounts
+Note: Override new button for Billing Accounts so it can execute the footprintcheck webservice
+
+@date 02.01.2018
+@author Tiago Ribeiro
+
+@modifications
+-->
+<aura:component access="global" implements="force:hasRecordId,flexipage:availableForRecordHome,lightning:actionOverride">
+    <aura:attribute name="idAccount" type="String"/>
+    <aura:attribute name="selectedAddress" type="String"/>
+    <aura:attribute name="footPrintOpen" type="Boolean"/>
+    <aura:attribute name="isOpen" type="Boolean" default="true"/>
+
+    <aura:handler name="strike_evt_addNewRecord" event="c:strike_evt" action="{!c.handleNewRecord}"/>
+
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open"> 
+        <div class="slds-modal__container">
+            <aura:if isTrue="{!v.isOpen}">
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close"
+                                        onclick="{! c.closeModel }"
+                                        alternativeText="close"
+                                        variant="bare-inverse"
+                                        class="slds-modal__close"/>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Add Billing Account</h2>
+            </header>
+        <lightning:recordEditForm
+            aura:id="form"
+            objectApiName="csconta__Billing_Account__c"
+            onsuccess="{!c.handleSuccess}"
+            onsubmit="{!c.handleSubmit}"
+            onerror="{!c.handleError}">
+        <!--###### MODAL BOX BODY Part Start######-->
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <lightning:messages />
+            <div class="slds-grid slds-gutters">   
+                <div class="slds-col">
+                    <lightning:inputField fieldName="csconta__Account__c" value="{!v.idAccount}"/>
+                    <c:strike_lookup
+                    label="Billing Address"
+                    object="UPC_ADBASE__c"
+                    searchField="UPC_Address_Formula__c"
+                    placeholder="Select Addresses..."
+                    iconName="standard:account"
+                    subtitleField="UPC_Address_Formula__c"
+                    order="UPC_Address_Formula__c"
+                    limit="5"
+                    loadingMessage="Loading..."
+                    errorMessage="Invalid input"
+                    value="{!v.selectedAddress}"
+                    allowNewRecords="true"
+                    overrideNewEvent="true"
+                    showRecentRecords="true"/>
+                    <lightning:inputField aura:id="billingChannel" fieldName="UPC_Billing_Channel__c"/>
+                    <lightning:inputField fieldName="UPC_Billing_Email__c"/>
+                </div>
+                <div class="slds-col">
+                    <lightning:inputField fieldName="csconta__Status__c"/>
+                    <lightning:inputField fieldName="csconta__Payment_Terms__c"/>
+                    <lightning:inputField fieldName="csconta__Billing_Language__c"/>
+                    <lightning:inputField fieldName="CurrencyIsoCode"/>
+                </div>                    
+            </div>
+        </div>
+        <!--###### MODAL BOX FOOTER Part Start ######-->
+        <footer class="slds-modal__footer">
+            <lightning:button variant="neutral" 
+                                label="Cancel"
+                                title="Cancel"
+                                onclick="{! c.closeModel }"/>
+            <lightning:button variant="brand"
+                                type="submit"
+                                label="Save"
+                                title="Save"/>
+        </footer>
+        </lightning:recordEditForm>
+        </aura:if>
+
+        <aura:if isTrue="{!v.footPrintOpen}">
+            <c:nxFootPrintAction selectedAddress="{!v.selectedAddress}" footPrintOpen="{!v.footPrintOpen}" isOpen="{!v.isOpen}" isNewAddress="true"/>
+        </aura:if>
+        </div>
+    </section>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+</aura:component>

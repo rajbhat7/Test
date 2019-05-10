@@ -1,0 +1,31 @@
+<!-->
+   (c) 2019 CloudSense LTD
+   Developed by CloudSense LTD, London (UK)
+
+   @date 2.2019
+   @author Tomislav Blazek
+
+   @description SFCH-788 Used for progress bar dialog in Sales Console/Product basket while generating a quote.
+
+   @modifications
+   dd.mm.yyyy [xy] modification description
+-->
+<apex:page id="cscrmGenerateSendQuote" controller="cscrmGenerateSendQuoteController" showheader="false" sidebar="false">
+    <apex:form id="form">
+        <apex:actionPoller interval="5" action="{!checkQuoteGeneratingStatus}" reRender="form" />
+        <apex:slds />
+        <div class="slds-scope">
+            <apex:outputLabel rendered="{!NOT quoteGeneratingCompleted}">
+                <div id="spinner" class="slds-spinner_container">
+                    <div role="status" class="slds-spinner slds-spinner--large slds-spinner--brand">
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+            </apex:outputLabel>
+            <apex:outputText rendered="{!quoteGeneratingCompleted}">
+                Completed.
+            </apex:outputText>
+        </div>
+    </apex:form>
+</apex:page>

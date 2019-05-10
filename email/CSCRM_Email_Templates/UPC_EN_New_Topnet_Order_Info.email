@@ -1,0 +1,114 @@
+<table border="0" cellpadding="5" width="1000" cellspacing="5" height="400">
+	<tr valign="top" height="400">
+		<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:10pt; font-family:arial;" aEditID="c1r1" locked="0">
+			<![CDATA[
+			<div style="float:right;text-align:right;color: rgb(0, 0, 0); font-family: arial; font-size: 8pt;">
+				<font face="arial">Further information is available at:  <a href="https://upc.ch/business">upc.ch/business</a>
+				</font>
+			</div>
+			<div style="clear:both"></div>
+			<div style="color: rgb(35,154,152); font-family: arial; font-size: 10pt;">
+				<font face="arial">Inspection of your broadband connection, request ID: {!UPC_mLog_Request_ID__c}</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br/>
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">{!Salutation} {!CustomerName}</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br/>
+					</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">To be able to use the UPC Business service you have ordered, you need an intact broadband connection from UPC or one of our partner networks.</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br/>
+					</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">Should a socket already be available at the intended location, it needs to be inspected in advance and if necessary adapted to the latest technological standards.</font>
+        <br/>
+        <font face="arial">In the event that there is no socket yet, one will be installed.</font>
+        <br/>
+        <font face="arial">Our partner company will contact you in the next few days to arrange an appointment.</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br />
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">Please note that this appointment does not include the installation of UPC Business services.</font>
+        <br/>
+        <font face="arial">As soon as the connection has been verified and checked, you will be contacted by our specialised partner regarding installation.</font>
+			</div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br />
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">Please do not hesitate to contact us if you have any further questions.</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br />
+				</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">Yours sincerely</font>
+			</div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">UPC Business</font>
+			</div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">
+          <br />
+        </font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">_________________________________________</font>
+        <br/>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt; font-weight:bold;">
+        <font face="arial">Business Customer Service Excellence</font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">
+          <br />
+        </font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">Tel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0800 568 568</font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">E-Mail&nbsp;&nbsp;<a href="mailto:kmu@upc.ch">kmu@upc.ch</a></font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">
+          <br />
+        </font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+        <font face="arial">UPC Switzerland LLC</font>
+        <br/>
+        <font face="arial">UPC Business</font>
+        <br/>
+        <font face="arial">Richtiplatz 5</font>
+        <br/>
+        <font face="arial">PO Box</font>
+        <br/>
+        <font face="arial">8304 Wallisellen</font>
+        <br/>
+        <font face="arial"><a href="https://upc.ch/business">upc.ch/business</a></font>
+      </div>
+			]]>
+		</td>
+	</tr>
+</table>

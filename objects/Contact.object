@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>QuickStartLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>QuickStartLayout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>Email</fields>
+        <fields>MobilePhone</fields>
+        <fields>OwnerId</fields>
+        <label>Quick Start Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>sortablegrid__default</fullName>
+        <description>asdf</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>default</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CSCAP__Approval_PIN__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Approval PIN</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Role__c</fullName>
+        <description>EMEA_SOW_Tele2_001:</description>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrative/Back-office</fullName>
+                    <default>false</default>
+                    <label>Administrative/Back-office</label>
+                </value>
+                <value>
+                    <fullName>Building Contact</fullName>
+                    <default>false</default>
+                    <label>Building Contact</label>
+                </value>
+                <value>
+                    <fullName>Business Customer Support</fullName>
+                    <default>false</default>
+                    <label>Business Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CEO (MD/VD)</fullName>
+                    <default>false</default>
+                    <label>CEO (MD/VD)</label>
+                </value>
+                <value>
+                    <fullName>CTO</fullName>
+                    <default>false</default>
+                    <label>CTO</label>
+                </value>
+                <value>
+                    <fullName>Consultant</fullName>
+                    <default>false</default>
+                    <label>Consultant</label>
+                </value>
+                <value>
+                    <fullName>Decision maker</fullName>
+                    <default>false</default>
+                    <label>Decision maker</label>
+                </value>
+                <value>
+                    <fullName>Influencer</fullName>
+                    <default>false</default>
+                    <label>Influencer</label>
+                </value>
+                <value>
+                    <fullName>Initiator</fullName>
+                    <default>false</default>
+                    <label>Initiator</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+                <value>
+                    <fullName>Planjob</fullName>
+                    <default>false</default>
+                    <label>Planjob</label>
+                </value>
+                <value>
+                    <fullName>Purchaser</fullName>
+                    <default>false</default>
+                    <label>Purchaser</label>
+                </value>
+                <value>
+                    <fullName>Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>Sponsor</fullName>
+                    <default>false</default>
+                    <label>Sponsor</label>
+                </value>
+                <value>
+                    <fullName>Technical Contact</fullName>
+                    <default>false</default>
+                    <label>Technical Contact</label>
+                </value>
+                <value>
+                    <fullName>User/Consumer</fullName>
+                    <default>false</default>
+                    <label>User/Consumer</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Telefoniansvarig</fullName>
+                    <default>false</default>
+                    <label>Telefoniansvarig</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Contact Details Captured&quot;, &quot;Missing: &quot;&amp;IF( LEN( Phone ) = 0, &quot;Phone, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN( Email) = 0, &quot;Email, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN( MailingStreet ) = 0, &quot;Complete Address, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(Title) = 0, &quot;Job Title, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Salutation,&quot;&quot;), &quot;Salutation&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( LEN( Phone) = 0, 0,20) + IF( LEN( Email) = 0, 0,20) + IF( LEN(MailingStreet) = 0, 0,20) + IF( LEN(Title) = 0, 0,20) + IF( ISPICKVAL(Salutation,&quot;&quot;), 0,20)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>UPC_Bypass_Duplicate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to avoid duplicate rule on process builder update.</description>
+        <externalId>false</externalId>
+        <label>UPC Bypass Duplicate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_DPhone__c</fullName>
+        <description>Created by Nexell and used as intermediary before populating the standard contact phone.</description>
+        <externalId>false</externalId>
+        <label>Direct Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>UPC_English_Salutation__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(UPC_Gender__c, &apos;F&apos;), $CustomMetadata.UPC_General_Document_Values__mdt.UPC_English_Language_Settings.UPC_Salutation_Female__c , $CustomMetadata.UPC_General_Document_Values__mdt.UPC_English_Language_Settings.UPC_Salutation_Male__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>English Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_French_Salutation__c</fullName>
+        <description>The salutation to use in documents to this contact in French</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(UPC_Gender__c, &apos;F&apos;), $CustomMetadata.UPC_General_Document_Values__mdt.UPC_French_Language_Settings.UPC_Salutation_Female__c , $CustomMetadata.UPC_General_Document_Values__mdt.UPC_French_Language_Settings.UPC_Salutation_Male__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The salutation to use in documents to this contact in French</inlineHelpText>
+        <label>French Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Gender__c</fullName>
+        <description>Field created by Nexell to control the gender. (Jochen Request).</description>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Gender</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_German_Salutation__c</fullName>
+        <description>The salutation to be used for this contact in German</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( UPC_Gender__c, &apos;F&apos; ), $CustomMetadata.UPC_General_Document_Values__mdt.UPC_German_Language_Settings.UPC_Salutation_Female__c , $CustomMetadata.UPC_General_Document_Values__mdt.UPC_German_Language_Settings.UPC_Salutation_Male__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The salutation to be used for this contact in German</inlineHelpText>
+        <label>German Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Italian_Salutation__c</fullName>
+        <description>The salutation to use for this contact in Italian documents</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( UPC_Gender__c, &apos;F&apos;) , $CustomMetadata.UPC_General_Document_Values__mdt.UPC_Italian_Language_Settings.UPC_Salutation_Female__c,  $CustomMetadata.UPC_General_Document_Values__mdt.UPC_Italian_Language_Settings.UPC_Salutation_Male__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The salutation to use for this contact in Italian documents</inlineHelpText>
+        <label>Italian Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Taifun_Reconciliation__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Taifun Reconciliation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Preferred_Language__c</fullName>
+        <description>Field Created by NExell to control the preferred language.</description>
+        <externalId>false</externalId>
+        <label>Preferred Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Preferred_Language</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Synced_Taifun_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Taifun Contact	Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by Nexell. Lookup field to the corresponding user.</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Address__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The address of this Contact. Used for the Contact&apos;s residential or default address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The address of this Contact. Used for the Contact&apos;s residential or default address.</inlineHelpText>
+        <label>Address</label>
+        <referenceTo>cscrm__Address__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Birth_Certificate_Authority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The issuing authority for this Contact&apos;s birth certificate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The issuing authority for this Contact&apos;s birth certificate.</inlineHelpText>
+        <label>Birth Certificate Authority</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Birth_Certificate_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The country of issue for this Contact&apos;s birth certificate. Two-letter country code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The country of issue for this Contact&apos;s birth certificate. Two-letter country code.</inlineHelpText>
+        <label>Birth Certificate Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Birth_Certificate_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date of issue for this Contact&apos;s birth certificate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date of issue for this Contact&apos;s birth certificate.</inlineHelpText>
+        <label>Birth Certificate Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Birth_Certificate_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The ID number for this Contact&apos;s birth Certificate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The ID number for this Contact&apos;s birth Certificate.</inlineHelpText>
+        <label>Birth Certificate Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Concession_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The reference number of the document under which this Contact is eligible for a concession.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The reference number of the document under which this Contact is eligible for a concession.</inlineHelpText>
+        <label>Concession Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Concession_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of concession this Contact is eligible for.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of concession this Contact is eligible for.</inlineHelpText>
+        <label>Concession Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pensioner</fullName>
+                    <default>false</default>
+                    <label>Pensioner</label>
+                </value>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>false</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Carer</fullName>
+                    <default>false</default>
+                    <label>Carer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Concession__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this Contact is entitled to a concession (e.g. old age etc.).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this Contact is entitled to a concession (e.g. old age etc.).</inlineHelpText>
+        <label>Concession</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Current_Employer_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of this Contact&apos;s current Employer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of this Contact&apos;s current Employer.</inlineHelpText>
+        <label>Current Employer Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Current_Employer_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The phone number for this Contact&apos;s current employer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The phone number for this Contact&apos;s current employer.</inlineHelpText>
+        <label>Current Employer Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Drivers_License_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Country of issue for this Contact&apos;s driver&apos;s license. Two-letter country code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country of issue for this Contact&apos;s driver&apos;s license. Two-letter country code.</inlineHelpText>
+        <label>Driver&apos;s License Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Drivers_License_Expiry_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiry date of this Contact&apos;s driver&apos;s license.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiry date of this Contact&apos;s driver&apos;s license.</inlineHelpText>
+        <label>Driver&apos;s License Expiry Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Drivers_License_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The driver number on this Contact&apos;s driving license.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The driver number on this Contact&apos;s driving license.</inlineHelpText>
+        <label>Driver&apos;s License Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__External_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID for this Contact from an external system.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>ID for this Contact from an external system.</inlineHelpText>
+        <label>External ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__National_Health_Card_Expiry_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The expiry date for this Contact&apos;s national health insurance card.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The expiry date for this Contact&apos;s national health insurance card.</inlineHelpText>
+        <label>National Health Card Expiry Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__National_Health_Card_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This Contact&apos;s ID number in the national health insurance program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This Contact&apos;s ID number in the national health insurance program.</inlineHelpText>
+        <label>National Health Card Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Occupation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This Contact&apos;s occupation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This Contact&apos;s occupation.</inlineHelpText>
+        <label>Occupation</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Paperless_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this Contact prefers paperless billing (bill by email).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this Contact prefers paperless billing (bill by email).</inlineHelpText>
+        <label>Paperless Billing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Pasport_Expiry_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiry date of this Contact&apos;s passport.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiry date of this Contact&apos;s passport.</inlineHelpText>
+        <label>Pasport Expiry Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Passport_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The country of issue for this Contact&apos;s passport. Two-letter country code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The country of issue for this Contact&apos;s passport. Two-letter country code.</inlineHelpText>
+        <label>Passport Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Passport_Issue_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of issue of this Contact&apos;s passport.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of issue of this Contact&apos;s passport.</inlineHelpText>
+        <label>Passport Issue Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Passport_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The passport number for this Contact.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The passport number for this Contact.</inlineHelpText>
+        <label>Passport Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Previous_Address__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The previous address of this Contact.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The previous address of this Contact.</inlineHelpText>
+        <label>Previous Address</label>
+        <referenceTo>cscrm__Address__c</referenceTo>
+        <relationshipLabel>Contacts (Previous Address)</relationshipLabel>
+        <relationshipName>Contacts_Previous_Address</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Residential_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The residential status of this Contact (owner, tenant etc).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The residential status of this Contact (owner, tenant etc).</inlineHelpText>
+        <label>Residential Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>Tenant</fullName>
+                    <default>false</default>
+                    <label>Tenant</label>
+                </value>
+                <value>
+                    <fullName>Living with parents</fullName>
+                    <default>false</default>
+                    <label>Living with parents</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Social_Security_Card_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This Contact&apos;s ID number in the social security program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This Contact&apos;s ID number in the social security program.</inlineHelpText>
+        <label>Social Security Card Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Student_Card_Authority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The issuing authority of this Contact&apos;s student card.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The issuing authority of this Contact&apos;s student card.</inlineHelpText>
+        <label>Student Card Authority</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Student_Card_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The issuing country of this Contact&apos;s student card. Two letter country code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The issuing country of this Contact&apos;s student card. Two letter country code.</inlineHelpText>
+        <label>Student Card Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Student_Card_Expiry_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The expiry date for this Contact&apos;s student card.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The expiry date for this Contact&apos;s student card.</inlineHelpText>
+        <label>Student Card Expiry Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Student_Card_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This Contact&apos;s student card ID number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This Contact&apos;s student card ID number.</inlineHelpText>
+        <label>Student Card Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Time_at_Current_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The time this Contact has lived at their current address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time this Contact has lived at their current address.</inlineHelpText>
+        <label>Time at Current Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 6 months</fullName>
+                    <default>false</default>
+                    <label>Less than 6 months</label>
+                </value>
+                <value>
+                    <fullName>6-12 months</fullName>
+                    <default>false</default>
+                    <label>6-12 months</label>
+                </value>
+                <value>
+                    <fullName>1-2 years</fullName>
+                    <default>false</default>
+                    <label>1-2 years</label>
+                </value>
+                <value>
+                    <fullName>2-5 years</fullName>
+                    <default>false</default>
+                    <label>2-5 years</label>
+                </value>
+                <value>
+                    <fullName>5+ years</fullName>
+                    <default>false</default>
+                    <label>5+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Time_at_Current_Employment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The time this Contact has been in their current employment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time this Contact has been in their current employment.</inlineHelpText>
+        <label>Time at Current Employment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 6 months</fullName>
+                    <default>false</default>
+                    <label>Less than 6 months</label>
+                </value>
+                <value>
+                    <fullName>6-12 months</fullName>
+                    <default>false</default>
+                    <label>6-12 months</label>
+                </value>
+                <value>
+                    <fullName>1 year</fullName>
+                    <default>false</default>
+                    <label>1 year</label>
+                </value>
+                <value>
+                    <fullName>2 years</fullName>
+                    <default>false</default>
+                    <label>2 years</label>
+                </value>
+                <value>
+                    <fullName>3 years</fullName>
+                    <default>false</default>
+                    <label>3 years</label>
+                </value>
+                <value>
+                    <fullName>5+ years</fullName>
+                    <default>false</default>
+                    <label>5+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Time_at_Previous_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The length of time this Contact lived at their previous address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The length of time this Contact lived at their previous address.</inlineHelpText>
+        <label>Time at Previous Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 1 year</fullName>
+                    <default>false</default>
+                    <label>Less than 1 year</label>
+                </value>
+                <value>
+                    <fullName>1-2 years</fullName>
+                    <default>false</default>
+                    <label>1-2 years</label>
+                </value>
+                <value>
+                    <fullName>2-3 years</fullName>
+                    <default>false</default>
+                    <label>2-3 years</label>
+                </value>
+                <value>
+                    <fullName>3-4 years</fullName>
+                    <default>false</default>
+                    <label>3-4 years</label>
+                </value>
+                <value>
+                    <fullName>4-5 years</fullName>
+                    <default>false</default>
+                    <label>4-5 years</label>
+                </value>
+                <value>
+                    <fullName>5+ years</fullName>
+                    <default>false</default>
+                    <label>5+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Time_at_Previous_Employment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The time this Contact spent at their previous employment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time this Contact spent at their previous employment.</inlineHelpText>
+        <label>Time at Previous Employment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 1 year</fullName>
+                    <default>false</default>
+                    <label>Less than 1 year</label>
+                </value>
+                <value>
+                    <fullName>1-2 years</fullName>
+                    <default>false</default>
+                    <label>1-2 years</label>
+                </value>
+                <value>
+                    <fullName>2-3 years</fullName>
+                    <default>false</default>
+                    <label>2-3 years</label>
+                </value>
+                <value>
+                    <fullName>3-4 years</fullName>
+                    <default>false</default>
+                    <label>3-4 years</label>
+                </value>
+                <value>
+                    <fullName>4-5 years</fullName>
+                    <default>false</default>
+                    <label>4-5 years</label>
+                </value>
+                <value>
+                    <fullName>5+ years</fullName>
+                    <default>false</default>
+                    <label>5+ years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>leadScoring__Campaign_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value from the converted lead</description>
+        <externalId>false</externalId>
+        <label>Campaign Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>leadScoring__Lead_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value from the converted lead</description>
+        <externalId>false</externalId>
+        <label>Lead Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>leadScoring__Total_Lead_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value from the converted lead</description>
+        <externalId>false</externalId>
+        <formula>leadScoring__Lead_Score__c + leadScoring__Campaign_Score__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Lead Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>NX_Contact_DirectPhone_Format</fullName>
+        <active>true</active>
+        <description>Used to control phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(UPC_DPhone__c )),
+OR( 
+    AND( 
+        NOT(BEGINS(UPC_DPhone__c ,&quot;+&quot;)), 
+        NOT(BEGINS(UPC_DPhone__c ,&quot;0&quot;))), 
+        (NOT (REGEX( UPC_DPhone__c , &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>UPC_DPhone__c</errorDisplayField>
+        <errorMessage>Phone numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Fax_Format</fullName>
+        <active>true</active>
+        <description>Used to control fax format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(Fax)),
+OR( 
+    AND( 
+        NOT(BEGINS(Fax,&quot;+&quot;)), 
+        NOT(BEGINS(Fax,&quot;0&quot;))), 
+        (NOT (REGEX( Fax, &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>Fax</errorDisplayField>
+        <errorMessage>Fax numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Mobile_Phone_Format</fullName>
+        <active>true</active>
+        <description>Used to control mobile phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(MobilePhone)),
+OR( 
+    AND( 
+        NOT(BEGINS(MobilePhone,&quot;+&quot;)), 
+        NOT(BEGINS(MobilePhone,&quot;0&quot;))), 
+        (NOT (REGEX( MobilePhone, &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>MobilePhone</errorDisplayField>
+        <errorMessage>Mobile numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Phone_Format</fullName>
+        <active>true</active>
+        <description>Used to control phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(Phone)),
+OR( 
+    AND( 
+        NOT(BEGINS(Phone,&quot;+&quot;)), 
+        NOT(BEGINS(Phone,&quot;0&quot;))), 
+        (NOT (REGEX( Phone, &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>Phone numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Swiss_DirectPhone_Length</fullName>
+        <active>true</active>
+        <description>Used to Control Swiss Phone Length</description>
+        <errorConditionFormula>IF( 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+NOT(AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00417.*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004171.*&quot;) 
+)) 
+, 
+OR( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041860.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=16 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041869.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=10, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=17 
+) 
+, 
+AND( 
+OR( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004198.*&quot;), 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004199.*&quot;) 
+), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(00412|00413|00414|00415|00416|00417|00418|00419).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(0041860|0041869).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(004198|004199).*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13 
+) 
+) 
+) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>UPC_DPhone__c</errorDisplayField>
+        <errorMessage>Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are not allowed in phone field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Swiss_Fax_Length</fullName>
+        <active>true</active>
+        <description>Used to Control Swiss fax Length.</description>
+        <errorConditionFormula>IF( 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+NOT(AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00417.*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004171.*&quot;) 
+)) 
+, 
+OR( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00411.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=10 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041860.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=16 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041869.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=10, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=17 
+) 
+, 
+AND( 
+OR( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004198.*&quot;), 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004199.*&quot;) 
+), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(00412|00413|00414|00415|00416|00417|00418|00419).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(0041860|0041869).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(004198|004199).*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Fax,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Fax,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Fax,LEN(Fax)-1),Fax),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13 
+) 
+) 
+) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>Fax</errorDisplayField>
+        <errorMessage>Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are not allowed in phone field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Swiss_Mobile_Length</fullName>
+        <active>true</active>
+        <description>Used to Control the Mobile Length for swiss numbers.</description>
+        <errorConditionFormula>IF( 
+    !REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(MobilePhone ,1)=&quot;0&quot;,LEFT(SUBSTITUTE(MobilePhone ,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(MobilePhone ,LEN(MobilePhone )-1),MobilePhone ),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(MobilePhone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(MobilePhone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(MobilePhone,LEN(MobilePhone)-1),MobilePhone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00417.*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(MobilePhone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(MobilePhone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(MobilePhone,LEN(MobilePhone)-1),MobilePhone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004171.*&quot;), 
+(LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(MobilePhone ,1)=&quot;0&quot;,LEFT(SUBSTITUTE(MobilePhone ,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(MobilePhone ,LEN(MobilePhone )-1),MobilePhone ),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13) 
+)))</errorConditionFormula>
+        <errorDisplayField>MobilePhone</errorDisplayField>
+        <errorMessage>Mobile Phone: invalid length or wrong number type. Mobile phone number length is 9 digits with area code but without the leading 0. Only mobile numbers are allowed in this field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Contact_Swiss_Phone_Length</fullName>
+        <active>true</active>
+        <description>Used to Control Swiss Phone Length</description>
+        <errorConditionFormula>IF( 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+OR( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00411.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=10 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041860.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=16 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041869.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=10, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=17 
+) 
+, 
+AND( 
+OR( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004198.*&quot;), 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004199.*&quot;) 
+), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(00412|00413|00414|00415|00416|00417|00418|00419).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(0041860|0041869).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(004198|004199).*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(Phone,1)=&quot;0&quot;,LEFT(SUBSTITUTE(Phone,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(Phone,LEN(Phone)-1),Phone),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13 
+) 
+) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are allowed in phone field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Phone_or_Email_Mobile_are_mandatory</fullName>
+        <active>true</active>
+        <description>Either Email or Mobile or Phone is mandatory</description>
+        <errorConditionFormula>AND( 
+(ISBLANK(Email)), 
+(ISBLANK(Phone)), 
+(ISBLANK(MobilePhone)))</errorConditionFormula>
+        <errorMessage>Either Email or Mobile or Phone is mandatory</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>

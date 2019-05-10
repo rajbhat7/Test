@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>http://sts.liberty.biz/adfs/services/trust</issuer>
+    <loginUrl>https://sts.liberty.biz/adfs/ls/</loginUrl>
+    <name>sts</name>
+    <oauthTokenEndpoint>https://upc--devph2.cs101.my.salesforce.com/services/oauth2/token?so=00D1X0000008gN9</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11r000000Gnp6</requestSigningCertId>
+    <salesforceLoginUrl>https://upc--devph2.cs101.my.salesforce.com?so=00D1X0000008gN9</salesforceLoginUrl>
+    <samlEntityId>https://upc.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC2jCCAcKgAwIBAgIQNr7vdj2xJYVL/CJl3FSAzjANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDEx5BREZTIFNpZ25pbmcgLSBzdHMubGliZXJ0eS5iaXowHhcNMTcwNTExMTMwOTEyWhcNMjEwNTEwMTMwOTEyWjApMScwJQYDVQQDEx5BREZTIFNpZ25pbmcgLSBzdHMubGliZXJ0eS5iaXowggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCpphPOC/oedah/2wXTDgdQwSA/Jvf/qVyXzD+Bo0+TXhskw5PYW8F+mI9/4T1Jux35bwOdSB6zuoFFlrqgTvEuUYbbs7nMIX2rMk+ymXR5pV/5DTBG1hXTOaZqD+0vGmIEMGvB5v9KnqmdvfWMKtubT+SocUzce90HMShG7B4/66mxkyQIfJJUQi6q+/a5BbBl+kFxyyMFRVzGvpdTZhsVpQidrbXdlVapUPSdQmNze/JjwOM8HiasRrnkkfeD5nTisUxl1LtczCwvLnKcE2qxMv51rxIJF2rJOx/swW+C7tjDGvthSAHpbkeSpTmaf8/2gQ2Kyk0lZAOfNVeu0hn/AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAKmCVjy09IxrXl3TAdkxGXmcRi/ooRt/h39WvsxPqXVN/lU35CPASIVEu9P9u+ZYWLDwaiwtegs+LR4WsX7/bodI3Guoign02wAifLTV+mpMjKB3uY+OY1NakpdKMpKZIUhpcbeXDAfkGIQ3SV0ZCjUHSFyVgmZIfaT59keMpoF1QEoZiHC/a7BL26W/ZvMQiUFTnOAbm2Bj85HuyYic9K62Ph7Trx0Ih83ZBba35qVYp8JisZLOpXlN2GQqiexDBz7Y/seDVpL6FxpIe+XN4BlpbNtQKS8XnVoXbjPdrfpo+lRiMkC57WCBOgvuXb1+l1W51z/zEh09iuB5HW+xybE=</validationCert>
+</SamlSsoConfig>

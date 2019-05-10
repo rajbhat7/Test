@@ -1,0 +1,64 @@
+<!--
+(c) 2019 Cloudsense LTD
+Developed by Cloudsense LTD, Zagreb (Switzerland)
+
+Date: 2.2019
+Author: Tomislav Blazek
+
+Description: Page is used for code coverage inspection
+
+Modifications (new entries on top):
+dd.mm.yyyy [XX] PT or Case number followed by short description of change
+-->
+
+
+<apex:page id="cscrmZTestInspector_DoNotDeploy" controller="cscrmZTestInspector_DoNotDeployControlle">
+    <!--<apex:variable value="{!0}" var="totalLines"/>-->
+    <apex:variable value="{!0}" var="totalCoveredLines"/>
+    <apex:outputPanel id="mainPanel">
+        <apex:dataTable value="{!cw.records}" var="c" width="80%" cellspacing="3">
+
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputText value="{!c.ApexClassOrTrigger.Name}"/>
+            </apex:column>
+
+            <apex:column >
+                <apex:facet name="header">Total Lines</apex:facet>
+                <!--<apex:variable var="totalLines"-->
+                               <!--value="{!totalLines + (IF(ISBLANK(c.NumLinesCovered),0,c.NumLinesCovered) + IF(ISBLANK(c.NumLinesUncovered),0,c.NumLinesUncovered))}"/>-->
+                <apex:outputText value="{!IF(ISBLANK(c.NumLinesCovered),0,c.NumLinesCovered) + IF(ISBLANK(c.NumLinesUncovered),0,c.NumLinesUncovered)}"/>
+            </apex:column>
+
+            <apex:column >
+                <apex:facet name="header">Lines Covered</apex:facet>
+                <apex:variable var="totalCoveredLines" value="{!totalCoveredLines + c.NumLinesCovered}"/>
+                <apex:outputText value="{!c.NumLinesCovered}"/>
+            </apex:column>
+
+            <apex:column >
+                <apex:facet name="header">Lines Uncovered</apex:facet>
+                <apex:outputText value="{!IF(ISBLANK(c.NumLinesUncovered),0,c.NumLinesUncovered)}"/>
+            </apex:column>
+
+            <apex:column >
+                <apex:facet name="header">Percentage Covered</apex:facet>
+                <apex:outputText value="{!IF((IF(ISBLANK(c.NumLinesCovered),0,c.NumLinesCovered) + IF(ISBLANK(c.NumLinesUncovered),0,c.NumLinesUncovered)) > 0,ROUND((IF(ISBLANK(c.NumLinesCovered),0,c.NumLinesCovered)/(IF(ISBLANK(c.NumLinesCovered),0,c.NumLinesCovered) + IF(ISBLANK(c.NumLinesUncovered),0,c.NumLinesUncovered)))*100,0),0)}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Percentage available to cover</apex:facet>
+                <apex:outputText value="{0, number, ###,##0.00 %}" id="myNumberDisplay">
+                    <apex:param value="{!IF(ISBLANK(c.NumLinesUncovered),0,(c.NumLinesUncovered/totalLines))}"/>
+                </apex:outputText>
+            </apex:column>
+        </apex:dataTable>
+
+        <br/>
+        <b>
+            <apex:outputText value="Total Lines in Org : {!totalLines}"/>
+            <br/>
+            <apex:outputText value="Total Lines Covered in Org : {!totalCoveredLines}"/>
+            <br/>
+            <apex:outputText value="Code Coverage: {!IF(totalLines > 0,ROUND((totalCoveredLines/totalLines)*100,0),0)}%"/>
+        </b></apex:outputPanel>
+</apex:page>

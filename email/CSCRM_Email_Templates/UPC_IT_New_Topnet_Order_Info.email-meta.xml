@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to give info in New Topnet Order</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC IT New Topnet Order Info</name>
+    <style>freeForm</style>
+    <subject>Verifica del suo collegamento a banda larga, Request ID: {!UPC_mLog_Request_ID__c}</subject>
+    <textOnly>Maggiori informazioni sono disponibili alla pagina: upc.ch/business
+Verifica del suo collegamento a banda larga, Request ID: {!UPC_mLog_Request_ID__c}
+
+{!Salutation} {!CustomerName}
+
+Per utilizzare il servizio UPC Business da lei ordinato, è necessario disporre di un collegamento a banda larga di UPC o di una sua rete partner.
+
+Qualora già disponesse di una presa presso la località desiderata, questa verrà verificata in via preventiva e, se necessario, adeguata secondo gli standard tecnologici più recenti.
+Qualora non fosse disponibile alcuna presa, questa verrà installata in via preliminare.
+La nostra azienda partner provvederà a mettersi in contatto con lei nei prossimi giorni  per fissare un appuntamento.
+
+La preghiamo di considerare che questo appuntamento non prevede anche l’installazione dei servizi UPC Business.
+Una volta verificato il collegamento, provvederemo a farla contattare dal nostro partner specializzato per l’installazione.
+
+Restiamo a disposizione per qualsiasi informazione.
+
+Cordiali saluti,
+UPC Business
+
+_________________________________________
+Business Customer Service Excellence
+
+Tel.      0800 568 568
+Email kmu@upc.ch
+
+UPC Svizzera Sagl
+UPC Business
+Richtiplatz 5
+Casella postale
+8304 Wallisellen
+upc.ch/business</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

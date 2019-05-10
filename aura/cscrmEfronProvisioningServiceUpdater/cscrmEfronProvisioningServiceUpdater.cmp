@@ -1,0 +1,28 @@
+<aura:component controller="cscrmEfronProvisioningServiceUpdater"  implements="flexipage:availableForAllPageTypes,force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName">
+    
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="errors" type="Object" default="[]"/>
+    <aura:attribute name="draftValues" type="Object" default="[]"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="servIdByRowNumberMap" type="Object" default="[]"/>
+    
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <div class="slds-text-heading_small">
+        <h2 class="slds-text-heading_small">Subscriptions</h2>
+    </div>
+    
+    <!-- the container element determine the height of the datatable -->
+    <div style="height: 300px">
+        <lightning:datatable aura:id="dtTable"
+                             columns="{! v.columns }"
+                             class="datable-table"
+                             data="{! v.data }"
+                             keyField="Id"
+                             errors="{! v.errors }"
+                             draftValues="{! v.draftValues }"
+                             onsave="{! c.handleSaveEdition }"
+                             />
+    </div>
+</aura:component>

@@ -1,0 +1,64 @@
+<!-- (c) 2019 Nexell GmbH Developed by Nexell GmbH, Zug (Switzerland) 
+ Date: ​04.2019 
+ Author: Vítor Costa 
+ Description: ​PT7992 - SFCH-2668 - Override Address on site edit mode -> Component of the quick action to change the primary address.
+ Modifications (new entries on top): dd.mm.yyyy [XX] ​PT or Case number followed by short description of change --> 
+ 
+<aura:component controller="nxChangePrimaryAddressController" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global">
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+
+    <aura:attribute name="selectedPrimaryAddress" type="String" />
+    <aura:attribute name="errorDescription" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:html tag="style">
+        .slds-modal__container{
+            height : 400px !important;
+            max-height: 400px !important;
+
+        }
+
+        </aura:html> 
+      
+    <!--###### MODAL BOX Header Part Start From Here ######-->
+    <div class="modal-header slds-docked-form-header slds-modal__header">
+            <h4 class="title slds-text-heading--medium" >Change Primary Address</h4>
+    </div>
+    <div aura:id="toastError" class="demo-only slds-hide" style="height: 4rem;">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_error" role="status">
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">{!v.errorDescription}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <!--Content-->
+    <div aura:id="bodyChange" class="slds-modal__content slds-p-around_x-medium contentBody">
+        
+        <lightning:datatable
+            keyField="id"
+            columns="{! v.columns }"
+            maxRowSelection="1"
+            data="{! v.data }" 
+            onrowselection="{! c.selectRow }"/>
+    </div>   
+    <br/>
+    <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+    <div class="slds-modal__footer slds-modal__footer_directional">
+        <lightning:button variant="Neutral" 
+            label="Cancel" 
+            title="Cancel"
+            onclick="{!c.closeModal}"/>     
+    
+        <lightning:button variant="brand" 
+            label="Save" 
+            title="Finish"
+            onclick="{!c.updateSite}"
+            /> 
+    </div>
+
+</aura:component>

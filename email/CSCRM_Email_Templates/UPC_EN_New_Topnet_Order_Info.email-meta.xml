@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to give info in New Topnet Order</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC EN New Topnet Order Info</name>
+    <style>freeForm</style>
+    <subject>Inspection of your broadband connection, request ID: {!UPC_mLog_Request_ID__c}</subject>
+    <textOnly>Further information is available at: upc.ch/business
+Inspection of your broadband connection, request ID: {!UPC_mLog_Request_ID__c}
+
+{!Salutation} {!CustomerName}
+
+To be able to use the UPC Business service you have ordered, you need an intact broadband connection from UPC or one of our partner networks.
+
+Should a socket already be available at the intended location, it needs to be inspected in advance and if necessary adapted to the latest technological standards.
+In the event that there is no socket yet, one will be installed.
+Our partner company will contact you in the next few days to arrange an appointment.
+
+Please note that this appointment does not include the installation of UPC Business services.
+As soon as the connection has been verified and checked, you will be contacted by our specialised partner regarding installation.
+
+Please do not hesitate to contact us if you have any further questions.
+
+Yours sincerely
+UPC Business
+
+_________________________________________
+Business Customer Service Excellence
+
+Tel.      0800 568 568
+E-Mail kmu@upc.ch
+
+UPC Switzerland LLC
+UPC Business
+Richtiplatz 5
+PO Box
+8304 Wallisellen
+upc.ch/business</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

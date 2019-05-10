@@ -1,0 +1,4 @@
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                controller="cscrmCmtyNewBasketButtonCntrl">
+    <lightning:button label="New Basket" onclick="{!c.redirectTo}"/>
+</aura:component>

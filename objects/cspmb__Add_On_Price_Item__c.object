@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Describes a simple product, bolt-on, optional extra etc. which can be sold associated with a parent Commercial Product.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>CSCRM_Migration_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used as an external id for migrating the data from org to an org (easing up the deployments).</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Used as an external id for migrating the data from org to an org (easing up the deployments).</inlineHelpText>
+        <label>CSCRM Migration Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Taifun_Product_Element_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Taifun Product Element ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Name_English__c</fullName>
+        <description>A value to display on documents</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A value to display on documents</inlineHelpText>
+        <label>Add On Name English</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Name_French__c</fullName>
+        <description>The name of the add on, translated into French</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the add on, translated into French</inlineHelpText>
+        <label>Add On Name French</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Name_German__c</fullName>
+        <description>The German language name of the Add On</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The German language name of the Add On</inlineHelpText>
+        <label>Add On Name German</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Name_Italian__c</fullName>
+        <description>The name of the add on, translated into Italian</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the add on, translated into Italian</inlineHelpText>
+        <label>Add On Name Italian</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Addon_Abbreviation__c</fullName>
+        <externalId>false</externalId>
+        <label>Addon Abbreviation</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Image__c</fullName>
+        <description>Name of the static resource on the org.</description>
+        <externalId>false</externalId>
+        <label>Image</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_OE_Type__c</fullName>
+        <description>Type of the OE to be displayed (currently only used in DigiPhone)</description>
+        <externalId>false</externalId>
+        <label>OE Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Block 10</fullName>
+                    <default>false</default>
+                    <label>Block 10</label>
+                </value>
+                <value>
+                    <fullName>Block 100</fullName>
+                    <default>false</default>
+                    <label>Block 100</label>
+                </value>
+                <value>
+                    <fullName>Analog</fullName>
+                    <default>false</default>
+                    <label>Analog</label>
+                </value>
+                <value>
+                    <fullName>MSN</fullName>
+                    <default>false</default>
+                    <label>MSN</label>
+                </value>
+                <value>
+                    <fullName>New Number</fullName>
+                    <default>false</default>
+                    <label>New Number</label>
+                </value>
+                <value>
+                    <fullName>Call Forwarding</fullName>
+                    <default>false</default>
+                    <label>Call Forwarding</label>
+                </value>
+                <value>
+                    <fullName>New Number Code Required</fullName>
+                    <default>false</default>
+                    <label>New Number Code Required</label>
+                </value>
+                <value>
+                    <fullName>CLIP Number</fullName>
+                    <default>false</default>
+                    <label>CLIP Number</label>
+                </value>
+                <value>
+                    <fullName>Backup Number</fullName>
+                    <default>false</default>
+                    <label>Backup Number</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Requires_Provisioning_Taifun__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Does AddOn Requires Provisioning in Taifun</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does AddOn Requires Provisioning in Taifun</inlineHelpText>
+        <label>Requires Provisioning Taifun</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_TaifunProductElement_InternalName__c</fullName>
+        <description>Stores Taifun provisioning name</description>
+        <externalId>false</externalId>
+        <label>Taifun Product Element Internal Name</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_TaifunProductElement_Number__c</fullName>
+        <description>Stores Taifun provisioning number</description>
+        <externalId>false</externalId>
+        <label>Taifun Product Element Number</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_TaifunProductElement_Type__c</fullName>
+        <description>Stores Taifun provisioning type</description>
+        <externalId>false</externalId>
+        <label>Taifun Product Element Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Optional</fullName>
+                    <default>false</default>
+                    <label>Optional</label>
+                </value>
+                <value>
+                    <fullName>Optional Auto</fullName>
+                    <default>false</default>
+                    <label>Optional Auto</label>
+                </value>
+                <value>
+                    <fullName>Mandatory</fullName>
+                    <default>false</default>
+                    <label>Mandatory</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Taifun_ProductElement_Parameter__c</fullName>
+        <description>Stores Taifun provisioning parameter (if applicable)</description>
+        <externalId>false</externalId>
+        <label>Taifun Product Element Parameter</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Add Ons</relationshipLabel>
+        <relationshipName>Add_On_Price_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Add_On_Price_Item_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Add On Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Add_On_Price_Item_Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Add On Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Apply_One_Off_Charge_Account_Discount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Apply One-Off Charge Account Discount</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Apply_Recurring_Charge_Account_Discount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Apply Recurring Charge Account Discount</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Authorization_Level__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Authorization Level</label>
+        <referenceTo>cspmb__Authorization_Level__c</referenceTo>
+        <relationshipLabel>Add Ons</relationshipLabel>
+        <relationshipName>Add_On_Price_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Billing_Frequency__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Annually</fullName>
+                    <default>false</default>
+                    <label>Annually</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cspmb__Contract_Term__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contract Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>12 Months</fullName>
+                    <default>false</default>
+                    <label>12 Months</label>
+                </value>
+                <value>
+                    <fullName>24 Months</fullName>
+                    <default>false</default>
+                    <label>24 Months</label>
+                </value>
+                <value>
+                    <fullName>36 Months</fullName>
+                    <default>false</default>
+                    <label>36 Months</label>
+                </value>
+                <value>
+                    <fullName>48 Months</fullName>
+                    <default>false</default>
+                    <label>48 Months</label>
+                </value>
+                <value>
+                    <fullName>60 Months</fullName>
+                    <default>false</default>
+                    <label>60 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cspmb__Currency_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Currency Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sample Code</fullName>
+                    <default>false</default>
+                    <label>Sample Code</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cspmb__Current_Version__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The current version of this Add On. If blank, this record is the current version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The current version of this Add On. If blank, this record is the current version.</inlineHelpText>
+        <label>Current Version</label>
+        <referenceTo>cspmb__Add_On_Price_Item__c</referenceTo>
+        <relationshipLabel>Versions</relationshipLabel>
+        <relationshipName>Versions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Discount_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Amount</fullName>
+                    <default>false</default>
+                    <label>Amount</label>
+                </value>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+                <value>
+                    <fullName>Negative Line Item</fullName>
+                    <default>false</default>
+                    <label>Negative Line Item</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cspmb__Effective_End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Effective_Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Is_Authorization_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Authorization Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Is_One_Off_Discount_Allowed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is One-Off Discount Allowed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__Is_Recurring_Discount_Allowed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Recurring Discount Allowed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cspmb__One_Off_Charge_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>One-Off Charge Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__One_Off_Charge_External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>One-Off Charge External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__One_Off_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>One-Off Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__One_Off_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>One-Off Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Product_Definition_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Product Definition Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sample Product</fullName>
+                    <default>false</default>
+                    <label>Sample Product</label>
+                </value>
+                <value>
+                    <fullName>Number Details</fullName>
+                    <default>false</default>
+                    <label>Number Details</label>
+                </value>
+                <value>
+                    <fullName>Devices</fullName>
+                    <default>false</default>
+                    <label>Devices</label>
+                </value>
+                <value>
+                    <fullName>Additional Add Ons</fullName>
+                    <default>false</default>
+                    <label>Additional Add Ons</label>
+                </value>
+                <value>
+                    <fullName>Voice Number Porting</fullName>
+                    <default>false</default>
+                    <label>Voice Number Porting</label>
+                </value>
+                <value>
+                    <fullName>Voice Additional Numbers</fullName>
+                    <default>false</default>
+                    <label>Voice Additional Numbers</label>
+                </value>
+                <value>
+                    <fullName>Voice Special Arrangement</fullName>
+                    <default>false</default>
+                    <label>Voice Special Arrangement</label>
+                </value>
+                <value>
+                    <fullName>Voice Backup Number</fullName>
+                    <default>false</default>
+                    <label>Voice Backup Number</label>
+                </value>
+                <value>
+                    <fullName>Voice Support &amp; Service</fullName>
+                    <default>false</default>
+                    <label>Voice Support &amp; Service</label>
+                </value>
+                <value>
+                    <fullName>Voice Installation</fullName>
+                    <default>false</default>
+                    <label>Voice Installation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cspmb__Recurring_Charge_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Recurring Charge Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Recurring_Charge_External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Recurring Charge External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Recurring_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Recurring Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Recurring_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Recurring Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Sequence__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates the sorting order for this Add On.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the sorting order for this Add On.</inlineHelpText>
+        <label>Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cspmb__Version_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The version number of this Add On.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The version number of this Add On.</inlineHelpText>
+        <label>Version Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Add On</label>
+    <listViews>
+        <fullName>cspmb__All</fullName>
+        <columns>NAME</columns>
+        <columns>UPC_TaifunProductElement_Number__c</columns>
+        <columns>cspmb__Recurring_Charge__c</columns>
+        <columns>cspmb__Account__c</columns>
+        <columns>UPC_Addon_Abbreviation__c</columns>
+        <columns>cspmb__One_Off_Charge__c</columns>
+        <columns>UPC_Add_On_Name_German__c</columns>
+        <columns>cspmb__Add_On_Price_Item_Description__c</columns>
+        <columns>cspmb__Is_One_Off_Discount_Allowed__c</columns>
+        <columns>cspmb__Is_Recurring_Discount_Allowed__c</columns>
+        <columns>cspmb__Current_Version__c</columns>
+        <columns>cspmb__Version_Number__c</columns>
+        <columns>cspmb__Sequence__c</columns>
+        <columns>CSCRM_Migration_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Add On Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Add Ons</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>cspmb__One_Off_Charge__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cspmb__Recurring_Charge__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cspmb__Version_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cspmb__Is_Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cspmb__Current_Version__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

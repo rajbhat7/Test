@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Installation Date Time --></label>
+        <name>Installation_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Basket --></label>
+        <name>Product_Basket__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is a TV Socket available at the installation address? --></help>
+        <label><!-- Socket Move --></label>
+        <name>Socket_Move__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Porting --></label>
+        <name>UPC_Is_Porting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Terms --></label>
+        <name>UPC_Process_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Abbrevations --></label>
+        <name>UPC_Product_Abbreviations__c</name>
+    </fields>
+    <fields>
+        <help><!-- If marked, provisioning process will enter the branch for rescheduling the order (changing the wish date). --></help>
+        <label><!-- Reschedule Order --></label>
+        <name>UPC_Reschedule_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates does Order has Site Move in underlying services/product configurations. --></help>
+        <label><!-- Site Move --></label>
+        <name>UPC_Site_Move__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Wish Date Today or Past --></label>
+        <name>UPC_Termination_Wish_Date_Today_or_Past__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Wish Date --></label>
+        <name>UPC_Termination_Wish_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>csord__Account__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Select the main category for the service cease --></help>
+        <label><!-- Cease Category --></label>
+        <name>csord__Cease_Category__c</name>
+        <picklistValues>
+            <masterLabel>Financial / Admin</masterLabel>
+            <translation><!-- Financial / Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-renewal - Preferred Supplier</masterLabel>
+            <translation><!-- Non-renewal - Preferred Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-renewal - Product Not Required</masterLabel>
+            <translation><!-- Non-renewal - Product Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-renewal - Service Issues</masterLabel>
+            <translation><!-- Non-renewal - Service Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Withdrawn</masterLabel>
+            <translation><!-- Product Withdrawn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regrade</masterLabel>
+            <translation><!-- Regrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Enter a short comment about why the cease order has been raised --></help>
+        <label><!-- Cease Reason Comment --></label>
+        <name>csord__Cease_Reason_Comment__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Select the main reason for ceasing the service --></help>
+        <label><!-- Cease Reason --></label>
+        <name>csord__Cease_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Admin Error</masterLabel>
+            <translation><!-- Admin Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ceased Trading / Liquidation / Merged</masterLabel>
+            <translation><!-- Ceased Trading / Liquidation / Merged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolidation to Major Supplier</masterLabel>
+            <translation><!-- Consolidation to Major Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Amendment</masterLabel>
+            <translation><!-- Contract Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service - Lack of update</masterLabel>
+            <translation><!-- Customer Service - Lack of update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Closed</masterLabel>
+            <translation><!-- Office Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Renegotiation</masterLabel>
+            <translation><!-- Price Renegotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Withdrawn</masterLabel>
+            <translation><!-- Product Withdrawn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services now In-House</masterLabel>
+            <translation><!-- Services now In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support - resolution took too long</masterLabel>
+            <translation><!-- Support - resolution took too long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Write-off</masterLabel>
+            <translation><!-- Write-off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. --></help>
+        <label><!-- Cease Stage --></label>
+        <name>csord__Cease_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Customer Cancellation Authorised</masterLabel>
+            <translation><!-- Customer Cancellation Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Cancellation Confirmed</masterLabel>
+            <translation><!-- Customer Cancellation Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Cancellation Request</masterLabel>
+            <translation><!-- Customer Cancellation Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Cancellation Stopped</masterLabel>
+            <translation><!-- Customer Cancellation Stopped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement Active</masterLabel>
+            <translation><!-- Replacement Active --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A customer-facing order number to identify this Order --></help>
+        <label><!-- Customer Order Number --></label>
+        <name>csord__Customer_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivered Date --></label>
+        <name>csord__Delivered_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Enter the date the customer would like the service to be ceased --></help>
+        <label><!-- Desired Cease Date --></label>
+        <name>csord__Desired_Cease_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>csord__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Id field used for bulk inserts of Orders &amp; Subscriptions objects. --></help>
+        <label><!-- External Identifier --></label>
+        <name>csord__External_Identifier2__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Use External Identifier2 field instead. --></help>
+        <label><!-- DEPRECATED External Identifier --></label>
+        <name>csord__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- E.g. &quot;spokeServiceAmsterdam&quot; in Hub&amp;Spokes scenario. --></help>
+        <label><!-- Identification --></label>
+        <name>csord__Identification__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. --></help>
+        <label><!-- Order Group --></label>
+        <name>csord__Order_Group__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- An auto number defining the Order. --></help>
+        <label><!-- Order Number --></label>
+        <name>csord__Order_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Order Request which introduced the latest changes to this Order. --></help>
+        <label><!-- Order Request --></label>
+        <name>csord__Order_Request__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Type of the order. The value should be one of: Subscription Creation, Subscription Change or Product Delivery --></help>
+        <label><!-- Order Type --></label>
+        <name>csord__Order_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used if the Order is introducing changes/additions to a solution created by a previous, primary Order. --></help>
+        <label><!-- Primary Order --></label>
+        <name>csord__Primary_Order__c</name>
+        <relationshipLabel><!-- Secondary Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>csord__Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference --></label>
+        <name>csord__Reference__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the service for which the Product Delivery order is attached to. Note that the related service might be the placeholder for child services that actually use the item that has been order. --></help>
+        <label><!-- Related Service --></label>
+        <name>csord__Related_Service__c</name>
+        <relationshipLabel><!-- Delivery Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Solution of this Order --></help>
+        <label><!-- Solution --></label>
+        <name>csord__Solution__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>csord__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for state transitions. --></help>
+        <label><!-- Status --></label>
+        <name>csord__Status2__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. --></help>
+        <label><!-- Status Reason --></label>
+        <name>csord__Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Account Manager Confirms Cease</masterLabel>
+            <translation><!-- Account Manager Confirms Cease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backup (to primary order)</masterLabel>
+            <translation><!-- Backup (to primary order) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Cease Actioned</masterLabel>
+            <translation><!-- Customer Cease Actioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Requests Cease</masterLabel>
+            <translation><!-- Customer Requests Cease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Retained</masterLabel>
+            <translation><!-- Customer Retained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer cancellation - no longer required</masterLabel>
+            <translation><!-- Customer cancellation - no longer required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer site not suitable</masterLabel>
+            <translation><!-- Customer site not suitable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Down-grade (Same product)</masterLabel>
+            <translation><!-- Down-grade (Same product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excess charges not agreed by the Customer</masterLabel>
+            <translation><!-- Excess charges not agreed by the Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Quote</masterLabel>
+            <translation><!-- Incorrect Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed</masterLabel>
+            <translation><!-- Installed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Supplier capacity available</masterLabel>
+            <translation><!-- No Supplier capacity available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-payment</masterLabel>
+            <translation><!-- Non-payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novation</masterLabel>
+            <translation><!-- Novation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Change / Contract Amendment</masterLabel>
+            <translation><!-- Price Change / Contract Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Change / Contract Renewal</masterLabel>
+            <translation><!-- Price Change / Contract Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regrade Down (Lesser product)</masterLabel>
+            <translation><!-- Regrade Down (Lesser product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regrade Up (Higher product)</masterLabel>
+            <translation><!-- Regrade Up (Higher product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocation</masterLabel>
+            <translation><!-- Relocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced</masterLabel>
+            <translation><!-- Replaced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed not available</masterLabel>
+            <translation><!-- Speed not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplier cannot deliver order</masterLabel>
+            <translation><!-- Supplier cannot deliver order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspension lifted</masterLabel>
+            <translation><!-- Suspension lifted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Up-grade (Same product)</masterLabel>
+            <translation><!-- Up-grade (Same product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wayleave permission denied</masterLabel>
+            <translation><!-- Wayleave permission denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Use Status2__c. --></help>
+        <label><!-- Status --></label>
+        <name>csord__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Provisioning</masterLabel>
+            <translation><!-- In Provisioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Provisioned</masterLabel>
+            <translation><!-- Not Provisioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Closure</masterLabel>
+            <translation><!-- Pending Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the charges on all of the delivery order’s line items --></help>
+        <label><!-- Total One-Off Charges --></label>
+        <name>csord__Total_One_Off_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled By Change Process --></label>
+        <name>csordtelcoa__Cancelled_By_Change_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>csordtelcoa__Opportunity__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Product Configuration --></label>
+        <name>csordtelcoa__Parent_Product_Configuration__c</name>
+        <relationshipLabel><!-- Orders (Parent Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the order is undergoing an in-flight change, this field will be cheked --></help>
+        <label><!-- Participating in Inflight Change --></label>
+        <name>csordtelcoa__Participating_in_Inflight_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Inflight change is not possible on an Order whose child delivery order has this checkbox ticked --></help>
+        <label><!-- Point of No-Return Reached --></label>
+        <name>csordtelcoa__Point_of_No_Return_Reached__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Configuration lookup for Product Delivery typed orders --></help>
+        <label><!-- Product Configuration --></label>
+        <name>csordtelcoa__Product_Configuration__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Custom UPC Order Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Order Provisioning --></label>
+            <section>Order Provisioning</section>
+        </sections>
+        <sections>
+            <label><!-- Provisioning Details --></label>
+            <section>Provisioning Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Reschedule --></label>
+        <name>CSCRM_Reschedule_Order</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Withdraw --></label>
+        <name>CSCRM_Withdraw</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Cease Order --></label>
+        <name>Cease_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Change Order --></label>
+        <name>Change_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Order --></label>
+        <name>New_Order</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- OE_Data --></label>
+        <name>OE_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recreate_Order_Confirmation --></label>
+        <name>Recreate_Order_Confirmation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recreate_Termination_Document --></label>
+        <name>Recreate_Termination_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- In_flight_Change --></label>
+        <name>csordtelcoa__In_flight_Change</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Visualise_In_Flight_Delta --></label>
+        <name>csordtelcoa__Visualise_In_Flight_Delta</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>Account not in Zefix</name>
+    <style>freeForm</style>
+    <subject>ATTENTION: Account not found in Zefix</subject>
+    <textOnly>Dear {!Account.OwnerFirstName}, 
+
+An Account you own is not identified in the Zefix database. This account is a not registered account or the Account name is wrong, please take action. 
+
+Account: {!Account.Name}
+Account Link: {!Account.Link}
+
+Your Salesforce Administrator</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

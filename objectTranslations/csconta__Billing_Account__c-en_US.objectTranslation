@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billing Channel --></label>
+        <name>UPC_Billing_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Paper Bill</masterLabel>
+            <translation><!-- Paper Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eBanking</masterLabel>
+            <translation><!-- eBanking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eMail Bill</masterLabel>
+            <translation><!-- eMail Bill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing email --></label>
+        <name>UPC_Billing_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Branch --></label>
+        <name>UPC_Billing_Local_Branch__c</name>
+        <picklistValues>
+            <masterLabel>ROM_Small</masterLabel>
+            <translation><!-- ROM_Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROM_Solution</masterLabel>
+            <translation><!-- ROM_Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZH_8021</masterLabel>
+            <translation><!-- ZH_8021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZH_Business_Admin</masterLabel>
+            <translation><!-- ZH_Business_Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZH_KMU</masterLabel>
+            <translation><!-- ZH_KMU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZH_SOHO</masterLabel>
+            <translation><!-- ZH_SOHO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZH_Sales_Admin</masterLabel>
+            <translation><!-- ZH_Sales_Admin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address file --></label>
+        <name>UPC_ECD_Address_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- ECD Business Numbers --></label>
+        <name>UPC_ECD_Business_Numbers__c</name>
+        <picklistValues>
+            <masterLabel>CEB_DEFAULT</masterLabel>
+            <translation><!-- CEB_DEFAULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cut A number --></label>
+        <name>UPC_ECD_Cut_A_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cut B number --></label>
+        <name>UPC_ECD_Cut_B_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT included --></label>
+        <name>UPC_ECD_VAT_Included__c</name>
+    </fields>
+    <fields>
+        <label><!-- ECD Voice --></label>
+        <name>UPC_ECD_Voice__c</name>
+        <picklistValues>
+            <masterLabel>CEV_COST_OBJECT</masterLabel>
+            <translation><!-- CEV_COST_OBJECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice-CHUV</masterLabel>
+            <translation><!-- Voice-CHUV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice-Default</masterLabel>
+            <translation><!-- Voice-Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice-Default incl. total</masterLabel>
+            <translation><!-- Voice-Default incl. total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice-Default with discounts</masterLabel>
+            <translation><!-- Voice-Default with discounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice-SA</masterLabel>
+            <translation><!-- Voice-SA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Electronic Call Data --></label>
+        <name>UPC_ECD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max. Bill Periods --></label>
+        <name>UPC_Invoice_Condition_Max_Bill_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min. Amount --></label>
+        <name>UPC_Invoice_Condition_Min_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Condition --></label>
+        <name>UPC_Invoice_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Taifun Reconciliation --></label>
+        <name>UPC_Last_Taifun_Reconciliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>UPC_Shipping_Address__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taifun Bill_Spec Number --></label>
+        <name>UPC_Synced_Taifun_Bill_Spec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>csconta__Account__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>csconta__Address__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Channel --></label>
+        <name>csconta__Billing_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Electronic Bill</masterLabel>
+            <translation><!-- Electronic Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper bill</masterLabel>
+            <translation><!-- Paper bill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>csconta__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>csconta__Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Cycle --></label>
+        <name>csconta__Billing_Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Language --></label>
+        <name>csconta__Billing_Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Postcode --></label>
+        <name>csconta__Billing_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>csconta__Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>csconta__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>csconta__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account Number --></label>
+        <name>csconta__Financial_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Format Type --></label>
+        <name>csconta__Format_Type__c</name>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolidated</masterLabel>
+            <translation><!-- Consolidated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost centre</masterLabel>
+            <translation><!-- Cost centre --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unused --></label>
+        <name>csconta__Order__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Account Address --></label>
+        <name>csconta__Override_Account_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Billing Account --></label>
+        <name>csconta__Parent_Billing_Account__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>csconta__Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Half-yearly invoice</masterLabel>
+            <translation><!-- Half-yearly invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly invoice</masterLabel>
+            <translation><!-- Monthly invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly invoice</masterLabel>
+            <translation><!-- Quarterly invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly invoice</masterLabel>
+            <translation><!-- Yearly invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>csconta__Postcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is not used --></help>
+        <label><!-- Unused --></label>
+        <name>csconta__Service__c</name>
+        <relationshipLabel><!-- Unused --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>csconta__Status__c</name>
+        <picklistValues>
+            <masterLabel>In collection</masterLabel>
+            <translation><!-- In collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in collection</masterLabel>
+            <translation><!-- Not in collection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>csconta__Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is not used --></help>
+        <label><!-- Unused --></label>
+        <name>csconta__Subscription__c</name>
+        <relationshipLabel><!-- Unused --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>UPC Billing Account Layout all Profiles</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Electronic Call Data --></label>
+            <section>Electronic Call Data</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice Conditions --></label>
+            <section>Invoice Conditions</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- When the Channel is Paper, the Shipping Address field is required. --></errorMessage>
+        <name>NX_Address_Mandatory_when_Channel_Paper</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When the Channel is email, the Billing email field is required. --></errorMessage>
+        <name>NX_Email_Mandatory_when_Channel_is_email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The address lookup must be cleared if &quot;Override Account Address&quot; is unchecked --></errorMessage>
+        <name>csconta__Override_Account_Billing_Address</name>
+    </validationRules>
+</CustomObjectTranslation>

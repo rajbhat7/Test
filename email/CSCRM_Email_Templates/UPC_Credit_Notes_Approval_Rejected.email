@@ -1,0 +1,10 @@
+<div style="font-family: arial; font-size: 10pt;">
+    Hi,<br />
+    <br />
+    Your Credit Note has been rejected<br />
+    <br />
+    <b><u>Credit Note {!UPC_Credit_Note__c.Name}</u></b><br />
+    {!UPC_Credit_Note__c.Link}<br />
+    <br />
+ Best regards<br />
+</div>

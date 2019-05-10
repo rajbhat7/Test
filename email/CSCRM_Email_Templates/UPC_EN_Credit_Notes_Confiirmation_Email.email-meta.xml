@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for Credit Notes confirmations</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UPC EN Credit Notes Confirmation Email</name>
+    <style>none</style>
+    <subject>Credit note from UPC Business</subject>
+    <textOnly>Customer number: {!UPC_Credit_Note__c.UPC_Customer_Number__c}
+
+{!UPC_Credit_Note__c.UPC_Main_Commercial_Contact_Salutation__c} {!UPC_Credit_Note__c.UPC_Main_Commercial_Contact_Name__c}
+
+We are pleased to hereby confirm the credit note of CHF {!UPC_Credit_Note__c.UPC_Net_Amount__c}.
+{!UPC_Credit_Note__c.UPC_Credit_Method_Expression__c}
+
+Please do not hesitate to contact us if you have any further questions.
+
+Yours sincerely
+{!UPC_Credit_Note__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

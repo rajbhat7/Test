@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email send from Opportunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC EN Quote Email</name>
+    <style>freeForm</style>
+    <subject>Offer from UPC Business / {!Opportunity.ReferenceNumber}</subject>
+    <textOnly>Further information is available at: upc.ch/business
+Offer from UPC Business
+
+{!Salutation} {!CustomerName}
+
+Thank you for your interest in products from UPC Business.
+Enclosed you will find our offer tailored to your specific needs, including accompanying documents.
+
+We are convinced that we can ideally support you with our ICT solutions.
+With our services you will benefit from the following advantages:
+
+{!ProductAdvantages}
+
+
+We would be glad to welcome you as a Business customer soon.
+After receiving the signed offer within 30 days we will arrange the ordered services for you.
+
+It&apos;s even faster with our online tool: here you can simply accept or reject your offer.
+
+I am available as your personal contact and will be glad to answer any questions about your offer.
+
+Yours sincerely
+{!Opportunity.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

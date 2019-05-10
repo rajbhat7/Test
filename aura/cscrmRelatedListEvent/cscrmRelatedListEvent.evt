@@ -1,0 +1,9 @@
+<!--
+ - Created by Petar on 11/19/2018.
+ -->
+
+<aura:event type="COMPONENT" description="cscrmRelatedListEvent">
+    <aura:attribute name="eventType" type="String" description="String name of event type"/>
+    <aura:attribute name="rowIndex" type="Integer" description="Index of row event occurred" />
+    <aura:attribute name="columnName" type="String" description="API name of column event occurred" />
+</aura:event>

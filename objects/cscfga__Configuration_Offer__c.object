@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>csbb__High_Level_Product_Offer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>High Level Product Offer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the offer will be active and available for configuration.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Baskets_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of associated baskets. Only valid for template offers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of associated baskets. Only valid for template offers.</inlineHelpText>
+        <label>Baskets_Count__c</label>
+        <summaryForeignKey>cscfga__Template_Offer_Basket_Association__c.cscfga__Offer__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Category_Association_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Field populated automatically based on number of Categories associated to the Offer.</inlineHelpText>
+        <label>Category Association Count</label>
+        <summaryForeignKey>cscfga__Offer_Category_Association__c.cscfga__Configuration_Offer__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Content__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Filed not in use.</inlineHelpText>
+        <label>Content</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cscfga__Date_Range__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date range used to make the Offer available only for a fixed time period.</inlineHelpText>
+        <label>Dates Available</label>
+        <referenceTo>cscfga__Date_Range__c</referenceTo>
+        <relationshipLabel>Offers</relationshipLabel>
+        <relationshipName>Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Offer description.</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscfga__Eligibility_Rule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose from existing Eligibility Rules in order to restrict the sale to qualified customers only.</inlineHelpText>
+        <label>Eligibility Rule</label>
+        <referenceTo>cscfga__Eligibility_Rule__c</referenceTo>
+        <relationshipName>Configuration_Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Sequence__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The weight to be assigned to this Offer when sorting offers for display to the sales user.</inlineHelpText>
+        <label>Sequence</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscfga__Shared_Context_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Filed not in use.</inlineHelpText>
+        <label>Shared Context Configuration</label>
+        <referenceTo>cscfga__Product_Configuration__c</referenceTo>
+        <relationshipLabel>Offers (Shared Context)</relationshipLabel>
+        <relationshipName>Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscfga__Template__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check if this will be a template offer, which is versioned and immutable once activated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that Offer is a template that can be used for creation of new offers or new templates.</inlineHelpText>
+        <label>Template</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>csexpimp1__guid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>GUID for JSON export/import</description>
+        <externalId>true</externalId>
+        <inlineHelpText>GUID for JSON export/import</inlineHelpText>
+        <label>GUID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Offer</label>
+    <listViews>
+        <fullName>cscfga__All_Template_Offers</fullName>
+        <columns>NAME</columns>
+        <columns>cscfga__Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Template Offers</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>cscfga__Template_Offers</fullName>
+        <columns>NAME</columns>
+        <columns>cscfga__Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>cscfga__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Template Offers</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Offer Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Offers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>csexpimp1__Guid_Format_Check</fullName>
+        <active>true</active>
+        <description>Validates the format of GUID, but allows for it to remain blank.</description>
+        <errorConditionFormula>AND(NOT( REGEX( csexpimp1__guid__c , &quot;\\w{8}-\\w{4}-\\w{4}-\\w{4}-\\w{12}&quot;) )
+, NOT(ISBLANK(csexpimp1__guid__c )))</errorConditionFormula>
+        <errorDisplayField>csexpimp1__guid__c</errorDisplayField>
+        <errorMessage>Required format of the GUID is xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+With x being any alphanumeric character (letter or digit).</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>cscfga__BtnObrisiMee</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>CloudSense</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>www.cloudsense.com</url>
+    </webLinks>
+    <webLinks>
+        <fullName>cscfga__Create_new_version</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create new version</masterLabel>
+        <openType>sidebar</openType>
+        <page>cscfga__CloneTemplateOffer</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>cscfga__TestniObrisiMe</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>CloudSenseSolutions</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>www.cloudsensesolutions.com</url>
+    </webLinks>
+    <webLinks>
+        <fullName>csexpimp1__Export_to_JSON</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Export to JSON</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var recordId = &apos;[&quot;{!cscfga__Configuration_Offer__c.Id}&quot;]&apos;; 
+document.location = &quot;/apex/csexpimp1__JsonExportJob?exportName=ConfigurationOffer&amp;recordIds=&quot; + encodeURI(recordId) + &quot;&amp;objectType=cscfga__Configuration_Offer__c&amp;retUrl=&quot; + encodeURI(window.location.href);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>csexpimp1__List_Export_to_JSON</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Export to JSON</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var selectedRecords = {!GETRECORDIDS($ObjectType.cscfga__Configuration_Offer__c)};
+if (!selectedRecords.length) {
+    window.alert(&quot;No records selected&quot;);
+} else {
+    var recordIds = JSON.stringify(selectedRecords);
+    document.location = &quot;/apex/csexpimp1__JsonExportJob?exportName=SelectedOffers&amp;recordIds=&quot; + encodeURI(recordIds) + &quot;&amp;objectType=cscfga__Configuration_Offer__c&amp;retUrl=&quot; + encodeURI(window.location.href);
+}</url>
+    </webLinks>
+</CustomObject>

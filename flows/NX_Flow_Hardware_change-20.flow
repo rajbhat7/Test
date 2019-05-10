@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <constants>
+        <name>resConnectbox</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>&lt;img src=’https://www.callblocker.ch/wp-content/uploads/2018/05/UPC-Connect-Box-300x204.png’, alt=’UPC Connect Box’, title=’UPC Router‘ width=’64’, height=’64’ /&gt;</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>DeviceTypDecision</name>
+        <label>DecDeviceTyp</label>
+        <locationX>417</locationX>
+        <locationY>186</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Phone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Telefon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>varPhone_choice</targetReference>
+            </connector>
+            <label>Phone</label>
+        </rules>
+        <rules>
+            <name>Modem</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Modem / Router</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Modem_Choice</targetReference>
+            </connector>
+            <label>Modem</label>
+        </rules>
+        <rules>
+            <name>Other</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Andere</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Other_Choice</targetReference>
+            </connector>
+            <label>Other</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>resDeviceTyp</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Hardware_Choice__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resLanguageCustomer</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Language_Spoken__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resModemNew</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Modem_DeviceNew__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resModemOld</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Modem_DeviceOld__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resPhoneNew</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Phone_DeviceNew__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resPhoneOld</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Phone_DeviceOld__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>NX Flow Hardware change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NX Flow Hardware change V2.2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>GetAccountRecord</name>
+        <label>GetAccountRecord</label>
+        <locationX>154</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetContactRecord</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccountID</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>varAccountRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>UPC_Taifun_ID__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>BillingCity</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetCaseRecord</name>
+        <label>GetCaseRecord</label>
+        <locationX>407</locationX>
+        <locationY>48</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Hardware_changes</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>varCaseRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CaseNumber</queriedFields>
+        <queriedFields>ContactEmail</queriedFields>
+        <queriedFields>Status</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetContactRecord</name>
+        <label>GetContactRecord</label>
+        <locationX>282</locationX>
+        <locationY>49</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetCaseRecord</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varContactId</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>varContactRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Email</queriedFields>
+        <queriedFields>Phone</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>1057</locationX>
+        <locationY>176</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>P4 &gt; kein Ausfall und/oder Beeinträchtigung des Services</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_DeviceOther_Description__c</field>
+            <value>
+                <elementReference>varOther_Device_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_DeviceOther__c</field>
+            <value>
+                <elementReference>varDeviceTyp_Other</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Email_verified__c</field>
+            <value>
+                <elementReference>varContact_Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Language_Spoken__c</field>
+            <value>
+                <elementReference>varContact_Language</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Last_Information__c</field>
+            <value>
+                <elementReference>Last_Information</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_MacAddressModemNew__c</field>
+            <value>
+                <elementReference>varMac_Address_Modem_New</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_MacAddressModemOld__c</field>
+            <value>
+                <elementReference>varMac_Address_Modem_Old</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_MacAddressPhoneNew__c</field>
+            <value>
+                <elementReference>varMac_Address_Phone_New</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_MacAddressPhoneOld__c</field>
+            <value>
+                <elementReference>varMac_Address_Phone_Old</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Modem_DeviceNew__c</field>
+            <value>
+                <elementReference>varModem_New</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Modem_DeviceOld__c</field>
+            <value>
+                <elementReference>varModem_Old</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Number_Verified__c</field>
+            <value>
+                <elementReference>Contact_Number</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Phone_DeviceNew__c</field>
+            <value>
+                <elementReference>varPhone_New</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Phone_DeviceOld__c</field>
+            <value>
+                <elementReference>varPhone_old</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Remark_Modem__c</field>
+            <value>
+                <elementReference>varRemark_Modem</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Remark_Phone__c</field>
+            <value>
+                <elementReference>varRemark_Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UPC_SUP_Ticket_Number_told__c</field>
+            <value>
+                <elementReference>varCase_Number_Told</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>Control_and_Finalize</name>
+        <label>Control and Finalize</label>
+        <locationX>906</locationX>
+        <locationY>176</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Contact_Number</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Telefonnummer verifiziert</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Die Nummer muss bestätigt werden</errorMessage>
+                <formulaExpression>{!Contact_Number} = true</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>varContactPhoneControl</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>varContactRecord.Phone</elementReference>
+            </defaultValue>
+            <fieldText>Telefonnummer</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>varContact_Email</name>
+            <dataType>Boolean</dataType>
+            <fieldText>E-Mail Adresse verifiziert</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Die Email-Adresse muss bestätigt werden</errorMessage>
+                <formulaExpression>{!varContact_Email}= true</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>varContactEmailControl</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>varContactRecord.Email</elementReference>
+            </defaultValue>
+            <fieldText>Email</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>varContact_Language</name>
+            <choiceReferences>resLanguageCustomer</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Sprache vom Kunde</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>varCase_Number_Told</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Ticket Nummer mitgeteilt</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>Bitte bestätigen dass die TicketNummer mitgeteilt worden ist.</errorMessage>
+                <formulaExpression>{!varCase_Number_Told}= true</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>varCaseNumberControl</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>varCaseRecord.CaseNumber</elementReference>
+            </defaultValue>
+            <fieldText>Ticket Nummer</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Last_Information</name>
+            <dataType>String</dataType>
+            <fieldText>Zusätzliche Infos</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <description>hier bitte ein Hardware-Typ aussuchen</description>
+        <name>Hardware_changes</name>
+        <label>Hardware changes</label>
+        <locationX>327</locationX>
+        <locationY>186</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>DeviceTypDecision</targetReference>
+        </connector>
+        <fields>
+            <name>DeviceTypChoice</name>
+            <choiceReferences>resDeviceTyp</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>DeviceTyp</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Modem_Choice</name>
+        <label>Auswahl Modem</label>
+        <locationX>621</locationX>
+        <locationY>76</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>To_copy_in_Remedy_Modem</targetReference>
+        </connector>
+        <fields>
+            <name>varModem_Old</name>
+            <choiceReferences>resModemOld</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp alt</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varModem_New</name>
+            <choiceReferences>resModemNew</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varMac_Address_Modem_Old</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address alt</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varMac_Address_Modem_New</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address neu</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varRemark_Modem</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Bemerkungen</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Modem_Choice</name>
+            <fieldText>neue MAC eintragen
+&quot;Save&quot; drücken
+&quot;Generate bootfile&quot; drücken
+&quot;Reprovision&quot;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>Other_Choice</name>
+        <label>Andere Geräte</label>
+        <locationX>637</locationX>
+        <locationY>296</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>To_copy_in_Remedy_Other</targetReference>
+        </connector>
+        <fields>
+            <name>Text_Other</name>
+            <fieldText>Nur verwenden wenn es um spezielle Hardware Changes geht wie : ISDN-PBX (Patton-Box), Meraki Firewall, etc.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>varDeviceTyp_Other</name>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varOther_Device_Description</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Beschreibung</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>To_copy_in_Remedy_Modem</name>
+        <label>To copy in Remedy</label>
+        <locationX>750</locationX>
+        <locationY>78</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Control_and_Finalize</targetReference>
+        </connector>
+        <fields>
+            <name>varResumCaseRemedy</name>
+            <fieldText>Case Number : {!varCaseRecord.CaseNumber}
+Account Name : {!varAccountRecord.Name}
+Account Taifun ID : {!varAccountRecord.UPC_Taifun_ID__c}
+Contact Name : {!varContactRecord.Name}
+Modem
+Alter Modem : {!varModem_Old}
+Mac Adresse : {!varMac_Address_Modem_Old}
+Neuer Modem : {!varModem_New}
+Mac Adresse : {!varMac_Address_Modem_New}
+Bemerkung : {!varRemark_Modem}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>To_copy_in_Remedy_Other</name>
+        <label>To copy in Remedy</label>
+        <locationX>749</locationX>
+        <locationY>298</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Control_and_Finalize</targetReference>
+        </connector>
+        <fields>
+            <name>varResumCaseRemedyOther</name>
+            <fieldText>Case Number : {!varCaseRecord.CaseNumber}
+Account Name : {!varAccountRecord.Name}
+Account Taifun ID : {!varAccountRecord.UPC_Taifun_ID__c}
+Contact Name : {!varContactRecord.Name}
+Typ : {!varDeviceTyp_Other}
+Beschreibung : {!varOther_Device_Description}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>To_copy_in_Remedy_Phone</name>
+        <label>To copy in Remedy</label>
+        <locationX>752</locationX>
+        <locationY>176</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Control_and_Finalize</targetReference>
+        </connector>
+        <fields>
+            <name>varResumCaseRemedyPhone</name>
+            <fieldText>Case Number : {!varCaseRecord.CaseNumber}
+Account Name : {!varAccountRecord.Name}
+Account Taifun ID : {!varAccountRecord.UPC_Taifun_ID__c}
+Contact Name : {!varContactRecord.Name}
+Telefon
+Alter Telefon : {!varPhone_old}
+Mac Adresse : {!varMac_Address_Phone_Old}
+Neuer Telefon : {!varPhone_New}
+Mac Adresse : {!varMac_Address_Phone_New}
+Bemerkung : {!varRemark_Phone}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>varPhone_choice</name>
+        <label>Auswahl Telefon</label>
+        <locationX>630</locationX>
+        <locationY>176</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>To_copy_in_Remedy_Phone</targetReference>
+        </connector>
+        <fields>
+            <name>varPhone_old</name>
+            <choiceReferences>resPhoneOld</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp Neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varPhone_New</name>
+            <choiceReferences>resPhoneNew</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp Neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varMac_Address_Phone_Old</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address Old</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varMac_Address_Phone_New</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address New</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>varRemark_Phone</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Bemerkungen</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Phone_Choice</name>
+            <fieldText>neue MAC eintragen
+&quot;Save&quot; drücken
+&quot;Generate bootfile&quot; drücken
+&quot;Reprovision&quot;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>GetAccountRecord</startElementReference>
+    <variables>
+        <name>varAccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varAccountRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>varAccountTaifunId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varCaseNo</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varCaseRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>varContactEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varContactFirstname</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varContactLastname</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varContactPhone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varContactRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>varMacAddressModemNew</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varMacAddressModemOld</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varMacAddressPhoneNew</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varMacAddressPhoneOld</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varRemark</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

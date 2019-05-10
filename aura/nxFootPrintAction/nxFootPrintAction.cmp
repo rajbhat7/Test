@@ -1,0 +1,255 @@
+<aura:component controller="nxFootPrintActionController" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" >
+    <!--currentStep attribute will control the steps of progress indicator-->
+    <aura:attribute name="currentStep" type="string" default="1"/>
+   <!-- <aura:attribute name="selectedAddress" type="String" default=""/>-->
+    <aura:attribute name="recordsReturned" type="Integer" default="0"/>
+   <!-- <aura:attribute name="hasLookup" type="boolean" default="false"/>-->
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="sortedBy" type="String" default="buildingId"/>
+    <aura:attribute name="sortedDirection" type="String"/>
+    <aura:attribute name="defaultSortDirection" type="String"/>
+    <aura:attribute name="rowsSelected" type="List"/>
+    <aura:attribute name="fpRowSelected" type="List"/>
+    <aura:attribute name="footPrintColumns" type="List"/>
+    <aura:attribute name="footPrintData" type="List"/>
+    <aura:attribute name="errorDescription" type="String" default=""/>
+    <aura:attribute name="threshold" type="Integer" default="0"/>
+    <aura:attribute name="isNewAddress" type="boolean" default="false"/>
+    <aura:attribute name="selectedAddress" type="String" default=""/>
+    <aura:attribute name="footPrintOpen" type="boolean" default=""/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="isFootprint" type="Boolean" default="false"/>
+
+    <!--Added for PT7992-->
+    <aura:attribute name="siteId" type="String"/>
+    <aura:attribute name="siteOverride" type="Boolean"/>
+    <!--Style-->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:nxHandleInputChangeEvent" action="{!c.onChangeSearch}"/>
+    <aura:handler name="change" action="{!c.onLookupChange}" value="{!v.selectedAddress}"/> 
+
+    <aura:if isTrue="{!!v.isNewAddress}">
+        <aura:html tag="style">
+            .slds-modal__container{
+                height : auto;
+                width: 70%;
+                max-width: 70rem;
+            }
+            .modal-body{
+                height : 500px !important;
+                max-height: 500px !important;
+            } 
+        </aura:html> 
+    </aura:if>
+<!--
+    <aura:if isTrue="{!v.errorDescription != ''}">
+        <aura:html tag="style">
+            .contentBody{
+                min-height: 250px;
+            }
+        </aura:html>
+    </aura:if>
+ -->   
+    <!--Header-->
+    
+    <div class="modal-header slds-docked-form-header slds-modal__header">
+        <aura:if isTrue="{!v.isNewAddress}">
+        <lightning:buttonIcon iconName="utility:close"
+            onclick="{! c.closeModel }"
+            alternativeText="close"
+            variant="bare-inverse"
+            class="slds-modal__close"/>
+        </aura:if>
+        <div aura:id="toastError" class="demo-only slds-hide" style="height: 4rem;">
+                <div class="slds-notify_container slds-is-relative">
+                    <div class="slds-notify slds-notify_toast slds-theme_error" role="status">
+                    <!--<span class="slds-assistive-text">error</span>
+                    <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                        <lightning:icon iconName="utility:error" alternativeText='Info'/>
+                    </span>-->
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">{!v.errorDescription}</h2>
+                    </div>
+                    <!--<div class="slds-notify__close">
+                        <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                        <lightning:icon iconName="utility:close" alternativeText="Close"/>
+                        <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div>--> 
+                    </div>
+                </div>
+            </div>
+
+        <h4 class="title slds-text-heading--medium" >Add Address</h4>
+        <br/>                        
+        <!--lightning progressIndicator start-->
+        <lightning:progressIndicator currentStep="{!v.currentStep}" type="base">
+            <lightning:progressStep label="Input Address" value="1" />
+            <lightning:progressStep label="Address Check" value="2" />
+            <lightning:progressStep label="FootPrint Check" value="3"/>
+        </lightning:progressIndicator>
+
+    </div>
+    
+    <!--Content-->
+    <div aura:id="bodyChange" class="slds-modal__content slds-p-around_x-medium contentBody">
+        <!--showing 3 screens based on progress indicator steps-->
+        <div class="{!v.currentStep == '1' ? 'slds-show' : 'slds-hide'}">
+           <!-- Commented on 04/12/2018 for PT7791
+               <c:strike_lookup
+                label="UPC Address"
+                object="UPC_ADBASE__c"
+                searchField="UPC_Address_Formula__c"
+                placeholder="Select an option"
+                iconName="standard:account"
+                subtitleField="UPC_Address_Formula__c"
+                order="UPC_Address_Formula__c"
+                limit="5"
+                loadingMessage="Loading..."
+                errorMessage="Invalid input"
+                value="{!v.selectedAddress}"/>-->
+
+                <div aura:id="addressFields" style="margin-left:15px; margin-top:15px; margin-right:15px">
+                    <div style="width:45%;float:left">
+                        <lightning:input label="Street" type="text" aura:id="street"/>
+                        <lightning:input label="Number" type="text" aura:id="number"/>
+                        <lightning:input label="Postcode" type="text" aura:id="postcode"/>
+                    </div>
+                    <div style="width:45%;float:right">
+                        <lightning:input label="Town" type="text" aura:id="city"/>
+                        <lightning:input label="Country" type="text" aura:id="country"/>
+                        <lightning:input label="Building Name" type="text" aura:id="buildingName"/>
+                    </div>
+                </div>
+        </div>
+        <div class="{!v.currentStep == '2' ? 'slds-show' : 'slds-hide'}">
+            <div style="height: 300px">
+                <lightning:datatable
+                    auraId="addressChecker"
+                    columns="{! v.columns }"
+                    data="{! v.data }"
+                    keyField="buildingId"
+                    onrowselection="{!c.updateSelectedRows}"
+                    sortedBy="{! v.sortedBy }"
+                    sortedDirection="{! v.sortedDirection }"
+                    defaultSortDirection="asc"
+                    onsort="{! c.updateColumnSorting }"
+                    />
+            </div>
+        </div>
+        <div class="{!v.currentStep == '3' ? 'slds-show' : 'slds-hide'}">
+            <div style="height: 300px">
+            <table aria-multiselectable="true" class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid">
+                <thead>
+                    <tr style="height:25px" class="slds-line-height_reset">
+                    <th class="slds-text-title_caps slds-text-align_right" scope="col" style="width: 3.25rem;">
+                        <div class="slds-truncate slds-assistive-text" id="column-group-header" title="Choose a row to select">Choose a row to select</div>
+                    </th>
+                    <th aria-label="HFC" aria-sort="none" class="slds-text-title_caps slds-is-sortable" scope="col">
+                            <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                <span class="slds-truncate" title="HFC">Address</span>
+                            </div>
+                        </th>
+                    <th aria-label="HFC" aria-sort="none" class="slds-text-title_caps slds-is-sortable" scope="col">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                            <span class="slds-truncate" title="HFC">HFC</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                            <span class="slds-truncate" title="HFC">FTTH</span>
+                        </div>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.footPrintData}" var="footprint" indexVar="index">
+                        <tr class="slds-hint-parent">
+                            <td class="slds-text-align_right" role="gridcell">
+                                <span class="slds-radio">
+                                    <!--<lightning:input type="radio" name="select" value="{!footprint.buildingId}" onchange="{!c.test}"/>-->
+                                    <aura:if isTrue="{!v.footPrintData.length > 1}">
+                                        <input type="radio" id="{!footprint.buildingId}" name="options" tabindex="-1" aria-labelledby="radio-button-label-01 column-group-header" value="{!footprint.buildingId}"/>
+                                        <aura:set attribute="else">
+                                            <input type="radio" checked="true" name="options" id="{!footprint.buildingId}" tabindex="-1" aria-labelledby="radio-button-label-01 column-group-header" value="{!footprint.buildingId}"/>  
+                                        </aura:set>
+                                    </aura:if>
+                                    <label class="slds-radio__label" for="{!footprint.buildingId}" id="radio-button-label-01">
+                                        <span class="slds-radio_faux"></span>
+                                        <span class="slds-form-element__label slds-assistive-text">Select item 1</span>
+                                    </label>
+                                </span>
+                            </td>
+                            <td role="gridcell">
+                                <div data-index="{!index}" class="slds-truncate">{!footprint.fullAddress}</div>
+                            </td>
+                            <td role="gridcell">
+                                <aura:if isTrue="{!and(or(footprint.hfcAvailability == 'yes', footprint.hfcAvailability == 'on demand'), footprint.suitability == 'T1')}">
+                                    <div class="slds-truncate" title="yes"><img style="width:20px; height:20px; margin-right:5px" src="{!$Resource.Available_Icon}"/>   {!footprint.suitability}</div>
+                                    <aura:set attribute="else">
+                                        <aura:if isTrue="{!and (or(footprint.suitability == 'T2', footprint.suitability == 'T3', footprint.suitability == 'T4'), or(footprint.hfcAvailability == 'yes', footprint.hfcAvailability == 'on demand'))}">
+                                            <div class="slds-truncate" title="yes"><img style="width:20px; height:20px;margin-right:5px" src="{!$Resource.Alert_Icon}"/>   {!footprint.suitability}</div>
+                                            <aura:set attribute="else">
+                                                <div class="slds-truncate" title="yes"><img style="width:20px; height:20px;" src="{!$Resource.Unavailable_Icon}"/></div>
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:set>
+                                </aura:if>
+                            
+                            </td>
+                            <td role="gridcell">
+                                <aura:if isTrue="{!and(or(footprint.ftthAvailability == 'yes', footprint.ftthAvailability == 'on demand'))}">
+                                        <div class="slds-truncate" title="yes"><img style="width:20px; height:20px" src="{!$Resource.Available_Icon}"/></div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-truncate" title="yes"><img style="width:20px; height:16p20pxx" src="{!$Resource.Unavailable_Icon}"/></div>
+                                            </aura:set>
+                                    </aura:if>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                    </tbody>
+
+                    </table>  
+                </div>
+            </div>
+         <div>
+                
+         </div>
+ 
+    </div>
+     <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+     <div class="slds-modal__footer slds-modal__footer_directional">
+            <lightning:button disabled="{!v.currentStep != '1' ? '' : 'disabled'}"
+                              variant="neutral" 
+                              label="Back"
+                              title="Back"
+                              onclick="{! c.moveBack }"/>
+            <aura:if isTrue="{!v.isNewAddress != false}">
+            <lightning:button variant="neutral" 
+                                label="Cancel"
+                                title="Cancel"
+                                onclick="{! c.closeModel }"/>
+            </aura:if>
+            <aura:if isTrue="{!v.currentStep != '3'}">
+                <lightning:button variant="brand" 
+                                  label="Next"
+                                  title="Next"
+                                  onclick="{! c.moveNext }"/>
+            </aura:if>
+            <aura:if isTrue="{!v.isFootprint == true}">
+                <lightning:button variant="brand"
+                                  label="Create Footprint"
+                                  title="Create Footprint"
+                                  onclick="{!c.createFootprint}"
+                />
+            </aura:if>
+            <aura:if isTrue="{!v.currentStep == '3'}"> 
+                <lightning:button variant="brand" 
+                                  label="Finish"
+                                  title="Finish"
+                                  onclick="{! c.finish }"/>  
+            </aura:if>
+        </div>
+</aura:component>

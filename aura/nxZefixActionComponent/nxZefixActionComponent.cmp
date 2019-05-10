@@ -1,0 +1,54 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+    access="global" controller="nxZefixComponentController">
+
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="selectedRowsList" type="List"  />
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="maxRowSelection" type="Integer" default="1"/>
+    <aura:attribute name="myMessage" type="String"  />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:html tag='style'>
+        .slds-modal__container{
+            height : auto;
+            width: 60%;
+            max-width: 60rem;
+        }
+        .modal-body{
+            height : 400px !important;
+            max-height: 450px !important;
+        } 
+    </aura:html>
+    <lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small" />
+            Zefix Webservice
+        </aura:set>
+        <div>
+            <aura:if isTrue="{! v.loaded }">
+                    <aura:if isTrue="{!not(empty(v.data))}"> 
+                        <lightning:datatable
+                            columns="{! v.columns }"
+                            data="{! v.data }"
+                            keyField="id"
+                            maxRowSelection="{! v.maxRowSelection }"
+                            onrowselection="{! c.updateSelectedText }"/>
+                            <div style= "margin-top: 10px;" align="right"> 
+                            <lightning:button class="slds-button slds-button_brand" label="Update Account" onclick="{! c.updateAccount }" />
+                        </div>
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="utility:warning" alternativeText="Warning!" variant="warning"/><lightning:formattedText value="{!v.myMessage}" />
+                        </aura:set>
+                    </aura:if>
+                   
+                <aura:set attribute="else">
+                    <lightning:spinner alternativeText="Loading" size="large" />
+                </aura:set>
+            </aura:if> 
+        </div>
+    </lightning:card>
+ 
+</aura:component>

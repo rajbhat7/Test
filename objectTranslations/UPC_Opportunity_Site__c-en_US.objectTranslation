@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Site</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Sites</value>
+    </caseValues>
+    <fields>
+        <label><!-- Building ID --></label>
+        <name>Building_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC Suitability --></label>
+        <name>HFC_Suitability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Name --></label>
+        <name>Site_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>UPC_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- BBCS --></label>
+        <name>UPC_BBCS_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building ID not Found --></label>
+        <name>UPC_Building_ID_not_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTTH --></label>
+        <name>UPC_FTTH__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFC --></label>
+        <name>UPC_HFC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Footprint Check --></label>
+        <name>UPC_Last_Footprint_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Only Solution Offer --></label>
+        <name>UPC_No_SOHO_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS ID --></label>
+        <name>UPC_OS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>UPC_Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage --></label>
+        <name>UPC_Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>UPC_Opportunity__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site Address --></label>
+        <name>UPC_Site_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Number --></label>
+        <name>UPC_Site_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>UPC_Site__c</name>
+        <relationshipLabel><!-- Opportunities Using This Site --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Only Solution Offer --></label>
+        <name>UPC_Soho_Service_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- ULL CU --></label>
+        <name>UPC_ULL_CU_Alert__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Site Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Site Details --></label>
+            <section>Site Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Update_Sites --></label>
+        <name>Update_Sites</name>
+    </webLinks>
+</CustomObjectTranslation>

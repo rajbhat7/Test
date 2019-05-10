@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>cspmb__Account__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Authorization Level --></label>
+        <name>cspmb__Authorization_Level__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>cspmb__Effective_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>cspmb__Effective_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>cspmb__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Authorization Required --></label>
+        <name>cspmb__Is_Authorization_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Definition Name --></label>
+        <name>cspmb__Product_Definition_Name__c</name>
+        <picklistValues>
+            <masterLabel>SMPF</masterLabel>
+            <translation><!-- SMPF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate Card Code --></label>
+        <name>cspmb__Rate_Card_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

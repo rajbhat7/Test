@@ -1,0 +1,4532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- UPC BCSE Service Console --></label>
+        <name>UPC_BCSE_Service_Console</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- UPC Business --></label>
+        <name>UPC_Business</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- UPC External Data Sources --></label>
+        <name>UPC_External_Data_Sources</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- upc Integration Tests --></label>
+        <name>upc_Integration_Tests</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Button - Cancel --></label>
+        <name>CSCAP__Button_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Create Variation Request --></label>
+        <name>CSCAP__Button_Create_Variation_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Delete --></label>
+        <name>CSCAP__Button_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Delete Approver Signature --></label>
+        <name>CSCAP__Button_Delete_Approver_Signature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Load Approver Signature --></label>
+        <name>CSCAP__Button_Load_Approver_Signature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Request PIN --></label>
+        <name>CSCAP__Button_Request_PIN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Save --></label>
+        <name>CSCAP__Button_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button - Send Email --></label>
+        <name>CSCAP__Button_Send_Email</name>
+    </customLabels>
+    <customLabels>
+        <label>Inviare</label>
+        <name>CSCAP__Button_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Upload Document --></label>
+        <name>CSCAP__Button_Upload_Document</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button - Use setting --></label>
+        <name>CSCAP__Button_Use_setting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Validate PIN --></label>
+        <name>CSCAP__Button_Validate_PIN</name>
+    </customLabels>
+    <customLabels>
+        <label>Commenti</label>
+        <name>CSCAP__Customer_Comment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Dropdown - Please Select --></label>
+        <name>CSCAP__Dropdown_Please_Select</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Dropdown - Please Select ClickApprove Setting --></label>
+        <name>CSCAP__Dropdown_Select_ClickApprove_Setting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Dropdown - Please Select Authorised Signatory --></label>
+        <name>CSCAP__Dropdown_Select_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Action --></label>
+        <name>CSCAP__Label_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Approval Expiry --></label>
+        <name>CSCAP__Label_Approval_Expiry</name>
+    </customLabels>
+    <customLabels>
+        <label>Accettare l’offerta</label>
+        <name>CSCAP__Label_Approve</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Approver Signature --></label>
+        <name>CSCAP__Label_Approver_Signature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Attach --></label>
+        <name>CSCAP__Label_Attach</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Attach - Question --></label>
+        <name>CSCAP__Label_Attach_Question</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Authorised Signatory --></label>
+        <name>CSCAP__Label_Authorised_Signatory</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Bcc --></label>
+        <name>CSCAP__Label_Bcc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Body --></label>
+        <name>CSCAP__Label_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - CC --></label>
+        <name>CSCAP__Label_CC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Choose File --></label>
+        <name>CSCAP__Label_Choose_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Clause --></label>
+        <name>CSCAP__Label_Clause</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Comment --></label>
+        <name>CSCAP__Label_Comment</name>
+    </customLabels>
+    <customLabels>
+        <label>Conferma</label>
+        <name>CSCAP__Label_Confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Content Type --></label>
+        <name>CSCAP__Label_Content_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Rifiutare l’offerta</label>
+        <name>CSCAP__Label_Decline</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Download --></label>
+        <name>CSCAP__Label_Download</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - PO --></label>
+        <name>CSCAP__Label_PO</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Quote --></label>
+        <name>CSCAP__Label_Quote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Quote - Question --></label>
+        <name>CSCAP__Label_Quote_Question</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Reject Reason Dropdown --></label>
+        <name>CSCAP__Label_Reject_Reason_Dropdown</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Select ClickApprove setting --></label>
+        <name>CSCAP__Label_Select_ClickApprove_setting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Send Formal Approval Email --></label>
+        <name>CSCAP__Label_Send_Formal_Approval_Email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Subject --></label>
+        <name>CSCAP__Label_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - VAT --></label>
+        <name>CSCAP__Label_VAT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Max Invalid PIN Entries Reached --></label>
+        <name>CSCAP__Max_Invalid_PIN_Entries_Reached</name>
+    </customLabels>
+    <customLabels>
+        <label>Non è stato possibile trasmettere il modulo. La preghiamo di verificare la sua selezione.</label>
+        <name>CSCAP__Message_Choose_Option</name>
+    </customLabels>
+    <customLabels>
+        <label>L’offerta ha perso la sua validità.
+ 
+Magari le sue esigenze sono cambiate? Desidera ricevere una nuova proposta?
+Il team UPC Business è a sua disposizione.</label>
+        <name>CSCAP__Message_Customer_Approval_Expired</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Select File For Approval. --></label>
+        <name>CSCAP__Message_Customer_Approval_Select_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message File Deleted --></label>
+        <name>CSCAP__Message_File_Deleted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message File Size Exception --></label>
+        <name>CSCAP__Message_File_Size_Exception</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message File Upload Successful --></label>
+        <name>CSCAP__Message_File_Upload_Successful</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Invalid Email Address --></label>
+        <name>CSCAP__Message_Invalid_Email_Address</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Invalid File Type --></label>
+        <name>CSCAP__Message_Invalid_File_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Multiple BCC Addresses --></label>
+        <name>CSCAP__Message_Multiple_BCC_Addresses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Multiple CC Addresses --></label>
+        <name>CSCAP__Message_Multiple_CC_Addresses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Multiple To Addresses --></label>
+        <name>CSCAP__Message_Multiple_To_Addresses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message No Access --></label>
+        <name>CSCAP__Message_No_Access</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message No File Selected For Deletion --></label>
+        <name>CSCAP__Message_No_File_Selected_For_Deletion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Pin Send Error --></label>
+        <name>CSCAP__Message_Pin_Send_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Pin Sent --></label>
+        <name>CSCAP__Message_Pin_Sent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Provide Comments --></label>
+        <name>CSCAP__Message_Provide_Comments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Select ClickApprove Setting --></label>
+        <name>CSCAP__Message_Select_ClickApprove_Setting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Please Select Authorised Signatory --></label>
+        <name>CSCAP__Message_Select_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Select File To Upload --></label>
+        <name>CSCAP__Message_Select_File_To_Upload</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Select RejectReason --></label>
+        <name>CSCAP__Message_Select_RejectReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Signature File --></label>
+        <name>CSCAP__Message_Signature_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message_Single_Authoriser --></label>
+        <name>CSCAP__Message_Single_Authoriser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message - Use Settings --></label>
+        <name>CSCAP__Message_Use_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message Valid Pin --></label>
+        <name>CSCAP__Message_Valid_Pin</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading - Additional Files --></label>
+        <name>CSCAP__Section_Block_Heading_Additional_Files</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Additional Information --></label>
+        <name>CSCAP__Section_Block_Heading_Additional_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Client Document --></label>
+        <name>CSCAP__Section_Block_Heading_Client_Document</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading - Documents Approve --></label>
+        <name>CSCAP__Section_Block_Heading_Documents_Approve</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Email Options --></label>
+        <name>CSCAP__Section_Block_Heading_Email_Options</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Select Attachments --></label>
+        <name>CSCAP__Section_Block_Heading_Select_Attachments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Select Documents --></label>
+        <name>CSCAP__Section_Block_Heading_Select_Documents</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading -  Signature --></label>
+        <name>CSCAP__Section_Block_Heading_Signature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading Variation Request --></label>
+        <name>CSCAP__Section_Block_Heading_Variation_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading - File Selected --></label>
+        <name>CSCAP__Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Signatory Name --></label>
+        <name>CSCAP__Signatory_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Table Header - File Name --></label>
+        <name>CSCAP__Table_Header_File_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Table Header - Last Modified Date --></label>
+        <name>CSCAP__Table_Header_Last_Modified_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Table Header - Name --></label>
+        <name>CSCAP__Table_Header_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Table Header - Related To --></label>
+        <name>CSCAP__Table_Header_Related_To</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Account Manager Will Contact --></label>
+        <name>CSCAP__Text_Account_Manager_Will_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Approval Page Info --></label>
+        <name>CSCAP__Text_Approval_Page_Info</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Contact Account Manager --></label>
+        <name>CSCAP__Text_Contact_Account_Manager</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Contact Sales Rep --></label>
+        <name>CSCAP__Text_Contact_Sales_Rep</name>
+    </customLabels>
+    <customLabels>
+        <label>L’offerta ha perso la sua validità. Magari le sue esigenze sono cambiate Desidera ricevere una nuova proposta? Il team UPC Business è a sua disposizione.</label>
+        <name>CSCAP__Text_Document_Already_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label>L’offerta ha perso la sua validità. Magari le sue esigenze sono cambiate? Desidera ricevere una nuova proposta? Il team UPC Business è a sua disposizione.</label>
+        <name>CSCAP__Text_Document_Already_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label>Il modulo è stato trasmesso. La ringraziamo per il suo riscontro.</label>
+        <name>CSCAP__Text_Document_Approval_Received</name>
+    </customLabels>
+    <customLabels>
+        <label>Il modulo è stato trasmesso. La ringraziamo per il suo riscontro.</label>
+        <name>CSCAP__Text_Document_Rejection_Received</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Enter PIN --></label>
+        <name>CSCAP__Text_Enter_PIN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text - No Attachments For Approval --></label>
+        <name>CSCAP__Text_No_attachments_for_approval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text Sales Rep Will Contact --></label>
+        <name>CSCAP__Text_Sales_Rep_Will_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text - Submit Your Decision --></label>
+        <name>CSCAP__Text_Submit_Your_Decision</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Text - No Documents For Approval --></label>
+        <name>CSCAP__Text_There_are_no_documents_for_approval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label - Variation Request Details --></label>
+        <name>CSCAP__Variation_Request_Details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Block Heading - Variation Request --></label>
+        <name>CSCAP__Variation_Request_Screen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MC Reports Title --></label>
+        <name>CSPOFA__MC_Reports_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Main Commercial or Technical must have phone --></label>
+        <name>NX_Main_Comercial_or_Technical_must_have_phone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewLine --></label>
+        <name>NX_NewLine</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Active --></label>
+        <name>astrea_oct__L_OCT_Active</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-ApexClasses --></label>
+        <name>astrea_oct__L_OCT_ApexClasses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Apex Class Information --></label>
+        <name>astrea_oct__L_OCT_Apex_Class_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Apex Class Name --></label>
+        <name>astrea_oct__L_OCT_Apex_Class_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Apex Component Information --></label>
+        <name>astrea_oct__L_OCT_Apex_Component_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Apex Components --></label>
+        <name>astrea_oct__L_OCT_Apex_Components</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Api Version --></label>
+        <name>astrea_oct__L_OCT_Api_Version</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Approval Processes --></label>
+        <name>astrea_oct__L_OCT_Approval_Processes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Approval Processes Information --></label>
+        <name>astrea_oct__L_OCT_Approval_Processes_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Async Apex Job Information --></label>
+        <name>astrea_oct__L_OCT_Async_Apex_Job_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Body Length --></label>
+        <name>astrea_oct__L_OCT_Body_Length</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Cache Control --></label>
+        <name>astrea_oct__L_OCT_Cache_Control</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-City --></label>
+        <name>astrea_oct__L_OCT_City</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Completed Date --></label>
+        <name>astrea_oct__L_OCT_Completed_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Content Type --></label>
+        <name>astrea_oct__L_OCT_Content_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Controller Key --></label>
+        <name>astrea_oct__L_OCT_Controller_Key</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Country --></label>
+        <name>astrea_oct__L_OCT_Country</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Created By --></label>
+        <name>astrea_oct__L_OCT_Created_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Created Date --></label>
+        <name>astrea_oct__L_OCT_Created_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Custom Objects and Fields --></label>
+        <name>astrea_oct__L_OCT_Custom_Objects_and_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Custom Objects and Fields Information --></label>
+        <name>astrea_oct__L_OCT_Custom_Objects_and_Fields_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Dashboard Information --></label>
+        <name>astrea_oct__L_OCT_Dashboard_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Description --></label>
+        <name>astrea_oct__L_OCT_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Division --></label>
+        <name>astrea_oct__L_OCT_Division</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-DoNotInclude --></label>
+        <name>astrea_oct__L_OCT_DoNotInclude</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Download As --></label>
+        <name>astrea_oct__L_OCT_Download_As</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Email --></label>
+        <name>astrea_oct__L_OCT_Email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Email Template Information --></label>
+        <name>astrea_oct__L_OCT_Email_Template_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Extended Status --></label>
+        <name>astrea_oct__L_OCT_Extended_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Fax --></label>
+        <name>astrea_oct__L_OCT_Fax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Field API name --></label>
+        <name>astrea_oct__L_OCT_Field_API_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Field Label --></label>
+        <name>astrea_oct__L_OCT_Field_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-File Name --></label>
+        <name>astrea_oct__L_OCT_File_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Fiscal Year Start Month --></label>
+        <name>astrea_oct__L_OCT_Fiscal_Year_Start_Month</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Flows --></label>
+        <name>astrea_oct__L_OCT_Flows</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Folder Name --></label>
+        <name>astrea_oct__L_OCT_Folder_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Help Text --></label>
+        <name>astrea_oct__L_OCT_Help_Text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Ifyouareunable --></label>
+        <name>astrea_oct__L_OCT_Ifyouareunable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Is Active --></label>
+        <name>astrea_oct__L_OCT_Is_Active</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Is Deleted --></label>
+        <name>astrea_oct__L_OCT_Is_Deleted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Is Valid --></label>
+        <name>astrea_oct__L_OCT_Is_Valid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Job Items Processed --></label>
+        <name>astrea_oct__L_OCT_Job_Items_Processed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Job Type --></label>
+        <name>astrea_oct__L_OCT_Job_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Language Locale Key --></label>
+        <name>astrea_oct__L_OCT_Language_Locale_Key</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Last Modified By --></label>
+        <name>astrea_oct__L_OCT_Last_Modified_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Last Modified Date --></label>
+        <name>astrea_oct__L_OCT_Last_Modified_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Last Run Date --></label>
+        <name>astrea_oct__L_OCT_Last_Run_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Last Used Date --></label>
+        <name>astrea_oct__L_OCT_Last_Used_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Length Without Comments --></label>
+        <name>astrea_oct__L_OCT_Length_Without_Comments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Mail Merge Template List Information --></label>
+        <name>astrea_oct__L_OCT_Mail_Merge_Template_List_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Mail Merge Templates --></label>
+        <name>astrea_oct__L_OCT_Mail_Merge_Templates</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Master Label --></label>
+        <name>astrea_oct__L_OCT_Master_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-MaxNumberOfRecords --></label>
+        <name>astrea_oct__L_OCT_MaxNumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Method Name --></label>
+        <name>astrea_oct__L_OCT_Method_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Name --></label>
+        <name>astrea_oct__L_OCT_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Namespace Prefix --></label>
+        <name>astrea_oct__L_OCT_Namespace_Prefix</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Number Of Errors --></label>
+        <name>astrea_oct__L_OCT_Number_Of_Errors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Object --></label>
+        <name>astrea_oct__L_OCT_Object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Object Permission --></label>
+        <name>astrea_oct__L_OCT_Object_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Object Permission Information --></label>
+        <name>astrea_oct__L_OCT_Object_Permission_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Octopus --></label>
+        <name>astrea_oct__L_OCT_Octopus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-OctopusCan --></label>
+        <name>astrea_oct__L_OCT_OctopusCan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Organisation --></label>
+        <name>astrea_oct__L_OCT_Organisation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Organization Information --></label>
+        <name>astrea_oct__L_OCT_Organization_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Organization Type --></label>
+        <name>astrea_oct__L_OCT_Organization_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Owner Name --></label>
+        <name>astrea_oct__L_OCT_Owner_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permission Set Owned by Profile --></label>
+        <name>astrea_oct__L_OCT_Permission_Set_Owned_by_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions Create --></label>
+        <name>astrea_oct__L_OCT_Permissions_Create</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions Delete --></label>
+        <name>astrea_oct__L_OCT_Permissions_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions Edit --></label>
+        <name>astrea_oct__L_OCT_Permissions_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions Modify All Records --></label>
+        <name>astrea_oct__L_OCT_Permissions_Modify_All_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions Read --></label>
+        <name>astrea_oct__L_OCT_Permissions_Read</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Permissions View All Records --></label>
+        <name>astrea_oct__L_OCT_Permissions_View_All_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Phone --></label>
+        <name>astrea_oct__L_OCT_Phone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Postal Code --></label>
+        <name>astrea_oct__L_OCT_Postal_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Primary Contact --></label>
+        <name>astrea_oct__L_OCT_Primary_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Process Builder --></label>
+        <name>astrea_oct__L_OCT_Process_Builder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Profile --></label>
+        <name>astrea_oct__L_OCT_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Profiles --></label>
+        <name>astrea_oct__L_OCT_Profiles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Queues --></label>
+        <name>astrea_oct__L_OCT_Queues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Record Types --></label>
+        <name>astrea_oct__L_OCT_Record_Types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Record Types Information --></label>
+        <name>astrea_oct__L_OCT_Record_Types_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Report Information --></label>
+        <name>astrea_oct__L_OCT_Report_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Report Unique Name --></label>
+        <name>astrea_oct__L_OCT_Report_Unique_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Reports --></label>
+        <name>astrea_oct__L_OCT_Reports</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Reports To --></label>
+        <name>astrea_oct__L_OCT_Reports_To</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Role --></label>
+        <name>astrea_oct__L_OCT_Role</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-SalesforceInstance --></label>
+        <name>astrea_oct__L_OCT_SalesforceInstance</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Select All --></label>
+        <name>astrea_oct__L_OCT_Select_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Send Email to Members --></label>
+        <name>astrea_oct__L_OCT_Send_Email_to_Members</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Size Without Comments --></label>
+        <name>astrea_oct__L_OCT_Size_Without_Comments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Source Table --></label>
+        <name>astrea_oct__L_OCT_Source_Table</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Standard Objects and Fields --></label>
+        <name>astrea_oct__L_OCT_Standard_Objects_and_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-State --></label>
+        <name>astrea_oct__L_OCT_State</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Static Resources --></label>
+        <name>astrea_oct__L_OCT_Static_Resources</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Static Resources Information --></label>
+        <name>astrea_oct__L_OCT_Static_Resources_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Status --></label>
+        <name>astrea_oct__L_OCT_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Street --></label>
+        <name>astrea_oct__L_OCT_Street</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Subject --></label>
+        <name>astrea_oct__L_OCT_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Supported Objects --></label>
+        <name>astrea_oct__L_OCT_Supported_Objects</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Table Enum or Id --></label>
+        <name>astrea_oct__L_OCT_Table_Enum_or_Id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Template Name --></label>
+        <name>astrea_oct__L_OCT_Template_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Text Color --></label>
+        <name>astrea_oct__L_OCT_Text_Color</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Title --></label>
+        <name>astrea_oct__L_OCT_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Title Color --></label>
+        <name>astrea_oct__L_OCT_Title_Color</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Total Job Items --></label>
+        <name>astrea_oct__L_OCT_Total_Job_Items</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Trigger Information --></label>
+        <name>astrea_oct__L_OCT_Trigger_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Triggers --></label>
+        <name>astrea_oct__L_OCT_Triggers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Type --></label>
+        <name>astrea_oct__L_OCT_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage After Insert --></label>
+        <name>astrea_oct__L_OCT_Usage_After_Insert</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage After Undelete --></label>
+        <name>astrea_oct__L_OCT_Usage_After_Undelete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage After Update --></label>
+        <name>astrea_oct__L_OCT_Usage_After_Update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage Before Delete --></label>
+        <name>astrea_oct__L_OCT_Usage_Before_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage Before Insert --></label>
+        <name>astrea_oct__L_OCT_Usage_Before_Insert</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage Before Update --></label>
+        <name>astrea_oct__L_OCT_Usage_Before_Update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Usage Is Bulk --></label>
+        <name>astrea_oct__L_OCT_Usage_Is_Bulk</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-User --></label>
+        <name>astrea_oct__L_OCT_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-User Information --></label>
+        <name>astrea_oct__L_OCT_User_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-User License Name --></label>
+        <name>astrea_oct__L_OCT_User_License_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-User Roles Information --></label>
+        <name>astrea_oct__L_OCT_User_Roles_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-User Type --></label>
+        <name>astrea_oct__L_OCT_User_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Users --></label>
+        <name>astrea_oct__L_OCT_Users</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Validation Rules --></label>
+        <name>astrea_oct__L_OCT_Validation_Rules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Viewbutton --></label>
+        <name>astrea_oct__L_OCT_Viewbutton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- VisualForce Pages --></label>
+        <name>astrea_oct__L_OCT_VisualForce_Pages</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Visualforce Page Information --></label>
+        <name>astrea_oct__L_OCT_Visualforce_Page_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- Workflow Field Updates --></label>
+        <name>astrea_oct__L_OCT_Workflow_Field_Updates</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-Workflow Rules --></label>
+        <name>astrea_oct__L_OCT_Workflow_Rules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT- getToKnow --></label>
+        <name>astrea_oct__L_OCT_getToKnow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- L-OCT-sobject type --></label>
+        <name>astrea_oct__L_OCT_sobject_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Activate tag types - Group Products By... --></label>
+        <name>csbb__activate_tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Active tag types - Selected --></label>
+        <name>csbb__active_tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add product date - Date --></label>
+        <name>csbb__add_product_date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address search btn search - Search --></label>
+        <name>csbb__address_search_btn_search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address search check - AddressCheck --></label>
+        <name>csbb__address_search_check</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address search tab title - Search --></label>
+        <name>csbb__address_search_tab_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Placeholder for addresscheck search --></label>
+        <name>csbb__addtobasket_addresscheck_search_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket btn add - Add to Basket --></label>
+        <name>csbb__addtobasket_btn_add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket btn cancel - Cancel --></label>
+        <name>csbb__addtobasket_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select address modal confirm and close modal button --></label>
+        <name>csbb__addtobasket_btn_select_and_close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add to Basket Catalogue Header --></label>
+        <name>csbb__addtobasket_catalogue_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add to Basket Catalogue Title --></label>
+        <name>csbb__addtobasket_catalogue_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket dialog title - Add Offer to Basket --></label>
+        <name>csbb__addtobasket_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket error summaryaddress - Adress Error --></label>
+        <name>csbb__addtobasket_error_summaryaddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket error summarycategory - Category error please delete this item --></label>
+        <name>csbb__addtobasket_error_summarycategory</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket error summaryoffer - Offer Error please delete this item --></label>
+        <name>csbb__addtobasket_error_summaryoffer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu address - Address --></label>
+        <name>csbb__addtobasket_menu_address</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu date - Date --></label>
+        <name>csbb__addtobasket_menu_date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu offer - Offer --></label>
+        <name>csbb__addtobasket_menu_offer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu productcategory - Product Category --></label>
+        <name>csbb__addtobasket_menu_productcategory</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu productfilter - Product Filter --></label>
+        <name>csbb__addtobasket_menu_productfilter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket menu search placeholder - Search... --></label>
+        <name>csbb__addtobasket_menu_search_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select address modal title on add to basket --></label>
+        <name>csbb__addtobasket_pick_address_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket search no common address check --></label>
+        <name>csbb__addtobasket_search_no_common_address_check</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket search noresults - No results --></label>
+        <name>csbb__addtobasket_search_noresults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button description to open select address modal on add to basket --></label>
+        <name>csbb__addtobasket_summary_add_address_button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No address selected warning on add to basket --></label>
+        <name>csbb__addtobasket_summary_no_address_selected_warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addtobasket summary title - Summary --></label>
+        <name>csbb__addtobasket_summary_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Warn the user about advanced clone --></label>
+        <name>csbb__advanced_clone_warning_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Availability btn cancel - Close --></label>
+        <name>csbb__availability_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Availability dialog title - Service Availability Check Results --></label>
+        <name>csbb__availability_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Toaster text shown when background processes are running --></label>
+        <name>csbb__background_process_running</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basket empty - No products in basket --></label>
+        <name>csbb__basket_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone btn cancel - Cancel --></label>
+        <name>csbb__basketclone_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone btn currentbasket - Current basket --></label>
+        <name>csbb__basketclone_btn_currentbasket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone btn newbasket - New basket --></label>
+        <name>csbb__basketclone_btn_newbasket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone btn ok - Ok --></label>
+        <name>csbb__basketclone_btn_ok</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone btn sourcebasket - Source basket --></label>
+        <name>csbb__basketclone_btn_sourcebasket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone dialog time warning --></label>
+        <name>csbb__basketclone_dialog_time_warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone dialog title - Basket Clone --></label>
+        <name>csbb__basketclone_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone msg confirmclone - Are you sure you want to clone this basket? --></label>
+        <name>csbb__basketclone_msg_confirmclone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketclone msg - Which basket would you like to view now? --></label>
+        <name>csbb__basketclone_msg_view_which_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketdetails btn apply - Apply --></label>
+        <name>csbb__basketdetails_btn_apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketdetails btn cancel - Cancel --></label>
+        <name>csbb__basketdetails_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketdetails btn clone - Clone Basket --></label>
+        <name>csbb__basketdetails_btn_clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketdetails btn save - Save --></label>
+        <name>csbb__basketdetails_btn_save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketdetails section title - Product Basket --></label>
+        <name>csbb__basketdetails_section_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketpage id not found message - Error Basket Id not found --></label>
+        <name>csbb__basketpage_id_not_found_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketpage tab details - Details --></label>
+        <name>csbb__basketpage_tab_details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketpage tab related - Related --></label>
+        <name>csbb__basketpage_tab_related</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketpage title - Product basket --></label>
+        <name>csbb__basketpage_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basketrelated new - New --></label>
+        <name>csbb__basketrelated_new</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Billing details - Billing details --></label>
+        <name>csbb__billing_details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button cancel - Cancel --></label>
+        <name>csbb__btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button delete - Delete --></label>
+        <name>csbb__btn_delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button OK - OK --></label>
+        <name>csbb__btn_ok</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clear tags - Clear all tags --></label>
+        <name>csbb__clear_tags</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone addresses - Addresses --></label>
+        <name>csbb__config_clone_addresses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone btn cancel - Cancel --></label>
+        <name>csbb__config_clone_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone btn clone - Clone --></label>
+        <name>csbb__config_clone_btn_clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone dialog advanced tab - Advanced --></label>
+        <name>csbb__config_clone_dialog_advanced_tab</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone dialog simple tab - Simple --></label>
+        <name>csbb__config_clone_dialog_simple_tab</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone quantity - Quantity --></label>
+        <name>csbb__config_clone_quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Config clone summary - Summary --></label>
+        <name>csbb__config_clone_summary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom action class should extend csbb.CustomButtonExt --></label>
+        <name>csbb__custom_action_should_extend_custombuttonext</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No implementation found for custom button action --></label>
+        <name>csbb__custombutton_error_actionnotfound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- delete product dialog description --></label>
+        <name>csbb__delete_product_dialog_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Confirm delete pcr - no product selected --></label>
+        <name>csbb__delete_product_dialog_noproduct</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- delete product dialog title --></label>
+        <name>csbb__delete_product_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Editproduct dialog btn close - Close --></label>
+        <name>csbb__editproduct_dialog_btn_close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Editproduct dialog title - Edit Product Configuration --></label>
+        <name>csbb__editproduct_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid locale format --></label>
+        <name>csbb__invalid_locale_format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts btn add - Add Product --></label>
+        <name>csbb__listproducts_btn_add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts btn clone - Copy Product --></label>
+        <name>csbb__listproducts_btn_clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts btn delete - Delete Product --></label>
+        <name>csbb__listproducts_btn_delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts btn selectproduct - Select Product --></label>
+        <name>csbb__listproducts_btn_selectproduct</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts btn updateqty - Update Quantity --></label>
+        <name>csbb__listproducts_btn_updateqty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- draganddrop_dropiteminto --></label>
+        <name>csbb__listproducts_draganddrop_dropiteminto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Review and correct invalid product configuration --></label>
+        <name>csbb__listproducts_rowstatustooltip_text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- invalid_product_configuration --></label>
+        <name>csbb__listproducts_rowstatustooltip_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts section title - Manage Products in Basket --></label>
+        <name>csbb__listproducts_section_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Listproducts total sitcky footer --></label>
+        <name>csbb__listproducts_total_sticky_footer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading --></label>
+        <name>csbb__loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No results to display --></label>
+        <name>csbb__no_results_to_display</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product list groups - Ungrouped --></label>
+        <name>csbb__pcrgroups_ungrouped</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Productquantity dialog btn cancel - Cancel --></label>
+        <name>csbb__productquantity_dialog_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Productquantity dialog btn update - Update --></label>
+        <name>csbb__productquantity_dialog_btn_update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Productquantity dialog quantity - Quantity --></label>
+        <name>csbb__productquantity_dialog_quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Productquantity dialog title - Product quantity --></label>
+        <name>csbb__productquantity_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quantity cannot be less than 1 --></label>
+        <name>csbb__productquantity_dialog_wrong_quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This operation will reload the Grouping and Sorting information --></label>
+        <name>csbb__reload_grouping_and_sorting_dialog_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Refresh Grouping and Sorting --></label>
+        <name>csbb__reload_grouping_and_sorting_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select default placeholder - Select... --></label>
+        <name>csbb__select_default_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selectproduct btn cancel - Cancel --></label>
+        <name>csbb__selectproduct_btn_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selectproduct btn save - Save --></label>
+        <name>csbb__selectproduct_btn_save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selectproduct dialog title - Select Product --></label>
+        <name>csbb__selectproduct_dialog_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag active tag types - Active (Current Basket) --></label>
+        <name>csbb__tag_active_tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag add new tag - Add Value --></label>
+        <name>csbb__tag_add_new_tag</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag add new tag type - Add Type --></label>
+        <name>csbb__tag_add_new_tag_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag all tag types applied - All available Tag Types have been applied --></label>
+        <name>csbb__tag_all_tag_types_applied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag available tag types - Available Types --></label>
+        <name>csbb__tag_available_tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag confirm delete description - Are you sure? This affects the entire basket. --></label>
+        <name>csbb__tag_confirm_delete_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag confirm delete title - Delete Tag Type from basket --></label>
+        <name>csbb__tag_confirm_delete_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag hide tags --></label>
+        <name>csbb__tag_hide_tags</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag inactive tag types - Inactive (Current Basket) --></label>
+        <name>csbb__tag_inactive_tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag listproducts select field - Select field --></label>
+        <name>csbb__tag_listproducts_select_field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag listproducts select tag - Select tag --></label>
+        <name>csbb__tag_listproducts_select_tag</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag new key added - New --></label>
+        <name>csbb__tag_new_key_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag placeholder new tag type value - Enter New Type --></label>
+        <name>csbb__tag_placeholder_new_tag_type_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag placeholder new tag value - Enter New Value --></label>
+        <name>csbb__tag_placeholder_new_tag_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag remove tag type - Remove type --></label>
+        <name>csbb__tag_remove_tag_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag Modal Title --></label>
+        <name>csbb__tag_selection_modal_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag show all tags - Show all tags --></label>
+        <name>csbb__tag_show_all_tags</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag tab key management - Manage Tag Types --></label>
+        <name>csbb__tag_tab_key_management</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag tab key values management - Manage Values --></label>
+        <name>csbb__tag_tab_key_values_management</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag tab tag management - Manage Tags --></label>
+        <name>csbb__tag_tab_tag_management</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag tag type already exists - Tag Type already exists --></label>
+        <name>csbb__tag_tag_type_already_exists</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag type - Group by Tag Type --></label>
+        <name>csbb__tag_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag types - Available --></label>
+        <name>csbb__tag_types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag unused tag type - This Tag Type isn&apos;t used in any item! --></label>
+        <name>csbb__tag_unused_tag_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag values - Values --></label>
+        <name>csbb__tag_values</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tag values different - Selected rows Tag Values do not match! --></label>
+        <name>csbb__tag_values_different</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Annualised total header --></label>
+        <name>cscfga__Annualised_total_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Non-recurring header --></label>
+        <name>cscfga__Non_recurring_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring header --></label>
+        <name>cscfga__Recurring_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring invoice header --></label>
+        <name>cscfga__Recurring_invoice_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Total contract value header --></label>
+        <name>cscfga__Total_contract_value_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action cannot have null ConfigItem --></label>
+        <name>cscfga__actionscls_Action_cannot_have_null_ConfigItem</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value cannot be null --></label>
+        <name>cscfga__actionscls_Value_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action value is trying to be set to an invalid value --></label>
+        <name>cscfga__acttrg_Action_value_is_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Execute JavaScript Action can not be created for attribute --></label>
+        <name>cscfga__acttrg_ExecuteJavaScriptAction_can_not_be_created_for_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot persist configuration --></label>
+        <name>cscfga__api1cls_Cannot_persist_configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration id must not be null. --></label>
+        <name>cscfga__api1cls_Configuration_id_must_not_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Either Opportunity or SessionInfo must --></label>
+        <name>cscfga__api1cls_Either_Opportunity_or_SessionInfo_must</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No products in basket --></label>
+        <name>cscfga__api1cls_No_products_in_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product_Configuration__c cannot be null --></label>
+        <name>cscfga__api1cls_Product_Configuration_c_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product_Configuration__c.id cannot be null --></label>
+        <name>cscfga__api1cls_Product_Configuration_c_id_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration cannot be null --></label>
+        <name>cscfga__api1cls_Product_Configuration_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration list cannot be null or empty --></label>
+        <name>cscfga__api1cls_Product_Configuration_list_cannot_be_null_or_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definition cannot be null --></label>
+        <name>cscfga__api1cls_Product_Definition_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definition id cannot be null --></label>
+        <name>cscfga__api1cls_Product_Definition_id_cannot_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definition reference cannot be null or empty --></label>
+        <name>cscfga__api1cls_Product_Definition_reference_cannot_be_null_or_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid override type for attribute of type {0} --></label>
+        <name>cscfga__assatrg_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Resources limit can be reached for the selected number of product definitions. --></label>
+        <name>cscfga__async_task_message_size_exceed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task has finished. --></label>
+        <name>cscfga__async_task_status_after_finish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task execute chunk finished. --></label>
+        <name>cscfga__async_task_status_after_last_execute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task has started. --></label>
+        <name>cscfga__async_task_status_after_start</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task execute. --></label>
+        <name>cscfga__async_task_status_in_execute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task is queued. --></label>
+        <name>cscfga__async_task_status_in_queue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No running task over object at the moment. --></label>
+        <name>cscfga__asynctaskindicator_no_running_task_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Class: --></label>
+        <name>cscfga__asynctaskindicator_task_class_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Errors: --></label>
+        <name>cscfga__asynctaskindicator_task_errors_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Message: --></label>
+        <name>cscfga__asynctaskindicator_task_message_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Progress: --></label>
+        <name>cscfga__asynctaskindicator_task_progress_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tasks in queue indicator header --></label>
+        <name>cscfga__asynctaskindicator_tasks_in_queue_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tasks in queue tooltip header --></label>
+        <name>cscfga__asynctaskindicator_tasks_in_queue_tooltip_header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute type/data type combination invalid --></label>
+        <name>cscfga__atrdeftrg_Attribute_type_data_type_combination_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute type/product definition record type combination invalid --></label>
+        <name>cscfga__atrdeftrg_Attribute_type_prod_def_record_type_combination_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Below errors happened while propagating change --></label>
+        <name>cscfga__atrdeftrg_Below_errors_happened_while_propagating_change</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disable quantity field can only be used on Related Products --></label>
+        <name>cscfga__atrdeftrg_Disable_quantity_is_valid_only_on_related_products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- For this attribute you already have Select options defined. --></label>
+        <name>cscfga__atrdeftrg_For_this_attribute_you_already_have_Select_options_defined</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Formula fields, autonumbers and summary roll-up fields can not be mapped --></label>
+        <name>cscfga__atrdeftrg_Formula_fields_autonumbers_and_summary_roll_up_fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- &quot;Is rate line item&quot; can be checked --></label>
+        <name>cscfga__atrdeftrg_Is_rate_line_item_can_be_checked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- atrdeftrg_Package_Line_Item_type_cannot_have_value --></label>
+        <name>cscfga__atrdeftrg_Package_Line_Item_type_cannot_have_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a number --></label>
+        <name>cscfga__atrdeftrg_Please_enter_a_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a number with at most --></label>
+        <name>cscfga__atrdeftrg_Please_enter_a_number_with_at_most</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a whole number --></label>
+        <name>cscfga__atrdeftrg_Please_enter_a_whole_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please supply a message to display if pattern validation fails --></label>
+        <name>cscfga__atrdeftrg_Please_supply_a_message_to_display_if_pattern_validation_fails</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- &quot;Reference value&quot; can be used only if --></label>
+        <name>cscfga__atrdeftrg_Reference_value_can_be_used_only_if</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- &quot;Reference value&quot; can not contain any script. --></label>
+        <name>cscfga__atrdeftrg_Reference_value_can_not_contain_any_script</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Scale must be empty for non-decimal attributes --></label>
+        <name>cscfga__atrdeftrg_Scale_must_be_empty_for_non_decimal_attributes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Scale value can not be zero or less. --></label>
+        <name>cscfga__atrdeftrg_Scale_value_can_not_be_zero_or_less</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This pattern is not a valid regular expression: --></label>
+        <name>cscfga__atrdeftrg_This_pattern_is_not_a_valid_regular_expression</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- To change an attribute&apos;s Type to another value --></label>
+        <name>cscfga__atrdeftrg_To_change_an_attribute_s_Type_to_another_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Too many attributes would need to be updated for changed --></label>
+        <name>cscfga__atrdeftrg_Too_many_attributes_would_need_to_be_updated_for_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- When you have Select options defined for an attribute --></label>
+        <name>cscfga__atrdeftrg_When_you_have_Select_options_defined_for_an_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- decimals --></label>
+        <name>cscfga__atrdeftrg_decimals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field does not exist --></label>
+        <name>cscfga__atrdeftrg_field_does_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field types mismatch --></label>
+        <name>cscfga__atrdeftrg_field_mismatch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Significant Attributes cannot be serialized to json --></label>
+        <name>cscfga__atrdeftrg_is_significant_attribute_cannot_be_serialized_to_json</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related product attributes cannot be serialized to JSON. --></label>
+        <name>cscfga__atrdeftrg_related_product_attribute_cannot_be_serialized_to_json</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute Field Definition delete association error --></label>
+        <name>cscfga__atrfielddeftrg_delete_association_error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute can&apos;t be created for a configuration --></label>
+        <name>cscfga__atrtrg_Attribute_can_t_be_created_for_a_configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute that is a part of a configuration --></label>
+        <name>cscfga__atrtrg_Attribute_that_is_a_part_of_a_configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration can&apos;t be deleted --></label>
+        <name>cscfga__atrtrg_Configuration_can_t_be_deleted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update of &quot;Is Rate Line Item&quot; not allowed --></label>
+        <name>cscfga__atrtrg_Update_of_Is_Rate_Line_Item_not_allowed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed resolving attribute reference --></label>
+        <name>cscfga__attrcls_Failed_resolving_attribute_reference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup Attribute Type (id: --></label>
+        <name>cscfga__attrcls_Lookup_Attribute_Type_id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The maximum number of --></label>
+        <name>cscfga__attrcls_The_maximum_number_of</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ) contains CSV list with ID --></label>
+        <name>cscfga__attrcls_contains_CSV_list_with_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- from attribute value. --></label>
+        <name>cscfga__attrcls_from_attribute_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- related items have already been configured. --></label>
+        <name>cscfga__attrcls_related_items_have_already_been_configured</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- that does not exist. Please remove the ID --></label>
+        <name>cscfga__attrcls_that_does_not_exist_Please_remove_the_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to lookup or related product --></label>
+        <name>cscfga__attrcls_to_lookup_or_related_product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No action reference supplied --></label>
+        <name>cscfga__avseloptcontrcls_No_action_reference_supplied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to basket --></label>
+        <name>cscfga__baskdel_Back_to_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deleting basket --></label>
+        <name>cscfga__baskdel_Deleting_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Drop configuration here to move it out of the package --></label>
+        <name>cscfga__basksumm_basket_drop_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel button label --></label>
+        <name>cscfga__basksumm_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Close button label --></label>
+        <name>cscfga__basksumm_close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy batch failed --></label>
+        <name>cscfga__basksumm_copy_batch_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy batch job started --></label>
+        <name>cscfga__basksumm_copy_batch_id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy button label --></label>
+        <name>cscfga__basksumm_copy_button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bad number of copies --></label>
+        <name>cscfga__basksumm_copy_count_error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy dialog title --></label>
+        <name>cscfga__basksumm_copy_related</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete batch failed --></label>
+        <name>cscfga__basksumm_delete_batch_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete job started --></label>
+        <name>cscfga__basksumm_delete_batch_id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Confirm button label --></label>
+        <name>cscfga__basksumm_delete_confirm</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Question for the delete dialog --></label>
+        <name>cscfga__basksumm_delete_dialog_question</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Are you sure --></label>
+        <name>cscfga__basksumm_delete_sure</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__basksumm_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Drop configuration here to move it out of the package --></label>
+        <name>cscfga__basksumm_done</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Received result for config that is not in the basket model --></label>
+        <name>cscfga__basksumm_err_result_not_in_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading... --></label>
+        <name>cscfga__basksumm_loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Monitor apex jobs --></label>
+        <name>cscfga__basksumm_monitor_batch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Moving configuration to basket... --></label>
+        <name>cscfga__basksumm_moving_config_to_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Moving configuration to package slot... --></label>
+        <name>cscfga__basksumm_moving_config_to_package_slot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of copies --></label>
+        <name>cscfga__basksumm_number_of_copies</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- One-off discount --></label>
+        <name>cscfga__basksumm_one_off_discount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opening the product edit page. Please wait... --></label>
+        <name>cscfga__basksumm_opening_edit_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opening the product selection page. Please wait... --></label>
+        <name>cscfga__basksumm_opening_selection_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximum allowed number of configurations reached for package slot --></label>
+        <name>cscfga__basksumm_over_max_in_slot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Package slot is empty --></label>
+        <name>cscfga__basksumm_package_slot_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quantity must be a positive integer --></label>
+        <name>cscfga__basksumm_quantity_must_be_positive</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Updating quantity failed. --></label>
+        <name>cscfga__basksumm_quantity_update_failure</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring discount --></label>
+        <name>cscfga__basksumm_recurring_discount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reload after batch finish --></label>
+        <name>cscfga__basksumm_reload_after_batch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Starting copy batch --></label>
+        <name>cscfga__basksumm_starting_copy_batch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Starting delete batch --></label>
+        <name>cscfga__basksumm_starting_delete_batch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Term --></label>
+        <name>cscfga__basksumm_term</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An error was raised but a message was not defined. --></label>
+        <name>cscfga__basksumm_undefined_error_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update button text --></label>
+        <name>cscfga__basksumm_update_button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update failed info message --></label>
+        <name>cscfga__basksumm_update_failed_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update quantity dialog title --></label>
+        <name>cscfga__basksumm_update_quantity_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update success info message --></label>
+        <name>cscfga__basksumm_update_success_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Updating quantity info message --></label>
+        <name>cscfga__basksumm_updating_quantity_message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot delete non-empty basket --></label>
+        <name>cscfga__basktrg_Cannot_delete_non_empty_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Return to Opportunity --></label>
+        <name>cscfga__bdloppsync_Return_to_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Synchronizing --></label>
+        <name>cscfga__bdloppsync_Synchronizing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported Operation --></label>
+        <name>cscfga__binnumopcls_Unsupported_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attempted to bind third operand to binary operator: --></label>
+        <name>cscfga__binoptcls_Attempted_to_bind_third_operand_to_binary_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Neither object can be null: --></label>
+        <name>cscfga__binoptcls_Neither_object_can_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Undefined --></label>
+        <name>cscfga__binoptcls_Undefined</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unknown data type: --></label>
+        <name>cscfga__binoptcls_Unknown_data_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported Operation --></label>
+        <name>cscfga__binoptcls_Unsupported_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot delete because of an association --></label>
+        <name>cscfga__cannot_delete_because_of_an_association</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Access Granted --></label>
+        <name>cscfga__catper_Access_Granted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Access permission for profiles --></label>
+        <name>cscfga__catper_Access_permission_for_profiles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to Category --></label>
+        <name>cscfga__catper_Back_to_Category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cascade permissions to all children --></label>
+        <name>cscfga__catper_Cascade_permissions_to_all_children</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile --></label>
+        <name>cscfga__catper_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Restrict access for category --></label>
+        <name>cscfga__catper_Restrict_access_for_category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__catper_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Set access permissions for --></label>
+        <name>cscfga__catper_Set_access_permissions_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot set value for attribute field --></label>
+        <name>cscfga__cfgcontpres_cant_set_attr_field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot set value for configuration field --></label>
+        <name>cscfga__cfgcontpres_cant_set_cfg_field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The configuration is not admissible into slot --></label>
+        <name>cscfga__cfgcontpres_cfg_not_admissible_into_slot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of configurations is outside limits defined for the package slot --></label>
+        <name>cscfga__cfgcontpres_outside_package_slot_limits</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Package slot contains inadmissible configs --></label>
+        <name>cscfga__cfgcontpres_slot_contains_inadmissibile_configs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Package slot contains invalid configurations --></label>
+        <name>cscfga__cfgcontpres_slot_contains_invalid_cofigs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Warning: --></label>
+        <name>cscfga__cfgvalmessage_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First invalid attribute is... --></label>
+        <name>cscfga__cfgvld_first_invalid_attr</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Other invalid attributes --></label>
+        <name>cscfga__cfgvld_other_invalid_attr</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charges field is not editable --></label>
+        <name>cscfga__charges_config_field_not_editable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bundle could not be copied: --></label>
+        <name>cscfga__clbndcontrcls_Bundle_could_not_be_copied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copied from --></label>
+        <name>cscfga__clbndcontrcls_Copied_from</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected Opportunity is closed --></label>
+        <name>cscfga__clbndcontrcls_Selected_Opportunity_is_closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__clinconf_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- : Click the --></label>
+        <name>cscfga__clinconf_Click_the</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy Configuration --></label>
+        <name>cscfga__clinconf_Copy_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy Configuration to same basket --></label>
+        <name>cscfga__clinconf_Copy_Configuration_to_same_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy Configuration to same bundle --></label>
+        <name>cscfga__clinconf_Copy_Configuration_to_same_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy Configuration to specified Basket --></label>
+        <name>cscfga__clinconf_Copy_Configuration_to_specified_Basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy Configuration to specified Bundle --></label>
+        <name>cscfga__clinconf_Copy_Configuration_to_specified_Bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create a copy of Configuration --></label>
+        <name>cscfga__clinconf_Create_a_copy_of_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get Bundles --></label>
+        <name>cscfga__clinconf_Get_Bundles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- : Get the bundles for the destination Opportunity: --></label>
+        <name>cscfga__clinconf_Get_the_bundles_for_the_destination_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select an object type of the target Basket container --></label>
+        <name>cscfga__clinconf_Select_an_object_type_of_the_target_Basket_container</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- : Select opportunity containing the target Bundle: --></label>
+        <name>cscfga__clinconf_Select_opportunity_containing_the_target_Bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select a record containing the target Basket --></label>
+        <name>cscfga__clinconf_Select_record_containing_the_target_Basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select the target Basket within the chosen object record --></label>
+        <name>cscfga__clinconf_Select_target_Basket_within_chosen_object_record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- : Select the target Bundle within the chosen Opportunity: --></label>
+        <name>cscfga__clinconf_Select_the_target_Bundle_within_the_chosen_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step 1 --></label>
+        <name>cscfga__clinconf_Step_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step 2 --></label>
+        <name>cscfga__clinconf_Step_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step 3 --></label>
+        <name>cscfga__clinconf_Step_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step 4 --></label>
+        <name>cscfga__clinconf_Step_4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- button below to start the copy process. --></label>
+        <name>cscfga__clinconf_button_below_to_start_the_copy_process</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to another Basket --></label>
+        <name>cscfga__clinconf_to_another_Basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to another Bundle --></label>
+        <name>cscfga__clinconf_to_another_Bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- within the same Basket. --></label>
+        <name>cscfga__clinconf_within_the_same_Basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- within the same Bundle. --></label>
+        <name>cscfga__clinconf_within_the_same_Bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bundle copied successfully. --></label>
+        <name>cscfga__clnbndl_Bundle_copied_successfully</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__clnbndl_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Click here to go to the new bundle --></label>
+        <name>cscfga__clnbndl_Click_here_to_go_to_the_new_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy bundle --></label>
+        <name>cscfga__clnbndl_Copy_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Enter name for new bundle: --></label>
+        <name>cscfga__clnbndl_Enter_name_for_new_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select opportunity to copy to: --></label>
+        <name>cscfga__clnbndl_Select_opportunity_to_copy_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to another Opportunity --></label>
+        <name>cscfga__clnbndl_to_another_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration copied successfully --></label>
+        <name>cscfga__clnconfcls_Configuration_copied_successfully</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration copied successfully. Close this window --></label>
+        <name>cscfga__clnconfcls_Configuration_copied_successfully_Close_this_window</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration could not be copied: --></label>
+        <name>cscfga__clnconfcls_Configuration_could_not_be_copied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid target Opportunity / Bundle combination --></label>
+        <name>cscfga__clnconfcls_Invalid_target_Opportunity_Bundle_combination</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected bundle is synchronised with closed opportunity. --></label>
+        <name>cscfga__clnconfcls_Selected_Opportunity_is_closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Target bundle must be selected --></label>
+        <name>cscfga__clnconfcls_Target_bundle_must_be_selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The Opportunity for this bundle is closed --></label>
+        <name>cscfga__clnconfcls_The_Opportunity_for_this_bundle_is_closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- There was a problem locating the bundle --></label>
+        <name>cscfga__clnconfcls_There_was_a_problem_locating_the_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- You must enter a value. --></label>
+        <name>cscfga__clnconfcls_You_must_enter_a_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- copy would cause an unique field to be duplicated! --></label>
+        <name>cscfga__clnconfcls_copy_would_cause_unique_field_to_duplicate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action --></label>
+        <name>cscfga__confbundet_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__confbundet_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change quantity for --></label>
+        <name>cscfga__confbundet_Change_quantity_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configured Products --></label>
+        <name>cscfga__confbundet_Configured_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy --></label>
+        <name>cscfga__confbundet_Copy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Del --></label>
+        <name>cscfga__confbundet_Del</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount --></label>
+        <name>cscfga__confbundet_Discount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit --></label>
+        <name>cscfga__confbundet_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Enter New Quantity: --></label>
+        <name>cscfga__confbundet_Enter_New_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Grand Total --></label>
+        <name>cscfga__confbundet_Grand_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid quantity value entered --></label>
+        <name>cscfga__confbundet_Invalid_quantity_value_entered</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Item --></label>
+        <name>cscfga__confbundet_Item</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- List Price --></label>
+        <name>cscfga__confbundet_ListPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Product Configuration --></label>
+        <name>cscfga__confbundet_New_Product_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quantity --></label>
+        <name>cscfga__confbundet_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rate --></label>
+        <name>cscfga__confbundet_Rate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sales Price --></label>
+        <name>cscfga__confbundet_SalesPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__confbundet_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Shared Item --></label>
+        <name>cscfga__confbundet_Shared_Item</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>cscfga__confbundet_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This bundle cannot be edited because --></label>
+        <name>cscfga__confbundet_This_bundle_cannot_be_edited_because</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Totals for --></label>
+        <name>cscfga__confbundet_Totals_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update Configurations --></label>
+        <name>cscfga__confbundet_Update_Configurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Updating... --></label>
+        <name>cscfga__confbundet_Updating</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Updating Configurations --></label>
+        <name>cscfga__confbundet_Updating_Configurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete selection --></label>
+        <name>cscfga__confbundet_delete_selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- There are validation errors within the configuration. --></label>
+        <name>cscfga__configuration_There_are_validation_errors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action --></label>
+        <name>cscfga__confoffdet_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Product Configuration --></label>
+        <name>cscfga__confoffdet_Add_Product_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Annualised Total --></label>
+        <name>cscfga__confoffdet_Annualised_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configured Products --></label>
+        <name>cscfga__confoffdet_Configured_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Del --></label>
+        <name>cscfga__confoffdet_Del</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit --></label>
+        <name>cscfga__confoffdet_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Item --></label>
+        <name>cscfga__confoffdet_Item</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Non-Recurring Costs --></label>
+        <name>cscfga__confoffdet_Non_Recurring_Costs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quantity --></label>
+        <name>cscfga__confoffdet_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring Costs --></label>
+        <name>cscfga__confoffdet_Recurring_Costs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring Invoice Amount --></label>
+        <name>cscfga__confoffdet_Recurring_Invoice_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>cscfga__confoffdet_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Total Contract Value --></label>
+        <name>cscfga__confoffdet_Total_Contract_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Totals for --></label>
+        <name>cscfga__confoffdet_Totals_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only one version of a template offer --></label>
+        <name>cscfga__confofftrg_Only_one_version_of_a_template_offer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Template offer must have at least one --></label>
+        <name>cscfga__confofftrg_Template_offer_must_have_at_least_one</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This offer is immutable --></label>
+        <name>cscfga__confofftrg_This_offer_is_immutable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action --></label>
+        <name>cscfga__confprod_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__confprod_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration Name --></label>
+        <name>cscfga__confprod_Configuration_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Continue --></label>
+        <name>cscfga__confprod_Continue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Continue anyway --></label>
+        <name>cscfga__confprod_Continue_anyway</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy --></label>
+        <name>cscfga__confprod_Copy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Del --></label>
+        <name>cscfga__confprod_Del</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit --></label>
+        <name>cscfga__confprod_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Finish --></label>
+        <name>cscfga__confprod_Finish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- General Information --></label>
+        <name>cscfga__confprod_General_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>cscfga__confprod_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>cscfga__confprod_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>cscfga__confprod_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product --></label>
+        <name>cscfga__confprod_Product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Refresh --></label>
+        <name>cscfga__confprod_Refresh</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save without Validation --></label>
+        <name>cscfga__confprod_Save_without_Validation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Skip --></label>
+        <name>cscfga__confprod_Skip</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Validate and Save --></label>
+        <name>cscfga__confprod_Validate_and_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Warning: --></label>
+        <name>cscfga__confprod_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New --></label>
+        <name>cscfga__confprof_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The product you have chosen requires the following shared --></label>
+        <name>cscfga__confprof_The_product_you_have_chosen_requires_the_following_shared</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only template offers can be versioned --></label>
+        <name>cscfga__conoffcontrcls_Only_template_offers_can_be_versioned</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot create orphan slot configuration --></label>
+        <name>cscfga__cpycfg_Error_Orphan_Slot_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Number of copies must be a positive, non-zero integer --></label>
+        <name>cscfga__cpycfgbatch_Error_Copies_Positive</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Can&apos;t copy configurations --></label>
+        <name>cscfga__cpycfgbatch_Error_No_Correlation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Called get reference on value-only Data --></label>
+        <name>cscfga__datacls_Called_get_reference_on_value_only_Data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- From --></label>
+        <name>cscfga__datrangtrg_From</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Until --></label>
+        <name>cscfga__datrangtrg_Until</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to --></label>
+        <name>cscfga__datrangtrg_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No charge or LIA to apply discount --></label>
+        <name>cscfga__discntcalc_Discount_charge_mismatch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Click --></label>
+        <name>cscfga__dltbndl_Click</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- here --></label>
+        <name>cscfga__dltbndl_here</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to return to the previous page. --></label>
+        <name>cscfga__dltbndl_to_return_to_the_previous_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field --></label>
+        <name>cscfga__elicrittrg_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field {0} is not available on the {1} object --></label>
+        <name>cscfga__elicrittrg_Field_is_not_available_on_the_object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- is not available on the --></label>
+        <name>cscfga__elicrittrg_is_not_available_on_the</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- object --></label>
+        <name>cscfga__elicrittrg_object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Object Name (object to query) can only have values: {0} --></label>
+        <name>cscfga__eligruletrg_Object_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading... --></label>
+        <name>cscfga__embscr_Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quantity for related configurations must be at least 1 --></label>
+        <name>cscfga__error_child_config_with_wrong_quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid attribute or field data type --></label>
+        <name>cscfga__functionscls_Invalid_attribute_or_field_data_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cache warmup data only for cacheWarming Eager --></label>
+        <name>cscfga__genlkpcch_Cache_warmup_data_only_for_eager</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot find the Lookup Query record with ID --></label>
+        <name>cscfga__genlkpcch_Cannot_find_Lookup_Query_with_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attempted to associate an attribute via a section from a different configuration --></label>
+        <name>cscfga__layhelpcls_Attempt_to_associate_an_attribute_via_a_section_from_a_different_con</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Screen Section id --></label>
+        <name>cscfga__layhelpcls_Screen_Section_id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- not found for screen --></label>
+        <name>cscfga__layhelpcls_not_found_for_screen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Absolute Expiry value must be a timestamp --></label>
+        <name>cscfga__lkpcchmgr_Absolute_expiry_value_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cache Configuration field contains unparseable JSON --></label>
+        <name>cscfga__lkpcchmgr_Cache_configuration_field_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cache Warming strategy is invalid --></label>
+        <name>cscfga__lkpcchmgr_Cache_warming_value_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cache Warming strategy is missing. Valid values: &quot;lazy&quot;, &quot;eager&quot; --></label>
+        <name>cscfga__lkpcchmgr_Cache_warming_value_missing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cache warmup data attachment contains stale data --></label>
+        <name>cscfga__lkpcchmgr_Cache_warmup_data_stale</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot generate cache warmup data: No Criteria --></label>
+        <name>cscfga__lkpcchmgr_Cannot_generate_warmup_data_no_criteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot generate cache warmup data: No Eager --></label>
+        <name>cscfga__lkpcchmgr_Cannot_generate_warmup_data_not_eager</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot generate cache warmup data: No Equals --></label>
+        <name>cscfga__lkpcchmgr_Cannot_generate_warmup_data_not_equals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Missing Cache warmup data attachment --></label>
+        <name>cscfga__lkpcchmgr_Missing_cache_warmup_data_attachment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TTL value must be a zero or a positive integer --></label>
+        <name>cscfga__lkpcchmgr_Time_to_live_value_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- You can not use operator {0} on field type {1} --></label>
+        <name>cscfga__lkpcrttrg_You_can_not_use_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contains operator only on Multi-Select Picklist and Text --></label>
+        <name>cscfga__lkpcrttrg_You_can_use_contains</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configurator could not parse the following keywords: --></label>
+        <name>cscfga__lkpqrtrg_Configurator_could_not_parse</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Following Lookup Criterions do not exist on this record: --></label>
+        <name>cscfga__lkpqrtrg_Following_lookup_queries_do_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please correct missing parantheses. --></label>
+        <name>cscfga__lkpqrtrg_Please_correct_missing_parantheses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute names are case sensitive in this context. --></label>
+        <name>cscfga__lkpsoqlbuildercls_Attribute_names_are_case_sensitive_in_this_context</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute value provider not defined --></label>
+        <name>cscfga__lkpsoqlbuildercls_Attribute_value_provider_not_defined</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error_evaluating_lookup_criterion --></label>
+        <name>cscfga__lkpsoqlbuildercls_Error_evaluating_lookup_criterion_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Field not found on object --></label>
+        <name>cscfga__lkpsoqlbuildercls_Field_not_found_on_object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config does not have search object mapping --></label>
+        <name>cscfga__lkpsoqlbuildercls_Lookup_config_does_not_have_search_object_mapping</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup criterion has empty value data --></label>
+        <name>cscfga__lkpsoqlbuildercls_Lookup_criterion_has_empty_value_data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup criterion no lookup query has empty value data --></label>
+        <name>cscfga__lkpsoqlbuildercls_Lookup_criterion_no_lookup_query_has_empty_value_data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SObject type not found for lookup config --></label>
+        <name>cscfga__lkpsoqlbuildercls_SObject_type_not_found_for_lookup_config</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported operator --></label>
+        <name>cscfga__lkpsoqlbuildercls_Unsupported_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config without list columns defined (name can be used) --></label>
+        <name>cscfga__lkupcontrcls_Config_without_list_columns_with_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config without list columns defined --></label>
+        <name>cscfga__lkupcontrcls_Config_without_list_columns_without_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config without search columns used --></label>
+        <name>cscfga__lkupcontrcls_Config_without_search_columns</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config has mapping targeting object which does not exist --></label>
+        <name>cscfga__lkupcontrcls_Lookup_config_has_mapping_targeting_object_which_does_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup config not found: --></label>
+        <name>cscfga__lkupcontrcls_Lookup_config_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No information could be retrieved --></label>
+        <name>cscfga__lkupcontrcls_No_information_could_be_retrieved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Can&apos;t build dynamic lookup query --></label>
+        <name>cscfga__lkuphlpcls_Can_t_build_dynamic_lookup_query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not build LookupQuery Filter --></label>
+        <name>cscfga__lkuphlpcls_Could_not_build_LookupQuery_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not find Lookup Query --></label>
+        <name>cscfga__lkuphlpcls_Could_not_find_Lookup_Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Either no field was provided --></label>
+        <name>cscfga__lkuphlpcls_Either_no_field_was_provided</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup criteria attribute --></label>
+        <name>cscfga__lkuphlpcls_Lookup_criteria_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The query used on screen has no search value. --></label>
+        <name>cscfga__lkuphlpcls_Malformed_query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No lookup_query__c found for name --></label>
+        <name>cscfga__lkuphlpcls_No_lookup_query_c_found_for_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported operator used on Multiselect picklist --></label>
+        <name>cscfga__lkuphlpcls_Unsupported_operator_used_on_Multipicklist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- lookup_searcher_implementation_not_found --></label>
+        <name>cscfga__lkuphlpcls_lookup_searcher_implementation_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- not found in configuration. Attribute --></label>
+        <name>cscfga__lkuphlpcls_not_found_in_configuration_Attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply Filters --></label>
+        <name>cscfga__lookup_Apply_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Checked --></label>
+        <name>cscfga__lookup_Checked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clear Filters --></label>
+        <name>cscfga__lookup_Clear_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filtered by: --></label>
+        <name>cscfga__lookup_Filtered_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First --></label>
+        <name>cscfga__lookup_First</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First page --></label>
+        <name>cscfga__lookup_First_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Go! --></label>
+        <name>cscfga__lookup_Go</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Hide Filters --></label>
+        <name>cscfga__lookup_Hide_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last page --></label>
+        <name>cscfga__lookup_Last</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last page --></label>
+        <name>cscfga__lookup_Last_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup --></label>
+        <name>cscfga__lookup_Lookup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New --></label>
+        <name>cscfga__lookup_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>cscfga__lookup_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next page --></label>
+        <name>cscfga__lookup_Next_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>cscfga__lookup_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous page --></label>
+        <name>cscfga__lookup_Previous_page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reset --></label>
+        <name>cscfga__lookup_Reset</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>cscfga__lookup_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show Filters --></label>
+        <name>cscfga__lookup_Show_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unchecked --></label>
+        <name>cscfga__lookup_Unchecked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- use wildcard --></label>
+        <name>cscfga__lookup_use_wildcard</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom lookup class does not exist --></label>
+        <name>cscfga__lsmcls_Custom_lookup_class_does_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Limit for querying records page-by-page is 2000. Please narrow down your search --></label>
+        <name>cscfga__lsmcls_Limit_for_querying_records_page_by_page_is_2000</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add --></label>
+        <name>cscfga__multsecontr_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bottom --></label>
+        <name>cscfga__multsecontr_Bottom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__multsecontr_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Down --></label>
+        <name>cscfga__multsecontr_Down</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove --></label>
+        <name>cscfga__multsecontr_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__multsecontr_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Top --></label>
+        <name>cscfga__multsecontr_Top</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Up --></label>
+        <name>cscfga__multsecontr_Up</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An unexpected error has occurred (New bundle redirect failed) --></label>
+        <name>cscfga__newprobdl_An_unexpected_error_has_occurred_New_bundle_redirect_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addition operator not supported on Date and --></label>
+        <name>cscfga__opercls_Addition_operator_not_supported_on_Date_and</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Addition operator not supported on String and --></label>
+        <name>cscfga__opercls_Addition_operator_not_supported_on_String_and</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attempt to bind second parameter to unary operator --></label>
+        <name>cscfga__opercls_Attempt_to_bind_second_parameter_to_unary_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No value bound --></label>
+        <name>cscfga__opercls_No_value_bound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only Boolean types can be bound --></label>
+        <name>cscfga__opercls_Only_Boolean_types_can_be_bound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only String types can be bound --></label>
+        <name>cscfga__opercls_Only_String_types_can_be_bound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Operator --></label>
+        <name>cscfga__opercls_Operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Processing StartsWith operator --></label>
+        <name>cscfga__opercls_Processing_StartsWith_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Subtraction operator not supported on Date and --></label>
+        <name>cscfga__opercls_Subtraction_operator_not_supported_on_Date_and</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Undefined --></label>
+        <name>cscfga__opercls_Undefined</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unimplemented --></label>
+        <name>cscfga__opercls_Unimplemented</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unrecognised operator --></label>
+        <name>cscfga__opercls_Unrecognised_operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unsupported Operation --></label>
+        <name>cscfga__opercls_Unsupported_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- failed to apply --></label>
+        <name>cscfga__opercls_failed_to_apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help for this Page --></label>
+        <name>cscfga__pagehead_Help_for_this_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Product Configuration --></label>
+        <name>cscfga__pagehead_New_Product_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration Edit --></label>
+        <name>cscfga__pagehead_Product_Configuration_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Aggregate configuration in basket --></label>
+        <name>cscfga__pcasynctask_aggregate_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Copy product configurations job title --></label>
+        <name>cscfga__pcasynctask_copy_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete product configurations job title --></label>
+        <name>cscfga__pcasynctask_delete_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Revalidate product configurations job title --></label>
+        <name>cscfga__pcasynctask_revalidate_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unable to save Product Configuration. Error occurred while trying to map --></label>
+        <name>cscfga__pcc_Unable_to_save_Product_Configuration_Error_occured_on_conf_out_mapping</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration Customiser class not found. --></label>
+        <name>cscfga__pcc_configuration_customiser_implementation_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute --></label>
+        <name>cscfga__pchlpcls_Attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute type is not a related product --></label>
+        <name>cscfga__pchlpcls_Attribute_type_is_not_a_related_product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ConfigIdentifier was null --></label>
+        <name>cscfga__pchlpcls_ConfigIdentifier_was_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not find reference --></label>
+        <name>cscfga__pchlpcls_Could_not_find_reference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not understand attribute reference --></label>
+        <name>cscfga__pchlpcls_Could_not_understand_attribute_reference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not understand attribute reference in Count(): --></label>
+        <name>cscfga__pchlpcls_Could_not_understand_attribute_reference_in_Count</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Count() can only be applied to related list attributes. --></label>
+        <name>cscfga__pchlpcls_Count_can_only_be_applied_to_related_list_attributes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lookup query creation failed. --></label>
+        <name>cscfga__pchlpcls_Lookup_query_creation_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Product definition found with name --></label>
+        <name>cscfga__pchlpcls_No_Product_definition_found_with_name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No category found with reference --></label>
+        <name>cscfga__pchlpcls_No_category_found_with_reference</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No parent found for ProductConfiguration --></label>
+        <name>cscfga__pchlpcls_No_parent_found_for_ProductConfiguration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No related products found on attribute --></label>
+        <name>cscfga__pchlpcls_No_related_products_found_on_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No results found: --></label>
+        <name>cscfga__pchlpcls_No_results_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No return field set for Lookup Query --></label>
+        <name>cscfga__pchlpcls_No_return_field_set_for_Lookup_Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a number --></label>
+        <name>cscfga__pchlpcls_Please_enter_a_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a number with at most --></label>
+        <name>cscfga__pchlpcls_Please_enter_a_number_with_at_most</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter a whole number --></label>
+        <name>cscfga__pchlpcls_Please_enter_a_whole_number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related product for Attribute --></label>
+        <name>cscfga__pchlpcls_Related_product_for_Attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- could not be found --></label>
+        <name>cscfga__pchlpcls_could_not_be_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- decimals --></label>
+        <name>cscfga__pchlpcls_decimals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- related items has been exceeded. --></label>
+        <name>cscfga__pchlpcls_exceeded_related_items</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- in category --></label>
+        <name>cscfga__pchlpcls_in_category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- requested at out-of-range index: --></label>
+        <name>cscfga__pchlpcls_requested_at_out_of_range_index</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Compile product definitions job title --></label>
+        <name>cscfga__pdasynctask_compile_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PPC does not extend AConfigurationCustomiser class --></label>
+        <name>cscfga__ppc_does_not_extend_configuration_customiser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not update configurations: --></label>
+        <name>cscfga__prdbndlcontrcls_Could_not_update_configurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deprecated --></label>
+        <name>cscfga__prdbndlcontrcls_Deprecated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Quantity --></label>
+        <name>cscfga__prdbndlcontrcls_Invalid_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No opportunity is associated with this product bundle. --></label>
+        <name>cscfga__prdbndlcontrcls_No_opportunity_is_associated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The bundle cannot be synchronised --></label>
+        <name>cscfga__prdbndlcontrcls_The_bundle_cannot_be_synchronised</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The product bundle line items were successfully synchronised with the opportunit --></label>
+        <name>cscfga__prdbndlcontrcls_The_product_bundle_line_items_were_successfully_synchronised</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Destination opportunity Id does not exist --></label>
+        <name>cscfga__prdbndlmngcls_Destination_opportunity_Id_does_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductBundleManager.updateDirtyConfigurations --></label>
+        <name>cscfga__prdbndlmngcls_ProductBundleManager_updateDirtyConfigurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configurations having Definitions for UX Engine --></label>
+        <name>cscfga__prdbndlmngcls_Product_Configurations_having_Definitions_for_Runtime_V2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Source bundle Id does not exist --></label>
+        <name>cscfga__prdbndlmngcls_Source_bundle_Id_does_not_exist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The configurations to be copied use a different context product to the items alr --></label>
+        <name>cscfga__prdbndlmngcls_The_configurations_to_be_copied_use_a_different</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The configurations to be copied use multiple --></label>
+        <name>cscfga__prdbndlmngcls_The_configurations_to_be_copied_use_multiple</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not find Opportunity: --></label>
+        <name>cscfga__prdcatcontrcls_Could_not_find_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No linked id or retURL parameters provided --></label>
+        <name>cscfga__prdcatcontrcls_No_linked_id_or_retURL_parameters_provided</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Definitions and ScreenFlows must be --></label>
+        <name>cscfga__prdconfcls_Definitions_and_ScreenFlows_must_be</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error in ProductConfiguration executeRules() --></label>
+        <name>cscfga__prdconfcls_Error_in_ProductConfiguration_executeRules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguration --></label>
+        <name>cscfga__prdconfcls_ProductConfiguration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- already has a parent --></label>
+        <name>cscfga__prdconfcls_already_has_a_parent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An Error has occurred --></label>
+        <name>cscfga__prdconfcontrcls_An_Error_has_occurred</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An error occurred updating attribute --></label>
+        <name>cscfga__prdconfcontrcls_An_error_occurred_updating_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attempted to add related product for attribute --></label>
+        <name>cscfga__prdconfcontrcls_Attempted_to_add_related_product_for_attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bundle ID --></label>
+        <name>cscfga__prdconfcontrcls_Bundle_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot select an offer containing V2 configurations --></label>
+        <name>cscfga__prdconfcontrcls_Cannot_select_an_offer_containing_v2_configurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not find Opportunity: --></label>
+        <name>cscfga__prdconfcontrcls_Could_not_find_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not locate related product to copy --></label>
+        <name>cscfga__prdconfcontrcls_Could_not_locate_related_product_to_copy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Could not select offer: --></label>
+        <name>cscfga__prdconfcontrcls_Could_not_select_offer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New item cannot be added --></label>
+        <name>cscfga__prdconfcontrcls_New_item_cannot_be_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please address the problems indicated below --></label>
+        <name>cscfga__prdconfcontrcls_Please_address_the_problems_indicated_below</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.buildSharedContext --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_buildSharedContext</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.generateBundleName --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_generateBundleName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.persistConfig basket --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_persistConfig_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.persistConfig baskets match --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_persistConfig_baskets_match</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.persistConfig bundle --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_persistConfig_bundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.persistConfig --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_persistConfig_linked_obj</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProductConfiguratorController.persistConfig offer --></label>
+        <name>cscfga__prdconfcontrcls_ProductConfiguratorController_persistConfig_offer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definitions for UX Engine --></label>
+        <name>cscfga__prdconfcontrcls_Product_Definitions_for_Runtime_V2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definitions for UX Engine - Related Products --></label>
+        <name>cscfga__prdconfcontrcls_Product_Definitions_for_Runtime_V2_Related_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- selectPackage() invoked over definition with wrong record type. --></label>
+        <name>cscfga__prdconfcontrcls_Select_package_invoked_over_nonpackage_definition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Template offers can only be added to baskets. --></label>
+        <name>cscfga__prdconfcontrcls_Template_offers_can_only_be_added_to_baskets</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The bundle can still be saved but --></label>
+        <name>cscfga__prdconfcontrcls_The_bundle_can_still_be_saved_but</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The previous screen is incomplete --></label>
+        <name>cscfga__prdconfcontrcls_The_previous_screen_is_incomplete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- There are validation errors within the configuration. --></label>
+        <name>cscfga__prdconfcontrcls_There_are_validation_errors_within_the_configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This opportunity is closed, no new configurations can be added. --></label>
+        <name>cscfga__prdconfcontrcls_This_opportunity_is_closed_no_new_configurations_can_be_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This product requires a different top-level --></label>
+        <name>cscfga__prdconfcontrcls_This_product_requires_a_different_top_level</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- User does not have access to Product Definition --></label>
+        <name>cscfga__prdconfcontrcls_User_does_not_have_access_to_Product_Definition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basket id not found --></label>
+        <name>cscfga__prdconfcontrcls_basket_id_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- cannot invoke selectOffer without setting offerId --></label>
+        <name>cscfga__prdconfcontrcls_cannot_invoke_selectOffer_without_setting_offerId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- More than one Screen Flow Predicate evaluates to true --></label>
+        <name>cscfga__prdconfcontrcls_more_than_one_screen_flow_predicate_true</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- not found --></label>
+        <name>cscfga__prdconfcontrcls_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- of type --></label>
+        <name>cscfga__prdconfcontrcls_of_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition behaviour has changed. --></label>
+        <name>cscfga__prdconfcontrcls_product_definition_behaviour_has_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition layout has changed. --></label>
+        <name>cscfga__prdconfcontrcls_product_definition_layout_has_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition structure has changed. --></label>
+        <name>cscfga__prdconfcontrcls_product_definition_structure_has_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- records is --></label>
+        <name>cscfga__prdconfcontrcls_records_is</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- until the errors have been corrected. --></label>
+        <name>cscfga__prdconfcontrcls_until_the_errors_have_been_corrected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- A valid Configuration ID must be supplied --></label>
+        <name>cscfga__prdconfhlpcls_A_valid_Configuration_ID_must_be_supplied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- numCopiesRequired must be a positive integer --></label>
+        <name>cscfga__prdconfhlpcls_numCopiesRequired_must_be_a_positive_integer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Predicate is already associated with a rule --></label>
+        <name>cscfga__predvalid_predicate_associated_with_rule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Predicate is already associated with a Screen flow --></label>
+        <name>cscfga__predvalid_predicate_associated_with_screenflow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Predicate can not be associated with more than one Screen flow --></label>
+        <name>cscfga__predvalid_predicate_cant_have_more_than_one_screenflow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Information --></label>
+        <name>cscfga__probunded_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>cscfga__probunded_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Bundle Edit --></label>
+        <name>cscfga__probunded_Product_Bundle_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product bundles on closed opportunities cannot be deleted. --></label>
+        <name>cscfga__probundtrg_Product_bundles_on_closed_opportunities_cannot_be_deleted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product bundles on closed opportunities cannot be edited. --></label>
+        <name>cscfga__probundtrg_Product_bundles_on_closed_opportunities_cannot_be_edited</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Amount invalid for percentage discount --></label>
+        <name>cscfga__proconftrg_Amount_invalid_for_percentage_discount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charge already exists as a Charge --></label>
+        <name>cscfga__proconftrg_Charge_already_exists_as_Charge</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charge already exists as a Line Item Attribute --></label>
+        <name>cscfga__proconftrg_Charge_already_exists_as_Line_Attribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charge type field is not supported in 1-0-0 version. --></label>
+        <name>cscfga__proconftrg_Charge_type_field_is_not_supported_for_version_1_0_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charge type invalid --></label>
+        <name>cscfga__proconftrg_Charge_type_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charges field is invalid --></label>
+        <name>cscfga__proconftrg_Charges_field_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration can&apos;t be attached to an immutable --></label>
+        <name>cscfga__proconftrg_Configuration_can_t_be_attached_to_an_immutable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration can&apos;t be deleted because --></label>
+        <name>cscfga__proconftrg_Configuration_can_t_be_deleted_because</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration is attached to an immutable template --></label>
+        <name>cscfga__proconftrg_Configuration_is_attached_to_an_immutable_template</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount charge invalid --></label>
+        <name>cscfga__proconftrg_Discount_charge_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount charge invalid for the duration --></label>
+        <name>cscfga__proconftrg_Discount_charge_invalid_for_duration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount charge or type invalid --></label>
+        <name>cscfga__proconftrg_Discount_charge_type_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount could not be upgraded --></label>
+        <name>cscfga__proconftrg_Discount_could_not_be_upgraded</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount field is invalid --></label>
+        <name>cscfga__proconftrg_Discount_field_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount type invalid --></label>
+        <name>cscfga__proconftrg_Discount_type_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Duration contains negative value --></label>
+        <name>cscfga__proconftrg_Duration_invalid_negative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid value in charge field --></label>
+        <name>cscfga__proconftrg_Invalid_charge_field_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount version format is invalid --></label>
+        <name>cscfga__proconftrg_Invalid_discount_version_format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parent discount invalid --></label>
+        <name>cscfga__proconftrg_Parent_discount_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product configurations in bundles synchronised --></label>
+        <name>cscfga__proconftrg_Product_configurations_in_bundles_synchronised</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Root configurations cannot inherit any discounts --></label>
+        <name>cscfga__proconftrg_Root_configurations_cannot_inherit_discounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__prodbaskedit_cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Information --></label>
+        <name>cscfga__prodbaskedit_information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>cscfga__prodbaskedit_name_label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Basket Edit --></label>
+        <name>cscfga__prodbaskedit_product_basket_edit_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__prodbaskedit_save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot delete basket while asynchronous processing on basket is running. --></label>
+        <name>cscfga__prodbaskettrigger_async_tasks_running_over_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__prodbundedit_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__prodbundedit_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition can not be archived --></label>
+        <name>cscfga__proddeftrg_Product_definition_can_not_be_archived</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition can not have iteration changed. --></label>
+        <name>cscfga__proddeftrg_Product_definition_can_not_have_iteration_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition can not have record type changed. --></label>
+        <name>cscfga__proddeftrg_Product_definition_can_not_have_record_type_changed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product definition must have runtime engine --></label>
+        <name>cscfga__proddeftrg_Product_definition_must_have_runtime_engine</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Shared context mark cannot be removed --></label>
+        <name>cscfga__proddeftrg_Shared_context_mark_cannot_be_removed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Shared context mark cannot be removed - definition --></label>
+        <name>cscfga__proddeftrg_Shared_context_mark_cannot_be_removed_definition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Access Granted --></label>
+        <name>cscfga__prodper_Access_Granted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Access permission for profiles --></label>
+        <name>cscfga__prodper_Access_permission_for_profiles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to Product Definition --></label>
+        <name>cscfga__prodper_Back_to_Product_Definition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile --></label>
+        <name>cscfga__prodper_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Restrict access for Product Definition --></label>
+        <name>cscfga__prodper_Restrict_access_for_Product_Definition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cscfga__prodper_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Set access permissions for --></label>
+        <name>cscfga__prodper_Set_access_permissions_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Definition Id not specified --></label>
+        <name>cscfga__reindefcontrcls_Definition_Id_not_specified</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Definition reinstated from Archive --></label>
+        <name>cscfga__reindefcontrcls_Definition_reinstated_from_Archive</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definition could not be reinstated: --></label>
+        <name>cscfga__reindefcontrcls_Product_Definition_could_not_be_reinstated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add --></label>
+        <name>cscfga__relprod_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Del --></label>
+        <name>cscfga__relprod_Del</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit --></label>
+        <name>cscfga__relprod_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- High volume related product not validated. --></label>
+        <name>cscfga__revalidatecfg_hvrelated_not_validated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please remove Rule/Predicate Association references --></label>
+        <name>cscfga__rulpredasstrg_Please_remove_Rule_Predicate_Associations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__selcat_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Categories --></label>
+        <name>cscfga__selcat_Categories</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Category --></label>
+        <name>cscfga__selcat_Category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Configuration --></label>
+        <name>cscfga__selcat_New_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offers --></label>
+        <name>cscfga__selcat_Offers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Packages --></label>
+        <name>cscfga__selcat_Packages_Section</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Definitions &amp; Categories --></label>
+        <name>cscfga__selcat_Product_Definitions_Categories</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Name --></label>
+        <name>cscfga__selcat_Product_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Products &amp; Offers --></label>
+        <name>cscfga__selcat_Products_Offers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related Product Selection --></label>
+        <name>cscfga__selcat_Related_Product_Selection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Category --></label>
+        <name>cscfga__selcat_Select_Category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Product --></label>
+        <name>cscfga__selcat_Select_Product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- There are no products or sub categories available to configure in this context, --></label>
+        <name>cscfga__selcat_There_are_no_products_or_sub_categories_available_to_configure</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This opportunity is closed - no product bundles can be added to it. --></label>
+        <name>cscfga__selcat_This_opportunity_is_closed_no_product_bundles_can_be_added_to_it</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selcat_cat_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selcat_off_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selcat_prod_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please enter search term --></label>
+        <name>cscfga__selectlistlookup_Please_enter_search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please select value --></label>
+        <name>cscfga__selectlistlookup_Please_select_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute type &quot; --></label>
+        <name>cscfga__selopttrg_Attribute_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute type does not support Select Options --></label>
+        <name>cscfga__selopttrg_Attribute_type_does_not_support_Select_options_select_different</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attribute types that support &quot;Select options&quot; are : --></label>
+        <name>cscfga__selopttrg_Attribute_types_that_support_Select_options_are</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please select different attribute type --></label>
+        <name>cscfga__selopttrg_Please_select_different_attribute_type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- &quot; does not support &quot;Select options&quot;. --></label>
+        <name>cscfga__selopttrg_does_not_support_Select_options</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selprod_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offer Name --></label>
+        <name>cscfga__selprod_Offer_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Name --></label>
+        <name>cscfga__selprod_Product_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back --></label>
+        <name>cscfga__selprodcat_Back</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cscfga__selprodcat_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Category Name --></label>
+        <name>cscfga__selprodcat_Category_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selprodcat_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help for this Page --></label>
+        <name>cscfga__selprodcat_Help_for_this_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Product Configuration --></label>
+        <name>cscfga__selprodcat_New_Product_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offers --></label>
+        <name>cscfga__selprodcat_Offers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration Edit --></label>
+        <name>cscfga__selprodcat_Product_Configuration_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Products --></label>
+        <name>cscfga__selprodcat_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- There are no products or sub categories --></label>
+        <name>cscfga__selprodcat_There_are_no_products_or_sub_categories</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- to --></label>
+        <name>cscfga__selprodcat_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to --></label>
+        <name>cscfga__selrelopt_Back_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Category Name --></label>
+        <name>cscfga__selrelopt_Category_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>cscfga__selrelopt_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Either no products options --></label>
+        <name>cscfga__selrelopt_Either_no_products_options</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Help for this Page --></label>
+        <name>cscfga__selrelopt_Help_for_this_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Related Product Configuration --></label>
+        <name>cscfga__selrelopt_New_Related_Product_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No products available --></label>
+        <name>cscfga__selrelopt_No_products_available</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration Edit --></label>
+        <name>cscfga__selrelopt_Product_Configuration_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Name --></label>
+        <name>cscfga__selrelopt_Product_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to validate expression --></label>
+        <name>cscfga__soqlbuildercls_Failed_to_validate_expression</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Limit must be greater or equal to zero. --></label>
+        <name>cscfga__soqlbuildercls_Limit_cannot_be_less_than_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offset must be zero or greater. --></label>
+        <name>cscfga__soqlbuildercls_Offset_cannot_be_less_than_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select clause at SOQL builder not built correctly --></label>
+        <name>cscfga__soqlbuildercls_Select_clause_at_SOQL_builder_not_built_correctly</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select column cannot be null in SOQL. --></label>
+        <name>cscfga__soqlbuildercls_Select_column_cannot_be_null_in_SOQL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Where clause expression most not be null --></label>
+        <name>cscfga__soqlbuildercls_Where_clause_expression_most_not_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- is not queryable --></label>
+        <name>cscfga__soqlbuildercls_is_not_queryable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Object type must be defined for SOQLBuilder --></label>
+        <name>cscfga__soqlbuildercls_object_type_must_be_defined_for_SOQLBuilder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- where clause entity is empty --></label>
+        <name>cscfga__soqlbuildercls_where_clause_entity_is_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to capture default screen flow --></label>
+        <name>cscfga__statuictrlcls_Failed_to_capture_default_screen_flow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to capture product model --></label>
+        <name>cscfga__statuictrlcls_Failed_to_capture_product_model</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to capture product rules --></label>
+        <name>cscfga__statuictrlcls_Failed_to_capture_product_rules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to capture screen flow --></label>
+        <name>cscfga__statuictrlcls_Failed_to_capture_screen_flow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Compiling product definition is initiated --></label>
+        <name>cscfga__statuictrlcls_Product_definition_compile_initiated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product model capture was successful --></label>
+        <name>cscfga__statuictrlcls_Product_model_capture_success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product rules capture was successful --></label>
+        <name>cscfga__statuictrlcls_Product_rules_capture_success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Required parameter(s) missing --></label>
+        <name>cscfga__statuictrlcls_Required_parameters_missing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Screen flow capture was successful --></label>
+        <name>cscfga__statuictrlcls_Screen_flow_capture_success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Screen flow capture was skipped, template not found --></label>
+        <name>cscfga__statuictrlcls_Screen_flow_capture_template_not_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only active template offers be attached --></label>
+        <name>cscfga__tempofftrg_Only_active_template_offers_be_attached</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Shuffling around template offer to basket --></label>
+        <name>cscfga__tempofftrg_Shuffling_around_template_offer_to_basket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- template offer id --></label>
+        <name>cscfga__tempofftrg_template_offer_id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Can&apos;t edit Bundle Configuration with UX Engine --></label>
+        <name>cscfga__uisupportcls_Cant_Edit_Bundle_Configuration_With_Runtime_V2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type missmatch between list and search objects. --></label>
+        <name>cscfga__upsertlconftrg_Type_missmatch_between_list_and_search_objects</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Applying rules --></label>
+        <name>cscfga__v2_Applying_rules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Configuration saved. --></label>
+        <name>cscfga__v2_Configuration_saved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Creating new product --></label>
+        <name>cscfga__v2_Creating_new_product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading product --></label>
+        <name>cscfga__v2_Loading_product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Persisting changes... --></label>
+        <name>cscfga__v2_Persisting_changes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Preparing main product form --></label>
+        <name>cscfga__v2_Preparing_main_product_form</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Retrieving --></label>
+        <name>cscfga__v2_Retrieving</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Retrieving {0} referenced records from server --></label>
+        <name>cscfga__v2_Retrieving_referenced_records_from_server</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address/Availability Check available --></label>
+        <name>cscrmACheckAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address/Availability Check Not available --></label>
+        <name>cscrmACheckNotAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Address Header --></label>
+        <name>cscrmAddressHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- City Header --></label>
+        <name>cscrmCityHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FTTH Header --></label>
+        <name>cscrmFTTHHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HFC Header --></label>
+        <name>cscrmHFCHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HFC Suitability Header --></label>
+        <name>cscrmHFCSuitabilityHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- House number ext Header --></label>
+        <name>cscrmHouseNumberExtHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- House number Header --></label>
+        <name>cscrmHouseNumberHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Move Product Button --></label>
+        <name>cscrmMoveProductButton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offer Available --></label>
+        <name>cscrmOfferAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offer Not available --></label>
+        <name>cscrmOfferNotAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Partner Network Model --></label>
+        <name>cscrmPartnerNetworkModel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Postcode header --></label>
+        <name>cscrmPostcodeHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected Site Address Id --></label>
+        <name>cscrmSelectedSiteAddressId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Site Header --></label>
+        <name>cscrmSiteHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Street Header --></label>
+        <name>cscrmStreetHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No General Document Settings found for language --></label>
+        <name>cscrm_no_document_values_found_for_language</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No language passed to doc generation --></label>
+        <name>cscrm_no_language_passed_for_doc_generation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No source record for document --></label>
+        <name>cscrm_no_source_record_passed_for_doc_generation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actual Approver --></label>
+        <name>csdiscounts__approval_ActualApprover</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Approve --></label>
+        <name>csdiscounts__approval_Approve</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Approver --></label>
+        <name>csdiscounts__approval_Approver</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Assigned To --></label>
+        <name>csdiscounts__approval_AssignedTo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Comment --></label>
+        <name>csdiscounts__approval_Comment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Comments --></label>
+        <name>csdiscounts__approval_Comments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Date --></label>
+        <name>csdiscounts__approval_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reassign --></label>
+        <name>csdiscounts__approval_Reassign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reassign approval request --></label>
+        <name>csdiscounts__approval_ReassignApprovalRequest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recall --></label>
+        <name>csdiscounts__approval_Recall</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reject --></label>
+        <name>csdiscounts__approval_Reject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>csdiscounts__approval_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>csdiscounts__basketdetails_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Base One Off --></label>
+        <name>csdiscounts__basketnegotiate_BaseOneOff</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Base recurring --></label>
+        <name>csdiscounts__basketnegotiate_BaseRecurring</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basket Negotiate --></label>
+        <name>csdiscounts__basketnegotiate_BasketNegotiate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Button Save --></label>
+        <name>csdiscounts__basketnegotiate_ButtonSave</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negotiate one off --></label>
+        <name>csdiscounts__basketnegotiate_NegotiateOneOff</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negotiate recurring --></label>
+        <name>csdiscounts__basketnegotiate_NegotiateRecurring</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configurations --></label>
+        <name>csdiscounts__basketnegotiate_ProductConfigurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove one off --></label>
+        <name>csdiscounts__basketnegotiate_RemoveOneOff</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove Recurring --></label>
+        <name>csdiscounts__basketnegotiate_RemoveRecurring</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Title --></label>
+        <name>csdiscounts__basketnegotiate_title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Warning --></label>
+        <name>csdiscounts__basketnegotiate_warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Percentage --></label>
+        <name>csdiscounts__bulkdiscountadditionrow_Percentage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>csdiscounts__bulkdiscountadditionrow_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>csdiscounts__bulkdiscountrow_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Period --></label>
+        <name>csdiscounts__bulkdiscounttable_Period</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove --></label>
+        <name>csdiscounts__bulkdiscounttable_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add --></label>
+        <name>csdiscounts__bulkmodalpage_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add New discount --></label>
+        <name>csdiscounts__bulkmodalpage_AddNewDiscount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discounts list --></label>
+        <name>csdiscounts__bulkmodalpage_DiscountsList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration Filters --></label>
+        <name>csdiscounts__bulkmodalpage_ProductConfigurationFilters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product Configuration List --></label>
+        <name>csdiscounts__bulkmodalpage_ProductConfigurationList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove discount --></label>
+        <name>csdiscounts__bulkmodalpage_RemoveDiscount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply Filter --></label>
+        <name>csdiscounts__bulkproductconfigurationfilter_ApplyFilter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Choose one! --></label>
+        <name>csdiscounts__bulkproductconfigurationfilter_ChooseOne</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select All --></label>
+        <name>csdiscounts__bulkproductconfigurationtable_SelectAll</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bulk Discounts --></label>
+        <name>csdiscounts__bulkupdate_BulkDiscounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Close --></label>
+        <name>csdiscounts__bulkupdate_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save changes --></label>
+        <name>csdiscounts__bulkupdate_SaveChanges</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- cloudsense --></label>
+        <name>csdiscounts__cloudsense_Cloudsense</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to basket --></label>
+        <name>csdiscounts__discountpage_BackToBasket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basket Approval --></label>
+        <name>csdiscounts__discountpage_BasketApproval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Basket Details --></label>
+        <name>csdiscounts__discountpage_BasketDetails</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>csdiscounts__discountpage_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Credit Funds --></label>
+        <name>csdiscounts__discountpage_CreditFunds</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deal Management --></label>
+        <name>csdiscounts__discountpage_DealManagement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profit and Loss --></label>
+        <name>csdiscounts__discountpage_ProfitAndLoss</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profit and Loss Report --></label>
+        <name>csdiscounts__discountpage_ProfitAndLossReport</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Report --></label>
+        <name>csdiscounts__discountpage_Report</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Submit for Approval --></label>
+        <name>csdiscounts__discountpage_SubmitForApproval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Amount --></label>
+        <name>csdiscounts__discountrow_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Percentage --></label>
+        <name>csdiscounts__discountrow_Percentage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actions --></label>
+        <name>csdiscounts__productconfiguration_Actions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add new discount --></label>
+        <name>csdiscounts__productconfiguration_AddNewDiscount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Amount --></label>
+        <name>csdiscounts__productconfiguration_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Approval --></label>
+        <name>csdiscounts__productconfiguration_Approval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Charge Type --></label>
+        <name>csdiscounts__productconfiguration_ChargeType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>csdiscounts__productconfiguration_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>csdiscounts__productconfiguration_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount Code --></label>
+        <name>csdiscounts__productconfiguration_DiscountCode</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Initial Price --></label>
+        <name>csdiscounts__productconfiguration_InitialPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negotiate Price --></label>
+        <name>csdiscounts__productconfiguration_NegotiatePrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- One Off --></label>
+        <name>csdiscounts__productconfiguration_OneOff</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Period --></label>
+        <name>csdiscounts__productconfiguration_Period</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Price --></label>
+        <name>csdiscounts__productconfiguration_Price</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Price Charge Type --></label>
+        <name>csdiscounts__productconfiguration_PriceChargeType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recurring --></label>
+        <name>csdiscounts__productconfiguration_Recurring</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sales Price --></label>
+        <name>csdiscounts__productconfiguration_SalesPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>csdiscounts__productconfiguration_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save discounts --></label>
+        <name>csdiscounts__productconfiguration_SaveDiscounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save negotiated price --></label>
+        <name>csdiscounts__productconfiguration_SaveNegotiatedPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show child configurations --></label>
+        <name>csdiscounts__productconfiguration_ShowChildConfigurations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show Discounts --></label>
+        <name>csdiscounts__productconfiguration_ShowDiscounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Source --></label>
+        <name>csdiscounts__productconfiguration_Source</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type --></label>
+        <name>csdiscounts__productconfiguration_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select --></label>
+        <name>csdiscounts__select_placeholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>cspdui__PD_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>cspdui__PD_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading --></label>
+        <name>cspdui__PD_Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New attribute --></label>
+        <name>cspdui__PD_NewAttribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New screen --></label>
+        <name>cspdui__PD_NewScreen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New screen section --></label>
+        <name>cspdui__PD_NewScreenSection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ok --></label>
+        <name>cspdui__PD_Ok</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Refresh --></label>
+        <name>cspdui__PD_Refresh</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>cspdui__PD_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Success --></label>
+        <name>cspdui__PD_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An error has occurred during async task service execute request. --></label>
+        <name>csutil__async_task_service_request_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The async task setting update failed. --></label>
+        <name>csutil__async_task_setting_update_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The task has finished. --></label>
+        <name>csutil__async_task_status_after_finish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task execute chunk finished. --></label>
+        <name>csutil__async_task_status_after_last_execute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task has started. --></label>
+        <name>csutil__async_task_status_after_start</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task execute. --></label>
+        <name>csutil__async_task_status_in_execute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task is queued. --></label>
+        <name>csutil__async_task_status_in_queue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- An error has occurred during token request. --></label>
+        <name>csutil__async_task_token_request_failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Failed to validate expression --></label>
+        <name>csutil__soqlbuildercls_Failed_to_validate_expression</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Limit must be greater or equal to zero. --></label>
+        <name>csutil__soqlbuildercls_Limit_cannot_be_less_than_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Offset must be zero or greater. --></label>
+        <name>csutil__soqlbuildercls_Offset_cannot_be_less_than_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select clause at SOQL builder not built correctly --></label>
+        <name>csutil__soqlbuildercls_Select_clause_at_SOQL_builder_not_built_correctly</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select column cannot be null in SOQL. --></label>
+        <name>csutil__soqlbuildercls_Select_column_cannot_be_null_in_SOQL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Where clause expression most not be null --></label>
+        <name>csutil__soqlbuildercls_Where_clause_expression_most_not_be_null</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- is not queryable --></label>
+        <name>csutil__soqlbuildercls_is_not_queryable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Object type must be defined for SOQLBuilder --></label>
+        <name>csutil__soqlbuildercls_object_type_must_be_defined_for_SOQLBuilder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- where clause entity is empty --></label>
+        <name>csutil__soqlbuildercls_where_clause_entity_is_empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- After --></label>
+        <name>sortablegrid__sdgAfter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sdgAgo --></label>
+        <name>sortablegrid__sdgAgo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Before --></label>
+        <name>sortablegrid__sdgBefore</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contains --></label>
+        <name>sortablegrid__sdgContains</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ends --></label>
+        <name>sortablegrid__sdgEnds</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Equals --></label>
+        <name>sortablegrid__sdgEquals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- False --></label>
+        <name>sortablegrid__sdgFalse</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filtered --></label>
+        <name>sortablegrid__sdgFiltered</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filtered Of --></label>
+        <name>sortablegrid__sdgFilteredOf</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Greater than --></label>
+        <name>sortablegrid__sdgGreaterThan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sdgIn --></label>
+        <name>sortablegrid__sdgIn</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Month --></label>
+        <name>sortablegrid__sdgLastMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last quarter --></label>
+        <name>sortablegrid__sdgLastQuarter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Week --></label>
+        <name>sortablegrid__sdgLastWeek</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Year --></label>
+        <name>sortablegrid__sdgLastYear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Less than --></label>
+        <name>sortablegrid__sdgLessThan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next month --></label>
+        <name>sortablegrid__sdgNextMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next Quarter --></label>
+        <name>sortablegrid__sdgNextQuarter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next week --></label>
+        <name>sortablegrid__sdgNextWeek</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next year --></label>
+        <name>sortablegrid__sdgNextYear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No data --></label>
+        <name>sortablegrid__sdgNoData</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Not Contains --></label>
+        <name>sortablegrid__sdgNotContains</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Not Equals --></label>
+        <name>sortablegrid__sdgNotEquals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page --></label>
+        <name>sortablegrid__sdgPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page Size --></label>
+        <name>sortablegrid__sdgPage_Size</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Starts --></label>
+        <name>sortablegrid__sdgStarts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This Month --></label>
+        <name>sortablegrid__sdgThisMonth</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This quarter --></label>
+        <name>sortablegrid__sdgThisQuarter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This Week --></label>
+        <name>sortablegrid__sdgThisWeek</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- This Year --></label>
+        <name>sortablegrid__sdgThisYear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Today --></label>
+        <name>sortablegrid__sdgToday</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tomorrow --></label>
+        <name>sortablegrid__sdgTomorrow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- True --></label>
+        <name>sortablegrid__sdgTrue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View All --></label>
+        <name>sortablegrid__sdgView_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Yesterday --></label>
+        <name>sortablegrid__sdgYesterday</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Permaleads Test --></label>
+        <name>Permaleads_Test</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Product Design Studio --></label>
+        <name>Product_Design_Studio</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Billing Account --></label>
+        <name>New_Billing_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Customer --></label>
+        <name>NX_New_Customer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Lead --></label>
+        <name>NX_New_Lead_RT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Partner --></label>
+        <name>NX_New_Partner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Pending Approvals --></description>
+        <label><!-- Pending Approvals --></label>
+        <name>Pending_Approvals</name>
+        <sections>
+            <label><!-- Process Instance --></label>
+            <name>Process Instance</name>
+        </sections>
+        <sections>
+            <label><!-- Process Instance Node --></label>
+            <name>Process Instance Node</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- test --></description>
+        <label><!-- test --></label>
+        <name>test</name>
+        <sections>
+            <label><!-- Opportunities Using This Site --></label>
+            <name>Opportunities Using This Site</name>
+        </sections>
+        <sections>
+            <label><!-- Sites --></label>
+            <name>Sites</name>
+        </sections>
+        <sections>
+            <label><!-- UPC Addresses --></label>
+            <name>UPC Addresses</name>
+        </sections>
+    </reportTypes>
+</Translations>

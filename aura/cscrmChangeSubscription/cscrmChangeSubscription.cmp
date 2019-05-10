@@ -1,0 +1,16 @@
+<!--
+ - Created by Petar on 11/30/2018.
+ -->
+
+<aura:component description="cscrmChangeSubscription" controller="cscrmChangeSubscriptionController" extends="c:cscrmCommonComponent"
+                implements="force:lightningQuickActionWithoutHeader,force:hasSObjectName,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    
+    <div>
+        <lightning:spinner variant="brand"
+                           size="small"
+                           alternativeText="Loading..."
+                           aura:id="spinner"/>
+    </div>
+    
+</aura:component>

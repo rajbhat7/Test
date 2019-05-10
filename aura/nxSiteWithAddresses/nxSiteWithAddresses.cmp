@@ -1,0 +1,255 @@
+<!--
+(c) 2018 Nexell GmbH  
+Developed by Nexell GmbH, Zug (Switzerland) 
+
+PT7756 - Accordion for site and site addresses.
+Note: <lighting:accordion> component cannot be used as is since it supports only text in the section title.
+
+@date 16.11.2018
+@author Pierre Castori
+
+@modifications
+24.04.2019 [PC] Component available to communities
+21.01.2019 [PC] PT7888
+06.12.2018 [TR] PT7791 - Added custom New Site
+30.11.2018 [PC] PT7786 - UPC_HFC_Upload__c, UPC_HFC_Download__c, UPC_Site_Status__c
+
+-->
+<aura:component controller="nxSiteManager" implements="force:hasRecordId,force:hasSObjectName,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="sites" type="UPC_Site__c[]"/>
+    <aura:attribute name="numberOfSites" type="Integer" default="0"/>
+    <aura:attribute name="isCommunityUser" type="Boolean" default="false"/>
+
+    <!--Needed for PT7791-->
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="footPrintOpen" type="boolean" default="false"/>
+    <aura:attribute name="selectedAddress" type="String" default=""/>
+    <aura:attribute name="objectId" type="String"/>
+    <aura:attribute name="objectName" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="siteUpdateEvent" event="c:nxSiteUpdateEvent" action="{!c.doInit}" />
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object"
+                    description="The record object to be displayed"/>
+    <aura:attribute name="AccountRecord" type="Object"
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String"
+                    description="An error message bound to force:recordData"/>
+
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.AccountRecord }"
+                      mode="VIEW"/>  
+
+    <lightning:card class="slds-card_boundary">
+
+        <aura:set attribute="actions">
+            <lightning:button label="New" onclick="{!c.openModel}"/>
+        </aura:set>
+
+        <aura:set attribute="title">
+            <lightning:icon iconName="custom:custom78" size="small" />
+            <span class="slds-card__header-title slds-m-left--small slds-truncate">
+                <b>Sites ({!v.numberOfSites})</b>
+            </span>
+        </aura:set>
+
+        <div>
+
+            <!-- Accordion title columns -->
+            <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal" role="grid">
+                <thead>
+                    <tr>
+                        <th class="slds-is-sortable slds-cell-wrap" scope="col" style="width:70%;">
+                            SITE NAME
+                        </th>
+                        <th class="slds-is-sortable slds-cell-wrap" scope="col" style="width:10%;">
+                            FTTH
+                        </th>
+                        <th class="slds-is-sortable slds-cell-wrap" scope="col" style="width:10%;">
+                            HFC
+                        </th>
+                        <th class="slds-is-sortable slds-cell-wrap" scope="col" style="width:10%;">
+                            STATUS
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+
+            <!-- Accordion content -->
+            <lightning:accordion>
+                <aura:iteration items="{!v.sites}" var="site" indexVar="index">
+                    <li class="slds-accordion__list-item">
+
+                        <section class="slds-accordion__section">
+
+                            <!-- SECTION TITLE -->
+                            <div class="slds-accordion__summary" onclick="{!c.showSection}" data-value="{!site.Id}">
+                                <h3 class="slds-accordion__summary-heading">
+                                    <button aria-controls="accordion-details-01" aria-expanded="true" class="slds-button slds-button_reset slds-accordion__summary-action">
+                                        <span id="{!'chevron-close-'+site.Id}" class="chevron-close"><lightning:icon iconName="utility:chevronright" size="x-small"/></span>
+                                        <span id="{!'chevron-open-'+site.Id}" class="chevron-open slds-hide"><lightning:icon iconName="utility:chevrondown" size="x-small"/></span>
+
+                                        <table class="slds-table slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal" role="grid">
+                                            <tr class="slds-hint-parent">
+                                                <td role="gridcell" class="slds-cell-wrap" style="width:70%;">
+                                                    <div class="slds-truncate">
+                                                        <aura:unescapedHtml value="{!site.Site_Name__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap" style="width:10%;">
+                                                    <div class="slds-truncate">
+                                                        <aura:unescapedHtml value="{!site.UPC_FTTH_Alert__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap" style="width:10%;">
+                                                    <div class="slds-truncate">
+                                                        <aura:unescapedHtml value="{!site.UPC_HFC_Alert__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap" style="width:10%;">
+                                                    <div class="slds-truncate">
+                                                        <aura:unescapedHtml value="{!site.UPC_Site_Status__c}" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </button>
+                                </h3>
+                            </div>
+
+                            <!-- SECTION CONTENT -->
+                            <div aria-hidden="false" class="accordion-body slds-p-top-medium slds-hide" id="{!'accordion-details-'+site.Id}">
+
+                                <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal"
+                                    role="grid">
+                                    <thead>
+                                        <tr>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                SITE ADDRESS NAME
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                FTTH
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                HFC
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                HFC SUITABILITY
+                                            </th>
+                                            <!-- PT7888
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                FTTH DOWNLOAD
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                FTTH UPLOAD
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                HFC DOWNLOAD
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                HFC UPLOAD
+                                            </th>
+                                            -->
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                PARTNER NETWORK MODEL
+                                            </th>
+                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                ADDRESS RECORD TYPE
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <aura:iteration items="{!site.Site_Addresses__r}" var="address">
+                                            <tr class="slds-hint-parent">
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_Site_Address_Link__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_FTTH_Alert__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_HFC_Alert__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_HFC_Suitability__c}" />
+                                                    </div>
+                                                </td>
+                                                <!-- PT7888
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_FTTH_Download__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_FTTH_Upload__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_HFC_Download__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_HFC_Upload__c}" />
+                                                    </div>
+                                                </td>
+                                                -->
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                        <aura:unescapedHtml value="{!address.UPC_Partner_Network_Model__c}" />
+                                                    </div>
+                                                </td>
+                                                <td role="gridcell" class="slds-cell-wrap">
+                                                    <div class="">
+                                                       <aura:unescapedHtml value="{!address.UPC_Address_Record_Type__c}" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </aura:iteration>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </li>
+                </aura:iteration>
+            </lightning:accordion>
+
+        </div>
+
+    </lightning:card>
+
+    <!--Created for PT7791: FootPrint Enchancements-->
+    <aura:if isTrue="{!v.isOpen}">
+        <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <c:nxAddSiteComponent isOpen="{!v.isOpen}" objectName="{!v.objectName}" idval="{!v.objectId}" footPrintOpen="{!v.footPrintOpen}" selectedAddress="{!v.selectedAddress}"/>
+            </div>
+        </section>
+    </aura:if>
+
+    <aura:if isTrue="{!v.footPrintOpen}">
+        <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <c:nxFootPrintAction selectedAddress="{!v.selectedAddress}" isNewAddress="true" footPrintOpen="{!v.footPrintOpen}" isOpen="{!v.isOpen}"/>
+            </div>
+        </section>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>UPC_Add_On_Product_MRC_Discount_Field__c</fullName>
+        <description>The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge discount amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge discount amount</inlineHelpText>
+        <label>Add On Product MRC Discount Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Product_MRC_Field__c</fullName>
+        <description>The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge amount</inlineHelpText>
+        <label>Add On Product MRC Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Product_NRC_Discount_Field__c</fullName>
+        <description>The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge discount amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge discount amount</inlineHelpText>
+        <label>Add On Product NRC Discount Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Add_On_Product_NRC_Field__c</fullName>
+        <description>The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge amount</inlineHelpText>
+        <label>Add On Product NRC Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether this record is actively used in quote document generation</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines whether this record is actively used in quote document generation</inlineHelpText>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Master_Product_MRC_Discount_Field__c</fullName>
+        <description>The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge discount amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge discount amount</inlineHelpText>
+        <label>Master Product MRC Discount Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Master_Product_MRC_Field__c</fullName>
+        <description>The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge amount</inlineHelpText>
+        <label>Master Product MRC Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Master_Product_NRC_Disc__c</fullName>
+        <description>The name of the Attribute related to the master Product Configuration which holds the One Off Charge discount amount</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to the master Product Configuration which holds the One Off Charge discount amount</inlineHelpText>
+        <label>Master Product NRC Discount Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Master_Product_NRC_Field__c</fullName>
+        <description>The name of the Attribute related to the master Product Configuration which holds the One Off Charge</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Attribute related to the master Product Configuration which holds the One Off Charge</inlineHelpText>
+        <label>Master Product NRC Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Quantity_Field__c</fullName>
+        <description>The field on the Product Configuration which holds the Quantity value</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The field on the Product Configuration which holds the Quantity value</inlineHelpText>
+        <label>Quantity Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Document Line Item Mappings</label>
+    <listViews>
+        <fullName>All_Quote_Document_Line_Item_Mappings</fullName>
+        <columns>MasterLabel</columns>
+        <columns>UPC_Add_On_Product_MRC_Discount_Field__c</columns>
+        <columns>UPC_Add_On_Product_MRC_Field__c</columns>
+        <columns>UPC_Add_On_Product_NRC_Discount_Field__c</columns>
+        <columns>UPC_Add_On_Product_NRC_Field__c</columns>
+        <columns>UPC_Master_Product_MRC_Discount_Field__c</columns>
+        <columns>UPC_Master_Product_MRC_Field__c</columns>
+        <columns>UPC_Master_Product_NRC_Disc__c</columns>
+        <columns>UPC_Master_Product_NRC_Field__c</columns>
+        <columns>UPC_Is_Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Quote Document Line Item Mappings</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Quote Document Line Item Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

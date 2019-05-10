@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Address Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Address Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Details --></label>
+        <name>UPC_Address_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- Address Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>UPC_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Mobile --></label>
+        <name>UPC_Contact_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>UPC_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>UPC_Contact__c</name>
+        <relationshipLabel><!-- Address Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>UPC_Role__c</name>
+        <picklistValues>
+            <masterLabel>Site Manager</masterLabel>
+            <translation><!-- Site Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Address Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

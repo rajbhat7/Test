@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Site object stores details for specific locations within an Address, typically where Customer Premises Equipment (CPE) will be installed.  A large office building at a single Address could have many Sites and these could be defined at different levels of granularity. For example, a Site could simply be Room 25 on the 1st Floor.  Alternatively a Site could be Rack 23 within Room 25 on the 1st Floor.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>UPC_Site_Number__c</fullName>
+        <displayFormat>S-{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Site Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Floor__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Floor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Installation_Address_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>cscrm__Installation_Address__r.cscrm__Address_Details__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Installation Address Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Installation_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Installation Address</label>
+        <referenceTo>cscrm__Address__c</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Floor Mounted</fullName>
+                    <default>false</default>
+                    <label>Floor Mounted</label>
+                </value>
+                <value>
+                    <fullName>Shelf Mounted</fullName>
+                    <default>false</default>
+                    <label>Shelf Mounted</label>
+                </value>
+                <value>
+                    <fullName>Rack Mounted</fullName>
+                    <default>false</default>
+                    <label>Rack Mounted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cscrm__Power_Sockets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Power Sockets</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Primary_Contact_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(cscrm__Primary_Contact__r.FirstName) , &apos;&apos;, cscrm__Primary_Contact__r.FirstName +&apos; &apos;) + 
+cscrm__Primary_Contact__r.LastName + 
+IF( ISBLANK(cscrm__Primary_Contact__r.Email) , &apos;&apos;, &apos;, Email:&apos; + cscrm__Primary_Contact__r.Email) + 
+IF( ISBLANK(cscrm__Primary_Contact__r.Phone) , &apos;&apos;, &apos;, Phone:&apos; + cscrm__Primary_Contact__r.Phone) + 
+IF( ISBLANK(cscrm__Primary_Contact__r.MobilePhone ) , &apos;&apos;, &apos;, Mobile:&apos; + cscrm__Primary_Contact__r.MobilePhone)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Contact Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Rack_Location__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rack Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Secondary_Contact_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(cscrm__Secondary_Contact__r.FirstName) , &apos;&apos;, cscrm__Secondary_Contact__r.FirstName +&apos; &apos;) + 
+cscrm__Secondary_Contact__r.LastName + 
+IF( ISBLANK(cscrm__Secondary_Contact__r.Email) , &apos;&apos;, &apos;, Email:&apos; + cscrm__Secondary_Contact__r.Email) + 
+IF( ISBLANK(cscrm__Secondary_Contact__r.Phone) , &apos;&apos;, &apos;, Phone:&apos; + cscrm__Secondary_Contact__r.Phone) + 
+IF( ISBLANK(cscrm__Secondary_Contact__r.MobilePhone ) , &apos;&apos;, &apos;, Mobile:&apos; + cscrm__Secondary_Contact__r.MobilePhone)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary Contact Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cscrm__Secondary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Secondary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Sites (Secondary Contact)</relationshipLabel>
+        <relationshipName>Sites1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Spare_Network_Port__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Spare Network Port</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cscrm__Suite_Room__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Suite/Room</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Site</label>
+    <nameField>
+        <label>Site Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sites</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

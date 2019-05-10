@@ -1,0 +1,9 @@
+.THIS.contentBody{
+    max-height : 400px; 
+    min-height: 300px;
+}
+
+.THIS.contentBodyChanged{
+    max-height : 400px; 
+    min-height: 260px;
+}

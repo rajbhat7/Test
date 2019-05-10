@@ -1,0 +1,80 @@
+<table border="0" cellpadding="5" width="700" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="float:right;text-align:right;color: rgb(0, 0, 0); font-family: arial; font-size: 8pt;"><font face="arial"><br></font></div><div style="float:right;text-align:right;color: rgb(0, 0, 0); font-family: arial; font-size: 8pt;"><font face="arial"><br></font></div><div style="float:right;text-align:right;color: rgb(0, 0, 0); font-family: arial; font-size: 8pt;">
+				<font face="arial">Maggiori informazioni sono disponibili alla pagina: <a href="https://upc.ch/business">upc.ch/business</a></font>
+			</div>
+			<div style="clear:both"></div>
+			<div style="color: rgb(35,154,152); font-family: arial; font-size: 10pt;">
+				<font face="arial">Offerta di UPC Business&nbsp;</font></div>
+			<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+				<font face="arial">
+					<br>
+					</font>
+				</div>
+				<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+					<font face="arial">{!Salutation} {!CustomerName},</font></div>
+				<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+					<font face="arial">
+						<br>
+						</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">la ringraziamo per il suo interesse nei confronti dei prodotti di UPC Business.</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">Sulla base delle sue esigenze le inviamo in allegato un’offerta e tutti gli allegati che ne fanno parte.</font>
+					</div>
+					<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+						<font face="arial">
+							<br>
+							</font>
+						</div>
+						<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+							<font face="arial">Siamo convinti di poterle offrire un servizio adeguato alle sue esigenze grazie alle nostre soluzioni ICT.</font>
+						</div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><span style="font-size: 10pt;">Con i nostri servizi può beneficiare dei seguenti vantaggi:</span></div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <br>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <ul>
+                        {!ProductAdvantages}
+                    </ul>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">
+                    <br>
+                </font>
+            </div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+                <font face="arial">Saremmo molto lieti di poterla presto annoverare tra i nostri stimati clienti aziendali.</font>
+            </div>
+							<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+								<font face="arial">Dopo avere ricevuto l’offerta firmata entro 30 giorni, predisporremo il necessario per farle avere i nostri servizi.</font>
+							</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;"><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.3333px; background-color: rgb(255, 255, 255);">E tramite il tool online si è ancora più rapidi,&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 13.3333px; color: blue;"><a href="{!ClickApproveLink}">qui</a></span><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.3333px; background-color: rgb(255, 255, 255);">&nbsp;è possibile accettare o rifiutare l’offerta.</span></div>
+							<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+								<font face="arial">
+									<br>
+									</font>
+								</div>
+								<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+									<font face="arial">Rimango a disposizione in quanto suo interlocutore personale per rispondere a qualsiasi domanda sull’offerta.</font>
+								</div>
+								<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+									<font face="arial">
+										<br>
+										</font>
+									</div>
+									<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+										<font face="arial">Cordiali saluti,</font>
+									</div>
+									<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 10pt;">
+										<font face="arial">{!Opportunity.OwnerFullName}</font>
+									</div>]]></td>
+</tr>
+</table>

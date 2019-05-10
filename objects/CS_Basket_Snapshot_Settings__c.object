@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Cleanup_Process__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>In Transaction or In Batch</description>
+        <externalId>false</externalId>
+        <label>Cleanup Process</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Output_Strategy__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Attribute or Product Configuration</description>
+        <externalId>false</externalId>
+        <label>Output Strategy</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Use_Field_Type_Conversion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines will output value be converted to target field type</description>
+        <externalId>false</externalId>
+        <label>Use Field Type Conversion</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>CS Basket Snapshot Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

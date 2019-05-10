@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to give info in New Topnet Order</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC DE New Topnet Order Info</name>
+    <style>freeForm</style>
+    <subject>Überprüfung Ihres Breitbandanschlusses, Request ID: {!UPC_mLog_Request_ID__c}</subject>
+    <textOnly>Weitere Informationen unter: upc.ch/business
+Überprüfung Ihres Breitbandanschlusses, Request ID: {!UPC_mLog_Request_ID__c}
+
+{!Salutation} {!CustomerName}
+
+Um den von Ihnen bestellten UPC Business Service in Anspruch nehmen zu können, benötigen Sie einen intakten Breitbandanschluss von UPC oder einen unserer Partnernetze.
+
+Sollte bereits eine Anschlussdose am vorgesehenen Ort vorhanden sein, wird diese vorgängig überprüft und bei Bedarf direkt an den neusten technologischen Standard angepasst.
+Für den Fall, dass noch keine Anschlussdose vorhanden ist, wird diese im Vorfeld installiert.
+Unsere Partnerfirma wird sich in den nächsten Tagen bei Ihnen melden, um einen entsprechenden Termin zu vereinbaren.
+
+Bitte beachten Sie, dass dieser Termin keine Installation der UPC Business Services beinhaltet.
+Sobald der Anschluss erfolgreich überprüft wurde, werden Sie von unserem spezialisierten Partner zur Installation kontaktiert.
+
+Bei allfälligen Fragen stehen wir Ihnen gerne zur Verfügung.
+
+Freundliche Grüsse
+Ihre UPC Business
+
+_________________________________________
+Business Customer Service Excellence
+
+Tel.      0800 568 568
+E-Mail kmu@upc.ch
+
+UPC Schweiz GmbH
+UPC Business
+Richtiplatz 5
+Postfach
+8304 Wallisellen
+upc.ch/business</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

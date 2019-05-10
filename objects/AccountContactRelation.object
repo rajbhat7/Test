@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>IsDirect</fullName>
+    </fields>
+    <fields>
+        <fullName>Roles</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>UPC_Account_Contact_Email__c</fullName>
+        <description>When direct relationship, copied from contact.</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Contact_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact First Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Contact_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Last Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.FirstName &amp; &apos; &apos; &amp; Contact.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Cost_Center__c</fullName>
+        <description>Used together with the role Mobile Subscriber</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used together with the role Mobile Subscriber</inlineHelpText>
+        <label>Cost Center</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_DPhone__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Phone</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Taifun_Reconciliation__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Taifun Reconciliation</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Mobile__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Phone__c</fullName>
+        <description>When it is a direct relationship, this field is fulfilled by the Contact Phone. If indirect, it is kept blank by default.</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Preferred_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Language</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Salutations__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Contact.Salutation )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Salutations</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>NX_AccountContact_DirectPhone_Format</fullName>
+        <active>true</active>
+        <description>Used to control phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(UPC_DPhone__c )),
+OR( 
+    AND( 
+        NOT(BEGINS(UPC_DPhone__c ,&quot;+&quot;)), 
+        NOT(BEGINS(UPC_DPhone__c ,&quot;0&quot;))), 
+        (NOT (REGEX( UPC_DPhone__c , &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>UPC_DPhone__c</errorDisplayField>
+        <errorMessage>Phone numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_AccountContact_DirectPhone_Length</fullName>
+        <active>true</active>
+        <description>Used to Control Swiss Phone Length</description>
+        <errorConditionFormula>IF( 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+NOT(AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00417.*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004171.*&quot;) 
+)) 
+, 
+OR( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041860.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=16 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041869.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=10, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=17 
+) 
+, 
+AND( 
+OR( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004198.*&quot;), 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004199.*&quot;) 
+), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(00412|00413|00414|00415|00416|00417|00418|00419).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(0041860|0041869).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(004198|004199).*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_DPhone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_DPhone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_DPhone__c,LEN(UPC_DPhone__c)-1),UPC_DPhone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13 
+) 
+) 
+) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>UPC_DPhone__c</errorDisplayField>
+        <errorMessage>Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are not allowed in phone field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_AccountContact_Mobile_Length</fullName>
+        <active>true</active>
+        <description>Used to Control the Mobile Length for swiss numbers.</description>
+        <errorConditionFormula>IF( 
+    !REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Mobile__c ,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Mobile__c ,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Mobile__c ,LEN(UPC_Mobile__c )-1),UPC_Mobile__c ),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Mobile__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Mobile__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Mobile__c,LEN(UPC_Mobile__c)-1),UPC_Mobile__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^00417.*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Mobile__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Mobile__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Mobile__c,LEN(UPC_Mobile__c)-1),UPC_Mobile__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004171.*&quot;), 
+(LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Mobile__c ,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Mobile__c ,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Mobile__c ,LEN(UPC_Mobile__c )-1),UPC_Mobile__c ),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13) 
+)))</errorConditionFormula>
+        <errorDisplayField>UPC_Mobile__c</errorDisplayField>
+        <errorMessage>Mobile Phone: invalid length or wrong number type. Mobile phone number length is 9 digits with area code but without the leading 0. Only mobile numbers are allowed in this field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_AccountContact_Mobile_Phone_Format</fullName>
+        <active>true</active>
+        <description>Used to control mobile phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(UPC_Mobile__c)),
+OR( 
+    AND( 
+        NOT(BEGINS(UPC_Mobile__c,&quot;+&quot;)), 
+        NOT(BEGINS(UPC_Mobile__c,&quot;0&quot;))), 
+        (NOT (REGEX( UPC_Mobile__c, &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>UPC_Mobile__c</errorDisplayField>
+        <errorMessage>Mobile numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_AccountContact_Phone_Format</fullName>
+        <active>true</active>
+        <description>Used to control phone format.</description>
+        <errorConditionFormula>AND( 
+NOT(ISBLANK(UPC_Phone__c)),
+OR( 
+    AND( 
+        NOT(BEGINS(UPC_Phone__c,&quot;+&quot;)), 
+        NOT(BEGINS(UPC_Phone__c,&quot;0&quot;))), 
+        (NOT (REGEX( UPC_Phone__c, &quot;[&lt;|&gt;]?[0-9,+, ]+&quot;)))
+))</errorConditionFormula>
+        <errorDisplayField>UPC_Phone__c</errorDisplayField>
+        <errorMessage>Phone numbers must start with + or 0 and must contain only spaces and numbers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_AccountContact_Phone_Length</fullName>
+        <active>true</active>
+        <description>Used to Control Swiss Phone Length</description>
+        <errorConditionFormula>IF( 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041.*&quot;), 
+FALSE, 
+NOT( 
+AND( 
+OR( 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041860.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=16 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^0041869.*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=10, 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&lt;=17 
+) 
+, 
+AND( 
+OR( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004198.*&quot;), 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^004199.*&quot;) 
+), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))&gt;=7 
+) 
+, 
+AND( 
+REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(00412|00413|00414|00415|00416|00417|00418|00419).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(0041860|0041869).*&quot;), 
+!REGEX(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;),&quot;^(004198|004199).*&quot;), 
+LEN(SUBSTITUTE(SUBSTITUTE(IF(AND(LEFT(UPC_Phone__c,1)=&quot;0&quot;,LEFT(SUBSTITUTE(UPC_Phone__c,&quot; &quot;,&quot;&quot;),2)&lt;&gt;&quot;00&quot;),&quot;0041&quot;&amp;RIGHT(UPC_Phone__c,LEN(UPC_Phone__c)-1),UPC_Phone__c),&quot; &quot;,&quot;&quot;),&quot;+&quot;,&quot;00&quot;))=13 
+) 
+) 
+) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>UPC_Phone__c</errorDisplayField>
+        <errorMessage>Phone: invalid length or wrong number type. Normal phone number length is 9 digits with area code but without the leading 0. Exceptions are: 01 (3 to 6 digit), 0860 (12 digit), 0869 (6 to 13 digits). Mobile numbers are allowed in phone field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Main_Com_Tech_Roles_Cant_inactive</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ NOT(IsActive), 
+OR(
+ INCLUDES( Roles , &quot;Main Commercial Contact&quot;),
+ INCLUDES( Roles , &quot;Main Technical Contact&quot;),
+ INCLUDES( Roles , &quot;Mobile Admin&quot;)
+)
+)</errorConditionFormula>
+        <errorMessage>Main Commercial Contacts, Main Technical Contacts and Mobile Admin can not be inactivated.
+
+Please give these Contact Role(s) to another Contact before deactivating.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NX_Main_Com_Tech_Roles_phone_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+
+OR( 
+   INCLUDES( Roles , &quot;Main Commercial Contact&quot;), 
+   INCLUDES( Roles , &quot;Main Technical Contact&quot;),
+   INCLUDES( Roles , &quot;Mobile Admin&quot;)
+   ),
+OR(
+   AND(
+       Isnew(),
+       IsDirect,
+       ISBLANK( Contact.Phone ),
+       ISBLANK(Contact.MobilePhone),
+       ISBLANK( Contact.UPC_DPhone__c)
+       ),
+   AND(
+       ISBLANK(UPC_Phone__c),
+       ISBLANK(UPC_DPhone__c),
+       ISBLANK(UPC_Mobile__c),
+       ISBLANK( Contact.Phone ),
+       ISBLANK(Contact.MobilePhone),
+       ISBLANK( Contact.UPC_DPhone__c)
+      )
+   )
+)</errorConditionFormula>
+        <errorMessage>A Contact with Main Commercial, Main Technical or Mobile Admin Role must have a phone number!</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>test</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>test</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/07k/e?CF1r0000012qv6AAA={!AccountContactRelation.AccountId}&amp;CF1r0000012qv6AAA={!AccountContactRelation.Id}</url>
+    </webLinks>
+</CustomObject>

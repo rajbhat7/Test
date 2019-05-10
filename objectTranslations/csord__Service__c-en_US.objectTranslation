@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contract Term --></label>
+        <name>Contract_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the date until this service is contracted. It&apos;s service activation date + contract term duration --></help>
+        <label><!-- Contracted Untill --></label>
+        <name>Contracted_Untill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Creation --></label>
+        <name>Date_of_Creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACC Customer Number --></label>
+        <name>UPC_ACC_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACCID --></label>
+        <name>UPC_Acc_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>UPC_Account__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Addon Abbreviation --></label>
+        <name>UPC_Addon_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Detail --></label>
+        <name>UPC_Address_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Account --></label>
+        <name>UPC_Billing_Account__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Configuration Context --></label>
+        <name>UPC_Configuration_Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>UPC_Contract_Until_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICCID --></label>
+        <name>UPC_ICC_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installation Contact --></label>
+        <name>UPC_Installation_Contact__c</name>
+        <relationshipLabel><!-- Services (Installation Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone Number --></label>
+        <name>UPC_Mobile_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Receipt of Termination --></label>
+        <name>UPC_Opportunity_Receipt_of_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Service Status --></label>
+        <name>UPC_Parent_Service_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Terms --></label>
+        <name>UPC_Process_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Address --></label>
+        <name>UPC_Site_Address__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>UPC_Site__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taifun SAP --></label>
+        <name>UPC_Taifun_SAP_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tariff Name --></label>
+        <name>UPC_Tariff_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Fee --></label>
+        <name>UPC_Termination_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- The agreed date between UPC and a client on when this service will be terminated. Collected in CPQ and output mapped to this field. --></help>
+        <label><!-- Termination Wish Date --></label>
+        <name>UPC_Termination_Wish_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Decomposition JSON --></label>
+        <name>csoe__Quantity_Decomposition_JSON__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of activation. --></help>
+        <label><!-- Activation Date --></label>
+        <name>csord__Activation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- A field for the service owner (client) to store their own unique identifier on the Service Object, for ease of identification to external systems --></help>
+        <label><!-- Client Identifier --></label>
+        <name>csord__Client_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of deactivation. --></help>
+        <label><!-- Deactivation Date --></label>
+        <name>csord__Deactivation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- A reason to deactivate the service. --></help>
+        <label><!-- Deactivation Reason --></label>
+        <name>csord__Deactivation_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Id field used for bulk inserts of Orders &amp; Subscriptions objects. --></help>
+        <label><!-- External Identifier --></label>
+        <name>csord__External_Identifier2__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Use External Identifier2 field instead. --></help>
+        <label><!-- DEPRECATED External Identifier --></label>
+        <name>csord__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- E.g. &quot;spokeServiceAmsterdam&quot; in Hub&amp;Spokes scenario. --></help>
+        <label><!-- Identification --></label>
+        <name>csord__Identification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order Request object which introduced the latest changes to this object. --></help>
+        <label><!-- Order Request --></label>
+        <name>csord__Order_Request__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Order of this Service. --></help>
+        <label><!-- Order --></label>
+        <name>csord__Order__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The address to which this Service will be delivered. --></help>
+        <label><!-- Service Address --></label>
+        <name>csord__Service_Address__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Service of this Service. --></help>
+        <label><!-- Parent Service --></label>
+        <name>csord__Service__c</name>
+        <relationshipLabel><!-- Child Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Solution of this Service --></help>
+        <label><!-- Solution --></label>
+        <name>csord__Solution__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for state transitions. --></help>
+        <label><!-- Status --></label>
+        <name>csord__Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The parent Subscription of this Service. --></help>
+        <label><!-- Subscription --></label>
+        <name>csord__Subscription__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the one-off charges of the service’s line items --></help>
+        <label><!-- Total One-Off Charges --></label>
+        <name>csord__Total_One_Off_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the recurring charges of the service’s line items --></help>
+        <label><!-- Total Recurring Charges --></label>
+        <name>csord__Total_Recurring_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Contract Value --></label>
+        <name>csord__annual_contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Product --></label>
+        <name>csord__order_product__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Contract Value --></label>
+        <name>csord__service_contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled By Change Process --></label>
+        <name>csordtelcoa__Cancelled_By_Change_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Status --></label>
+        <name>csordtelcoa__Delta_Status__c</name>
+        <picklistValues>
+            <masterLabel>Added To Subscription</masterLabel>
+            <translation><!-- Added To Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuing In Subscription</masterLabel>
+            <translation><!-- Continuing In Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted From Subscription</masterLabel>
+            <translation><!-- Deleted From Subscription --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>csordtelcoa__Main_Contact__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Product Configuration --></label>
+        <name>csordtelcoa__Parent_Product_Configuration__c</name>
+        <relationshipLabel><!-- Services (Parent Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Inflight change is not possible on an Order whose child service has this checkbox ticked --></help>
+        <label><!-- Point of No-Return Reached --></label>
+        <name>csordtelcoa__Point_of_No_Return_Reached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Basket --></label>
+        <name>csordtelcoa__Product_Basket__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Bundle --></label>
+        <name>csordtelcoa__Product_Bundle__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>csordtelcoa__Product_Configuration__c</name>
+        <relationshipLabel><!-- Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replaced Service --></label>
+        <name>csordtelcoa__Replaced_Service__c</name>
+        <relationshipLabel><!-- Replacement Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is deprecated because it does not work well in MACD scenarios where several change request are created --></help>
+        <label><!-- DEPRECATED Replacement PC --></label>
+        <name>csordtelcoa__Replacement_Product_Configuration__c</name>
+        <relationshipLabel><!-- Replaced Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replacement Service --></label>
+        <name>csordtelcoa__Replacement_Service__c</name>
+        <relationshipLabel><!-- Replaced Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Number Sequence --></label>
+        <name>csordtelcoa__Service_Number_Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Number --></label>
+        <name>csordtelcoa__Service_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- temp --></label>
+        <name>temp__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom 	Service Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Lifecycle --></label>
+            <section>Service Lifecycle</section>
+        </sections>
+        <sections>
+            <label><!-- Service Provisioning --></label>
+            <section>Service Provisioning</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change Subscription --></label>
+        <name>Change_Subscription</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Unable to amend Services when they are related to an Account managed in SuperOffice --></errorMessage>
+        <name>Prevent_Amendment_when_Account_SuOf_Set</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Modify_Service_Configuration --></label>
+        <name>csordtelcoa__Modify_Service_Configuration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Product_Configuration_Attributes --></label>
+        <name>csordtelcoa__View_Product_Configuration_Attributes</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Associated Profile --></label>
+        <name>CSPOFA__Associated_Profile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines data that is used as key for Activity Definition selection through Data Links --></help>
+        <label><!-- OLA Activity Linked By --></label>
+        <name>CSPOFA__OLA_Activity_Linked_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLA Duration --></label>
+        <name>CSPOFA__OLA_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time amount for the process to finish before it goes into jeopardy. --></help>
+        <label><!-- OLA Time --></label>
+        <name>CSPOFA__OLA_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- OLA unit on process level: day, hour, minute. If not defined the minute unit is used. --></help>
+        <label><!-- OLA Unit --></label>
+        <name>CSPOFA__OLA_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>CSPOFA__Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Low</masterLabel>
+            <translation><!-- 1 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Normal</masterLabel>
+            <translation><!-- 2 - Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - High</masterLabel>
+            <translation><!-- 3 - High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>CSPOFA__Process_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>CSPOFA__Process_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cease</masterLabel>
+            <translation><!-- Cease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Provide</masterLabel>
+            <translation><!-- New Provide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade/Downgrade</masterLabel>
+            <translation><!-- Upgrade/Downgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processing Mode --></label>
+        <name>CSPOFA__Processing_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Name --></label>
+        <name>CSPOFA__Unique_Name__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Export_to_JSON --></label>
+        <name>CSPOFA__Export_to_JSON</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_to_XML --></label>
+        <name>CSPOFA__Export_to_XML</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- List_Export_to_JSON --></label>
+        <name>CSPOFA__List_Export_to_JSON</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Process_Designer --></label>
+        <name>CSPOFA__Process_Designer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Process_Visualiser --></label>
+        <name>CSPOFA__Process_Visualiser</name>
+    </webLinks>
+</CustomObjectTranslation>

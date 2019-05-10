@@ -1,0 +1,12 @@
+<apex:page > 
+<br/>
+<br/>
+<left><apex:image id="UPC_Logo" value="{!$Resource.UPC_UPC_LogoB2B_Flow}" width="10%" height="10%"/></left>
+<br/>
+<center><h1>Willkommen bei Call Point für UPC B2B</h1></center>
+<br/>
+<br/>
+<br/>
+  <flow:interview name="Create_Case_Flow">
+  </flow:interview>
+</apex:page>

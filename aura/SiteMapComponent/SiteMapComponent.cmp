@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    <!-- attributes -->
+    <aura:attribute name="mapMarkers" type="Object"/>
+    <aura:attribute name="zoomLevel" type="Integer" />
+    <aura:attribute name="mapLoaded" type="Boolean" default="false" />
+
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="targetFields" type="Object"/> 
+    <aura:attribute name="targetError" type="String"/>
+
+    <force:recordData aura:id="recordLoaderId"
+                    layoutType="FULL"
+                    recordId="{!v.recordId}"
+                    targetRecord ="{!v.record}"
+                    targetError="{!v.targetError}"
+                    targetFields="{!v.targetFields}"
+                    fields="UPC_MapStreet__c, UPC_MapCity__c, Site_Name__c, UPC_MapPostCode__c"
+                    recordUpdated="{!c.handleRecordUpdated}" 
+                    mode="VIEW"
+                    />
+
+    <!-- the map component -->
+    <lightning:card  > 
+            <aura:set attribute="title">
+            <b>Google Map</b>
+        </aura:set>
+            <p class="slds-p-horizontal_small">
+                    <aura:if isTrue="{!v.mapLoaded}">
+            <lightning:map mapMarkers="{! v.mapMarkers }" zoomLevel="{!v.zoomLevel}" />
+    
+            <aura:set attribute="else">
+            Loading
+            </aura:set>
+        </aura:if> 
+            </p>
+        </lightning:card>
+    
+</aura:component>

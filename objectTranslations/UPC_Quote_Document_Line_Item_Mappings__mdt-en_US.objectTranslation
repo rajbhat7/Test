@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Document Line Item Mappings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Document Line Item Mappings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge discount amount --></help>
+        <label><!-- Add On Product MRC Discount Field --></label>
+        <name>UPC_Add_On_Product_MRC_Discount_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to an Add On Product Configuration which holds the Recurring Charge amount --></help>
+        <label><!-- Add On Product MRC Field --></label>
+        <name>UPC_Add_On_Product_MRC_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge discount amount --></help>
+        <label><!-- Add On Product NRC Discount Field --></label>
+        <name>UPC_Add_On_Product_NRC_Discount_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to an Add On Product Configuration which holds the One Off Charge amount --></help>
+        <label><!-- Add On Product NRC Field --></label>
+        <name>UPC_Add_On_Product_NRC_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether this record is actively used in quote document generation --></help>
+        <label><!-- Is Active --></label>
+        <name>UPC_Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge discount amount --></help>
+        <label><!-- Master Product MRC Discount Field --></label>
+        <name>UPC_Master_Product_MRC_Discount_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to the master Product Configuration which holds the Monthly Recurring Charge amount --></help>
+        <label><!-- Master Product MRC Field --></label>
+        <name>UPC_Master_Product_MRC_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to the master Product Configuration which holds the One Off Charge discount amount --></help>
+        <label><!-- Master Product NRC Discount Field --></label>
+        <name>UPC_Master_Product_NRC_Disc__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Attribute related to the master Product Configuration which holds the One Off Charge --></help>
+        <label><!-- Master Product NRC Field --></label>
+        <name>UPC_Master_Product_NRC_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The field on the Product Configuration which holds the Quantity value --></help>
+        <label><!-- Quantity Field --></label>
+        <name>UPC_Quantity_Field__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Document Line Item Mappings Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

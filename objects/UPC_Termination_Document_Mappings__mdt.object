@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Details of dynamic fields in the termination documents and the fields they map to in the document query.</description>
+    <fields>
+        <fullName>UPC_Data_Source_Name__c</fullName>
+        <description>The name of the data source to which this Config Type relates</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the data source to which this Config Type relates</inlineHelpText>
+        <label>Data Source Name</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Doc_Config_Template__c</fullName>
+        <description>The name of the placeholder in the Doc Config showing where the data should go</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the placeholder in the Doc Config showing where the data should go</inlineHelpText>
+        <label>Doc Config Template</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Query_Result_Field__c</fullName>
+        <description>The name of the field in the query result which holds the appropriate data</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the field in the query result which holds the appropriate data</inlineHelpText>
+        <label>Query Result Field</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Termination Document Mapping</label>
+    <listViews>
+        <fullName>All_Termination_Document_Mappings</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <columns>UPC_Doc_Config_Template__c</columns>
+        <columns>UPC_Query_Result_Field__c</columns>
+        <columns>UPC_Data_Source_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Termination Document Mappings</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Termination Document Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

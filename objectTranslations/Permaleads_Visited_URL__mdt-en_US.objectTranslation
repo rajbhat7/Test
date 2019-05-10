@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Permaleads Visited URL</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Permaleads Visited URLs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Campaign ID --></label>
+        <name>UPC_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>UPC_Language__c</name>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN</masterLabel>
+            <translation><!-- EN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Permaleads Visited URL --></label>
+        <name>UPC_Permaleads_Visited_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>UPC_Target__c</name>
+        <picklistValues>
+            <masterLabel>Business Internet</masterLabel>
+            <translation><!-- Business Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Mobile</masterLabel>
+            <translation><!-- Business Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business VPN</masterLabel>
+            <translation><!-- Business VPN --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

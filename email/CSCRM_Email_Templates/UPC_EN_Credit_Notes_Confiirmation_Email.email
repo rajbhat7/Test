@@ -1,0 +1,13 @@
+<div style="font-family: arial; font-size: 10pt;">
+    <b>Customer number: {!UPC_Credit_Note__c.UPC_Customer_Number__c}</b><br />
+    <br />
+    {!UPC_Credit_Note__c.UPC_Main_Commercial_Contact_Salutation__c}&nbsp;{!UPC_Credit_Note__c.UPC_Main_Commercial_Contact_Name__c}<br />
+    <br />
+    We are pleased to hereby confirm the credit note of CHF {!UPC_Credit_Note__c.UPC_Net_Amount__c}.<br />
+{!UPC_Credit_Note__c.UPC_Credit_Method_Expression__c}<br />
+    <br />
+    Please do not hesitate to contact us if you have any further questions.<br />
+    <br />
+    Yours sincerely<br />
+    {!UPC_Credit_Note__c.OwnerFullName}
+</div>

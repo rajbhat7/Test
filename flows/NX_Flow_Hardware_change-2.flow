@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <decisions>
+        <name>DeviceTypDecision</name>
+        <label>DecDeviceTyp</label>
+        <locationX>203</locationX>
+        <locationY>226</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Phone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Telefon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Phone_choice</targetReference>
+            </connector>
+            <label>Phone</label>
+        </rules>
+        <rules>
+            <name>Modem</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Modem / Router</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Modem_Choice</targetReference>
+            </connector>
+            <label>Modem</label>
+        </rules>
+        <rules>
+            <name>Other</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeviceTypChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Andere</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Other_Choice</targetReference>
+            </connector>
+            <label>Other</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>resDeviceTyp</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Hardware_Choice__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resModemNew</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Modem_DeviceNew__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resModemOld</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Modem_DeviceOld__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resPhoneNew</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Phone_DeviceNew__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resPhoneOld</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>UPC_SUP_Phone_DeviceOld__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>NX Flow Hardware change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NX Flow Hardware change</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <description>hier bitte ein Hardware-Typ aussuchen</description>
+        <name>Hardware_changes</name>
+        <label>Hardware changes</label>
+        <locationX>226</locationX>
+        <locationY>51</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>DeviceTypDecision</targetReference>
+        </connector>
+        <fields>
+            <name>DeviceTypChoice</name>
+            <choiceReferences>resDeviceTyp</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>DeviceTyp</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Modem_Choice</name>
+        <label>Auswahl Modem</label>
+        <locationX>348</locationX>
+        <locationY>229</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Modem_Old</name>
+            <choiceReferences>resModemOld</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp alt</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Modem_New</name>
+            <choiceReferences>resModemNew</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Mac_Address_Modem_alt</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address alt</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Mac_Address_Modem_New</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address neu</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Modem</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Bemerkungen</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Modem_Choice</name>
+            <fieldText>neue MAC eintragen
+&quot;Save&quot; drücken
+&quot;Generate bootfile&quot; drücken
+&quot;Reprovision&quot;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>Other_Choice</name>
+        <label>Andere Geräte</label>
+        <locationX>214</locationX>
+        <locationY>381</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Text_Other</name>
+            <fieldText>Nur verwenden wenn es um spezielle Hardware Changes geht wie : ISDN-PBX (Patton-Box), Meraki Firewall, etc.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DeviceTyp_Other</name>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Other_Device_Description</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Beschreibung</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Phone_choice</name>
+        <label>Auswahl Telefon</label>
+        <locationX>58</locationX>
+        <locationY>230</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Phone_old</name>
+            <choiceReferences>resPhoneOld</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp Neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Phone_New</name>
+            <choiceReferences>resPhoneNew</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Gerättyp Neu</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>MacAddressOld</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address Old</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Mac_Address_New</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Mac Address New</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Phone</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue></stringValue>
+            </defaultValue>
+            <fieldText>Bemerkungen</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Remark_Phone_Choice</name>
+            <fieldText>neue MAC eintragen
+&quot;Save&quot; drücken
+&quot;Generate bootfile&quot; drücken
+&quot;Reprovision&quot;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Hardware_changes</startElementReference>
+    <variables>
+        <name>varMacAddressNew</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varMacAddressOld</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varRemark</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,299 @@
+<!--
+(c) 2019 Nexell GmbH
+Developed by Nexell GmbH, Zug (Switzerland)
+Created: 16.04.2019
+
+Author: Tiago Ribeiro
+Description: PT7985 - Visualforce page to communicate with Google Maps component
+
+Modifications:
+
+-->
+
+<apex:page showHeader="false">
+    <html>
+        <head>
+            <!-- 
+				This stylesheet contains specific styles for displaying the map on this page. Replace it with your own styles as described in the documentation:
+				https://developers.google.com/maps/documentation/javascript/tutorial 
+			-->
+            <link rel="stylesheet" href="//developers.google.com/maps/documentation/javascript/demos/demos.css"/>
+        </head>
+        <body>
+            
+            <div id="map"></div>
+
+            <script>
+            var lexOrigin = 'https://{!$CurrentPage.parameters.lcHost}';
+            console.log(lexOrigin);
+            //Data for Google map
+            var data;
+            
+            //Send message to LC
+            function sendToLC(message) {
+                if(typeof(lexOrigin) != 'undefined'){
+	                parent.postMessage(message, lexOrigin);
+                }
+            }
+            
+            //Receive message from LC
+            window.addEventListener("message", function(event) {
+                //If page is public (like used in force.com sites) then be careful about the origin
+                //if (event.origin !== lexOrigin) {
+                    // Not the expected origin: reject message!
+                    //return;
+                //}
+                // Handle message
+                console.log('Data Sent to VF: ', event.data);
+                data = event.data;
+    
+                
+                if(typeof(event.data.loadGoogleMap) != 'undefined'){
+                    //Load Google Map Script
+                    var script = document.createElement("script");
+                    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIAo5pNdqD44wb6J-eio1ucX8LMVrZgPE&callback=initMap";
+                    document.getElementsByTagName("head")[0].appendChild(script);        
+                }
+            }, false);
+            
+            //Opens Map popup when Fullscreen button is clicked
+            function openPopup(){
+                var hostname = window.location.hostname;
+                var domain = hostname.split('--c')[0];
+                var newWin = window.open('https://' + domain + '.lightning.force.com/c/nxGoogleMapsApp.app?objectId=' + data.objectId + '&width=' + (screen.availWidth-50) + '&height=' + (screen.availHeight-50), 'popup', 'fullscreen,menubar=yes,scrollbars=yes,toolbar=no,location=no');
+                if (newWin.outerWidth < screen.availWidth || newWin.outerHeight < screen.availHeight){
+                    newWin.moveTo(0,0);
+                    newWin.resizeTo(screen.availWidth, screen.availHeight);
+                }
+            }
+
+            //Custom fullscreen button
+            function fullscreenButton(controlDiv, map){
+                var fullScreenUI = document.createElement('div');
+                fullScreenUI.style.background = 'none rgb(255, 255, 255)';
+                fullScreenUI.style.border = '0px';
+                fullScreenUI.style.margin = '10px';
+                fullScreenUI.style.padding = '0px';
+                fullScreenUI.style.position = 'absolute';
+                fullScreenUI.style.cursor = 'pointer';
+                fullScreenUI.style.userSelect = 'none';
+                fullScreenUI.style.borderRadius = '2px';
+                fullScreenUI.style.height = '40px';
+                fullScreenUI.style.width = '40px';
+                fullScreenUI.style.boxShadow = 'rgba(0, 0, 0, 0.3) 0px 1px 4px -1px';
+                fullScreenUI.style.overflow = 'hidden';
+                
+                var imgFullScreen = document.createElement('img');
+                //imgFullScreen.src = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A'
+                imgFullScreen.src = '{!$Resource.fullScreenIcon}';
+                imgFullScreen.style.height = '18px';
+                imgFullScreen.style.width = '18px';
+                imgFullScreen.style.boxSizing = 'content-box';
+                imgFullScreen.style.left = '50%';
+                imgFullScreen.style.pointerEvents = 'none';
+                imgFullScreen.style.position = 'absolute';
+                imgFullScreen.style.top = '50%';
+                imgFullScreen.style.transform = 'translate(-50%,-50%)';
+                
+                fullScreenUI.appendChild(imgFullScreen);
+                controlDiv.appendChild(fullScreenUI);
+    
+                fullScreenUI.addEventListener('click', function() {
+                    openPopup();
+                });
+            }
+            
+            //Callback when Google Map is loaded
+            function initMap() {
+                //Get techonology colour and return the corresponding icon
+                function processIcons(technologyColour){
+                    var iconColour;
+                    switch(technologyColour){                 
+                        case 'Green':
+                            iconColour = '{!$Resource.Available_Icon}';
+                            break;
+                        case 'Orange':
+                            iconColour = '{!$Resource.Alert_Icon}';
+                            break;
+                        case 'Red':
+                            iconColour = '{!$Resource.Unavailable_Icon}';
+                            break;
+                        case 'Gray':
+                            iconColour = '{!$Resource.Maintenance_Icon}';
+                            break;    
+                    }
+
+                    return iconColour;
+                }
+                //Convert address to position
+                function geocoder(feature, center) {
+                    var geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({'address': feature.address}, function(results, status){
+                        if(status == 'OK'){
+                            if(center == true){
+                                map.setCenter(results[0].geometry.location);
+                            }else{
+                                feature.position = results[0].geometry.location
+                                addMarker(feature);
+                            }
+                        }
+                    });
+                }
+
+                //Add marker for each point along with text
+                function addMarker(feature) {
+                    var ftthIcon;
+                    var hfcIcon;
+                    var icon = {
+                        scaledSize: new google.maps.Size(25, 39), // scaled size
+                        origin: new google.maps.Point(0,0), // origin
+                        anchor: new google.maps.Point(0, 0) // anchor
+                    };
+
+                    if(feature.ftthColour == 'Green' && feature.hfcColour == 'Green'){
+                        icon.url = '{!$Resource.Green_Icon}';
+                        ftthIcon = '{!$Resource.Available_Icon}';
+                        hfcIcon = '{!$Resource.Available_Icon}';
+
+                    }else if(feature.ftthColour == 'Red' && feature.hfcColour == 'Red'){
+                        icon.url = '{!$Resource.Red_Icon}'
+                        ftthIcon = '{!$Resource.Unavailable_Icon}';
+                        hfcIcon = '{!$Resource.Unavailable_Icon}';
+
+                    }else{
+                        icon.url = '{!$Resource.Orange_Icon}';                       
+                        ftthIcon = processIcons(feature.ftthColour);
+                        hfcIcon = processIcons(feature.hfcColour);
+                        
+                    }
+                    
+                    //var contentString = '<div><p>FTTH: <img id="ftthImage" src="' + ftthIcon + '" width="20" height="20"/></p><p>HFC: <img id="hfcImage1" src="' + hfcIcon + '" width="20" height="20"/></p></div>';
+                    var contentString =  '<div style="text-align:center">'
+                                        +'<p>'+ feature.address +'</p>'
+                                        +'<div class="row" style="width:325px">' 
+                                        +   '<div class="column" style="float: left;width: 40%;padding:5px;text-align:center">'  
+                                        +       '<h6>FTTH</h6>'
+                                        +       '<p><img id="ftthImage" src="' + ftthIcon + '" width="20" height="20"/></p>'    
+                                        +   '</div>'
+                                        +   '<div class="column" style="float: left;width: 40%;padding:5px;text-align:center">'
+                                        +       '<h6>HFC</h6>'
+                                        +       '<p><img id="ftthImage" src="' + hfcIcon + '" width="20" height="20"/></p>'    
+                                        +   '</div>'
+                                        + '</div>'
+                                        + '</div>';
+
+                    if(feature.services.length > 0){
+                        var servicesString =  '<div>'
+                                            + '<table style="margin-right:auto;margin-left:auto">'
+                                            + '<caption>Services</caption>'
+                                            + '<tbody>';
+                        for(var i=0; i<feature.services.length; i++){
+                            console.log(feature.services[i].Name);
+                            servicesString = servicesString 
+                                            + '<tr >'
+                                            + '<td style="text-align:center"><a href="/' + feature.services[i].Id +'" target="_blank">' + feature.services[i].Name + '</a></td>' 
+                                            + '</tr>';        
+                        }
+                        servicesString = servicesString + '</tbody></table></div>';
+                        contentString = contentString + servicesString;
+                    }
+
+                    var marker = new google.maps.Marker({
+                        position: feature.position,
+                        icon: icon,
+                        map: map
+                    });
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: 325
+                    });
+
+                    var clicked = false;
+                    
+                    //Mouseover functionality
+                    marker.addListener('mouseover', function() {
+                        if(!clicked){
+                            infoWindow.open(map, this);
+                        }
+                        
+                    });
+
+                    // assuming you also want to hide the infowindow when user mouses-out
+                    marker.addListener('mouseout', function() {
+                        if(!clicked){
+                            infoWindow.close();
+                        }
+                        
+                    });
+
+                    marker.addListener('click', function(){
+                        clicked = true;
+                        infoWindow.open(map, this);
+                    });
+
+                    infoWindow.addListener('closeclick', function(){
+                        clicked = false;
+                    });
+                }
+                
+                //Create new map
+                
+                var map = new google.maps.Map(document.getElementById("map"), JSON.parse(data.mapOptions));
+                //Set map center
+                
+                var fullscreenControlDiv = document.createElement('div');
+                var fullscreenControl = new fullscreenButton(fullscreenControlDiv, map.getDiv());
+
+                fullscreenControlDiv.index = 1;
+                map.controls[google.maps.ControlPosition.TOP_CENTER].push(fullscreenControlDiv);
+
+                //iterate through map data for each point (even if 1)
+                var mapData = data.mapData;
+                var bounds = new google.maps.LatLngBounds();
+                for(var i=0, j=mapData.length; i<j; i++){
+                    //Add marker for each point
+                    
+                    if(mapData[i].lat == 0 && mapData[i].lng == 0){
+                        geocoder(mapData[i], false);
+                    }else{
+                        var myLatlng = new google.maps.LatLng(mapData[i].lat, mapData[i].lng);
+                        addMarker({position: myLatlng, address: mapData[i].address, ftthColour: mapData[i].ftthColour, hfcColour: mapData[i].hfcColour, services: mapData[i].listServices});
+                        if(data.isClicked == false){
+                            bounds.extend(myLatlng);
+                        }                      
+                    }                 
+                }
+                
+                if(data.mapOptionsCenter.lat == 0 && data.mapOptionsCenter.lng == 0){
+                    geocoder(data.mapOptionsCenter, true);
+                }else{
+                    map.setCenter(data.mapOptionsCenter);
+                }
+
+                //map.setCenter(bounds.getCenter());
+
+                //Makes sure every marker appears initialy on the Map
+                if(data.isClicked == false){
+                    map.fitBounds(bounds);
+                }
+
+                google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+                    this.setZoom(map.getZoom()-1);
+
+                    if (this.getZoom() > 15) {
+                        this.setZoom(15);
+                    }
+                });
+            }
+            
+            //Let LC know that VF page been loaded along with it's URL
+            //LC will then send the data
+            //This is done because LC has no way to know that VF page in iFrame has been loaded, event listener set and ready for data
+            var vfHost = "{!LEFT($CurrentPage.URL,FIND('/',$CurrentPage.URL,9))}";
+            sendToLC({'state':'LOADED', 'vfHost': vfHost});
+            
+            
+            </script>      
+    </body>
+    </html>
+</apex:page>

@@ -1,0 +1,39 @@
+<!--
+ - Created by Petar on 11/18/2018.
+ -->
+
+<aura:component description="cscrmRelatedListCell" extends="c:cscrmCommonComponent">
+    <aura:attribute name="fieldDefinition" type="Object" description="Field definition object"/>
+    <aura:attribute name="rowIndex" type="Integer" description="Index of row"/>
+    <aura:attribute name="record" type="Object" description="SObject object"/>
+    <aura:attribute name="value" type="Object" description="Value of object"/>
+    <aura:attribute name="resetStyles" type="Boolean" description="Reset styles"/>
+    <aura:attribute name="isSelected" type="Boolean" description="Is current cell selected"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.getValue}"/>
+    <aura:registerEvent name="relatedListEvent" type="c:cscrmRelatedListEvent"/>
+
+    <td class="{!join(' ',(v.isSelected ? 'cs-selected': ''))}">
+        <div class="slds-truncate"> <!-- slds-grid slds-grid_vertical-align-center  -->
+            <aura:if isTrue="{!not(empty(v.value))}">
+                <lightning:buttonIcon variant="container" iconName="utility:copy_to_clipboard" size="x-small"
+                                      alternativeText="Copy to clipboard" onclick="{!c.copyValue}"/>
+            </aura:if>
+            <aura:if isTrue="{!or(v.fieldDefinition.type == 'String',empty(v.fieldDefinition.type ))}">
+                <ui:outputText title="{!v.value}" value="{!v.value}"/>
+            </aura:if>
+            <aura:if isTrue="{!v.fieldDefinition.type == 'Number'}">
+                <ui:outputNumber value="{!v.value}"/>
+            </aura:if>
+            <aura:if isTrue="{!v.fieldDefinition.type == 'Date'}">
+                <ui:outputDate value="{!v.value}"/>
+            </aura:if>
+            <aura:if isTrue="{!v.fieldDefinition.type == 'DateTime'}">
+                <ui:outputDateTime value="{!v.value}"/>
+            </aura:if>
+            <aura:if isTrue="{!v.fieldDefinition.type == 'Id'}">
+                <ui:outputURL value="{!'/one/one.app#/sObject/' + v.value +'/view'}" label="{!v.value}" />
+            </aura:if>
+        </div>
+    </td>
+</aura:component>

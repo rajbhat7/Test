@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Advantages Email Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Advantages Email Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Advantages --></label>
+        <name>UPC_Advantages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>UPC_Sequence__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

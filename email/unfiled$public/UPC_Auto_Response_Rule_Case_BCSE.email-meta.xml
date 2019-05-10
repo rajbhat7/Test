@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template to Auto-Response an Case sent to Email2Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UPC Auto-Response Rule Case BCSE</name>
+    <style>none</style>
+    <subject>Ihre Anfrage vom {!Case.CreatedDate}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

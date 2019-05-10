@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify when Order is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>UPC_Generic_Letterhead</letterhead>
+    <name>UPC EN Order Confirmation Email</name>
+    <style>freeForm</style>
+    <subject>Order confirmation from UPC Business / {!Order.Number}</subject>
+    <textOnly>Further information is available at: upc.ch/business
+Order confirmation from UPC Business
+
+{!Salutation} {!CustomerName}
+
+Thank you for choosing UPC Business and for the trust you have placed in us.
+
+We are pleased to hereby confirm receipt of your order.
+Enclosed you will find the order confirmation with supporting documents.
+
+Should you have any questions, please do not hesitate to contact me.
+
+Yours sincerely
+{!Order.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BIFP Order --></label>
+        <name>UPC_BIFP_Order__c</name>
+        <relationshipLabel><!-- Subscriptions (BIFP Order) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BP Order --></label>
+        <name>UPC_BP_Order__c</name>
+        <relationshipLabel><!-- BP Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Non Mobile Order --></label>
+        <name>UPC_Non_Mobile_Order__c</name>
+        <relationshipLabel><!-- Non Mobile Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Process Terms --></label>
+        <name>UPC_Process_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag if the Info Email about Topnet request being placed should be sent to the customer --></help>
+        <label><!-- Send Topnet Customer Info --></label>
+        <name>UPC_Send_Topnet_Customer_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Address --></label>
+        <name>UPC_Site_Address__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>UPC_Site__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taifun SAP --></label>
+        <name>UPC_Taifun_SAP_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Billing Account to use for this Subscription. --></help>
+        <label><!-- Billing Account --></label>
+        <name>csconta__Billing_Account__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Account that governs this Subscription. --></help>
+        <label><!-- Account --></label>
+        <name>csord__Account__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- External Id field used for bulk inserts of Orders &amp; Subscriptions objects. --></help>
+        <label><!-- External Identifier --></label>
+        <name>csord__External_Identifier2__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Use External Identifier2 field instead. --></help>
+        <label><!-- DEPRECATED External Identifier --></label>
+        <name>csord__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- E.g. &quot;spokeServiceAmsterdam&quot; in Hub&amp;Spokes scenario. --></help>
+        <label><!-- Identification --></label>
+        <name>csord__Identification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order Request object which introduced the latest changes to this object. --></help>
+        <label><!-- Order Request --></label>
+        <name>csord__Order_Request__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Order of this Subscription. --></help>
+        <label><!-- Order --></label>
+        <name>csord__Order__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Solution of this Subscription. --></help>
+        <label><!-- Solution --></label>
+        <name>csord__Solution__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for state transitions. --></help>
+        <label><!-- Status --></label>
+        <name>csord__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total One-Off Charges --></label>
+        <name>csord__Total_One_Off_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Recurring Charges --></label>
+        <name>csord__Total_Recurring_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the one off charges on all of the subscription’s services --></help>
+        <label><!-- Total Service One-Off Charges --></label>
+        <name>csord__Total_Service_One_Off_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the recurring charges on all of the subscription’s services --></help>
+        <label><!-- Total Service Recurring Charges --></label>
+        <name>csord__Total_Service_Recurring_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the one-off charges of the subscription’s subscription line items --></help>
+        <label><!-- Total Sub. Line Item One-Off Charges --></label>
+        <name>csord__Total_Sub_Line_Item_One_Off_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all the recurring charges of the subscription’s subscription line items --></help>
+        <label><!-- Total Sub. Line Item Recurring Charges --></label>
+        <name>csord__Total_Sub_Line_Item_Recurring_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Contract Value --></label>
+        <name>csord__annual_contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Product --></label>
+        <name>csord__order_product__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Value --></label>
+        <name>csord__total_contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled By Change Process --></label>
+        <name>csordtelcoa__Cancelled_By_Change_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Type --></label>
+        <name>csordtelcoa__Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cease</masterLabel>
+            <translation><!-- Cease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocation</masterLabel>
+            <translation><!-- Relocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed Replaced --></label>
+        <name>csordtelcoa__Closed_Replaced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>csordtelcoa__Product_Configuration__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replaced Subscription --></label>
+        <name>csordtelcoa__Replaced_Subscription__c</name>
+        <relationshipLabel><!-- Replacement Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replacement Subscription --></label>
+        <name>csordtelcoa__Replacement_Subscription__c</name>
+        <relationshipLabel><!-- Replaced Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Number Sequence --></label>
+        <name>csordtelcoa__Subscription_Number_Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Number --></label>
+        <name>csordtelcoa__Subscription_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Subscription Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Subscription Provisioning --></label>
+            <section>Subscription Provisioning</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change Subscription --></label>
+        <name>Change_Subscription</name>
+    </quickActions>
+    <webLinks>
+        <label><!-- Visualise_OE_Delta --></label>
+        <name>csoe__Visualise_OE_Delta</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Change_Request --></label>
+        <name>csordtelcoa__Change_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Visualise_Subscription_Delta --></label>
+        <name>csordtelcoa__Visualise_Subscription_Delta</name>
+    </webLinks>
+</CustomObjectTranslation>

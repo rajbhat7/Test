@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CS Basket Snapshot Transactional</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CS Basket Snapshots Transactional</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attribute --></label>
+        <name>Attribute__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category for Breakdown --></label>
+        <name>Category_for_Breakdown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category for Order Confirmation --></label>
+        <name>Category_for_Order_Confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category for Quote --></label>
+        <name>Category_for_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- LineItemCategory --></label>
+        <name>LineItemCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Product Configuration --></label>
+        <name>Parent_Product_Configuration__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional (Parent Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Basket --></label>
+        <name>Product_Basket__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>Product_Configuration__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Definition --></label>
+        <name>Product_Definition__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Root Product Configuration --></label>
+        <name>Root_Product_Configuration__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional (Root Product Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text --></label>
+        <name>Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text for Quote --></label>
+        <name>Text_for_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPC Address --></label>
+        <name>UPC_Address__c</name>
+        <relationshipLabel><!-- CS Basket Snapshots Transactional --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Display Status --></label>
+        <name>UPC_Display_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <layouts>
+        <layout>CS Basket Snapshot Transactional Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

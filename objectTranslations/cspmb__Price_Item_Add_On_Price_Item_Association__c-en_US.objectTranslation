@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Add On Type --></label>
+        <name>Add_On_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used as an external id for migrating the data from org to an org (easing up the deployments). --></help>
+        <label><!-- CSCRM Migration Id --></label>
+        <name>CSCRM_Migration_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- A comma separated list of of change types for which this addon is not required. This effectively overrides the min value to 0 in addon manager. --></help>
+        <label><!-- Not Required For Change Types --></label>
+        <name>Not_Required_For_Change_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Product Contract Term --></label>
+        <name>UPC_Commercial_Product_Contract_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Context --></label>
+        <name>UPC_Configuration_Context__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does AddOn Requires Provisioning in Taifun --></help>
+        <label><!-- Requires Provisioning Taifun --></label>
+        <name>UPC_Requires_Provisioning_Taifun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add On --></label>
+        <name>cspmb__Add_On_Price_Item__c</name>
+        <relationshipLabel><!-- Commercial Product Add On Association --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Quantity --></label>
+        <name>cspmb__Default_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of a group of Add-Ons which this Add-On belongs to. Used to groups Add-Ons for a given Commercial Product. --></help>
+        <label><!-- Group --></label>
+        <name>cspmb__Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum number of the linked Add On which can be used with the linked Commercial Product. --></help>
+        <label><!-- Max --></label>
+        <name>cspmb__Max__c</name>
+    </fields>
+    <fields>
+        <help><!-- The minimum number of the linked Add On which can be used with the linked Commercial Product. --></help>
+        <label><!-- Min --></label>
+        <name>cspmb__Min__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overrides the One-Off Charge for the linked Add On when used with the linked Commercial Product. --></help>
+        <label><!-- One-Off Charge --></label>
+        <name>cspmb__One_Off_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this Add On Association&apos;s One Off Charge and Recurring Charge fields  overrides the equivalent values on the related Add On. If unchecked, this record&apos;s charge fields will take their values from the related Add On. --></help>
+        <label><!-- Overrides Add On Charges --></label>
+        <name>cspmb__Overrides_Add_On_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Product --></label>
+        <name>cspmb__Price_Item__c</name>
+        <relationshipLabel><!-- Commercial Product Add On Association --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Overrides the Recurring Charge for the linked Add On when used with the linked Commercial Product. --></help>
+        <label><!-- Recurring Charge --></label>
+        <name>cspmb__Recurring_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the sorting order for this Add On Association. --></help>
+        <label><!-- Sequence --></label>
+        <name>cspmb__Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>cspmb__effective_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>cspmb__effective_start_date__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Price Item Add On Price Item Association Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

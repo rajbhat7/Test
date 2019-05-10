@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Lead Imported&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Record Imported</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Lead Imported</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Sys Admin and Creation?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision11</name>
+        <label>myDecision11</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_12</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_12</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_12_A1</targetReference>
+            </connector>
+            <label>length =9 prefix = 3 digits</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision17</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>length = 12</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision17</name>
+        <label>myDecision17</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_18</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_18</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_18_A1</targetReference>
+            </connector>
+            <label>Length &lt;=13</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision5</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>prefix 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision5</name>
+        <label>myDecision5</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_6</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_6_A1</targetReference>
+            </connector>
+            <label>Prefix 98 or 99</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision11</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>length= 9 &amp; prefix &lt;&gt;3 digit</label>
+        </rules>
+    </decisions>
+    <description>Used to Reformat Phone Numbers</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,3,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,6,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,8,2)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_10_myRule_9_A1_8742451995</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,3,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,6,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,8,2)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,4,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,7,3)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_13_myRule_12_A1_9238701804</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,4,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,7,3)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,11,2)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_16_myRule_15_A1_9316094657</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,11,2)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,11,3)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_19_myRule_18_A1_3637549391</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,4,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,6,3)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,9,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,11,3)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,1)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,2,5)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_4_myRule_3_A1_6859029556</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,1)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,2,5)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+,2,99)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_7_myRule_6_A1_6160931725</name>
+        <dataType>String</dataType>
+        <expression>&quot;+41&quot;&amp;&quot; &quot;&amp;
+LEFT(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,2)&amp;&quot; &quot;&amp;
+MID(
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+,2,99)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+AND(
+  $Profile.Name = &apos;System Administrator&apos;,
+  ISNEW()
+  ),
+NOT(ISCHANGED([Lead].Phone))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+AND(
+  {!$Profile.Name} = &apos;System Administrator&apos;,
+  ISNEW()
+  ),
+NOT(ISCHANGED({!myVariable_current.Phone}))
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+)=9))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_12</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+)=9))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+)=12))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+)=12))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+)&lt;=13))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_18</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+)&lt;=13))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+,&quot;1&quot;)))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+,&quot;1&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+
+OR(
+
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+,&quot;98&quot;)),
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+,&quot;99&quot;))))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_6</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+
+OR(
+
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+,&quot;98&quot;)),
+(BEGINS(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+,&quot;99&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+OR( 
+BEGINS([Lead].Phone,&quot;+41&quot;), 
+BEGINS([Lead].Phone,&quot;+ 41&quot;), 
+BEGINS([Lead].Phone,&quot;00 41&quot;), 
+BEGINS([Lead].Phone,&quot;0041&quot;), 
+AND(BEGINS([Lead].Phone,&quot;0&quot;),NOT(BEGINS([Lead].Phone,&quot;00&quot;))) 
+), 
+
+AND(
+/*Prefix &lt;&gt;3digits */
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;080&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+41 80&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+4180&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;004180&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;0041 80&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;084&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+41 84&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+4184&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;004184&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;0041 84&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;086&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+41 86&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+4186&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;004186&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;0041 86&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;087&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+41 87&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+4187&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;004187&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;0041 87&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;090&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+41 90&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;+4190&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;004190&quot;)),
+NOT(BEGINS(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;),&quot;0041 90&quot;)),
+/*Prefix &lt;&gt;3digits */
+
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS([Lead].Phone,&quot;+41&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS([Lead].Phone,&quot;0041&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+IF(BEGINS([Lead].Phone,&quot;0&quot;),
+MID(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE([Lead].Phone,&quot; &quot;,&quot;&quot;))),
+
+
+[Lead].Phone
+))))
+/*Phone normatization */
+)=9)
+))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR( 
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;+ 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;00 41&quot;), 
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;), 
+AND(BEGINS({!myVariable_current.Phone},&quot;0&quot;),NOT(BEGINS({!myVariable_current.Phone},&quot;00&quot;))) 
+), 
+
+AND(
+/*Prefix &lt;&gt;3digits */
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;080&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+41 80&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+4180&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;004180&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;0041 80&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;084&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+41 84&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+4184&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;004184&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;0041 84&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;086&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+41 86&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+4186&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;004186&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;0041 86&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;087&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+41 87&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+4187&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;004187&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;0041 87&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;090&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+41 90&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;+4190&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;004190&quot;)),
+NOT(BEGINS(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;),&quot;0041 90&quot;)),
+/*Prefix &lt;&gt;3digits */
+
+(LEN(
+/*Phone normatization */
+(IF(
+
+BEGINS({!myVariable_current.Phone},&quot;+41&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;+41&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 3, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(
+BEGINS({!myVariable_current.Phone},&quot;0041&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0041&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 4, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+IF(BEGINS({!myVariable_current.Phone},&quot;0&quot;),
+MID(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;), FIND(&quot;0&quot;, SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;)) + 1, LEN(SUBSTITUTE({!myVariable_current.Phone},&quot; &quot;,&quot;&quot;))),
+
+
+{!myVariable_current.Phone}
+))))
+/*Phone normatization */
+)=9)
+))</expression>
+    </formulas>
+    <interviewLabel>NX_Lead_Phone_Formating-3_InterviewLabel</interviewLabel>
+    <label>NX_Lead_Phone_Formating</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Lead</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_12_A1</name>
+        <label>Update Phone</label>
+        <locationX>1200</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_13_myRule_12_A1_9238701804</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>UPdate Phone</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_16_myRule_15_A1_9316094657</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_18_A1</name>
+        <label>Update Phone</label>
+        <locationX>1800</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_19_myRule_18_A1_3637549391</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Update Phone</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_4_myRule_3_A1_6859029556</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_6_A1</name>
+        <label>Update Phone</label>
+        <locationX>600</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_7_myRule_6_A1_6160931725</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Update Phone</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>formula_10_myRule_9_A1_8742451995</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
+    </variables>
+</Flow>

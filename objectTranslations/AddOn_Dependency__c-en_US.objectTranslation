@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AddOn Dependency</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AddOn Dependencies</value>
+    </caseValues>
+    <fields>
+        <label><!-- Source Add On --></label>
+        <name>Add_On_Source__c</name>
+        <relationshipLabel><!-- AddOn Dependencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Add On --></label>
+        <name>Add_On_Target__c</name>
+        <relationshipLabel><!-- AddOn Dependencies (Target Add On) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used as an external id for migrating the data from org to an org (easing up the deployments). --></help>
+        <label><!-- CSCRM Migration Id --></label>
+        <name>CSCRM_Migration_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- GUID --></label>
+        <name>GUID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Group --></label>
+        <name>Group_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Group --></label>
+        <name>Group_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>Order_Type__c</name>
+        <picklistValues>
+            <masterLabel>MACD</masterLabel>
+            <translation><!-- MACD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Order</masterLabel>
+            <translation><!-- New Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commercial Product --></label>
+        <name>Price_Item__c</name>
+        <relationshipLabel><!-- AddOn Dependencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Exclusion</masterLabel>
+            <translation><!-- Exclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inclusion</masterLabel>
+            <translation><!-- Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandatory</masterLabel>
+            <translation><!-- Mandatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional</masterLabel>
+            <translation><!-- Optional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commercial Product Contract Term --></label>
+        <name>UPC_Commercial_Product_Contract_Term__c</name>
+    </fields>
+    <layouts>
+        <layout>AddOn Dependency Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

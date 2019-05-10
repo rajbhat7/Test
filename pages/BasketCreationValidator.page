@@ -1,0 +1,8 @@
+<apex:page standardController="cscfga__Product_Basket__c" extensions="cscrmBasketCreationValidatorController" action="{!checkAccountStatus}">
+    <apex:sectionHeader title="Create Basket">
+        <apex:pageMessages />
+    </apex:sectionHeader>
+    <apex:pageBlock >
+        <apex:outputLink value="/{!basket.cscfga__Opportunity__c}">Click here to return to the Opportunity</apex:outputLink>
+    </apex:pageBlock>
+</apex:page>

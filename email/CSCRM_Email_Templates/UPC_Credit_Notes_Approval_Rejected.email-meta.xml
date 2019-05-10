@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for Credit Notes approvals rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UPC Credit Notes Approval Rejected</name>
+    <style>none</style>
+    <subject>Credit Notes Approval Rejected</subject>
+    <textOnly>Hi,
+
+Your Credit Note has been rejected
+
+Credit Note {!UPC_Credit_Note__c.Name}
+{!UPC_Credit_Note__c.Link}
+
+Best regards</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>UPC_External_Contact_CL</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>UPC_External_Contact_CL</fullName>
+        <fields>Name</fields>
+        <fields>UPC_ExternalCompanyID__c</fields>
+        <fields>UPC_FirstName__c</fields>
+        <fields>UPC_Lastname__c</fields>
+        <fields>UPC_Department__c</fields>
+        <fields>UPC_DPhone__c</fields>
+        <label>UPC External Contact CL</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DGE</fullName>
+                    <default>false</default>
+                    <label>Managing Director</label>
+                </value>
+                <value>
+                    <fullName>PDG</fullName>
+                    <default>false</default>
+                    <label>Chairman</label>
+                </value>
+                <value>
+                    <fullName>DBR</fullName>
+                    <default>false</default>
+                    <label>Branch / Division Manager</label>
+                </value>
+                <value>
+                    <fullName>DFI</fullName>
+                    <default>false</default>
+                    <label>Financial Director</label>
+                </value>
+                <value>
+                    <fullName>CGE</fullName>
+                    <default>false</default>
+                    <label>Financial Controller</label>
+                </value>
+                <value>
+                    <fullName>CPT</fullName>
+                    <default>false</default>
+                    <label>Chief Accountant</label>
+                </value>
+                <value>
+                    <fullName>DAD</fullName>
+                    <default>false</default>
+                    <label>Administration Manager</label>
+                </value>
+                <value>
+                    <fullName>RSK</fullName>
+                    <default>false</default>
+                    <label>Risk / Compliance Manager</label>
+                </value>
+                <value>
+                    <fullName>PRZ</fullName>
+                    <default>false</default>
+                    <label>Process Manager</label>
+                </value>
+                <value>
+                    <fullName>FLM</fullName>
+                    <default>false</default>
+                    <label>Fleet Manager</label>
+                </value>
+                <value>
+                    <fullName>DSY</fullName>
+                    <default>false</default>
+                    <label>IT Strategy Manager</label>
+                </value>
+                <value>
+                    <fullName>DIN</fullName>
+                    <default>false</default>
+                    <label>IT Manager</label>
+                </value>
+                <value>
+                    <fullName>STV</fullName>
+                    <default>false</default>
+                    <label>Deputy IT Manager</label>
+                </value>
+                <value>
+                    <fullName>INF</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>DEV</fullName>
+                    <default>false</default>
+                    <label>Software Development Manager</label>
+                </value>
+                <value>
+                    <fullName>MIC</fullName>
+                    <default>false</default>
+                    <label>Micro Systems Manager</label>
+                </value>
+                <value>
+                    <fullName>REX</fullName>
+                    <default>false</default>
+                    <label>Data Center Manager</label>
+                </value>
+                <value>
+                    <fullName>NET</fullName>
+                    <default>false</default>
+                    <label>Network / Telecom Manager</label>
+                </value>
+                <value>
+                    <fullName>WEB</fullName>
+                    <default>false</default>
+                    <label>Internet Responsible</label>
+                </value>
+                <value>
+                    <fullName>SEC</fullName>
+                    <default>false</default>
+                    <label>Security Responsible</label>
+                </value>
+                <value>
+                    <fullName>ERP</fullName>
+                    <default>false</default>
+                    <label>ERP Responsible</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM Responsible</label>
+                </value>
+                <value>
+                    <fullName>STO</fullName>
+                    <default>false</default>
+                    <label>Storage Responsible</label>
+                </value>
+                <value>
+                    <fullName>PRT</fullName>
+                    <default>false</default>
+                    <label>Printing Responsible</label>
+                </value>
+                <value>
+                    <fullName>PBX</fullName>
+                    <default>false</default>
+                    <label>PBX Responsible</label>
+                </value>
+                <value>
+                    <fullName>IFR</fullName>
+                    <default>false</default>
+                    <label>IT Infrastructure Manager</label>
+                </value>
+                <value>
+                    <fullName>DMA</fullName>
+                    <default>false</default>
+                    <label>Marketing Manager</label>
+                </value>
+                <value>
+                    <fullName>DVE</fullName>
+                    <default>false</default>
+                    <label>Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>CAL</fullName>
+                    <default>false</default>
+                    <label>Call Center Manager</label>
+                </value>
+                <value>
+                    <fullName>DPR</fullName>
+                    <default>false</default>
+                    <label>Production Manager</label>
+                </value>
+                <value>
+                    <fullName>SVC</fullName>
+                    <default>false</default>
+                    <label>Customer Service Manager</label>
+                </value>
+                <value>
+                    <fullName>LOG</fullName>
+                    <default>false</default>
+                    <label>Logistic Manager</label>
+                </value>
+                <value>
+                    <fullName>QUA</fullName>
+                    <default>false</default>
+                    <label>Quality Manager</label>
+                </value>
+                <value>
+                    <fullName>FAM</fullName>
+                    <default>false</default>
+                    <label>Facility Manager</label>
+                </value>
+                <value>
+                    <fullName>DPE</fullName>
+                    <default>false</default>
+                    <label>DPE</label>
+                </value>
+                <value>
+                    <fullName>DAC</fullName>
+                    <default>false</default>
+                    <label>DAC</label>
+                </value>
+                <value>
+                    <fullName>RSE</fullName>
+                    <default>false</default>
+                    <label>RSE</label>
+                </value>
+                <value>
+                    <fullName>DMO</fullName>
+                    <default>false</default>
+                    <label>DMO</label>
+                </value>
+                <value>
+                    <fullName>DAI</fullName>
+                    <default>false</default>
+                    <label>DAI</label>
+                </value>
+                <value>
+                    <fullName>MOB</fullName>
+                    <default>false</default>
+                    <label>MOB</label>
+                </value>
+                <value>
+                    <fullName>DFO</fullName>
+                    <default>false</default>
+                    <label>DFO</label>
+                </value>
+                <value>
+                    <fullName>ECO</fullName>
+                    <default>false</default>
+                    <label>ECO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UPC_DPhone__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct phone number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>UPC_DataSource__c</fullName>
+        <externalId>false</externalId>
+        <label>DataSource</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Profondia</fullName>
+                    <default>false</default>
+                    <label>Profondia</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ExternalCompanyID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Internal company code</label>
+        <referenceTo>UPC_ExternalCompanyData__c</referenceTo>
+        <relationshipLabel>External Contacts</relationshipLabel>
+        <relationshipName>External_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_ExternalErasureDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of erasure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_ExternalUpdateDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of update</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_FirstName__c</fullName>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Gender</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Lastname__c</fullName>
+        <externalId>false</externalId>
+        <label>Last name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Preferred_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language spoken by contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Preferred_Language</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>External Contact</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UPC_FirstName__c</columns>
+        <columns>UPC_Lastname__c</columns>
+        <columns>UPC_DPhone__c</columns>
+        <columns>UPC_Department__c</columns>
+        <columns>Position__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Internal person number</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>External Contacts</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>UPC_FirstName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Lastname__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_DPhone__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Department__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Position__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Product Basket --></label>
+        <name>csordtelcoa__Product_Basket__c</name>
+        <relationshipLabel><!-- Subscriptions to Be Replaced --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>csordtelcoa__Subscription__c</name>
+        <relationshipLabel><!-- MACD Product Baskets --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

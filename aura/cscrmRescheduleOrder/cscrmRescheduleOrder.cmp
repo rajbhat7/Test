@@ -1,0 +1,22 @@
+<!--
+   (c) 2019 CloudSense LTD
+   Developed by CloudSense LTD, London (UK)
+
+   @date 1.2019
+   @author Tomislav Blazek
+
+   @description Used as an action button to reschedule the Termination Order.
+
+   @modifications
+   22.01.2019 [TB] SFCH-1171 Date Change/Cancellation of Termination
+-->
+<aura:component description="cscrmRescheduleOrder" controller="cscrmRescheduleOrderController" extends="c:cscrmCommonComponent"
+                implements="force:lightningQuickActionWithoutHeader,force:hasSObjectName,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <div>
+        <lightning:spinner variant="brand"
+                           size="small"
+                           alternativeText="Loading..."
+                           aura:id="spinner"/>
+    </div>
+</aura:component>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>UPC_Account_Interfaces_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>UPC_Account_Interfaces_Compact_Layout</fullName>
+        <fields>UPC_System__c</fields>
+        <fields>Account__c</fields>
+        <fields>UPC_Type__c</fields>
+        <fields>UPC_ID__c</fields>
+        <fields>UPC_Name_Verified_Flag__c</fields>
+        <fields>UPC_Owner_Verified_Flag__c</fields>
+        <fields>UPC_Address_Verified_Flag__c</fields>
+        <label>UPC Account Interfaces Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to map all account interfaces that will be integrated with a Salesforce Account</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Interfaces</relationshipLabel>
+        <relationshipName>Account_Interfaces</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Interface__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id,  TEXT(UPC_System__c), &quot;_self&quot; )</formula>
+        <label>Interface</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address_Verified_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPC_Address_Verified__c, 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20))</formula>
+        <label>Address Verified</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Address_Verified__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(
+/* Street and City must be 100% perfect */
+ Account__r.BillingStreet  =  UPC_Street__c ,
+Account__r.BillingCity = UPC_City__c,
+
+/* Taifun does not deliver the State, so only compare State if not Taifun */
+Account__r.BillingState = IF(ISPICKVAL(UPC_System__c, &quot;Taifun&quot;),Account__r.BillingState,UPC_State_Province__c),
+
+/* Taifun postcode is 4 or 6 digit for CH, compare first 4 digits only for CH */
+Account__r.BillingPostalCode = IF(AND(ISPICKVAL(UPC_System__c, &quot;Taifun&quot;),OR(UPC_Country__c == &quot;CH&quot;,UPC_Country__c == &quot;Switzerland&quot;)),LEFT(UPC_Zip_Postal_Code__c,4),UPC_Zip_Postal_Code__c),
+
+/* Country can be 2-digit ISO country code, or English name. Allow both */
+OR(UPC_Country__c == TEXT(Account__r.BillingCountryCode),Account__r.BillingCountry = UPC_Country__c)
+)</formula>
+        <label>Address Verified</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( UPC_Street__c ) , &apos;&apos;, UPC_Street__c +&apos;,&apos;) + 
+IF( ISBLANK( UPC_Zip_Postal_Code__c ) , &apos;&apos;, &apos; &apos; + UPC_Zip_Postal_Code__c +&apos; &apos;)+
+IF( ISBLANK( UPC_City__c ) , &apos;&apos;, &apos; &apos; + UPC_City__c  +&apos;,&apos;) +
+IF( ISBLANK( UPC_State_Province__c ) , &apos;&apos;, &apos; &apos; + UPC_State_Province__c +&apos;,&apos;)+  
+IF( ISBLANK( UPC_Country__c ) , &apos;&apos;, &apos; &apos; + UPC_Country__c)</formula>
+        <label>Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Business_Mobile_Service_ID__c</fullName>
+        <description>CS - Business mobile service Id copied over from case when it is closed</description>
+        <externalId>false</externalId>
+        <label>Business Mobile Service ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Country__c</fullName>
+        <description>Contains the Country from the foreign system. Ensure only 2-digit ISO code or English name is saved, otherwise the Address Verification formulas will not work</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Must contain 2-digit ISO country code or English country name. Examples: CH, Switzerland</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_External_ID__c</fullName>
+        <description>External Account ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>External Account ID</inlineHelpText>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ID__c</fullName>
+        <description>Used to identify the record ID in the legacy system</description>
+        <externalId>false</externalId>
+        <label>ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Verification_Date__c</fullName>
+        <description>Used to store the last verification date.</description>
+        <externalId>false</externalId>
+        <label>Last Verification Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Name_Verified_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPC_Name_Verified__c,
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20))</formula>
+        <label>Name Verified</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Name_Verified__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_System_Account_Name__c = Account__r.Name</formula>
+        <label>Name Verified</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Owner_Verified_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPC_Owner_Verified__c, 
+IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20), 
+IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20))</formula>
+        <label>Owner Verified</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Owner_Verified__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Owner__c = Account__r.Owner.FirstName&amp;&quot; &quot;&amp; Account__r.Owner.LastName</formula>
+        <label>Owner Verified</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Primary_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to set the primary account when more then one is found in the legacy systems.</description>
+        <externalId>false</externalId>
+        <label>Primary Account</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Service_Taifun_Sap_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_Service__r.UPC_Taifun_SAP_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Taifun Sap ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Service__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service</label>
+        <referenceTo>csord__Service__c</referenceTo>
+        <relationshipLabel>Account Interfaces</relationshipLabel>
+        <relationshipName>Account_Interfaces</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_State_Province__c</fullName>
+        <description>Contains the State from the foreign system. Ensure only State Code is saved, otherwise the Address Verification formulas will not work</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Must contain only state code. Examples: GE, VD, ZH, ZG</inlineHelpText>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_System_Account_AdditionalName__c</fullName>
+        <externalId>false</externalId>
+        <label>System Account Additional Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_System_Account_Name__c</fullName>
+        <description>Used to get the Account Name from the Interface.</description>
+        <externalId>false</externalId>
+        <label>System Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_System__c</fullName>
+        <description>Used to identify the legacy system that is connected to an account.</description>
+        <externalId>false</externalId>
+        <label>System</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACC</fullName>
+                    <default>false</default>
+                    <label>ACC</label>
+                </value>
+                <value>
+                    <fullName>AZD-Direct</fullName>
+                    <default>false</default>
+                    <label>AZD-Direct</label>
+                </value>
+                <value>
+                    <fullName>Permaleads</fullName>
+                    <default>false</default>
+                    <label>Permaleads</label>
+                </value>
+                <value>
+                    <fullName>Profondia</fullName>
+                    <default>false</default>
+                    <label>Profondia</label>
+                </value>
+                <value>
+                    <fullName>SuperOffice</fullName>
+                    <default>false</default>
+                    <label>SuperOffice</label>
+                </value>
+                <value>
+                    <fullName>Taifun</fullName>
+                    <default>false</default>
+                    <label>Taifun</label>
+                </value>
+                <value>
+                    <fullName>Zefix</fullName>
+                    <default>false</default>
+                    <label>Zefix</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Type__c</fullName>
+        <description>Used to identify the Type in the Legacy System.</description>
+        <externalId>false</externalId>
+        <label>System Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Register</fullName>
+                    <default>false</default>
+                    <label>Register</label>
+                </value>
+                <value>
+                    <fullName>Prospect Data Source</fullName>
+                    <default>false</default>
+                    <label>Prospect Data Source</label>
+                </value>
+                <value>
+                    <fullName>Debitor</fullName>
+                    <default>false</default>
+                    <label>Debitor</label>
+                </value>
+                <value>
+                    <fullName>Creditor</fullName>
+                    <default>false</default>
+                    <label>Creditor</label>
+                </value>
+                <value>
+                    <fullName>Partner Network</fullName>
+                    <default>false</default>
+                    <label>Partner Network</label>
+                </value>
+                <value>
+                    <fullName>Business Partner</fullName>
+                    <default>false</default>
+                    <label>Business Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip/Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Interface</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>INT-{000000}</displayFormat>
+        <label>Account Interfaces Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Interfaces</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

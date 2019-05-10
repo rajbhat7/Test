@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Site_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>UPC_Site_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>UPC_Site_Compact_Layout</fullName>
+        <fields>Site_Name__c</fields>
+        <fields>UPC_FTTH_Alert__c</fields>
+        <fields>UPC_HFC_Alert__c</fields>
+        <fields>UPC_BBCS_Alert__c</fields>
+        <fields>UPC_ULL_CU_Alert__c</fields>
+        <label>UPC Site Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object created by Nexell to manage UPC Sites.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>HFC_Suitability__c</fullName>
+        <externalId>false</externalId>
+        <label>HFC Suitability</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>T1</fullName>
+                    <default>false</default>
+                    <label>T1</label>
+                </value>
+                <value>
+                    <fullName>T2</fullName>
+                    <default>false</default>
+                    <label>T2</label>
+                </value>
+                <value>
+                    <fullName>T3</fullName>
+                    <default>false</default>
+                    <label>T3</label>
+                </value>
+                <value>
+                    <fullName>T4</fullName>
+                    <default>false</default>
+                    <label>T4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Site_Name__c</fullName>
+        <description>Created by Nexell to manage automated site names</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(UPC_Account__c )),
+IF( NOT(ISBLANK(UPC_ADBASE_Address__c)), 
+IF( LEN(UPC_Account__r.Name) &gt; 50,
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Account__r.Name, 50)&amp;&quot;...&quot;&amp;&quot; - &quot;&amp;
+ UPC_ADBASE_Address__r.UPC_Address_Formula__c 
+)
+, &quot;_self&quot; ),
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Account__r.Name, 50)&amp;&quot; - &quot;&amp;
+ UPC_ADBASE_Address__r.UPC_Address_Formula__c 
+)
+, &quot;_self&quot; )),
+IF( LEN(UPC_Account__r.Name) &gt; 50,
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Account__r.Name, 50)&amp;&quot;...&quot;&amp;&quot; - &quot;&amp;UPC_Note__c&amp;&quot; - &quot;&amp; TEXT(UPC_Geolocation__Latitude__s)&amp;&quot;, &quot;&amp; TEXT(UPC_Geolocation__Longitude__s)
+)
+, &quot;_self&quot; ),
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Account__r.Name, 50)&amp;&quot; - &quot;&amp; UPC_Note__c&amp;&quot; - &quot;&amp;  TEXT(UPC_Geolocation__Latitude__s)&amp;&quot;, &quot;&amp; TEXT(UPC_Geolocation__Longitude__s) 
+)
+, &quot;_self&quot; ))),
+
+IF( NOT(ISBLANK(UPC_ADBASE_Address__c)), 
+IF( LEN(UPC_Lead__r.Company) &gt; 50,
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Lead__r.Company, 50)&amp;&quot;...&quot;&amp;&quot; - &quot;&amp;
+ UPC_ADBASE_Address__r.UPC_Address_Formula__c 
+)
+, &quot;_self&quot; ),
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Lead__r.Company, 50)&amp;&quot; - &quot;&amp;
+ UPC_ADBASE_Address__r.UPC_Address_Formula__c 
+)
+, &quot;_self&quot; )),
+IF( LEN(UPC_Lead__r.Company) &gt; 50,
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Lead__r.Company, 50)&amp;&quot;...&quot;&amp;&quot; - &quot;&amp;UPC_Note__c&amp;&quot; - &quot;&amp; TEXT(UPC_Geolocation__Latitude__s)&amp;&quot;, &quot;&amp; TEXT(UPC_Geolocation__Longitude__s)
+)
+, &quot;_self&quot; ),
+
+HYPERLINK(&quot;/&quot; &amp; Id, 
+(LEFT(UPC_Lead__r.Company, 50)&amp;&quot; - &quot;&amp; UPC_Note__c&amp;&quot; - &quot;&amp;  TEXT(UPC_Geolocation__Latitude__s)&amp;&quot;, &quot;&amp; TEXT(UPC_Geolocation__Longitude__s) 
+)
+, &quot;_self&quot; )))
+)</formula>
+        <label>Site Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ADBASE_Address__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Address</label>
+        <referenceTo>UPC_ADBASE__c</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Address_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(UPC_ADBASE_Address__c),&quot;No Address Given&quot;,
+ UPC_ADBASE_Address__r.UPC_Address_Details__c )</formula>
+        <label>UPC Address Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+
+CASE( UPC_BBCS_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/Partner/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+),
+CASE( UPC_BBCS_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+)
+)</formula>
+        <label>BBCS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BBCS_Rollup__c</fullName>
+        <externalId>false</externalId>
+        <label>BBCS Rollup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Orange</fullName>
+                    <default>false</default>
+                    <label>Orange</label>
+                </value>
+                <value>
+                    <fullName>Gray</fullName>
+                    <default>false</default>
+                    <label>Gray</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDINGCOORDINATE_Y__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_BUILDINGCOORDINATEY__c</formula>
+        <label>BUILDING COORDINATE Y</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_BUILDING_COORDINATE_X__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_BUILDINGCOORDINATEX__c</formula>
+        <label>BUILDING COORDINATE X</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Basic_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(UPC_ADBASE_Address__c),&quot;No Address Given&quot;,
+ UPC_ADBASE_Address__r.UPC_Address_Formula__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC Basic Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Building_ID__c</fullName>
+        <description>Created by Nexell to show the primary address Building ID</description>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_ID_BUILDING__c</formula>
+        <label>Building ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Building_ID_not_Found__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Building ID not Found</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+
+CASE(  UPC_FTTH_Rollup__c  ,
+&apos;Green&apos;,IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/Partner/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+),
+
+CASE(  UPC_FTTH_Rollup__c  ,
+&apos;Green&apos;,IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+)
+)</formula>
+        <label>FTTH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH_Rollup__c</fullName>
+        <description>Created by Nexell to be used as intermediary for the FTTH alert icon.</description>
+        <externalId>false</externalId>
+        <label>FTTH Rollup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Orange</fullName>
+                    <default>false</default>
+                    <label>Orange</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Gray</fullName>
+                    <default>false</default>
+                    <label>Gray</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_FTTH__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>FTTH</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Geolocation__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Geolocation</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+CASE( UPC_HFC_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/Partner/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+),
+CASE( UPC_HFC_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+)
+)</formula>
+        <label>HFC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC_Rollup__c</fullName>
+        <description>Created by Nexell to be used as intermidiary for the HFC alert icon.</description>
+        <externalId>false</externalId>
+        <label>HFC Rollup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Orange</fullName>
+                    <default>false</default>
+                    <label>Orange</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Gray</fullName>
+                    <default>false</default>
+                    <label>Gray</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_HFC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HFC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_HelperField__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HelperField</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_HelperOppId__c</fullName>
+        <externalId>false</externalId>
+        <label>HelperOppId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Footprint_Check__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Footprint Check</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Last_Taifun_Reconciliation__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Taifun Reconciliation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Latitude__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(UPC_ADBASE_Address__r.UPC_Geolocation__Latitude__s)</formula>
+        <label>Latitude</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <formula>tEXT(UPC_ADBASE_Address__r.UPC_Geolocation__Longitude__s)</formula>
+        <label>Longitude</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_MapCity__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_LOCATIONNAME1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC_MapCity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_MapPostCode__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_POSTCODE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC_MapPostCode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_MapStreet__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_STREETNAME1__c + IF(ISBLANK(UPC_ADBASE_Address__r.UPC_BUILDING_NUMBER__c),&apos;&apos;, &apos; &apos; +  UPC_ADBASE_Address__r.UPC_BUILDING_NUMBER__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UPC_MapStreet</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_No_SOHO_Service__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Only Solution Offer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPC_Note__c</fullName>
+        <description>Created by Nexell and used to note information when the address is empty.</description>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UPC_OS_ID__c</fullName>
+        <description>Created by Nexell and used to show the Primary Address OS ID</description>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.UPC_OS_ID__c</formula>
+        <label>OS ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Primary_Address_Record_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>UPC_ADBASE_Address__r.RecordType.Name</formula>
+        <label>Primary Address Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Name_Searchable__c</fullName>
+        <description>Created by Nexell to make Site Name Searchable.</description>
+        <externalId>false</externalId>
+        <label>Site Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Site Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Site_Status__c</fullName>
+        <defaultValue>&quot;Draft&quot;</defaultValue>
+        <description>Created by Nexell. Used to control the status of a site.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UPC_Soho_Service_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPC_No_SOHO_Service__c,
+IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;No Soho&apos;,20,20),
+&quot;&quot;)</formula>
+        <label>Only Solution Offer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_Synced_Taifun_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Taifun Address Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CONTAINS($Profile.Name, &quot;Partner&quot;),
+
+CASE( UPC_ULL_CU_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/Partner/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/Partner/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/Partner/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/Partner/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+),
+CASE( UPC_ULL_CU_Rollup__c ,
+&apos;Green&apos;,IMAGE(&apos;/resource/1536830928000/Available_Icon&apos;,&apos;Green&apos;,20,20),
+&apos;Orange&apos;,IMAGE(&apos;/resource/1536831026000/Alert_Icon&apos;,&apos;Orange&apos;,20,20), 
+&apos;Red&apos;,IMAGE(&apos;/resource/1536830994000/Unavailable_Icon&apos;,&apos;Red&apos;,20,20), 
+&apos;Gray&apos;,IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20),
+IMAGE(&apos;/resource/1536831063000/Maintenance_Icon&apos;,&apos;Gray&apos;,20,20)
+)
+)</formula>
+        <label>ULL CU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC_ULL_CU_Rollup__c</fullName>
+        <externalId>false</externalId>
+        <label>ULL CU Rollup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Orange</fullName>
+                    <default>false</default>
+                    <label>Orange</label>
+                </value>
+                <value>
+                    <fullName>Gray</fullName>
+                    <default>false</default>
+                    <label>Gray</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Site</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPC_Basic_Address__c</columns>
+        <columns>UPC_Address_Details__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ST-{0000000}</displayFormat>
+        <label>Site ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sites</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Site_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_Site_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_FTTH__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_HFC__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>HFC_Suitability__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_Last_Footprint_Check__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPC_No_SOHO_Service__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Site_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_Site_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPC_Account__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Site_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Address_Details__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Site_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_FTTH__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_HFC__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>HFC_Suitability__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_Last_Footprint_Check__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPC_No_SOHO_Service__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_or_Lead_are_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISBLANK(  UPC_Account__c  ), ISBLANK( UPC_Lead__c ))</errorConditionFormula>
+        <errorMessage>A site can only be created with a Lead or an Account. Please make sure to fulfill one of them.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Address_or_Geotag_are_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    ISBLANK( UPC_ADBASE_Address__c ),
+    OR(   ISBLANK(UPC_Geolocation__Latitude__s),
+ISBLANK(UPC_Geolocation__Longitude__s )))</errorConditionFormula>
+        <errorMessage>A site can only be created with an Address or a Geotag. Please make sure to fulfill one of them.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_SOHO_check_when_FTTH_and_HFC_no_check</fullName>
+        <active>true</active>
+        <description>No Soho Service can just be checked if FTTH and HFC are not checked</description>
+        <errorConditionFormula>AND(OR(UPC_FTTH__c, UPC_HFC__c), UPC_No_SOHO_Service__c )</errorConditionFormula>
+        <errorDisplayField>UPC_No_SOHO_Service__c</errorDisplayField>
+        <errorMessage>No Soho Service can only be checked if FTTH and FHC are not Checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Note_is_Mandatory_when_Address_is_empty</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISBLANK( UPC_ADBASE_Address__c ),
+ISBLANK( UPC_Note__c ))</errorConditionFormula>
+        <errorDisplayField>UPC_ADBASE_Address__c</errorDisplayField>
+        <errorMessage>Please insert a note when the address is not fulfilled.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

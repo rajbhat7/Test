@@ -1,0 +1,2038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>SiteFooter</members>
+        <members>SiteHeader</members>
+        <members>SiteLogin</members>
+        <members>SitePoweredBy</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>AnswersHome</members>
+        <members>BandwidthExceeded</members>
+        <members>BasketCreationValidator</members>
+        <members>ChangePassword</members>
+        <members>CommunitiesLanding</members>
+        <members>CommunitiesLogin</members>
+        <members>CommunitiesSelfReg</members>
+        <members>CommunitiesSelfRegConfirm</members>
+        <members>CommunitiesTemplate</members>
+        <members>Exception</members>
+        <members>FileNotFound</members>
+        <members>ForgotPassword</members>
+        <members>ForgotPasswordConfirm</members>
+        <members>IdeasHome</members>
+        <members>InMaintenance</members>
+        <members>MyProfilePage</members>
+        <members>SiteLogin</members>
+        <members>SiteRegister</members>
+        <members>SiteRegisterConfirm</members>
+        <members>SiteTemplate</members>
+        <members>StdExceptionTemplate</members>
+        <members>UPC_CallPoint_Flow</members>
+        <members>UPC_Community_Homepage_Callpoint</members>
+        <members>Unauthorized</members>
+        <members>UnderConstruction</members>
+        <members>UpdateSitesonOpportunity</members>
+        <members>cscrmAccountMultipleSubscriptions</members>
+        <members>cscrmCmtyNewBasketRedirectCntrl</members>
+        <members>cscrmGenerateSendQuote</members>
+        <members>cscrmQuickCreateAccContactRelationship</members>
+        <members>cscrmQuickCreateContact</members>
+        <members>cscrmRecreateOrderConfirmation</members>
+        <members>cscrmRecreateTermination</members>
+        <members>cscrmZTestInspector_DoNotDeploy</members>
+        <members>nxGoogleMaps</members>
+        <members>nxGoogleMapsCommunity</members>
+        <members>nxPermaleadsTest</members>
+        <members>nxUpdateSitesOnOpportunity</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>AppSwitcher</members>
+        <members>Salesforce1</members>
+        <name>AppMenu</name>
+    </types>
+    <types>
+        <members>Account.UPC_Account_Ownership_Change_Approval</members>
+        <members>Campaign.UPC_Campaign_Ownership_Change_Approval</members>
+        <members>UPC_Credit_Note__c.UPC_Credit_Notes</members>
+        <members>UPC_Credit_Note__c.UPC_Credit_Notes_Approval</members>
+        <members>cscfga__Product_Basket__c.CSCRM_Basket_Approval_Process</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>CallUPCWebservice</members>
+        <members>SiteMapComponent</members>
+        <members>cscrmChangeSubscription</members>
+        <members>cscrmCmtyNewBasketButton</members>
+        <members>cscrmCommonComponent</members>
+        <members>cscrmEfronProvisioningServiceUpdater</members>
+        <members>cscrmLightningServiceUpdaterLightningComponent</members>
+        <members>cscrmRelatedList</members>
+        <members>cscrmRelatedListCell</members>
+        <members>cscrmRelatedListEvent</members>
+        <members>cscrmRescheduleOrder</members>
+        <members>cscrmWithdrawOrder</members>
+        <members>defaultTokens</members>
+        <members>forgotPassword</members>
+        <members>loginForm</members>
+        <members>nxAccountPath</members>
+        <members>nxAddSiteComponent</members>
+        <members>nxChangePrimaryAddress</members>
+        <members>nxCreditCheck</members>
+        <members>nxFootPrintAction</members>
+        <members>nxGoogleMapsApp</members>
+        <members>nxGoogleMapsCommunityComponent</members>
+        <members>nxGoogleMapsComponent</members>
+        <members>nxHandleInputChangeEvent</members>
+        <members>nxLeadZefixActionComponent</members>
+        <members>nxOpportunityRecordTypeChange</members>
+        <members>nxOverrideNewAddress</members>
+        <members>nxOverrideNewBilling</members>
+        <members>nxRelatedOpportunitiesOnSite</members>
+        <members>nxSiteComponent</members>
+        <members>nxSiteUpdateEvent</members>
+        <members>nxSiteWithAddresses</members>
+        <members>nxUPCAddressMapComponent</members>
+        <members>nxUidFrame</members>
+        <members>nxUpdateFootprintAddress</members>
+        <members>nxZefixActionComponent</members>
+        <members>selfRegister</members>
+        <members>setExpId</members>
+        <members>setStartUrl</members>
+        <members>strike_evt</members>
+        <members>strike_lookup</members>
+        <members>strike_svg</members>
+        <members>strike_tooltip</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>LEXTHEMINGUPC_Business_Theme</members>
+        <name>BrandingSet</name>
+    </types>
+    <types>
+        <members>SelfSignedCert_08Oct2018_094240</members>
+        <name>Certificate</name>
+    </types>
+    <types>
+        <members>DataCloudCompanyMatch</members>
+        <members>DataCloudGeoLocation</members>
+        <members>DataCloudLeadAppend</members>
+        <name>CleanDataService</name>
+    </types>
+    <types>
+        <members>Internal Community</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>UPCCablecom</members>
+        <members>UPC_Email_logo</members>
+        <members>callpoint</members>
+        <members>upc</members>
+        <members>upc_business_multicolored_logo_cmyk</members>
+        <members>upc_business_multicolored_logo_cmyk1</members>
+        <members>upc_business_multicolored_logo_cmyk2</members>
+        <members>upc_business_multicolored_logo_cmyk3</members>
+        <members>upc_logo</members>
+        <members>upc_partner</members>
+        <members>upc_partner1</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>GoogleMapCommunity</members>
+        <members>GoogleMapCommunity2</members>
+        <members>UIDRegister</members>
+        <name>CspTrustedSite</name>
+    </types>
+    <types>
+        <members>UPC_BCSE_Service_Console</members>
+        <members>UPC_Business</members>
+        <members>UPC_External_Data_Sources</members>
+        <members>upc_Integration_Tests</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Permaleads_Visited_URL.De_Business_Kmu_Internet</members>
+        <members>Permaleads_Visited_URL.www_upc_ch_de_business_kmu_kombi</members>
+        <members>Permaleads_Visited_URL.www_upc_ch_de_business_kmu_kombi_interne</members>
+        <members>Permaleads_Visited_URL.www_upc_ch_en_business</members>
+        <members>Permaleads_Visited_URL.www_upc_ch_fr_business</members>
+        <members>UPC_Clean_Order_Sheet_Value.General_Settings</members>
+        <members>UPC_Document_Queries.UPC_Termination_Document</members>
+        <members>UPC_General_Document_Values.UPC_English_Language_Settings</members>
+        <members>UPC_General_Document_Values.UPC_French_Language_Settings</members>
+        <members>UPC_General_Document_Values.UPC_German_Language_Settings</members>
+        <members>UPC_General_Document_Values.UPC_Italian_Language_Settings</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BIFP_DE</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BIFP_EN</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BIFP_FR</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BIFP_IT</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BM_DE</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BM_EN</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BM_FR</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BM_IT</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BP_DE</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BP_EN</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BP_FR</members>
+        <members>UPC_Product_Advantages_Email_Mapping.BP_IT</members>
+        <members>UPC_Product_Advantages_Email_Mapping.Common_DE</members>
+        <members>UPC_Product_Advantages_Email_Mapping.Common_EN</members>
+        <members>UPC_Product_Advantages_Email_Mapping.Common_FR</members>
+        <members>UPC_Product_Advantages_Email_Mapping.Common_IT</members>
+        <members>UPC_Quote_Document_Language_Settings.English_Language_Settings</members>
+        <members>UPC_Quote_Document_Language_Settings.French_Language_Settings</members>
+        <members>UPC_Quote_Document_Language_Settings.German_Language_Settings</members>
+        <members>UPC_Quote_Document_Language_Settings.Italian_Language_Settings</members>
+        <members>UPC_Quote_Document_Line_Item_Mappings.Default_Settings</members>
+        <members>UPC_Quote_Document_Mappings.ASAP</members>
+        <members>UPC_Quote_Document_Mappings.Access_Service_ID</members>
+        <members>UPC_Quote_Document_Mappings.Access_Technology</members>
+        <members>UPC_Quote_Document_Mappings.Additional_lines_needed</members>
+        <members>UPC_Quote_Document_Mappings.Additional_phone_number_w_o_Flat</members>
+        <members>UPC_Quote_Document_Mappings.Advice_of_Charge</members>
+        <members>UPC_Quote_Document_Mappings.Auth_Code_Header</members>
+        <members>UPC_Quote_Document_Mappings.Auth_Code_Header_2</members>
+        <members>UPC_Quote_Document_Mappings.Bandwidth</members>
+        <members>UPC_Quote_Document_Mappings.Basic_fee</members>
+        <members>UPC_Quote_Document_Mappings.Billing_Method_Title</members>
+        <members>UPC_Quote_Document_Mappings.Billing_Preference_Title</members>
+        <members>UPC_Quote_Document_Mappings.Billing_Preference_Title_Mob</members>
+        <members>UPC_Quote_Document_Mappings.Business_Digital_TV_Details</members>
+        <members>UPC_Quote_Document_Mappings.Business_Digital_TV_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Europe_Classic</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Europe_Classic_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Europe_Premium</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Europe_Premium_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Basic</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Basic_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Classic</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Classic_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Premium</members>
+        <members>UPC_Quote_Document_Mappings.Business_Mobile_Swiss_Premium_Service</members>
+        <members>UPC_Quote_Document_Mappings.Business_Package_100</members>
+        <members>UPC_Quote_Document_Mappings.Business_Package_300</members>
+        <members>UPC_Quote_Document_Mappings.Business_Package_600</members>
+        <members>UPC_Quote_Document_Mappings.CATV_included</members>
+        <members>UPC_Quote_Document_Mappings.CATV_included_short</members>
+        <members>UPC_Quote_Document_Mappings.CATV_not_included</members>
+        <members>UPC_Quote_Document_Mappings.CATV_not_included_short</members>
+        <members>UPC_Quote_Document_Mappings.Call_Forwarding</members>
+        <members>UPC_Quote_Document_Mappings.Call_Number</members>
+        <members>UPC_Quote_Document_Mappings.Classic</members>
+        <members>UPC_Quote_Document_Mappings.Combine_and_Save_Discount</members>
+        <members>UPC_Quote_Document_Mappings.Company</members>
+        <members>UPC_Quote_Document_Mappings.Contract_Term</members>
+        <members>UPC_Quote_Document_Mappings.DDI_Block_Name</members>
+        <members>UPC_Quote_Document_Mappings.Details_DigiPhone</members>
+        <members>UPC_Quote_Document_Mappings.Details_Header</members>
+        <members>UPC_Quote_Document_Mappings.Details_Internet</members>
+        <members>UPC_Quote_Document_Mappings.Details_Internet_Service</members>
+        <members>UPC_Quote_Document_Mappings.Digital_TV_Channels</members>
+        <members>UPC_Quote_Document_Mappings.Direct_dial_in_digits</members>
+        <members>UPC_Quote_Document_Mappings.Flatrate_Europe_Fixnet_Mobile</members>
+        <members>UPC_Quote_Document_Mappings.Flatrate_Export_Fixnet_Mobile</members>
+        <members>UPC_Quote_Document_Mappings.Flatrate_Switzerland_Fixnet_Mobile</members>
+        <members>UPC_Quote_Document_Mappings.Flatrate_World_Fixnet_Mobile</members>
+        <members>UPC_Quote_Document_Mappings.Half_Yearly_Invoice</members>
+        <members>UPC_Quote_Document_Mappings.Installation_by_Partner</members>
+        <members>UPC_Quote_Document_Mappings.Instead_Of</members>
+        <members>UPC_Quote_Document_Mappings.Internet_options</members>
+        <members>UPC_Quote_Document_Mappings.Location</members>
+        <members>UPC_Quote_Document_Mappings.MSN_Block_Name</members>
+        <members>UPC_Quote_Document_Mappings.Master_Value</members>
+        <members>UPC_Quote_Document_Mappings.Min_Service_Period_Mob</members>
+        <members>UPC_Quote_Document_Mappings.Minimum_Service_Period</members>
+        <members>UPC_Quote_Document_Mappings.Mobile_Backup</members>
+        <members>UPC_Quote_Document_Mappings.Monthly_invoice</members>
+        <members>UPC_Quote_Document_Mappings.Next_regular_date</members>
+        <members>UPC_Quote_Document_Mappings.No</members>
+        <members>UPC_Quote_Document_Mappings.Number_holder</members>
+        <members>UPC_Quote_Document_Mappings.Number_of_SIP_Channels_0</members>
+        <members>UPC_Quote_Document_Mappings.Option_Value</members>
+        <members>UPC_Quote_Document_Mappings.PH_Call_Number</members>
+        <members>UPC_Quote_Document_Mappings.PH_Number_holder</members>
+        <members>UPC_Quote_Document_Mappings.PH_Porting_date</members>
+        <members>UPC_Quote_Document_Mappings.PH_Porting_details</members>
+        <members>UPC_Quote_Document_Mappings.PH_Provider</members>
+        <members>UPC_Quote_Document_Mappings.Paper_Bill</members>
+        <members>UPC_Quote_Document_Mappings.Partner_Network_Discount</members>
+        <members>UPC_Quote_Document_Mappings.Porting_date</members>
+        <members>UPC_Quote_Document_Mappings.Porting_details</members>
+        <members>UPC_Quote_Document_Mappings.Private_Customer</members>
+        <members>UPC_Quote_Document_Mappings.Property_Manager</members>
+        <members>UPC_Quote_Document_Mappings.Provider</members>
+        <members>UPC_Quote_Document_Mappings.Quarterly_invoice</members>
+        <members>UPC_Quote_Document_Mappings.Radio_Stations</members>
+        <members>UPC_Quote_Document_Mappings.Self_Installation</members>
+        <members>UPC_Quote_Document_Mappings.Service_Header</members>
+        <members>UPC_Quote_Document_Mappings.Service_Level_Basic</members>
+        <members>UPC_Quote_Document_Mappings.Service_available</members>
+        <members>UPC_Quote_Document_Mappings.Start_Up_Discount</members>
+        <members>UPC_Quote_Document_Mappings.Support_Level_5x11</members>
+        <members>UPC_Quote_Document_Mappings.TV_Option</members>
+        <members>UPC_Quote_Document_Mappings.TV_Socket_Available</members>
+        <members>UPC_Quote_Document_Mappings.TV_Socket_Unavailable</members>
+        <members>UPC_Quote_Document_Mappings.Telephone_Numbers_Incl</members>
+        <members>UPC_Quote_Document_Mappings.Unlimited_calls_International</members>
+        <members>UPC_Quote_Document_Mappings.Voice_options</members>
+        <members>UPC_Quote_Document_Mappings.Year</members>
+        <members>UPC_Quote_Document_Mappings.Yearly_invoice</members>
+        <members>UPC_Quote_Document_Mappings.Years</members>
+        <members>UPC_Quote_Document_Mappings.Yes</members>
+        <members>UPC_Quote_Document_Mappings.eBanking</members>
+        <members>UPC_Quote_Document_Mappings.eMail_Bill</members>
+        <members>UPC_Related_List_Component_Setting.ACCCreation_MobileAdmin</members>
+        <members>UPC_Related_List_Component_Setting.AccountDataForAcc</members>
+        <members>UPC_Related_List_Component_Setting.AccountDataForAcc_BDTV_Taifun</members>
+        <members>UPC_Related_List_Component_Setting.AccountDataForAcc_Fulfillment</members>
+        <members>UPC_Related_List_Component_Setting.ApexTestKey</members>
+        <members>UPC_Related_List_Component_Setting.BDTV_Recalculated_MySport_SLIs</members>
+        <members>UPC_Related_List_Component_Setting.BPEfon_MainCommercialContact</members>
+        <members>UPC_Related_List_Component_Setting.BPEfon_TaifunSap_Service</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Bundle_Del</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Bundle_Sub</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Internet_Del</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Internet_Sub</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Voice_Del</members>
+        <members>UPC_Related_List_Component_Setting.BP_ServiceCreation_Voice_Sub</members>
+        <members>UPC_Related_List_Component_Setting.CallForwardingOEData</members>
+        <members>UPC_Related_List_Component_Setting.CaseAccountCreate_Sites</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Account</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Amounts</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Details</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Period</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Responsible</members>
+        <members>UPC_Related_List_Component_Setting.CaseCreditNote_Service</members>
+        <members>UPC_Related_List_Component_Setting.CaseMobileOrderClosing_AccountDetails</members>
+        <members>UPC_Related_List_Component_Setting.CaseMobileOrderClosing_ContactDetails</members>
+        <members>UPC_Related_List_Component_Setting.CaseMobileOrderClosing_OppDetails</members>
+        <members>UPC_Related_List_Component_Setting.CaseMobileOrderClosing_Subscriptions</members>
+        <members>UPC_Related_List_Component_Setting.CaseMobileOrderClosing_Tf_AccountDetails</members>
+        <members>UPC_Related_List_Component_Setting.CaseServiceCreation_Commercial</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunBM_AccessPoint</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_Account</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_BPTarifPlan</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_BillingSpec</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_Commercials</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_Contract</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_MobileContract</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_NonMobileContract</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunCustomer_OpportunityFiles</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_BillingSpec</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_ChildService_SLI</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_CommercialService</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_CommercialService_BDTV</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_General</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_ServiceCreation_DLI</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_ServiceCreation_Promo</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_ServiceCreation_SLI</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_ServiceRelationship</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifunService_Site</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifun_MainCommercialContact</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifun_MainTechnicalContact</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifun_PrimaryContactRoleLanguage</members>
+        <members>UPC_Related_List_Component_Setting.CaseTaifun_Site</members>
+        <members>UPC_Related_List_Component_Setting.CaseTermination_AccountId</members>
+        <members>UPC_Related_List_Component_Setting.CaseTermination_SAPNumbers</members>
+        <members>UPC_Related_List_Component_Setting.CaseTermination_Subscriptions</members>
+        <members>UPC_Related_List_Component_Setting.CaseTopnetOrder_AccountInterface</members>
+        <members>UPC_Related_List_Component_Setting.CaseTopnetOrder_OpportunityDetails</members>
+        <members>UPC_Related_List_Component_Setting.CaseTopnetOrder_ProductInformation</members>
+        <members>UPC_Related_List_Component_Setting.CaseTopnetOrder_Site</members>
+        <members>UPC_Related_List_Component_Setting.CustomerDataForAcc</members>
+        <members>UPC_Related_List_Component_Setting.DeviceNumberOEData</members>
+        <members>UPC_Related_List_Component_Setting.DigiPhoneAddons</members>
+        <members>UPC_Related_List_Component_Setting.InstallationContactFromService_BDTV</members>
+        <members>UPC_Related_List_Component_Setting.InstallationContactFromService_BIFPBP</members>
+        <members>UPC_Related_List_Component_Setting.MainCommercialContact</members>
+        <members>UPC_Related_List_Component_Setting.NumberPortingOEData</members>
+        <members>UPC_Related_List_Component_Setting.NumberPortingServiceData</members>
+        <members>UPC_Related_List_Component_Setting.OppReferenceNum_TaifunServiceCreation</members>
+        <members>UPC_Related_List_Component_Setting.OpportunityNotes</members>
+        <members>UPC_Related_List_Component_Setting.RelatedDocuments</members>
+        <members>UPC_Related_List_Component_Setting.ServiceData_BDTV_Taifun</members>
+        <members>UPC_Related_List_Component_Setting.ServicesForSubscription</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddress</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddressOEData</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddressShippingAddress_Mobile</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddress_BDTV</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddress_BDTV1</members>
+        <members>UPC_Related_List_Component_Setting.ShippingAddress_FromService</members>
+        <members>UPC_Related_List_Component_Setting.Taifun_BDTV_AccountInterface</members>
+        <members>UPC_Termination_Document_Mappings.Primary_Contact_DS</members>
+        <members>UPC_Termination_Document_Mappings.Termination_Fee</members>
+        <members>UPC_Termination_Document_Mappings.UPC_Doc_Issue_Date</members>
+        <members>UPC_Termination_Document_Mappings.UPC_Service_Cancellation_Date</members>
+        <members>UPC_Termination_Document_Mappings.UPC_Service_Deactivation_Date</members>
+        <members>csbb__Observer.CombineAndSaveAddToBasketObserver</members>
+        <members>csbb__Observer.RelocationAfterAdvancedClone</members>
+        <members>csbb__Observer.RelocationSelectOffer</members>
+        <members>csdiscounts__Observer.Discount_Observer</members>
+        <members>csdiscounts__Observer.Discount_Volume_Observer</members>
+        <members>csordcb__Observer.cscrmObserverTelcoAttachProcess</members>
+        <members>csordcb__Observer.cscrmObserverTelcoProcessBIFP</members>
+        <members>csutil__Message_Subscription.CombineAndSaveDiscountObserver</members>
+        <members>csutil__Message_Subscription.ProductConfigurationEvent</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountContactRelation</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>AddOn_Dependency__c</members>
+        <members>AddressCheckEndpoints__c</members>
+        <members>Asset</members>
+        <members>AssetRelationship</members>
+        <members>AssistantProgress</members>
+        <members>CSPOFA__Orchestration_Process_Template__c</members>
+        <members>CSPOFA__Orchestration_Process__c</members>
+        <members>CSPOFA__Orchestrator_Constants__c</members>
+        <members>CS_Basket_Snapshot_Settings__c</members>
+        <members>CS_Basket_Snapshot_Transactional__c</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
+        <members>ChatterActivity</members>
+        <members>CollaborationGroup</members>
+        <members>CollaborationGroupMember</members>
+        <members>Contact</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>CreditCheck_Endpoint__c</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>FootPrintCheckEndpoints__c</members>
+        <members>ForecastingAdjustment</members>
+        <members>ForecastingCategoryMapping</members>
+        <members>ForecastingOwnerAdjustment</members>
+        <members>ForecastingQuota</members>
+        <members>ForecastingTypeToCategory</members>
+        <members>Idea</members>
+        <members>Knowledge__kav</members>
+        <members>Lead</members>
+        <members>LinkedArticle</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>NetworkMember</members>
+        <members>No_Triggers__c</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>OpportunityTeamMember</members>
+        <members>PartnerRole</members>
+        <members>Permaleads_Endpoint__c</members>
+        <members>Permaleads_Visited_URL__mdt</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>Product2</members>
+        <members>ProfileSkill</members>
+        <members>ProfileSkillEndorsement</members>
+        <members>ProfileSkillUser</members>
+        <members>QuickText</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>Recommendation</members>
+        <members>RecordAction</members>
+        <members>RequestsForAccessSIQ</members>
+        <members>Scorecard</members>
+        <members>ScorecardAssociation</members>
+        <members>ScorecardMetric</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>SocialPost</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>Threshold_addresses__c</members>
+        <members>Topic</members>
+        <members>TopicAssignment</members>
+        <members>UPC_ADBASE__c</members>
+        <members>UPC_Account_Interfaces__c</members>
+        <members>UPC_Address_Contact__c</members>
+        <members>UPC_Basket_Locking_Settings__c</members>
+        <members>UPC_Clean_Order_Sheet_Value__mdt</members>
+        <members>UPC_Credit_Note__c</members>
+        <members>UPC_Decomposition_Process_Settings__c</members>
+        <members>UPC_Document_Queries__mdt</members>
+        <members>UPC_Error_Log__c</members>
+        <members>UPC_ExternalCompanyData__c</members>
+        <members>UPC_ExternalContact__c</members>
+        <members>UPC_ExternalDataInsight__c</members>
+        <members>UPC_General_Document_Values__mdt</members>
+        <members>UPC_Main_Competitors__c</members>
+        <members>UPC_Opportunity_Contact_Role__c</members>
+        <members>UPC_Opportunity_Site__c</members>
+        <members>UPC_Order_Confirmation_Email_Setting__c</members>
+        <members>UPC_Price_Item_Price_Item_Association__c</members>
+        <members>UPC_Product_Advantages_Email_Mapping__mdt</members>
+        <members>UPC_Quote_Document_Language_Settings__mdt</members>
+        <members>UPC_Quote_Document_Line_Item_Mappings__mdt</members>
+        <members>UPC_Quote_Document_Mappings__mdt</members>
+        <members>UPC_Quote_Renaming_Options__c</members>
+        <members>UPC_Quote_Settings__c</members>
+        <members>UPC_Related_List_Component_Setting__mdt</members>
+        <members>UPC_Service_Credit_Note__c</members>
+        <members>UPC_Settings__c</members>
+        <members>UPC_Site_Address__c</members>
+        <members>UPC_Site_Contacts__c</members>
+        <members>UPC_Site__c</members>
+        <members>UPC_Termination_Document_Mappings__mdt</members>
+        <members>User</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkThanks</members>
+        <members>Zefix_endpoint__c</members>
+        <members>csbb__Product_Configuration_Request__c</members>
+        <members>cscfga__AttributeField__c</members>
+        <members>cscfga__Attribute_Definition__c</members>
+        <members>cscfga__Attribute__c</members>
+        <members>cscfga__Configuration_Offer__c</members>
+        <members>cscfga__Product_Basket__c</members>
+        <members>cscfga__Product_Configuration__c</members>
+        <members>cscfga__Product_Definition__c</members>
+        <members>csconta__Billing_Account__c</members>
+        <members>csconta__Contract__c</members>
+        <members>cscrm__Address__c</members>
+        <members>cscrm__Site__c</members>
+        <members>csord__Order__c</members>
+        <members>csord__Service_Line_Item__c</members>
+        <members>csord__Service__c</members>
+        <members>csord__Solution__c</members>
+        <members>csord__Subscription_Line_Item__c</members>
+        <members>csord__Subscription_Line_Item_c</members>
+        <members>csord__Subscription__c</members>
+        <members>csordtelcoa__Orders_Subscriptions_Options__c</members>
+        <members>csordtelcoa__Subscr_MACDProductBasket_Association__c</members>
+        <members>cspmb__Add_On_Price_Item__c</members>
+        <members>cspmb__Price_Item_Add_On_Price_Item_Association__c</members>
+        <members>cspmb__Price_Item__c</members>
+        <members>cspmb__Rate_Card__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account-en_US</members>
+        <members>AddOn_Dependency__c-en_US</members>
+        <members>AddressCheckEndpoints__c-en_US</members>
+        <members>CSCAP__ClickApprove_Approver__c-en_US</members>
+        <members>CSCAP__ClickApprove_Constants__c-en_US</members>
+        <members>CSCAP__ClickApprove_Contact_Role__c-en_US</members>
+        <members>CSCAP__ClickApprove_Document_Keywords__c-en_US</members>
+        <members>CSCAP__Click_Approve_Setting__c-en_US</members>
+        <members>CSCAP__Customer_Approval__c-en_US</members>
+        <members>CSCAP__Variation_Request__c-en_US</members>
+        <members>CSPOFA__Archiving_Task__c-en_US</members>
+        <members>CSPOFA__Compatibility_Settings__c-en_US</members>
+        <members>CSPOFA__Conditional_Step_Criteria_Template__c-en_GB</members>
+        <members>CSPOFA__Conditional_Step_Criteria__c-en_GB</members>
+        <members>CSPOFA__Data_Link__c-en_GB</members>
+        <members>CSPOFA__Event__c-en_US</members>
+        <members>CSPOFA__Holiday_Date__c-en_GB</members>
+        <members>CSPOFA__MC_Report__c-en_GB</members>
+        <members>CSPOFA__MC_Snapshot_Execution__c-en_GB</members>
+        <members>CSPOFA__MC_Snapshot__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Notification__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Process_Template__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Process__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Step_Dependency_Template__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Step_Dependency__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Step_History__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Step_Template__c-en_GB</members>
+        <members>CSPOFA__Orchestration_Step__c-en_GB</members>
+        <members>CSPOFA__Orchestrator_Config__c-en_GB</members>
+        <members>CSPOFA__Orchestrator_Constants__c-en_US</members>
+        <members>CSPOFA__POF_Callout_Instruction__c-en_GB</members>
+        <members>CSPOFA__Step_Class__c-en_GB</members>
+        <members>CSPOFA__VisualiserSettings__c-en_US</members>
+        <members>CSPOFA__Visualiser_Layout__c-en_GB</members>
+        <members>CS_Basket_Snapshot_Settings__c-en_US</members>
+        <members>CS_Basket_Snapshot_Transactional__c-en_US</members>
+        <members>CreditCheck_Endpoint__c-en_US</members>
+        <members>FootPrintCheckEndpoints__c-en_US</members>
+        <members>GetIP__GetIP_Subnet_Request__c-en_US</members>
+        <members>GetIP__GetIP_Subnet__c-en_US</members>
+        <members>GetIP__Service__c-en_US</members>
+        <members>GetIP__Subnet_Import__c-en_US</members>
+        <members>No_Triggers__c-en_US</members>
+        <members>Permaleads_Endpoint__c-en_US</members>
+        <members>Permaleads_Visited_URL__mdt-en_US</members>
+        <members>Threshold_addresses__c-en_US</members>
+        <members>UPC_ADBASE__c-en_US</members>
+        <members>UPC_Account_Interfaces__c-en_US</members>
+        <members>UPC_Address_Contact__c-en_US</members>
+        <members>UPC_Basket_Locking_Settings__c-en_US</members>
+        <members>UPC_Clean_Order_Sheet_Value__mdt-en_US</members>
+        <members>UPC_Credit_Note__c-en_US</members>
+        <members>UPC_Decomposition_Process_Settings__c-en_US</members>
+        <members>UPC_Document_Queries__mdt-en_US</members>
+        <members>UPC_General_Document_Values__mdt-en_US</members>
+        <members>UPC_Main_Competitors__c-en_US</members>
+        <members>UPC_Opportunity_Contact_Role__c-en_US</members>
+        <members>UPC_Opportunity_Site__c-en_US</members>
+        <members>UPC_Order_Confirmation_Email_Setting__c-en_US</members>
+        <members>UPC_Product_Advantages_Email_Mapping__mdt-en_US</members>
+        <members>UPC_Quote_Document_Language_Settings__mdt-en_US</members>
+        <members>UPC_Quote_Document_Line_Item_Mappings__mdt-en_US</members>
+        <members>UPC_Quote_Document_Mappings__mdt-en_US</members>
+        <members>UPC_Quote_Renaming_Options__c-en_US</members>
+        <members>UPC_Quote_Settings__c-en_US</members>
+        <members>UPC_Related_List_Component_Setting__mdt-en_US</members>
+        <members>UPC_Settings__c-en_US</members>
+        <members>UPC_Site_Address__c-en_US</members>
+        <members>UPC_Site_Contacts__c-en_US</members>
+        <members>UPC_Site__c-en_US</members>
+        <members>UPC_Termination_Document_Mappings__mdt-en_US</members>
+        <members>Zefix_endpoint__c-en_US</members>
+        <members>csbb__Callout_Chaining__c-en_US</members>
+        <members>csbb__Callout_Configuration_Mapper__c-en_US</members>
+        <members>csbb__Callout_Data_Shortcut__c-en_US</members>
+        <members>csbb__Callout_Product_Result__c-en_US</members>
+        <members>csbb__Callout_Result__c-en_US</members>
+        <members>csbb__Callout_Service_Method__c-en_US</members>
+        <members>csbb__Callout_Service__c-en_US</members>
+        <members>csbb__Callout_Template__c-en_US</members>
+        <members>csbb__Configuration_Association__c-en_US</members>
+        <members>csbb__Configuration__c-en_US</members>
+        <members>csbb__No_Triggers__c-en_US</members>
+        <members>csbb__Observer__mdt-en_US</members>
+        <members>csbb__Product_Configuration_Request__c-en_US</members>
+        <members>cscfga__Action__c-en_US</members>
+        <members>cscfga__Attribute_Definition_Group__c-en_US</members>
+        <members>cscfga__Attribute_Definition_Template__c-en_US</members>
+        <members>cscfga__Attribute_Definition__c-en_US</members>
+        <members>cscfga__Attribute_Field_Definition__c-en_US</members>
+        <members>cscfga__Attribute_Field__c-en_US</members>
+        <members>cscfga__Attribute_Group_Template__c-en_US</members>
+        <members>cscfga__Attribute_Screen_Section_Association__c-en_US</members>
+        <members>cscfga__Attribute__c-en_US</members>
+        <members>cscfga__Attributes_Template__c-en_US</members>
+        <members>cscfga__Available_Product_Option__c-en_US</members>
+        <members>cscfga__Available_Select_Option__c-en_US</members>
+        <members>cscfga__Button__c-en_US</members>
+        <members>cscfga__CfgPkgConfig__c-en_US</members>
+        <members>cscfga__Configuration_Offer__c-en_US</members>
+        <members>cscfga__Configuration_Screen__c-en_US</members>
+        <members>cscfga__Date_Range__c-en_US</members>
+        <members>cscfga__Eligibility_Criterion__c-en_US</members>
+        <members>cscfga__Eligibility_Rule__c-en_US</members>
+        <members>cscfga__Field_Mapping__c-en_US</members>
+        <members>cscfga__Import_Batch_Item__c-en_US</members>
+        <members>cscfga__Import_Batch__c-en_US</members>
+        <members>cscfga__Json_Settings__c-en_US</members>
+        <members>cscfga__Log_Entry__c-en_US</members>
+        <members>cscfga__Lookup_Config__c-en_US</members>
+        <members>cscfga__Lookup_Criterion__c-en_US</members>
+        <members>cscfga__Lookup_Query__c-en_US</members>
+        <members>cscfga__OM_Query__c-en_US</members>
+        <members>cscfga__Object_Mapping__c-en_US</members>
+        <members>cscfga__Offer_Category_Association__c-en_US</members>
+        <members>cscfga__Predicate__c-en_US</members>
+        <members>cscfga__Product_Basket__c-en_US</members>
+        <members>cscfga__Product_Bundle__c-en_US</members>
+        <members>cscfga__Product_Category__c-en_US</members>
+        <members>cscfga__Product_Configuration__c-en_US</members>
+        <members>cscfga__Product_Definition_Version__c-en_US</members>
+        <members>cscfga__Product_Definition__c-en_US</members>
+        <members>cscfga__Profile_Permission__c-en_US</members>
+        <members>cscfga__Rule_Action_Association__c-en_US</members>
+        <members>cscfga__Rule_Predicate_Association__c-en_US</members>
+        <members>cscfga__Rule__c-en_US</members>
+        <members>cscfga__Screen_Flow_Product_Association__c-en_US</members>
+        <members>cscfga__Screen_Flow__c-en_US</members>
+        <members>cscfga__Screen_Section__c-en_US</members>
+        <members>cscfga__Select_Option__c-en_US</members>
+        <members>cscfga__Select_Options_Template__c-en_US</members>
+        <members>cscfga__Template_Offer_Basket_Association__c-en_US</members>
+        <members>cscfga__User_Session_Configuration__c-en_US</members>
+        <members>cscfga__User_Session__c-en_US</members>
+        <members>cscfga__compatibility__c-en_US</members>
+        <members>cscfglint__Lint_Plugin__c-en_US</members>
+        <members>cscfglint__Lint_Session__c-en_US</members>
+        <members>csconta__Account_Frame_Agreement_Association__c-en_US</members>
+        <members>csconta__Agreement_Milestone__c-en_US</members>
+        <members>csconta__Billing_Account__c-en_US</members>
+        <members>csconta__Contract_Offer_Association__c-en_US</members>
+        <members>csconta__Contract__c-en_US</members>
+        <members>csconta__Frame_Agreement__c-en_US</members>
+        <members>cscrm__Account_Address_Relationship__c-en_US</members>
+        <members>cscrm__Account_Contact_Relationship__c-en_US</members>
+        <members>cscrm__Address__c-en_US</members>
+        <members>cscrm__Contact_Address_Relationship__c-en_US</members>
+        <members>cscrm__Contact_Relationship__c-en_US</members>
+        <members>cscrm__Relation__c-en_US</members>
+        <members>cscrm__Settings__c-en_US</members>
+        <members>csdg__Actionable__c-en_US</members>
+        <members>csdg__Config_Type__c-en_US</members>
+        <members>csdg__Criteria__c-en_US</members>
+        <members>csdg__Data_Source__c-en_US</members>
+        <members>csdg__DocConfig_Datasource__c-en_US</members>
+        <members>csdg__Doc_Config__c-en_US</members>
+        <members>csdg__Pack_DocConfig__c-en_US</members>
+        <members>csdg__Pack__c-en_US</members>
+        <members>csdg__Sync_History__c-en_US</members>
+        <members>csdiscounts__Discount_Configuration__c-en_US</members>
+        <members>csdiscounts__Observer__mdt-en_US</members>
+        <members>csexpimp1__CSOM_Impex_Config__c-en_US</members>
+        <members>csexpimp1__Process_Response__c-en_US</members>
+        <members>csoe__Non_Commercial_Product_Association__c-en_US</members>
+        <members>csoe__Non_Commercial_Schema__c-en_US</members>
+        <members>csoe__OE_Configuration__c-en_US</members>
+        <members>csoe__OE_Settings__c-en_US</members>
+        <members>csoe__Observer__mdt-en_US</members>
+        <members>csog__OGCfg__c-en_US</members>
+        <members>csord__Asset__c-en_US</members>
+        <members>csord__Deliverable_Line_Item__c-en_US</members>
+        <members>csord__Deliverable__c-en_US</members>
+        <members>csord__Hub__c-en_US</members>
+        <members>csord__Order_Adhoc_Line_Item__c-en_US</members>
+        <members>csord__Order_Group__c-en_US</members>
+        <members>csord__Order_Line_Item__c-en_US</members>
+        <members>csord__Order_Options__c-en_US</members>
+        <members>csord__Order_Product__c-en_US</members>
+        <members>csord__Order_Request__c-en_US</members>
+        <members>csord__Order_Subscription_Association__c-en_US</members>
+        <members>csord__Order__c-en_US</members>
+        <members>csord__Registered_Module__c-en_US</members>
+        <members>csord__Service_Line_Item__c-en_US</members>
+        <members>csord__Service__c-en_US</members>
+        <members>csord__Solution__c-en_US</members>
+        <members>csord__Subscription_Line_Item__c-en_US</members>
+        <members>csord__Subscription__c-en_US</members>
+        <members>csordcb__Hub_Settings__c-en_US</members>
+        <members>csordcb__No_Triggers__c-en_US</members>
+        <members>csordcb__Observer__mdt-en_US</members>
+        <members>csordcb__Orders_And_Subscriptions_Settings__c-en_US</members>
+        <members>csordcb__Temp_Test_Data__c-en_US</members>
+        <members>csordtelcoa__Attribute_Field_Service_Line_Item_Map__c-en_US</members>
+        <members>csordtelcoa__Change_Types__c-en_US</members>
+        <members>csordtelcoa__Orders_Subscriptions_Options__c-en_US</members>
+        <members>csordtelcoa__Orders_and_Subscriptions_Option__mdt-en_US</members>
+        <members>csordtelcoa__Service_Fields_MACD_Mapping__c-en_US</members>
+        <members>csordtelcoa__Subscr_MACDProductBasket_Association__c-en_US</members>
+        <members>csordtelcoa__Subscription_MACDOpportunity_Association__c-en_US</members>
+        <members>cspl__PLReportSettings__c-en_US</members>
+        <members>cspl__P_L_Observer__mdt-en_US</members>
+        <members>cspl__Report_Configuration__c-en_US</members>
+        <members>cspmb__Add_On_Price_Item__c-en_US</members>
+        <members>cspmb__Authorization_Level__c-en_US</members>
+        <members>cspmb__Commercial_Product_Material_Group_Assoc__c-en_US</members>
+        <members>cspmb__Credit_Fund_Consumer__c-en_US</members>
+        <members>cspmb__Credit_Fund_Contribution__c-en_US</members>
+        <members>cspmb__Credit_Fund_Definition__c-en_US</members>
+        <members>cspmb__Credit_Fund__c-en_US</members>
+        <members>cspmb__Discount_Association__c-en_US</members>
+        <members>cspmb__Discount_Level__c-en_US</members>
+        <members>cspmb__Discount_Threshold__c-en_US</members>
+        <members>cspmb__Feature__c-en_US</members>
+        <members>cspmb__Material_Group_Material_Association__c-en_US</members>
+        <members>cspmb__Material_Group__c-en_US</members>
+        <members>cspmb__Material__c-en_US</members>
+        <members>cspmb__Price_Item_Add_On_Price_Item_Association__c-en_US</members>
+        <members>cspmb__Price_Item_Feature_Association__c-en_US</members>
+        <members>cspmb__Price_Item_Group_Association__c-en_US</members>
+        <members>cspmb__Price_Item_Pricing_Rule_Association__c-en_US</members>
+        <members>cspmb__Price_Item_Rate_Card_Association__c-en_US</members>
+        <members>cspmb__Price_Item__c-en_US</members>
+        <members>cspmb__Price_Override__c-en_US</members>
+        <members>cspmb__Pricing_Element_Type__c-en_US</members>
+        <members>cspmb__Pricing_Element__c-en_US</members>
+        <members>cspmb__Pricing_Rule_Group_Rule_Association__c-en_US</members>
+        <members>cspmb__Pricing_Rule_Group__c-en_US</members>
+        <members>cspmb__Pricing_Rule__c-en_US</members>
+        <members>cspmb__Rate_Card_Line__c-en_US</members>
+        <members>cspmb__Rate_Card__c-en_US</members>
+        <members>cssvc1__Service_Console_Component_Config__c-en_US</members>
+        <members>cstelcobb__No_Triggers__c-en_US</members>
+        <members>csutil__Async_Task_Data__c-en_US</members>
+        <members>csutil__CSUtilConfig__c-en_US</members>
+        <members>csutil__JSON_Data__c-en_US</members>
+        <members>csutil__Json_Settings__c-en_US</members>
+        <members>csutil__Message_Subscription__mdt-en_US</members>
+        <members>csutil__Package_Info__c-en_US</members>
+        <members>csutil__RestRoutes__mdt-en_US</members>
+        <members>leadScoring__LeadScoringRule__c-en_US</members>
+        <members>sortablegrid__SDGDefaults__mdt-en_US</members>
+        <members>sortablegrid__SDG_Action__c-en_US</members>
+        <members>sortablegrid__SDG_Field__c-en_US</members>
+        <members>sortablegrid__SDG__c-en_US</members>
+        <members>sortablegrid__sdg_Preferences__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>CallPoint</members>
+        <members>Click_Approve</members>
+        <members>Partner_Portal</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>AddOn_Dependency__c</members>
+        <members>CSPOFA__Orchestration_Process__c</members>
+        <members>CSPOFA__Step_Class__c</members>
+        <members>CS_Basket_Snapshot_Transactional__c</members>
+        <members>Permaleads_Test</members>
+        <members>Product_Design_Studio</members>
+        <members>UPC_ADBASE__c</members>
+        <members>UPC_Account_Interfaces__c</members>
+        <members>UPC_Address_Contact__c</members>
+        <members>UPC_Credit_Note__c</members>
+        <members>UPC_Opportunity_Site__c</members>
+        <members>UPC_Site_Contacts__c</members>
+        <members>UPC_Site__c</members>
+        <members>csbb__Callout_Result__c</members>
+        <members>csbb__Callout_Template__c</members>
+        <members>csbb__Configuration_Association__c</members>
+        <members>csbb__Configuration__c</members>
+        <members>cscfga__Attribute_Definition__c</members>
+        <members>cscfga__Attribute_Field_Definition__c</members>
+        <members>cscfga__Attribute_Field__c</members>
+        <members>cscfga__Attribute__c</members>
+        <members>cscfga__Lookup_Query__c</members>
+        <members>cscfga__Product_Basket__c</members>
+        <members>cscfga__Product_Configuration__c</members>
+        <members>csconta__Billing_Account__c</members>
+        <members>cscrm__Address__c</members>
+        <members>csdiscounts__Discount_Configuration__c</members>
+        <members>csoe__Non_Commercial_Product_Association__c</members>
+        <members>csoe__Non_Commercial_Schema__c</members>
+        <members>csoe__OE_Configuration__c</members>
+        <members>csord__Order__c</members>
+        <members>csord__Registered_Module__c</members>
+        <members>csord__Service__c</members>
+        <members>csord__Subscription__c</members>
+        <members>cspmb__Add_On_Price_Item__c</members>
+        <members>cspmb__Discount_Association__c</members>
+        <members>cspmb__Discount_Level__c</members>
+        <members>cspmb__Price_Item_Add_On_Price_Item_Association__c</members>
+        <members>cspmb__Price_Item__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CSCRM_BIFP_DE_Documents</members>
+        <members>CSCRM_BIFP_DE_Documents/SSh_BusinessKombi_BusinessInternet_042019_DE.pdf</members>
+        <members>CSCRM_BIFP_DE_Documents/b2b_AGB_upc_business_DE.pdf</members>
+        <members>CSCRM_BIFP_EN_Documents</members>
+        <members>CSCRM_BIFP_EN_Documents/SSh_BusinessKombi_BusinessInternet_042019_EN.pdf</members>
+        <members>CSCRM_BIFP_EN_Documents/b2b_AGB_upc_business_EN.pdf</members>
+        <members>CSCRM_BIFP_FR_Documents</members>
+        <members>CSCRM_BIFP_FR_Documents/SSh_BusinessKombi_BusinessInternet_042019_FR.pdf</members>
+        <members>CSCRM_BIFP_FR_Documents/b2b_AGB_upc_business_FR.pdf</members>
+        <members>CSCRM_BIFP_IT_Documents</members>
+        <members>CSCRM_BIFP_IT_Documents/SSh_BusinessKombi_BusinessInternet_042019_IT.pdf</members>
+        <members>CSCRM_BIFP_IT_Documents/b2b_AGB_upc_business_IT.pdf</members>
+        <members>CSCRM_BM_DE_Documents</members>
+        <members>CSCRM_BM_DE_Documents/Fair_Use_Policy_Mobile_1118_DE.pdf</members>
+        <members>CSCRM_BM_DE_Documents/SSh_Business_Mobil_032019_DE.pdf</members>
+        <members>CSCRM_BM_DE_Documents/b2b_AGB_business_mobile_upc_business_de.pdf</members>
+        <members>CSCRM_BM_EN_Documents</members>
+        <members>CSCRM_BM_EN_Documents/Fair_Use_Policy_Mobile_1118_EN.pdf</members>
+        <members>CSCRM_BM_EN_Documents/SSh_Business_Mobil_032019_EN.pdf</members>
+        <members>CSCRM_BM_EN_Documents/b2b_AGB_business_mobile_upc_business_en.pdf</members>
+        <members>CSCRM_BM_FR_Documents</members>
+        <members>CSCRM_BM_FR_Documents/Fair_Use_Policy_Mobile_1118_FR.pdf</members>
+        <members>CSCRM_BM_FR_Documents/SSh_Business_Mobil_032019_FR.pdf</members>
+        <members>CSCRM_BM_FR_Documents/b2b_AGB_business_mobile_upc_business_fr.pdf</members>
+        <members>CSCRM_BM_IT_Documents</members>
+        <members>CSCRM_BM_IT_Documents/Fair_Use_Policy_Mobile_1118_IT.pdf</members>
+        <members>CSCRM_BM_IT_Documents/SSh_Business_Mobil_032019_IT.pdf</members>
+        <members>CSCRM_BM_IT_Documents/b2b_AGB_business_mobile_upc_business_it.pdf</members>
+        <members>CSCRM_BP_EN_Documents</members>
+        <members>Communities_Shared_Document_Folder</members>
+        <members>Communities_Shared_Document_Folder/upc_business_multicolored_logo_small_jpg.jpg</members>
+        <members>SharedDocuments</members>
+        <members>SharedDocuments/Email_Signature.png</members>
+        <members>SharedDocuments/UPC_Business_Logo.png</members>
+        <members>SharedDocuments/UPC_Generic_Letterhead_new.jpeg</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>Account.Account</members>
+        <members>Account.UPC_Account_Duplicate_Rule</members>
+        <members>Contact.Standard_Contact_Rules</members>
+        <members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
+        <members>Contact.UPC_Contact_Duplicate_Rule</members>
+        <members>Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts</members>
+        <members>Lead.UPC_Lead_Duplicate_Rule</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>CSCRM_Email_Templates</members>
+        <members>CSCRM_Email_Templates/Send_PIN_Email_Template</members>
+        <members>CSCRM_Email_Templates/UPC_Approved_Owner_Email</members>
+        <members>CSCRM_Email_Templates/UPC_Credit_Notes_Approval</members>
+        <members>CSCRM_Email_Templates/UPC_Credit_Notes_Approval_Rejected</members>
+        <members>CSCRM_Email_Templates/UPC_DE_Credit_Notes_Confiirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_DE_New_Topnet_Order_Info</members>
+        <members>CSCRM_Email_Templates/UPC_DE_Order_Confirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_DE_Quote_Email</members>
+        <members>CSCRM_Email_Templates/UPC_EN_Credit_Notes_Confiirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_EN_New_Topnet_Order_Info</members>
+        <members>CSCRM_Email_Templates/UPC_EN_Order_Confirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_EN_Quote_Email</members>
+        <members>CSCRM_Email_Templates/UPC_FR_Credit_Notes_Confiirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_FR_New_Topnet_Order_Info</members>
+        <members>CSCRM_Email_Templates/UPC_FR_Order_Confirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_FR_Quote_Email</members>
+        <members>CSCRM_Email_Templates/UPC_IT_Credit_Notes_Confiirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_IT_New_Topnet_Order_Info</members>
+        <members>CSCRM_Email_Templates/UPC_IT_Order_Confirmation_Email</members>
+        <members>CSCRM_Email_Templates/UPC_IT_Quote_Email</members>
+        <members>CSCRM_Email_Templates/UPC_Rejected_Owner_Email</members>
+        <members>unfiled$public</members>
+        <members>unfiled$public/CommunityChangePasswordEmailTemplate</members>
+        <members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
+        <members>unfiled$public/CommunityLockoutEmailTemplate</members>
+        <members>unfiled$public/CommunityVerificationEmailTemplate</members>
+        <members>unfiled$public/CommunityWelcomeEmailTemplate</members>
+        <members>unfiled$public/ContactFollowUpSAMPLE</members>
+        <members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
+        <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
+        <members>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</members>
+        <members>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewCommentSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE2</members>
+        <members>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</members>
+        <members>unfiled$public/Sample_CallNoAnswer</members>
+        <members>unfiled$public/Sample_CustomerInterest</members>
+        <members>unfiled$public/Sample_DealClosed</members>
+        <members>unfiled$public/Sample_GreatMeetingYou</members>
+        <members>unfiled$public/Sample_HappyBirthday</members>
+        <members>unfiled$public/Sample_MeetOnsite</members>
+        <members>unfiled$public/Sample_NewAccountManager</members>
+        <members>unfiled$public/Sample_NextSteps</members>
+        <members>unfiled$public/Sample_OutofOffice</members>
+        <members>unfiled$public/Sample_Promotion</members>
+        <members>unfiled$public/Sample_Reconnecting</members>
+        <members>unfiled$public/Sample_ScheduleMeeting</members>
+        <members>unfiled$public/UPC_Account_not_in_Zefix</members>
+        <members>unfiled$public/UPC_Auto_Response_Rule_Case_BCSE</members>
+        <members>unfiled$public/UPC_BSCE_Case_escalating</members>
+        <members>unfiled$public/UPC_Opportunity_Approved_Alert</members>
+        <members>unfiled$public/UPC_Remedy_Case_Sending</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>Account_Record_Page</members>
+        <members>Account_Record_Page1</members>
+        <members>Account_Record_Page11</members>
+        <members>BDTV_Provisioning_Taifun_Service_Creation</members>
+        <members>BP_Efon_Service_Creation</members>
+        <members>BP_Provisioning_Efron_Entry</members>
+        <members>BP_Provisioning_SF_ServiceClose</members>
+        <members>BP_Provisioning_Taifun_Service_Creation</members>
+        <members>Campaign_Record_Page</members>
+        <members>Case_Record_Page</members>
+        <members>Contact_Record_Page</members>
+        <members>Contact_Record_Page1</members>
+        <members>Lead_Record_Page</members>
+        <members>LightningSalesConsole_UtilityBar</members>
+        <members>LightningService_UtilityBar</members>
+        <members>Opportunity_Record_Page</members>
+        <members>Opportunity_Record_Page1</members>
+        <members>Site_Record_Page</members>
+        <members>UPC_Address_Record_Page</members>
+        <members>UPC_BCSE_Case_Record_Page</members>
+        <members>UPC_BCSE_Console_Homepage</members>
+        <members>UPC_BCSE_Service_Console_UtilityBar</members>
+        <members>UPC_Backoffice_Home_Page</members>
+        <members>UPC_Business_UtilityBar</members>
+        <members>UPC_External_Data_Sources_UtilityBar</members>
+        <members>UPC_Standard_Home_Page</members>
+        <members>cscrmCaseCreditNoteCreation</members>
+        <members>cscrmCasePortingordertoACC</members>
+        <members>cscrmCaseServicesTerminationCompleted</members>
+        <members>cscrmCaseServicesTerminationOrdered</members>
+        <members>cscrmCaseTaifunAccountCreation</members>
+        <members>cscrmCaseTaifunChildServiceCreation</members>
+        <members>cscrmCaseTaifunMobileOrder</members>
+        <members>cscrmCaseTaifunMobileOrderClosing</members>
+        <members>cscrmCaseTaifunParentServiceCreation</members>
+        <members>cscrmCaseTopnetTaskCreation</members>
+        <members>cscrmMobileOrderToACC</members>
+        <members>upc_Integration_Tests_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>CSCRM_Create_Task_On_Quote_Response</members>
+        <members>CSCRM_On_Case_Reject_Cancel_Related_Processes</members>
+        <members>CSCRM_Set_Subscription_Send_Topnet_Info_Flag</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-1</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-10</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-11</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-12</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-13</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-14</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-16</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-2</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-3</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-4</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-7</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-8</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields-9</members>
+        <members>CSCRM_Update_Opportunity_CAPEX_Type</members>
+        <members>CSCRM_Update_Process_Terms_Case</members>
+        <members>CSCRM_Update_Service_with_Account_and_Billing_Account</members>
+        <members>CSCRM_Update_Subscription_with_Billing_Account_and_Address</members>
+        <members>Change_Account_RT_Based_on_UPC_Type_Field</members>
+        <members>Change_Account_RT_Based_on_UPC_Type_Field-1</members>
+        <members>Change_Account_RT_Based_on_UPC_Type_Field-2</members>
+        <members>Create_Case_Flow</members>
+        <members>Create_Case_Flow-1</members>
+        <members>Create_Case_Flow-2</members>
+        <members>NX_AccountContact_Copy_Phone_Email</members>
+        <members>NX_AccountContact_Copy_Phone_Email-1</members>
+        <members>NX_AccountContact_Copy_Phone_Email-10</members>
+        <members>NX_AccountContact_Copy_Phone_Email-11</members>
+        <members>NX_AccountContact_Copy_Phone_Email-12</members>
+        <members>NX_AccountContact_Copy_Phone_Email-13</members>
+        <members>NX_AccountContact_Copy_Phone_Email-2</members>
+        <members>NX_AccountContact_Copy_Phone_Email-3</members>
+        <members>NX_AccountContact_Copy_Phone_Email-4</members>
+        <members>NX_AccountContact_Copy_Phone_Email-5</members>
+        <members>NX_AccountContact_Copy_Phone_Email-6</members>
+        <members>NX_AccountContact_Copy_Phone_Email-7</members>
+        <members>NX_AccountContact_Copy_Phone_Email-8</members>
+        <members>NX_AccountContact_Copy_Phone_Email-9</members>
+        <members>NX_AccountContact_Direct_Phone_Formating</members>
+        <members>NX_AccountContact_Direct_Phone_Formating-1</members>
+        <members>NX_AccountContact_Mobile_Formating</members>
+        <members>NX_AccountContact_Mobile_Formating-1</members>
+        <members>NX_AccountContact_Phone_Formating</members>
+        <members>NX_AccountContact_Phone_Formating-1</members>
+        <members>NX_AccountInterface_Update_TaifunID</members>
+        <members>NX_AccountInterface_Update_TaifunID-1</members>
+        <members>NX_AccountInterface_Update_TaifunID-2</members>
+        <members>NX_Account_Address_Update</members>
+        <members>NX_Account_Address_Update-1</members>
+        <members>NX_Account_Assign_no_Employees</members>
+        <members>NX_Account_Assign_no_Employees-1</members>
+        <members>NX_Account_Assign_no_Employees-2</members>
+        <members>NX_Account_Assign_no_Employees-3</members>
+        <members>NX_Account_Create_Case_On_Account_Change</members>
+        <members>NX_Account_Create_Case_On_Account_Change-1</members>
+        <members>NX_Account_Create_Case_On_Account_Change-2</members>
+        <members>NX_Account_Create_Case_On_Account_Change-3</members>
+        <members>NX_Account_Create_Case_On_Account_Change-4</members>
+        <members>NX_Account_Create_Case_On_Account_Change-5</members>
+        <members>NX_Account_Create_Case_On_Account_Change-6</members>
+        <members>NX_Account_Create_Case_On_Account_Change-7</members>
+        <members>NX_Account_Create_Case_On_Account_Change-9</members>
+        <members>NX_Account_Fax_Formating</members>
+        <members>NX_Account_Fax_Formating-1</members>
+        <members>NX_Account_Fax_Formating-2</members>
+        <members>NX_Account_Mobile_Formating</members>
+        <members>NX_Account_Mobile_Formating-1</members>
+        <members>NX_Account_Not_in_Zefix</members>
+        <members>NX_Account_Partner_Type_when_Partner</members>
+        <members>NX_Account_Partner_Type_when_Partner-1</members>
+        <members>NX_Account_Partner_Type_when_Partner-2</members>
+        <members>NX_Account_Phone_Formating_V2</members>
+        <members>NX_Account_Phone_Formating_V2-1</members>
+        <members>NX_Account_Phone_Formating_V2-2</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back-1</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back-2</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back-3</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back-4</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back-5</members>
+        <members>NX_Account_Sales_Segment_Automation</members>
+        <members>NX_Account_Sales_Segment_Automation-1</members>
+        <members>NX_Account_Sales_Segment_Automation-2</members>
+        <members>NX_Assign_Lead_to_me-1</members>
+        <members>NX_Assign_Lead_to_me-2</members>
+        <members>NX_Campaign_Account_Owner_After_Approval</members>
+        <members>NX_Case_Change_Owern_when_Closing</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved-1</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved-2</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved-3</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved-4</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved-5</members>
+        <members>NX_Contact_Direct_Phone_Formating</members>
+        <members>NX_Contact_Direct_Phone_Formating-1</members>
+        <members>NX_Contact_Direct_Phone_Formating-2</members>
+        <members>NX_Contact_Fax_Formating</members>
+        <members>NX_Contact_Fax_Formating-1</members>
+        <members>NX_Contact_Gender_Based_on_Salutation</members>
+        <members>NX_Contact_Gender_Based_on_Salutation-1</members>
+        <members>NX_Contact_Gender_Based_on_Salutation-2</members>
+        <members>NX_Contact_Gender_Based_on_Salutation-3</members>
+        <members>NX_Contact_Gender_Based_on_Salutation-4</members>
+        <members>NX_Contact_Mobile_Formating</members>
+        <members>NX_Contact_Mobile_Formating-1</members>
+        <members>NX_Contact_Mobile_Formating-2</members>
+        <members>NX_Contact_Phone_Formating</members>
+        <members>NX_Contact_Phone_Formating-1</members>
+        <members>NX_Contact_Phone_Formating-2</members>
+        <members>NX_Contact_Phone_Formating-3</members>
+        <members>NX_Contact_Phone_Formating-4</members>
+        <members>NX_Flow_Hardware_change</members>
+        <members>NX_Flow_Hardware_change-2</members>
+        <members>NX_Flow_Hardware_change-20</members>
+        <members>NX_Flow_Hardware_change-4</members>
+        <members>NX_Freeze_Oppy_When_Closed</members>
+        <members>NX_Freeze_Oppy_When_Closed-1</members>
+        <members>NX_Freeze_Oppy_When_Closed-2</members>
+        <members>NX_Freeze_Oppy_When_Closed-3</members>
+        <members>NX_Freeze_Oppy_When_Closed-4</members>
+        <members>NX_Freeze_Oppy_When_Closed-5</members>
+        <members>NX_Lead_Address_Update</members>
+        <members>NX_Lead_Address_Update-1</members>
+        <members>NX_Lead_Assign_Partner_Account</members>
+        <members>NX_Lead_Assign_no_Employees</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-1</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-2</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-3</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-4</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-5</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-6</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-7</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-8</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer-9</members>
+        <members>NX_Lead_Change_RT_When_Zefix_Checked</members>
+        <members>NX_Lead_Change_RT_When_Zefix_Checked-1</members>
+        <members>NX_Lead_Change_RT_When_Zefix_Checked-2</members>
+        <members>NX_Lead_Change_RT_When_Zefix_Checked-3</members>
+        <members>NX_Lead_Direct_Phone_Formating</members>
+        <members>NX_Lead_Direct_Phone_Formating-1</members>
+        <members>NX_Lead_Direct_Phone_Formating-2</members>
+        <members>NX_Lead_Direct_Phone_Formating-3</members>
+        <members>NX_Lead_Fax_Formating</members>
+        <members>NX_Lead_Fax_Formating-1</members>
+        <members>NX_Lead_Fax_Formating-2</members>
+        <members>NX_Lead_Fax_Formating-3</members>
+        <members>NX_Lead_Fax_Formating-4</members>
+        <members>NX_Lead_Fax_Formating-5</members>
+        <members>NX_Lead_Fax_Formating-6</members>
+        <members>NX_Lead_Gender_Based_on_Salutation</members>
+        <members>NX_Lead_Mobile_Formating</members>
+        <members>NX_Lead_Mobile_Formating-1</members>
+        <members>NX_Lead_Mobile_Formating-2</members>
+        <members>NX_Lead_Mobile_Formating-3</members>
+        <members>NX_Lead_Mobile_Formating-4</members>
+        <members>NX_Lead_Mobile_Formating-5</members>
+        <members>NX_Lead_Mobile_Formating-6</members>
+        <members>NX_Lead_Mobile_Formating-7</members>
+        <members>NX_Lead_Phone_Formating</members>
+        <members>NX_Lead_Phone_Formating-1</members>
+        <members>NX_Lead_Phone_Formating-2</members>
+        <members>NX_Lead_Phone_Formating-3</members>
+        <members>NX_Lead_Phone_Formating-4</members>
+        <members>NX_Lead_Phone_Formating-5</members>
+        <members>NX_Lead_Phone_Formating-6</members>
+        <members>NX_Lead_Phone_Formating-7</members>
+        <members>NX_Lead_Phone_Formating-8</members>
+        <members>NX_Lead_Phone_Formating-9</members>
+        <members>NX_Lead_Stage_Duration_v2</members>
+        <members>NX_Lead_Stage_Duration_v2-1</members>
+        <members>NX_Lead_Take_Ownership</members>
+        <members>NX_Lead_Take_Ownership-1</members>
+        <members>NX_Map_Lead_Ownership_and_Address_from_Lead</members>
+        <members>NX_OpportunitySite_added_Update_Opp_Status</members>
+        <members>NX_Opportunity_Change_RT_On_Creation</members>
+        <members>NX_Opportunity_Change_RT_On_Creation-1</members>
+        <members>NX_Opportunity_Move_Review_Not_Validated</members>
+        <members>NX_Opportunity_Move_Review_Not_Validated-1</members>
+        <members>NX_Opportunity_Move_Review_Not_Validated-3</members>
+        <members>NX_Opportunity_Sync_Probabilities</members>
+        <members>NX_Opportunity_Sync_Probabilities-1</members>
+        <members>NX_ProductBasked_Added_Update_Opp_Stage</members>
+        <members>NX_Reassign_Leads_Score_greater_than_35_V2</members>
+        <members>NX_Site_Create_Site_Address_on_site_creation</members>
+        <members>NX_Site_Name_Searchable</members>
+        <members>NX_Site_Status_Automation</members>
+        <members>NX_Site_Update_Footprint_on_Lead</members>
+        <members>NX_Site_Update_Footprint_on_Lead-1</members>
+        <members>NX_Site_Update_Footprint_on_Lead-2</members>
+        <members>NX_Trigger_Account_Owner_approval</members>
+        <members>NX_Trigger_Account_Owner_approval-1</members>
+        <members>NX_Trigger_Campaign_Owner_approval</members>
+        <members>NX_Update_Account_Owner_After_Approval</members>
+        <members>NX_Update_Account_Owner_After_Approval-1</members>
+        <members>NX_Update_Account_Owner_After_Approval-10</members>
+        <members>NX_Update_Account_Owner_After_Approval-11</members>
+        <members>NX_Update_Account_Owner_After_Approval-12</members>
+        <members>NX_Update_Account_Owner_After_Approval-13</members>
+        <members>NX_Update_Account_Owner_After_Approval-2</members>
+        <members>NX_Update_Account_Owner_After_Approval-3</members>
+        <members>NX_Update_Account_Owner_After_Approval-4</members>
+        <members>NX_Update_Account_Owner_After_Approval-5</members>
+        <members>NX_Update_Account_Owner_After_Approval-6</members>
+        <members>NX_Update_Account_Owner_After_Approval-7</members>
+        <members>NX_Update_Account_Owner_After_Approval-8</members>
+        <members>NX_Update_Account_Owner_After_Approval-9</members>
+        <members>NX_Update_Oppy_Stage_Status-3</members>
+        <members>NX_Update_Site_Status_Address_RT</members>
+        <members>NX_Update_Site_Status_Address_RT-1</members>
+        <members>NX_auto_Select_Credit_Check_PIcklist_based_on_the_Score</members>
+        <members>NX_auto_Select_Credit_Check_PIcklist_based_on_the_Score-6</members>
+        <members>NX_convert_lead_Site_to_Account</members>
+        <members>Populate_Basket_Account_from_Opp</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>CSCRM_Create_Task_On_Quote_Response</members>
+        <members>CSCRM_On_Case_Reject_Cancel_Related_Processes</members>
+        <members>CSCRM_Set_Subscription_Send_Topnet_Info_Flag</members>
+        <members>CSCRM_Update_Case_Account_Opp_Fields</members>
+        <members>CSCRM_Update_Opportunity_CAPEX_Type</members>
+        <members>CSCRM_Update_Process_Terms_Case</members>
+        <members>CSCRM_Update_Service_with_Account_and_Billing_Account</members>
+        <members>CSCRM_Update_Subscription_with_Billing_Account_and_Address</members>
+        <members>Change_Account_RT_Based_on_UPC_Type_Field</members>
+        <members>Create_Case_Flow</members>
+        <members>NX_AccountContact_Copy_Phone_Email</members>
+        <members>NX_AccountContact_Direct_Phone_Formating</members>
+        <members>NX_AccountContact_Mobile_Formating</members>
+        <members>NX_AccountContact_Phone_Formating</members>
+        <members>NX_AccountInterface_Update_TaifunID</members>
+        <members>NX_Account_Address_Update</members>
+        <members>NX_Account_Assign_no_Employees</members>
+        <members>NX_Account_Create_Case_On_Account_Change</members>
+        <members>NX_Account_Fax_Formating</members>
+        <members>NX_Account_Mobile_Formating</members>
+        <members>NX_Account_Not_in_Zefix</members>
+        <members>NX_Account_Partner_Type_when_Partner</members>
+        <members>NX_Account_Phone_Formating_V2</members>
+        <members>NX_Account_Record_Type_to_Frozen_and_Back</members>
+        <members>NX_Account_Sales_Segment_Automation</members>
+        <members>NX_Assign_Lead_to_me</members>
+        <members>NX_Campaign_Account_Owner_After_Approval</members>
+        <members>NX_Case_Change_Owern_when_Closing</members>
+        <members>NX_ChangeStage_to_Closed_TVP_when_Order_Approved</members>
+        <members>NX_Contact_Direct_Phone_Formating</members>
+        <members>NX_Contact_Fax_Formating</members>
+        <members>NX_Contact_Gender_Based_on_Salutation</members>
+        <members>NX_Contact_Mobile_Formating</members>
+        <members>NX_Contact_Phone_Formating</members>
+        <members>NX_Flow_Hardware_change</members>
+        <members>NX_Freeze_Oppy_When_Closed</members>
+        <members>NX_Lead_Address_Update</members>
+        <members>NX_Lead_Assign_Partner_Account</members>
+        <members>NX_Lead_Assign_no_Employees</members>
+        <members>NX_Lead_Change_RT_Partner_Transfer</members>
+        <members>NX_Lead_Change_RT_When_Zefix_Checked</members>
+        <members>NX_Lead_Direct_Phone_Formating</members>
+        <members>NX_Lead_Fax_Formating</members>
+        <members>NX_Lead_Gender_Based_on_Salutation</members>
+        <members>NX_Lead_Mobile_Formating</members>
+        <members>NX_Lead_Phone_Formating</members>
+        <members>NX_Lead_Stage_Duration_v2</members>
+        <members>NX_Lead_Take_Ownership</members>
+        <members>NX_Map_Lead_Ownership_and_Address_from_Lead</members>
+        <members>NX_OpportunitySite_added_Update_Opp_Status</members>
+        <members>NX_Opportunity_Change_RT_On_Creation</members>
+        <members>NX_Opportunity_Move_Review_Not_Validated</members>
+        <members>NX_Opportunity_Sync_Probabilities</members>
+        <members>NX_ProductBasked_Added_Update_Opp_Stage</members>
+        <members>NX_Reassign_Leads_Score_greater_than_35_V2</members>
+        <members>NX_Site_Create_Site_Address_on_site_creation</members>
+        <members>NX_Site_Name_Searchable</members>
+        <members>NX_Site_Status_Automation</members>
+        <members>NX_Site_Update_Footprint_on_Lead</members>
+        <members>NX_Trigger_Account_Owner_approval</members>
+        <members>NX_Trigger_Campaign_Owner_approval</members>
+        <members>NX_Update_Account_Owner_After_Approval</members>
+        <members>NX_Update_Oppy_Stage_Status</members>
+        <members>NX_Update_Site_Status_Address_RT</members>
+        <members>NX_auto_Select_Credit_Check_PIcklist_based_on_the_Score</members>
+        <members>NX_convert_lead_Site_to_Account</members>
+        <members>Populate_Basket_Account_from_Opp</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>Gender</members>
+        <members>Preferred_Language</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>All_Internal_Users</members>
+        <members>All_Partner_Users</members>
+        <members>All_Users_internal_Partner</members>
+        <members>Back_Office_Team</members>
+        <members>Click_Approve_Groupe</members>
+        <members>Taifun_Approval_Group</members>
+        <members>edqexxx7</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>Dashboard Home Page Default</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>CallPoint.Banned</members>
+        <members>Partner Portal.Banned</members>
+        <name>KeywordList</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-UPC Customer Account Layout All Profiles</members>
+        <members>Account-UPC Customer Account Layout All Profiles %28Frozen%29</members>
+        <members>Account-UPC Customer Account Layout All Profiles Locked by Zefix</members>
+        <members>Account-UPC Customer Account Layout All Profiles Locked by Zefix %28Frozen%29</members>
+        <members>Account-UPC Customer Account Layout Partner Profile</members>
+        <members>Account-UPC Customer Account Layout Partners %28Frozen%29</members>
+        <members>Account-UPC Customer Account Layout Partners Locked by Zefix</members>
+        <members>Account-UPC Customer Account Layout Partners Locked by Zefix %28Frozen%29</members>
+        <members>Account-UPC Partner Account Layout All Profiles</members>
+        <members>Account-UPC Partner-Customer Account Layout All Profiles</members>
+        <members>Account-UPC Partner-Customer Account Layout All Profiles %28Frozen%29</members>
+        <members>Account-UPC Partner-Customer Account Layout All Profiles Locked by Zefix</members>
+        <members>Account-UPC Partner-Customer Account Layout All Profiles Locked by Zefix %28Frozen%29</members>
+        <members>Account-UPC Partner-Customer Account Layout Partner User</members>
+        <members>AccountContactRelation-Account Contact Relationship Layout</members>
+        <members>AccountTeamMember-Account Team Member Layout</members>
+        <members>AddOn_Dependency__c-AddOn Dependency Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>CSPOFA__Orchestration_Process__c-Custom Orchestration Process Layout</members>
+        <members>CS_Basket_Snapshot_Transactional__c-CS Basket Snapshot Transactional Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>Campaign-UPC Campaign Layout All Profiles</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Access Point New Order Taifun</members>
+        <members>Case-BDTV_Provisioning_Taifun_ServiceCreation_Layout</members>
+        <members>Case-BP_Provisioning_Efon_Entry_Layout</members>
+        <members>Case-BP_Provisioning_SF_ServiceClose_Layout</members>
+        <members>Case-BP_Provisioning_Taifun_ServiceCreation_Layout</members>
+        <members>Case-BP_ReservingMACandNumbers_Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Case-Credit Note Layout</members>
+        <members>Case-Mobile Close Taifun Order</members>
+        <members>Case-Mobile Order ACC</members>
+        <members>Case-Mobile Order Taifun</members>
+        <members>Case-New Customer for Taifun</members>
+        <members>Case-New Order Taifun</members>
+        <members>Case-New Porting Order for Acc</members>
+        <members>Case-Taifun Service Ready</members>
+        <members>Case-Termination Completed In Taifun</members>
+        <members>Case-Termination Order Entry</members>
+        <members>Case-Topnet Order</members>
+        <members>Case-UPC Case BCSE Standard</members>
+        <members>Case-UPC Case Tech Support</members>
+        <members>Case-UPC Taifun Customer Change</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>CaseInteraction-Case Feed Layout</members>
+        <members>CollaborationGroup-Group Layout</members>
+        <members>CommunityMemberLayout-Community Member Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-UPC Contact Layout Admin</members>
+        <members>Contact-UPC Contact Layout All Profiles</members>
+        <members>ContentVersion-Content Version</members>
+        <members>Contract-Contract Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Event-Event Layout</members>
+        <members>Event-UPC Permaleads Event Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Global-UPC BCSE Global Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Lead-UPC Lead All Profiles Locked by Zefix</members>
+        <members>Lead-UPC Lead Layout Admin</members>
+        <members>Lead-UPC Lead Layout All Profiles</members>
+        <members>Lead-UPC Lead Layout Partner Profiles</members>
+        <members>Lead-UPC Lead Layout Partner Profiles Locked by Zefix</members>
+        <members>LiveChatTranscriptActive-Live Chat Transcript %28In Progress%29 Layout</members>
+        <members>LiveChatTranscriptWaiting-Live Chat Transcript %28Waiting%29 Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-UPC Evolution Layout All Profiles</members>
+        <members>Opportunity-UPC Evolution Layout All Profiles %28Frozen%29</members>
+        <members>Opportunity-UPC Evolution Layout All Profiles %28New Page%29</members>
+        <members>Opportunity-UPC New Business Layout All Profiles</members>
+        <members>Opportunity-UPC New Business Layout All Profiles %28Frozen%29</members>
+        <members>Opportunity-UPC New Business Layout All Profiles %28New Page%29</members>
+        <members>Opportunity-UPC New Business Layout Partner Profiles</members>
+        <members>Opportunity-UPC Renewal Layout All Profiles</members>
+        <members>Opportunity-UPC Renewal Layout All Profiles %28Frozen%29</members>
+        <members>Opportunity-UPC Renewal Layout All Profiles %28New Page%29</members>
+        <members>Opportunity-UPC Renewal Layout Partner Profiles</members>
+        <members>Opportunity-UPC Termination Layout All Profiles %28Frozen%29</members>
+        <members>Opportunity-UPC Termination Layout All Profiles %28New Page%29</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>OpportunityTeamMember-Opportunity Team Member Layout</members>
+        <members>Outlook-UPC Publisher Layout</members>
+        <members>Permaleads_Visited_URL__mdt-Permaleads Visited URL Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>ProfileSkill-Skill Layout</members>
+        <members>ProfileSkillEndorsement-Endorsement Layout</members>
+        <members>ProfileSkillUser-Skill User Layout</members>
+        <members>QuickText-Quick Text Layout</members>
+        <members>Quote-Quote Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardAssociation-Scorecard Association Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>SocialPost-Social Post Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Task-Task Layout</members>
+        <members>UPC_ADBASE__c-UPC Address Layout</members>
+        <members>UPC_ADBASE__c-UPC Address Layout Admin</members>
+        <members>UPC_ADBASE__c-UPC Footprint Address Layout</members>
+        <members>UPC_ADBASE__c-UPC Footprint Address Layout Admin</members>
+        <members>UPC_Account_Interfaces__c-Account Interface Layout</members>
+        <members>UPC_Address_Contact__c-Address Contact Layout</members>
+        <members>UPC_Clean_Order_Sheet_Value__mdt-Clean Order Sheet Value Layout</members>
+        <members>UPC_Credit_Note__c-Custom Credit Note Layout</members>
+        <members>UPC_Document_Queries__mdt-Document Query Layout</members>
+        <members>UPC_General_Document_Values__mdt-General Document Value Layout</members>
+        <members>UPC_Main_Competitors__c-Main Competitors Layout</members>
+        <members>UPC_Opportunity_Contact_Role__c-Opportunity Contact Role Layout</members>
+        <members>UPC_Opportunity_Site__c-Opportunity Site Layout</members>
+        <members>UPC_Product_Advantages_Email_Mapping__mdt-Product Advantages Email Mapping Layout</members>
+        <members>UPC_Quote_Document_Language_Settings__mdt-Quote Document Language Settings Layout</members>
+        <members>UPC_Quote_Document_Language_Settings__mdt-Quote Document Settings Layout</members>
+        <members>UPC_Quote_Document_Line_Item_Mappings__mdt-Quote Document Line Item Mappings Layout</members>
+        <members>UPC_Quote_Document_Mappings__mdt-Quote Document Mappings Layout</members>
+        <members>UPC_Related_List_Component_Setting__mdt-Related List Component Setting Layout</members>
+        <members>UPC_Site_Address__c-Site Address Layout</members>
+        <members>UPC_Site_Contacts__c-Site Contact Layout</members>
+        <members>UPC_Site__c-Site Layout</members>
+        <members>UPC_Site__c-UPC Site Layout Admin</members>
+        <members>UPC_Site__c-UPC Site Layout All Profiles</members>
+        <members>UPC_Termination_Document_Mappings__mdt-Termination Document Mapping Layout</members>
+        <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
+        <members>UserAppMenuItem-Application Layout</members>
+        <members>WorkAccess-Access Layout</members>
+        <members>WorkBadge-Badge Layout</members>
+        <members>WorkBadge-Badge Received Layout 192</members>
+        <members>WorkBadgeDefinition-Badge Definition Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout 192</members>
+        <members>WorkThanks-Thanks Layout</members>
+        <members>csbb__Configuration_Association__c-Custom Configuration Association Layout</members>
+        <members>csbb__Configuration__c-Custom Configuration Layout</members>
+        <members>csbb__Product_Configuration_Request__c-Custom Product Configuration Request Layout</members>
+        <members>cscfga__Attribute_Definition__c-Custom Attribute Definition Layout</members>
+        <members>cscfga__Attribute_Field_Definition__c-Custom Attribute Field Definition Layout</members>
+        <members>cscfga__Attribute__c-Custom Attribute Layout</members>
+        <members>cscfga__Lookup_Config__c-Custom Lookup Config Layout</members>
+        <members>cscfga__Offer_Category_Association__c-Custom Offer Category Association Layout</members>
+        <members>cscfga__Product_Configuration__c-Custom Product Configuration Layout</members>
+        <members>cscfga__Product_Definition__c-Custom Package Definition Layout</members>
+        <members>cscfga__Product_Definition__c-Custom Product Definition Layout</members>
+        <members>cscfga__Rule_Action_Association__c-Custom Rule%2FAction Association Layout</members>
+        <members>cscfga__Rule_Predicate_Association__c-Custom %09Rule%2FPredicate Association Layout</members>
+        <members>cscfga__Rule__c-Custom Rule Layout</members>
+        <members>csconta__Billing_Account__c-UPC Billing Account Layout all Profiles</members>
+        <members>csdiscounts__Discount_Configuration__c-Custom Discount Configuration Layout</members>
+        <members>csoe__Non_Commercial_Product_Association__c-Custom Non Commercial Product Association Layout</members>
+        <members>csoe__Non_Commercial_Schema__c-Custom Technical JSON Schema Layout</members>
+        <members>csoe__OE_Configuration__c-Custom OE Configuration Layout</members>
+        <members>csord__Deliverable_Line_Item__c-Custom Deliverable Line Item Layout</members>
+        <members>csord__Deliverable__c-Custom Deliverable Layout</members>
+        <members>csord__Order_Line_Item__c-Custom Order Line Item Layout</members>
+        <members>csord__Order__c-Custom UPC Order Layout</members>
+        <members>csord__Service_Line_Item__c-Custom Service Line Item Layout</members>
+        <members>csord__Service__c-Custom %09Service Layout</members>
+        <members>csord__Solution__c-Custom Solution Layout</members>
+        <members>csord__Subscription_Line_Item__c-Custom Subscription Line Item Layout</members>
+        <members>csord__Subscription__c-Custom Subscription Layout</members>
+        <members>cspmb__Add_On_Price_Item__c-Custom Add On Price Item Layout</members>
+        <members>cspmb__Add_On_Price_Item__c-Custom Business Internet Layout</members>
+        <members>cspmb__Discount_Association__c-Custom Discount Association Layout</members>
+        <members>cspmb__Discount_Level__c-Custom Discount Level Layout</members>
+        <members>cspmb__Price_Item_Add_On_Price_Item_Association__c-Custom Price Item Add On Price Item Association Layout</members>
+        <members>cspmb__Price_Item_Group_Association__c-Custom Price Item Group Association Layout</members>
+        <members>cspmb__Price_Item__c-Custom Business Internet Layout</members>
+        <members>cspmb__Price_Item__c-Custom Price Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>LeadConvertSettings</members>
+        <name>LeadConvertSettings</name>
+    </types>
+    <types>
+        <members>UPC_Generic_Letterhead</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>CallPoint</members>
+        <members>Partner Portal</members>
+        <name>ManagedTopics</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>CallPoint.Block_banned_keywords</members>
+        <members>CallPoint.Flag_banned</members>
+        <members>CallPoint.Freeze_for_frequent_posting</members>
+        <members>CallPoint.Replace_banned</members>
+        <members>CallPoint.Review_the_first_post</members>
+        <members>Partner Portal.Block_banned_keywords</members>
+        <members>Partner Portal.Flag_banned</members>
+        <members>Partner Portal.Freeze_for_frequent_posting</members>
+        <members>Partner Portal.Replace_banned</members>
+        <members>Partner Portal.Review_the_first_post</members>
+        <name>ModerationRule</name>
+    </types>
+    <types>
+        <members>CallPoint</members>
+        <members>Partner Portal</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>Campaign_Path</members>
+        <members>Default</members>
+        <members>Default_Opportunity</members>
+        <members>New_Business_Created</members>
+        <members>Renewal_Created</members>
+        <members>UPC_Address_Status_Path</members>
+        <members>UPC_BCSE_Standard_Case</members>
+        <members>UPC_Customer_LifeCycle</members>
+        <members>UPC_Customer_LifeCycle_Locked_by_Zefix</members>
+        <members>UPC_Customer_LifeCycle_Locked_by_Zefix_F</members>
+        <members>UPC_Customer_or_Prospect_Frozen</members>
+        <members>UPC_Evolution_Path</members>
+        <members>UPC_Evolution_Path_Created</members>
+        <members>UPC_New_Business_Path</members>
+        <members>UPC_Part_Cust_Account_Locked_by_Zefix_F</members>
+        <members>UPC_Partner_Customer_Account_Frozen</members>
+        <members>UPC_Partner_Customer_LifeCycle_Customer</members>
+        <members>UPC_Partner_Customer_LifeCycle_Locked</members>
+        <members>UPC_Partner_Lead</members>
+        <members>UPC_Renewal_Path</members>
+        <members>UPC_Taifun_customer_change</members>
+        <members>UPC_site_Path</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>Bulk_API_Hard_Delete_Permission</members>
+        <members>CSCRM_CloudSense_Permission_Set</members>
+        <members>CloudSense_Creator_Admin_Local</members>
+        <members>CloudSense_Creator_User_Local</members>
+        <members>CloudSense_Partner_Permissionset</members>
+        <members>CloudSense_Permission_Set_Partners</members>
+        <members>Knowledge_LSF_Permission_Set</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Account.Owner_Approval</members>
+        <name>PostTemplate</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>CallPoint Profile</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>Click Approve Profile</members>
+        <members>ContractManager</members>
+        <members>Customer Community Login User</members>
+        <members>Guest License User</members>
+        <members>MarketingProfile</members>
+        <members>Partner Community User</members>
+        <members>Partner Portal Profile</members>
+        <members>ReadOnly</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>UPC Fulfillment Agent</members>
+        <members>UPC Fulfillment Manager</members>
+        <members>UPC Fulfillment Super User</members>
+        <members>UPC Marketing User</members>
+        <members>UPC Partner Community Admin User</members>
+        <members>UPC Partner Community User</members>
+        <members>UPC Partner Manager</members>
+        <members>UPC Sales</members>
+        <members>UPC Sales Backoffice</members>
+        <members>UPC Sales Backoffice Manager</members>
+        <members>UPC Sales Backoffice Super User</members>
+        <members>UPC Sales Manager</members>
+        <members>UPC Super User</members>
+        <members>UPC Tech Service Support</members>
+        <members>prm Profile</members>
+        <members>test</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Click_Approve_Profile_profilePasswordPolicy1552466650870</members>
+        <members>PT1_profilePasswordPolicy1543489737202</members>
+        <members>UPC_Fulfillment_Agent_profilePasswordPolicy1548923589794</members>
+        <members>UPC_Fulfillment_Manager_profilePasswordPolicy1547454210440</members>
+        <members>UPC_Fulfillment_Super_User_profilePasswordPolicy1548923661138</members>
+        <members>UPC_Marketing_User_profilePasswordPolicy1544015569046</members>
+        <members>UPC_Partner_Community_User_profilePasswordPolicy1552647164956</members>
+        <members>UPC_Partner_Manager_profilePasswordPolicy1552483941537</members>
+        <members>UPC_Sales_Backoffice_Manager_profilePasswordPolicy1547453464606</members>
+        <members>UPC_Sales_Backoffice_Super_User_profilePasswordPolicy1548923750807</members>
+        <members>UPC_Sales_Backoffice_profilePasswordPolicy1547210840639</members>
+        <members>UPC_Sales_Manager_profilePasswordPolicy1547202514301</members>
+        <members>UPC_Sales_profilePasswordPolicy1545207961984</members>
+        <members>UPC_Super_User_profilePasswordPolicy1548923807119</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>Click_Approve_Profile_profileSessionSetting1552466650962</members>
+        <members>PT1_profileSessionSetting1543489737535</members>
+        <members>UPC_Fulfillment_Agent_profileSessionSetting1548923589939</members>
+        <members>UPC_Fulfillment_Manager_profileSessionSetting1547454210498</members>
+        <members>UPC_Fulfillment_Super_User_profileSessionSetting1548923661222</members>
+        <members>UPC_Marketing_User_profileSessionSetting1544015569114</members>
+        <members>UPC_Partner_Community_User_profileSessionSetting1552647165086</members>
+        <members>UPC_Sales_Backoffice_Manager_profileSessionSetting1547453464704</members>
+        <members>UPC_Sales_Backoffice_Super_User_profileSessionSetting1548923750871</members>
+        <members>UPC_Sales_Backoffice_profileSessionSetting1547210840701</members>
+        <members>UPC_Sales_Manager_profileSessionSetting1547202514372</members>
+        <members>UPC_Sales_profileSessionSetting1545207962064</members>
+        <members>UPC_Super_User_profileSessionSetting1548923807213</members>
+        <members>null_profileSessionSetting1552483941597</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>Inbound_Sales</members>
+        <members>Lead_From_Partner</members>
+        <members>Lead_to_Partners</members>
+        <members>Marketing_team_1_DE</members>
+        <members>Marketing_team_2_FR</members>
+        <members>Marketing_team_3_IT</members>
+        <members>Markting_team_4_INT</members>
+        <members>Outbound_Sales</members>
+        <members>Solution_Sales</members>
+        <members>UPC_Business_Service_Fulfillment</members>
+        <members>UPC_Taifun_Provisioning_Queue</members>
+        <members>UPC_Topnet_Provisioning_Queue</members>
+        <members>business_admin_upc_ch</members>
+        <members>internal_business_admin_upc_ch</members>
+        <members>internal_kmu_upc_ch</members>
+        <members>internal_pme_upc_ch</members>
+        <members>internal_sales_admin_upc_ch</members>
+        <members>internal_solution_admin_upc_ch</members>
+        <members>kmu_upc_ch</members>
+        <members>pme_upc_ch</members>
+        <members>sales_admin_upc_ch</members>
+        <members>solution_admin_upc_ch</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Account.Change_Subscription_s</members>
+        <members>Account.Child_Account</members>
+        <members>Account.Credit_Check</members>
+        <members>Account.NX_Change_Owner</members>
+        <members>Account.NX_Logacall</members>
+        <members>Account.NX_NewTask</members>
+        <members>Account.NX_New_Case_BCSE</members>
+        <members>Account.NX_New_Phone_Case_BCSE</members>
+        <members>Account.New_Site</members>
+        <members>Account.New_Site2</members>
+        <members>Account.Zefix_Check</members>
+        <members>Campaign.Child_Campaign</members>
+        <members>Campaign.NX_Change_Owner</members>
+        <members>Case.NX_Create_a_Child_Case_BCSE</members>
+        <members>Case.NX_Fast_Close_BCSE</members>
+        <members>Case.NX_New_Case_BCSE</members>
+        <members>Case.NX_New_Email_BCSE</members>
+        <members>Case.NX_New_Phone_Case_BCSE</members>
+        <members>Case.NewChildCase</members>
+        <members>Case.Nx_Log_a_Call_BCSE</members>
+        <members>Case.SendEmail</members>
+        <members>CollaborationGroup.NewGroupMember</members>
+        <members>CollaborationGroup.NewGroupRecord</members>
+        <members>Contact.NX_Logacall</members>
+        <members>Contact.NX_NewTask</members>
+        <members>Contact.NX_New_Case_BCSE</members>
+        <members>Contact.NX_New_Phone_Case_BCSE</members>
+        <members>FeedItem.NewTaskFromFeedItem</members>
+        <members>Follow_Up</members>
+        <members>GuestCommunityCase</members>
+        <members>Lead.NX_Logacall</members>
+        <members>Lead.NX_NewTask</members>
+        <members>Lead.Zefix_Check</members>
+        <members>LogACall</members>
+        <members>NX_New_Customer</members>
+        <members>NX_New_Lead_RT</members>
+        <members>NX_New_Partner</members>
+        <members>NewAccount</members>
+        <members>NewCase</members>
+        <members>NewCommunityCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewGroup</members>
+        <members>NewLead</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>New_Billing_Account</members>
+        <members>Opportunity.Add_Site</members>
+        <members>Opportunity.Convert_to_MAC_Oppy</members>
+        <members>Opportunity.Credit_Check</members>
+        <members>Opportunity.Events</members>
+        <members>Opportunity.Log_a_call</members>
+        <members>Opportunity.Tasks</members>
+        <members>Quote.SendEmail</members>
+        <members>SendEmail</members>
+        <members>Task.Defer</members>
+        <members>Task.Defer_0</members>
+        <members>Task.Defer_1</members>
+        <members>Task.Defer_2</members>
+        <members>Task.Defer_3</members>
+        <members>Task.Defer_4</members>
+        <members>Task.EditDescription</members>
+        <members>Task.EditDescription_0</members>
+        <members>Task.EditDescription_1</members>
+        <members>Task.EditDescription_2</members>
+        <members>Task.EditDescription_3</members>
+        <members>Task.EditDescription_4</members>
+        <members>Task.UpdatePriority</members>
+        <members>Task.UpdatePriority_0</members>
+        <members>Task.UpdatePriority_1</members>
+        <members>Task.UpdatePriority_2</members>
+        <members>Task.UpdatePriority_3</members>
+        <members>Task.UpdatePriority_4</members>
+        <members>Task.UpdateStatus</members>
+        <members>Task.UpdateStatus_0</members>
+        <members>Task.UpdateStatus_1</members>
+        <members>Task.UpdateStatus_2</members>
+        <members>Task.UpdateStatus_3</members>
+        <members>Task.UpdateStatus_4</members>
+        <members>UPC_ADBASE__c.Update_Footprint</members>
+        <members>UPC_Site_Address__c.FootPrint</members>
+        <members>UPC_Site__c.Add_Address</members>
+        <members>UPC_Site__c.Change_Primary_Address</members>
+        <members>UPC_Site__c.Footprint_Check</members>
+        <members>UPC_Site__c.New_Task</members>
+        <members>csord__Order__c.CSCRM_Reschedule_Order</members>
+        <members>csord__Order__c.CSCRM_Withdraw</members>
+        <members>csord__Service__c.Change_Subscription</members>
+        <members>csord__Subscription__c.Change_Subscription</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>AddressChecker</members>
+        <members>Addresschecker2</members>
+        <members>CS101</members>
+        <members>CS_Creator_remote</members>
+        <members>Loopback</members>
+        <members>Permaleads</members>
+        <members>Uid</members>
+        <members>Zefix</members>
+        <members>ZefixWs</members>
+        <members>cscrm_Salesforce_Metadata_DoNotDeploy</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>Pending_Approvals</members>
+        <members>test</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>edqexxxPartnerUser</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>sts</members>
+        <members>stsuat</members>
+        <name>SamlSsoConfig</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AddOn_Dependency__c</members>
+        <members>AddressCheckEndpoints__c</members>
+        <members>Asset</members>
+        <members>CS_Basket_Snapshot_Settings__c</members>
+        <members>CS_Basket_Snapshot_Transactional__c</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>ChannelProgram</members>
+        <members>Contact</members>
+        <members>CreditCheck_Endpoint__c</members>
+        <members>FlowInterview</members>
+        <members>FootPrintCheckEndpoints__c</members>
+        <members>Lead</members>
+        <members>ListEmail</members>
+        <members>No_Triggers__c</members>
+        <members>Opportunity</members>
+        <members>Permaleads_Endpoint__c</members>
+        <members>Threshold_addresses__c</members>
+        <members>UPC_ADBASE__c</members>
+        <members>UPC_Address_Contact__c</members>
+        <members>UPC_Basket_Locking_Settings__c</members>
+        <members>UPC_Credit_Note__c</members>
+        <members>UPC_Decomposition_Process_Settings__c</members>
+        <members>UPC_Error_Log__c</members>
+        <members>UPC_ExternalCompanyData__c</members>
+        <members>UPC_ExternalContact__c</members>
+        <members>UPC_ExternalDataInsight__c</members>
+        <members>UPC_Opportunity_Site__c</members>
+        <members>UPC_Order_Confirmation_Email_Setting__c</members>
+        <members>UPC_Price_Item_Price_Item_Association__c</members>
+        <members>UPC_Quote_Renaming_Options__c</members>
+        <members>UPC_Quote_Settings__c</members>
+        <members>UPC_Service_Credit_Note__c</members>
+        <members>UPC_Settings__c</members>
+        <members>UPC_Site_Contacts__c</members>
+        <members>UPC_Site__c</members>
+        <members>User</members>
+        <members>Zefix_endpoint__c</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Partner_Sharing</members>
+        <name>SharingSet</name>
+    </types>
+    <types>
+        <members>CallPoint1</members>
+        <members>Partner_Portal1</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>Alcatel_IP2115</members>
+        <members>Alcatel_IP251G</members>
+        <members>Alert_Icon</members>
+        <members>Approval_Icon</members>
+        <members>Available_Icon</members>
+        <members>CSAddOnManager</members>
+        <members>CableSocketValidation</members>
+        <members>CallForwardingOperations</members>
+        <members>Cisco_ATA</members>
+        <members>ClickApprove_Accepted_Image</members>
+        <members>ClickApprove_Offer_NotValid_Image</members>
+        <members>Credit_Alert_Gray</members>
+        <members>Credit_Alert_Green</members>
+        <members>Credit_Alert_Red</members>
+        <members>Credit_Alert_Yellow</members>
+        <members>CustomRuleExecution</members>
+        <members>DE</members>
+        <members>DigiCard</members>
+        <members>EN</members>
+        <members>FlowPicture</members>
+        <members>Green_Icon</members>
+        <members>Grey_Icon</members>
+        <members>HD_Mediabox</members>
+        <members>IconLeadScoreHigh</members>
+        <members>IconLeadScoreLow</members>
+        <members>IconLeadScoreMedium</members>
+        <members>Maintenance_Icon</members>
+        <members>Orange_Icon</members>
+        <members>Panasonic_KX_HDV130</members>
+        <members>Panasonic_KX_HDV230</members>
+        <members>Panasonic_KX_TGP600</members>
+        <members>PortingAdditionalValidation</members>
+        <members>PortingBlock10Validation</members>
+        <members>ProductConfigurationUtils</members>
+        <members>Red_Icon</members>
+        <members>SN_DTA_ISDN_Adapter</members>
+        <members>SiteSamples</members>
+        <members>UPC_Email_logo</members>
+        <members>UPC_Font_BloomSpeakComp</members>
+        <members>UPC_Font_BloomSpeakComp_Bold</members>
+        <members>UPC_Font_BloomSpeakComp_Heavy</members>
+        <members>UPC_UPC_LogoB2B_Flow</members>
+        <members>Unavailable_Icon</members>
+        <members>aFiveStars</members>
+        <members>bFourStars</members>
+        <members>cThreeStars</members>
+        <members>caStyle</members>
+        <members>clearConfigurationUpgradeWarnings</members>
+        <members>cscrmStylesGeneral</members>
+        <members>dTwoStars</members>
+        <members>eOneStar</members>
+        <members>flag_green</members>
+        <members>flag_red</members>
+        <members>flag_yellow</members>
+        <members>flatuiiso</members>
+        <members>fullScreenIcon</members>
+        <members>fzerostar</members>
+        <members>generateQuote</members>
+        <members>icon_approval</members>
+        <members>icon_discount_basket</members>
+        <members>icon_snapshot</members>
+        <members>icon_sync</members>
+        <members>icon_sync_new</members>
+        <members>newPending</members>
+        <members>numberPortingValidation</members>
+        <members>otoBoxDetailsHandler</members>
+        <members>pricingWidget_core</members>
+        <members>shippingAddressDetailsHandler</members>
+        <members>sitescs</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>de</members>
+        <members>fr</members>
+        <members>it</members>
+        <name>Translations</name>
+    </types>
+    <types>
+        <members>CallPoint.Customer_Members</members>
+        <members>CallPoint.Members_without_contribution</members>
+        <members>CallPoint.Partner_and_Customer_members</members>
+        <members>Partner Portal.Customer_Members</members>
+        <members>Partner Portal.Members_without_contribution</members>
+        <members>Partner Portal.Partner_and_Customer_members</members>
+        <name>UserCriteria</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountContactRelation</members>
+        <members>AddOn_Dependency__c</members>
+        <members>AddressCheckEndpoints__c</members>
+        <members>Asset</members>
+        <members>AssetRelationship</members>
+        <members>AssistantProgress</members>
+        <members>CS_Basket_Snapshot_Settings__c</members>
+        <members>CS_Basket_Snapshot_Transactional__c</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
+        <members>ChatterActivity</members>
+        <members>CollaborationGroup</members>
+        <members>CollaborationGroupMember</members>
+        <members>Contact</members>
+        <members>Contract</members>
+        <members>CreditCheck_Endpoint__c</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>FootPrintCheckEndpoints__c</members>
+        <members>Idea</members>
+        <members>Knowledge__kav</members>
+        <members>Lead</members>
+        <members>LinkedArticle</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>NetworkMember</members>
+        <members>No_Triggers__c</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>OpportunityTeamMember</members>
+        <members>Organization</members>
+        <members>Permaleads_Endpoint__c</members>
+        <members>Permaleads_Visited_URL__mdt</members>
+        <members>Product2</members>
+        <members>ProfileSkill</members>
+        <members>ProfileSkillEndorsement</members>
+        <members>ProfileSkillUser</members>
+        <members>QuickText</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>RequestsForAccessSIQ</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>SocialPost</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>Threshold_addresses__c</members>
+        <members>Topic</members>
+        <members>TopicAssignment</members>
+        <members>UPC_ADBASE__c</members>
+        <members>UPC_Account_Interfaces__c</members>
+        <members>UPC_Address_Contact__c</members>
+        <members>UPC_Basket_Locking_Settings__c</members>
+        <members>UPC_Clean_Order_Sheet_Value__mdt</members>
+        <members>UPC_Credit_Note__c</members>
+        <members>UPC_Decomposition_Process_Settings__c</members>
+        <members>UPC_Document_Queries__mdt</members>
+        <members>UPC_Error_Log__c</members>
+        <members>UPC_ExternalCompanyData__c</members>
+        <members>UPC_ExternalContact__c</members>
+        <members>UPC_ExternalDataInsight__c</members>
+        <members>UPC_General_Document_Values__mdt</members>
+        <members>UPC_Main_Competitors__c</members>
+        <members>UPC_Opportunity_Contact_Role__c</members>
+        <members>UPC_Opportunity_Site__c</members>
+        <members>UPC_Order_Confirmation_Email_Setting__c</members>
+        <members>UPC_Price_Item_Price_Item_Association__c</members>
+        <members>UPC_Product_Advantages_Email_Mapping__mdt</members>
+        <members>UPC_Quote_Document_Language_Settings__mdt</members>
+        <members>UPC_Quote_Document_Line_Item_Mappings__mdt</members>
+        <members>UPC_Quote_Document_Mappings__mdt</members>
+        <members>UPC_Quote_Renaming_Options__c</members>
+        <members>UPC_Quote_Settings__c</members>
+        <members>UPC_Related_List_Component_Setting__mdt</members>
+        <members>UPC_Service_Credit_Note__c</members>
+        <members>UPC_Settings__c</members>
+        <members>UPC_Site_Address__c</members>
+        <members>UPC_Site_Contacts__c</members>
+        <members>UPC_Site__c</members>
+        <members>UPC_Termination_Document_Mappings__mdt</members>
+        <members>User</members>
+        <members>UserLicense</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkThanks</members>
+        <members>Zefix_endpoint__c</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>Company</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>Forecasting</members>
+        <members>Ideas</members>
+        <members>Knowledge</members>
+        <members>LiveAgent</members>
+        <members>Macro</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <version>40.0</version>
+</Package>

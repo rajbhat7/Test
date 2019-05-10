@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:handler name="change" value="{!v.simpleRecord}" action="{!c.doChange}"/>
+
+    <aura:attribute name="record" type="Object" 
+                    description="Object to be displayed"/>
+    <aura:attribute name="simpleRecord" type="Object" 
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" 
+                    description="An error message bound to force:recordData"/>
+    <aura:attribute name="uid" type="String" 
+                    description="The uid formatted for the URL"/>
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields ="{!v.simpleRecord}"
+                      mode="VIEW"/>
+    
+    <iframe src="{!'https://www.uid.admin.ch/Detail.aspx?uid_id=' + v.uid + '&amp;lang=en'}"
+            width="100%"
+            height="100%"
+            sandbox="allow-same-origin allow-scripts allow-forms"
+            scrolling="auto"/>
+
+</aura:component>

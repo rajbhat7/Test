@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>CSPOFA__Account__c</name>
+        <relationshipLabel><!-- Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>CSPOFA__Opportunity__c</name>
+        <relationshipLabel><!-- Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Orchestration Process Template --></label>
+        <name>CSPOFA__Orchestration_Process_Template__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Process --></label>
+        <name>CSPOFA__Parent_Process__c</name>
+        <relationshipLabel><!-- Child Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>CSPOFA__Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Low</masterLabel>
+            <translation><!-- 1 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Normal</masterLabel>
+            <translation><!-- 2 - Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - High</masterLabel>
+            <translation><!-- 3 - High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- On Hold --></label>
+        <name>CSPOFA__Process_On_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>CSPOFA__Process_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cease</masterLabel>
+            <translation><!-- Cease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Provide</masterLabel>
+            <translation><!-- New Provide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade/Downgrade</masterLabel>
+            <translation><!-- Upgrade/Downgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processing Mode --></label>
+        <name>CSPOFA__Processing_Mode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the progress of the Process, in terms of milestones reached. Expressed as a percentage (e.g. &quot;25%&quot;). NOT TO BE EDITED MANUALLY. --></help>
+        <label><!-- Progress --></label>
+        <name>CSPOFA__Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Root Process --></label>
+        <name>CSPOFA__Root_Process__c</name>
+        <relationshipLabel><!-- Descendant Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used internally by Orchestrator engine for tracking processing. Not to be changed manually. --></help>
+        <label><!-- State --></label>
+        <name>CSPOFA__State__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLETED</masterLabel>
+            <translation><!-- COMPLETED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INACTIVE</masterLabel>
+            <translation><!-- INACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INITIALIZING</masterLabel>
+            <translation><!-- INITIALIZING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TERMINATED</masterLabel>
+            <translation><!-- TERMINATED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>CSPOFA__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initializing</masterLabel>
+            <translation><!-- Initializing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subprocess Step --></label>
+        <name>CSPOFA__Subprocess_Step__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subprocess Type --></label>
+        <name>CSPOFA__Subprocess_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Date --></label>
+        <name>CSPOFA__actual_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Date --></label>
+        <name>CSPOFA__confirmed_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Process is in jeopardy because the Target Time was not met. --></help>
+        <label><!-- In Jeopardy --></label>
+        <name>CSPOFA__jeopardy_created_flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of OLA time remaining after the OLA clock has been paused/stopped. --></help>
+        <label><!-- OLA Remaining Time --></label>
+        <name>CSPOFA__ola_remaining_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>CSPOFA__target_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target time to complete the process. --></help>
+        <label><!-- Target Time --></label>
+        <name>CSPOFA__target_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Note --></label>
+        <name>UPC_Credit_Note__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Line Item --></label>
+        <name>UPC_Service_Line_Item__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Canceled --></label>
+        <name>UPC_Subscription_Canceled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the Service on which process instance was invoked --></help>
+        <label><!-- Service --></label>
+        <name>csordtelcoa__Service__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>csordtelcoa__Subscription__c</name>
+        <relationshipLabel><!-- Orchestration Processes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Custom Orchestration Process Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation Details --></label>
+            <section>Evaluation Details</section>
+        </sections>
+        <sections>
+            <label><!-- OLA Details --></label>
+            <section>OLA Details</section>
+        </sections>
+        <sections>
+            <label><!-- Related Objects --></label>
+            <section>Related Objects</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Process_Visualiser --></label>
+        <name>CSPOFA__Process_Visualiser</name>
+    </webLinks>
+</CustomObjectTranslation>

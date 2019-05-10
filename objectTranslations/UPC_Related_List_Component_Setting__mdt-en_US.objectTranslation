@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related List Component Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related List Component Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Used to store unique identifier by which component can access settings. Spaces not advised! --></help>
+        <label><!-- Component Setting Key --></label>
+        <name>UPC_Component_Setting_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to describe role of custom settings --></help>
+        <label><!-- Description --></label>
+        <name>UPC_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- API name of SObject to be queried. --></help>
+        <label><!-- Display Object --></label>
+        <name>UPC_Display_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Array of JSON objects with fields, array of object format:[{&quot;key&quot;:&quot;value&quot;(,other keys)}(,other object)].
+Keys: 
+name:API name
+label:a label (use &quot;Label.&quot; prefix for custom)
+order:sort
+type:supported String,Number,Date,Datetime (optional) --></help>
+        <label><!-- Field Definitions --></label>
+        <name>UPC_Field_Definitions__c</name>
+    </fields>
+    <fields>
+        <label><!-- OE Data --></label>
+        <name>UPC_OE_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- OE Object Type --></label>
+        <name>UPC_OE_Object_Type__c</name>
+        <picklistValues>
+            <masterLabel>Deliverable</masterLabel>
+            <translation><!-- Deliverable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where clause for select. Master record fields can be addressed with curly brackets { and }. DO NOT WRITE WHERE keyword. --></help>
+        <label><!-- WHERE Clause --></label>
+        <name>UPC_WHERE_Clause__c</name>
+    </fields>
+    <layouts>
+        <layout>Related List Component Setting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Field labels are required. --></errorMessage>
+        <name>Field_Labels_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- WHERE clause is required. --></errorMessage>
+        <name>WHERE_Clause_Required</name>
+    </validationRules>
+</CustomObjectTranslation>
